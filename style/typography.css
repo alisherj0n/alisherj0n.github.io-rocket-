@@ -31,8 +31,3 @@ h5 {
 h6 {
   font-size: 1.1rem;
 }
-
-p,
-small {
-  color: var(--color-body-dark);
-}
