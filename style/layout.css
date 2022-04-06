@@ -1,8 +1,14 @@
 .app {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 320px 1fr;
   /* TODO: Delete border after layout is approved. Border has presentational purpose */
   border: 1px solid;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    grid-template-columns: 280px 1fr;
+  }
 }
 
 @media (max-width: 992px) {
