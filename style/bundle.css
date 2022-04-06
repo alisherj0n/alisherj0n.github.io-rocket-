@@ -5,3 +5,5 @@
 @import url(./typography.css);
 @import url(./base.css);
 @import url(./layout.css);
+
+@import url(./components/sidebar.css);
