@@ -1,92 +1,82 @@
 .sidebar {
   border-right: 1px solid var(--color-border);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem 1.9rem;
-}
-
-.sidebar .header {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1rem;
-}
-
-.sidebar .heading {
-  font-weight: 400;
+  padding: 0.9rem 1.6rem;
 }
 
 .sidebar .logo {
-  width: 1.5rem;
+  width: 6.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .logo-only {
+  width: 1.7rem;
+  opacity: 0;
 }
 
 .sidebar .nav {
   list-style: none;
 }
 
-.sidebar .items {
+.sidebar .nav .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.sidebar .item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.1rem 0;
-  font-size: 0.9rem;
-}
-
-.sidebar .toggle {
-  all: unset;
+  padding: 1rem 1.6rem;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  color: var(--color-heading);
   cursor: pointer;
-  padding: 0.5rem;
-  margin-right: -0.5rem;
-  opacity: 0.5;
 }
 
-.sidebar .notification {
-  width: 18px;
-  height: 18px;
-  background-color: var(--color-red);
-  color: #fff;
-  font-size: 0.65rem;
-  border-radius: 35%;
+.sidebar .nav .item:hover {
+  color: var(--color-body-light);
+}
+
+.sidebar .nav .item div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.7rem;
 }
 
-.sidebar .active {
-  background-color: #f8f8f8;
-  padding-left: 1.9rem;
-  margin: 0px -1.9rem;
+.sidebar .nav .item .heading {
+  font-size: 0.95rem;
+}
+
+.sidebar .nav .item.active {
+  background-color: var(--color-bg);
   position: relative;
 }
 
-.sidebar .active .indicator {
+.sidebar .nav .item.active::before {
+  content: "";
   position: absolute;
-  width: 7px;
-  height: 3.5rem;
-  border-radius: 10px;
-  background: var(--color-accent);
   left: -3px;
+  height: 100%;
+  border-left: 7px solid var(--color-accent);
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
-  .sidebar span,
   .sidebar .heading,
-  .sidebar .toggle,
+  .sidebar .icon.arrow,
   .sidebar .notification,
-  .sidebar .active .indicator {
+  .sidebar .logo,
+  .sidebar .nav .item.active::before {
     display: none;
   }
 
-  .sidebar .items.active {
-    border-radius: 25%;
-    padding: 0px 1.1rem;
-    margin: 0 -1.1rem;
+  .sidebar .logo-only {
+    opacity: 1;
+  }
+
+  .sidebar .nav .item {
+    padding: 1rem 1.2rem;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+  }
+
+  .sidebar .nav .item.active {
+    border-radius: 15px;
   }
 }
