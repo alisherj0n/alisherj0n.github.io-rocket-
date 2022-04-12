@@ -1,8 +1,5 @@
-.notification {
-  min-width: 5px;
-  min-height: 5px;
-  line-height: 7px;
-  padding: 5px;
+.notification-badge {
+  padding: 0.5px 5px;
   color: #fff;
   background-color: var(--color-red);
   font-size: 0.7rem;
