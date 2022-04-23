@@ -1,0 +1,17 @@
+.user {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.user .username {
+  color: var(--color-heading);
+  display: block;
+}
+
+.user .job-title {
+  display: block;
+  color: var(--color-body-light);
+}

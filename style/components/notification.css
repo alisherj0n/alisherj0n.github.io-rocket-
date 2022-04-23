@@ -5,3 +5,14 @@
   font-size: 0.7rem;
   border-radius: 5px;
 }
+
+.notification-dot {
+  height: 6px;
+  width: 6px;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,52 @@
+.btn {
+  padding: 0.8rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-white);
+  color: var(--color-heading);
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn.grey-bg:hover {
+  background-color: #ebebeb;
+}
+
+.btn.icon-only {
+  background-color: transparent;
+}
+
+.btn.big {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.btn.grey-bg {
+  background-color: var(--color-bg);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn.outline {
+  border: 1px solid var(--color-border);
+}
+
+.btn.outline:hover {
+  background-color: #ebebeb;
+}
+
+.btn.primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn.primary.light {
+  background-color: var(--color-accent-light);
+}
+
+.btn.primary:hover {
+  background-color: #233abd;
+}

@@ -1,0 +1,32 @@
+.counter {
+  padding: 0.1rem 0.6rem;
+  border-radius: 7px;
+  background: var(--color-border);
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.remaining-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10px;
+  background: var(--color-bg);
+  max-width: 7.5rem;
+  color: var(--color-heading);
+}
+
+.day-counter {
+  font-size: 0.9rem;
+}
+
+.remaining-time.warning {
+  color: var(--color-orange-dark);
+  background: var(--color-orange-light);
+}
+
+.remaining-time.danger {
+  color: var(--color-red);
+  background: var(--color-red-light);
+}

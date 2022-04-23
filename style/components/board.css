@@ -1,0 +1,59 @@
+.board .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.board .page-header .heading {
+  font-size: 1.8rem;
+}
+
+.board .page-header .actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board .tabs .nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.board .tabs .nav .tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-body-light);
+  position: relative;
+}
+
+.board .tabs .nav .tab.active::after {
+  content: " ";
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: blue;
+}
+
+.board .tabs .view-type {
+  display: flex;
+  align-items: center;
+}
+
+.board .tabs .view-type .divider {
+  height: 1.2rem;
+}
+
+.board .horizontal-divider {
+  margin-bottom: 2rem;
+}

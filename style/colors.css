@@ -8,11 +8,16 @@
   --color-bg: #f8f8f8;
   --color-white: #ffffff;
   --color-accent: #304ffd;
+  --color-accent-light: #eaedff;
   --color-orange: #ff965d;
+  --color-orange-light: #fff5ef;
+  --color-orange-dark: #e56e19;
   --color-red: #fd7972;
   --color-dark-red: #f05c54;
+  --color-red-light: #fcd3d1;
   --color-yellow: #ffd240;
   --color-dark-blue: #009eb3;
   --color-purple: #b656eb;
   --color-pink: #f9ddc5;
+  --color-green: #49c96d;
 }

@@ -3,6 +3,15 @@
   grid-template-columns: 320px 1fr;
 }
 
+.app.list-view {
+  grid-template-columns: 70px 1fr;
+}
+
+.container {
+  padding: 2rem 1.8rem;
+  background-color: var(--color-bg);
+}
+
 @media (max-width: 1200px) {
   .app {
     grid-template-columns: 280px 1fr;

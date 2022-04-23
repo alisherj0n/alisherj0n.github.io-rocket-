@@ -1,0 +1,46 @@
+.progress-status {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-body-light);
+  margin-bottom: 0.3rem;
+}
+
+.progress-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  height: 0.4rem;
+  background: var(--color-bg);
+  border-radius: 25px;
+  width: 100%;
+}
+
+.progress-bar .progress {
+  background: var(--color-green);
+  height: 0.4rem;
+  display: block;
+  border-radius: 25px;
+}
+
+.progress-bar .progress.quarter {
+  width: 25%;
+}
+
+.progress-bar .progress.thirty {
+  width: 30%;
+}
+
+.progress-bar .progress.half {
+  width: 50%;
+}
+
+.progress-bar .progress.three-quarter {
+  width: 75%;
+}
+
+.progress-bar .progress.complete {
+  width: 100%;
+}
