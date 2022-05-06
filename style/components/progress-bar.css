@@ -25,6 +25,10 @@
   border-radius: 25px;
 }
 
+.progress-bar .progress.primary {
+  background: var(--color-accent);
+}
+
 .progress-bar .progress.quarter {
   width: 25%;
 }

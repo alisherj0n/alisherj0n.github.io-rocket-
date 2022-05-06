@@ -8,16 +8,22 @@
 
 @import url(./components/notification.css);
 @import url(./components/counter.css);
+@import url(./components/select.css);
 @import url(./components/progress-bar.css);
+@import url(./components/add-project.css);
+@import url(./components/edit-project.css);
+@import url(./components/project-details.css);
 @import url(./components/searchbar.css);
+@import url(./components/file.css);
 @import url(./components/button.css);
 @import url(./components/divider.css);
 @import url(./components/avatar.css);
 @import url(./components/sidebar.css);
 @import url(./components/sidebar-collapsed.css);
+@import url(./components/filter-tab.css);
+@import url(./components/dropdown-menu.css);
 @import url(./components/app-header.css);
 @import url(./components/user.css);
 @import url(./components/board.css);
-@import url(./components/projects.css);
 @import url(./components/project.css);
 @import url(./components/projects-list.css);

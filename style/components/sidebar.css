@@ -3,7 +3,7 @@
   min-height: 100vh;
 }
 
-.sidebar .logo {
+.sidebar .app-logo {
   width: 9.5rem;
   padding: 0.9rem 1.6rem 0.7rem;
 }
@@ -54,7 +54,7 @@
   .sidebar .link-txt,
   .sidebar .icon.arrow,
   .sidebar .notification-badge,
-  .sidebar .logo,
+  .sidebar .app-logo,
   .sidebar .nav .item.active::before {
     display: none;
   }

@@ -1,0 +1,106 @@
+.add-project {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 28rem;
+  padding: 1rem;
+  position: absolute;
+  top: 6rem;
+  left: 35rem;
+  box-shadow: 4px -1px 12px 7px #eeeeee;
+}
+
+.add-project .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.add-project .btn.add {
+  margin: 0 auto;
+  border: 1px dashed var(--color-border);
+  padding: 3rem;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+
+.add-project .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-project .project-info .heading {
+  font-size: 0.9rem;
+}
+
+.add-project .input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: var(--color-body-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.add-project .input-date {
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0rem 0.2rem;
+}
+
+.add-project .input-date .input {
+  border: none;
+  margin-bottom: 0;
+  outline: none;
+}
+
+.add-project .input-date .input.time {
+  border-right: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: 0 0.3rem;
+}
+
+.add-project .filter-deadline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../icons/Arrow-Down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-project .project-info .budget {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1.5rem;
+  padding: 0rem 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-project .project-info .budget .input {
+  margin-bottom: 0;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.add-project .btn-container {
+  display: flex;
+  justify-content: end;
+}

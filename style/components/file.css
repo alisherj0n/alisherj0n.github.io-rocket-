@@ -1,0 +1,31 @@
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.file .file-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file .file-extention {
+  width: 2rem;
+}
+
+.file .file-extention.img {
+  border-radius: 6px;
+  width: 2.2rem;
+}
+
+.file .filename {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.file .filesize {
+  font-size: 0.7rem;
+  color: var(--color-body-light);
+}
