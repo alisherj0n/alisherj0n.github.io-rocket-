@@ -12,6 +12,10 @@ a:hover {
   color: #000;
 }
 
+a:visited {
+  color: transparent;
+}
+
 nav {
   list-style: none;
 }

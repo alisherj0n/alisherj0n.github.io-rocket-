@@ -1,0 +1,43 @@
+.percentage {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.percentage .percent {
+  color: var(--color-body-light);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: var(--color-bg);
+  height: 0.5rem;
+  border-radius: 8px;
+}
+
+.progress-bar .status {
+  background-color: var(--color-green);
+  height: 0.4rem;
+  border-radius: 8px;
+  display: block;
+}
+
+.progress-bar .status.quarter {
+  width: 25%;
+}
+
+.progress-bar .status.thirty {
+  width: 30%;
+}
+
+.progress-bar .status.half {
+  width: 50%;
+}
+
+.progress-bar .status.half-quarter {
+  width: 75%;
+}
+
+.progress-bar .status.completed {
+  width: 100%;
+}

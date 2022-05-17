@@ -1,23 +1,24 @@
 .app-header {
-  height: 4rem;
-  padding: 1.2rem 1.8rem;
+  background-color: var(--color-white);
+  padding: 1.5rem 1.8rem;
+  border-bottom: 1px solid var(--color-border);
+  height: 4.2rem;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-border);
+  align-items: center;
 }
 
-.app-header .user-menu,
-.app-header .user-menu .actions {
+.app-header .right-side-content {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.app-header .user-menu .actions {
-  gap: 1.3rem;
-  position: relative;
+.app-header .right-side-content .actions {
+  display: flex;
+  gap: 1rem;
 }
 
-.app-header .user-menu .actions .action {
+.app-header .right-side-content .actions .btn {
   position: relative;
 }

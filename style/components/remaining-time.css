@@ -1,0 +1,18 @@
+.remaining-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  background: var(--color-bg);
+  padding: 0.2rem 0.6rem;
+}
+
+.remaining-time.warning {
+  color: var(--color-orange-dark);
+  background-color: var(--color-orange-light);
+}
+
+.remaining-time.danger {
+  color: var(--color-red);
+  background-color: var(--color-red-light);
+}

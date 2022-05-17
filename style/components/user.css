@@ -1,17 +1,21 @@
 .user {
-  all: unset;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  cursor: pointer;
 }
 
-.user .username {
-  color: var(--color-heading);
-  display: block;
+.user:hover {
+  background-color: transparent;
 }
 
-.user .job-title {
-  display: block;
-  color: var(--color-body-light);
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.avatar.small {
+  width: 2rem;
+  height: 2rem;
 }

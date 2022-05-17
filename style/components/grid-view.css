@@ -1,0 +1,78 @@
+.content .content-header,
+.content .projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.content .content-header .actions,
+.content .tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content .tabs .tab {
+  color: var(--color-body-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.content .tabs .tab:hover {
+  color: var(--color-heading);
+}
+
+.content .tabs .tab.active {
+  color: var(--color-heading);
+}
+
+.content .tabs .tab.active::after {
+  content: " ";
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+}
+
+.content .tabs .tab .counter {
+  background-color: var(--color-border);
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.content .projects-header {
+  margin-bottom: 0.5rem;
+}
+
+.content .view-type {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.content .view-type .divider {
+  height: 1.5rem;
+}
+
+.content .view-type .btn.active {
+  color: var(--color-accent);
+}
+
+.content .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content .horizontal-divider {
+  margin-bottom: 2rem;
+}
