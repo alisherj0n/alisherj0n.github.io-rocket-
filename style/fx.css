@@ -1,0 +1,5 @@
+:root {
+  --border-radius: 1rem;
+  --border-radius-sm: calc(var(--border-radius) / 2);
+  --border-radius-xs: calc(var(--border-radius-sm) / 2);
+}

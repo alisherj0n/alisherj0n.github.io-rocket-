@@ -4,80 +4,90 @@
 }
 
 .sidebar .logo {
-  width: 9.5rem;
-  padding: 0.9rem 1.6rem 0.7rem;
+  max-width: 10rem;
+  padding: 1rem 1.7rem 0.5rem;
 }
 
-.sidebar .icon-only {
-  width: 1.6rem;
+.sidebar .logo.icon-only {
+  margin: 0 auto;
+  max-width: 1.7rem;
+  padding: 1rem 0;
   display: none;
-}
-
-.sidebar .nav {
-  list-style: none;
 }
 
 .sidebar .nav .item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 1rem 1.7rem;
-  color: var(--color-heading);
-  transition: background-color 0.2s;
+  color: var(--color-body-dark);
+  transition: background-color 0.2s, color 0.2s;
+  gap: 1rem;
+}
+
+.sidebar .nav .icon {
+  font-size: 1.3rem;
 }
 
 .sidebar .nav .item:hover {
   background-color: var(--color-bg);
+  color: var(--color-heading);
 }
 
-.sidebar .nav .item .category {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
+.sidebar .nav .item .additional-menu {
+  font-size: 1.2rem;
+  margin: 0 0 0 auto;
+  color: var(--color-body-light);
+}
+
+.sidebar .nav .item .badge {
+  margin: 0 0 0 auto;
 }
 
 .sidebar .nav .item.active {
   background-color: var(--color-bg);
+  color: var(--color-heading);
 }
 
 .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
+  top: 0;
   left: -3px;
   height: 100%;
   border-left: 7px solid var(--color-accent);
-  border-radius: 10px;
+  border-radius: var(--border-radius-sm);
 }
 
 @media (max-width: 992px) {
   .sidebar .link-txt,
-  .sidebar .icon.arrow,
-  .sidebar .notification-badge,
+  .sidebar .additional-menu,
+  .sidebar .badge,
   .sidebar .logo,
   .sidebar .nav .item.active::before {
     display: none;
   }
 
   .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.3rem;
-    gap: 1rem;
+    padding: 0rem 0.8rem;
   }
 
   .sidebar .nav .item {
-    border-radius: 15px;
-    padding-left: 1.2rem;
-    padding-right: 0.8rem;
+    border-radius: var(--border-radius);
+    padding: 0.8rem;
+  }
+
+  .sidebar .nav .item:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
   }
 
   .sidebar .nav .item.active {
     background-color: var(--color-accent);
+    color: var(--color-white);
   }
 
-  .sidebar .icon-only {
+  .sidebar .logo.icon-only {
     display: block;
   }
 }

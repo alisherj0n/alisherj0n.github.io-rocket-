@@ -11,6 +11,6 @@
 
 @media (max-width: 992px) {
   .app {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: max-content 1fr;
   }
 }
