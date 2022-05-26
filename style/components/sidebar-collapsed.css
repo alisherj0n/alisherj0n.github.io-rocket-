@@ -1,0 +1,37 @@
+.app.collapsed .sidebar {
+  padding: 0rem 0.8rem;
+}
+
+.app.collapsed .sidebar .logo {
+  display: none;
+}
+
+.app.collapsed .sidebar .logo.icon-only {
+  margin: 0 auto;
+  max-width: 1.7rem;
+  padding: 1rem 0;
+  display: block;
+}
+
+.app.collapsed .sidebar .nav .item {
+  border-radius: var(--border-radius);
+  padding: 0.8rem;
+}
+
+.app.collapsed .sidebar .nav .item:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.app.collapsed .sidebar .nav .item.active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.app.collapsed .sidebar .link-txt,
+.app.collapsed .sidebar .additional-menu,
+.app.collapsed .sidebar .badge,
+.app.collapsed .sidebar .logo,
+.app.collapsed .sidebar .nav .item.active::before {
+  display: none;
+}
