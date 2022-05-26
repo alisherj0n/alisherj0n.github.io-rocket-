@@ -1,17 +1,22 @@
 .sidebar {
+  --sidebar-padding: 1rem 1.7rem;
+  --color-bg: #f8f8f8;
   border-right: 1px solid var(--color-border);
   min-height: 100vh;
+  padding: 1rem 0;
 }
 
 .sidebar .logo {
+  --sidebar-padding: 0 1.7rem;
   max-width: 10rem;
-  padding: 1rem 1.7rem 0.5rem;
+  padding: var(--sidebar-padding);
+  margin: 0 auto 1rem;
 }
 
 .sidebar .logo.icon-only {
-  margin: 0 auto;
-  max-width: 1.7rem;
-  padding: 1rem 0;
+  max-width: 1.6rem;
+  margin: 0 auto 1rem;
+  padding: 0;
   display: none;
 }
 
@@ -19,7 +24,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 1rem 1.7rem;
+  padding: var(--sidebar-padding);
   color: var(--color-body-dark);
   transition: background-color 0.2s, color 0.2s;
   gap: 1rem;
@@ -29,19 +34,18 @@
   font-size: 1.3rem;
 }
 
+.sidebar .nav .link-txt {
+  margin-right: auto;
+}
+
 .sidebar .nav .item:hover {
   background-color: var(--color-bg);
   color: var(--color-heading);
 }
 
-.sidebar .nav .item .additional-menu {
+.sidebar .nav .item .submenu-indicator {
   font-size: 1.2rem;
-  margin: 0 0 0 auto;
   color: var(--color-body-light);
-}
-
-.sidebar .nav .item .badge {
-  margin: 0 0 0 auto;
 }
 
 .sidebar .nav .item.active {
@@ -59,9 +63,38 @@
   border-radius: var(--border-radius-sm);
 }
 
+/* -----------Sidebar-collapsed-------------- */
+
+.app.collapsed .sidebar {
+  padding: 1.4rem 0.8rem;
+}
+
+.app.collapsed .sidebar .logo.icon-only {
+  display: block;
+}
+
+.app.collapsed .sidebar .nav .item {
+  border-radius: var(--border-radius);
+  padding: 0.8rem;
+}
+
+.app.collapsed .sidebar .nav .item.active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.app.collapsed .sidebar .logo,
+.app.collapsed .sidebar .link-txt,
+.app.collapsed .sidebar .submenu-indicator,
+.app.collapsed .sidebar .badge,
+.app.collapsed .sidebar .logo,
+.app.collapsed .sidebar .nav .item.active::before {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .sidebar .link-txt,
-  .sidebar .additional-menu,
+  .sidebar .submenu-indicator,
   .sidebar .badge,
   .sidebar .logo,
   .sidebar .nav .item.active::before {
@@ -69,17 +102,12 @@
   }
 
   .sidebar {
-    padding: 0rem 0.6rem;
+    padding: 1.4rem 0.6rem;
   }
 
   .sidebar .nav .item {
     border-radius: var(--border-radius);
     padding: 0.8rem;
-  }
-
-  .sidebar .nav .item:hover {
-    background-color: var(--color-accent);
-    color: var(--color-white);
   }
 
   .sidebar .nav .item.active {
@@ -89,5 +117,6 @@
 
   .sidebar .logo.icon-only {
     display: block;
+    padding: 0;
   }
 }
