@@ -2,3 +2,16 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--color-body-dark);
 }
+
+a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #000;
+}
+
+nav {
+  list-style: none;
+}
