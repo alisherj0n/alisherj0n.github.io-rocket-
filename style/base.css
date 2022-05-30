@@ -15,3 +15,7 @@ a:hover {
 nav {
   list-style: none;
 }
+
+.icon {
+  font-size: 1.3rem;
+}

@@ -46,10 +46,6 @@
   background-color: var(--color-bg);
 }
 
-.sidebar .nav .item .icon {
-  font-size: 1.3rem;
-}
-
 .sidebar .nav .item .link-txt {
   margin-right: auto;
   color: var(--color-heading);
