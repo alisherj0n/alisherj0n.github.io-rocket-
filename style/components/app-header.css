@@ -40,3 +40,9 @@
   top: 0.6rem;
   right: 0.7rem;
 }
+
+@media (max-width: 786px) {
+  .app-header .user .avatar {
+    display: none;
+  }
+}
