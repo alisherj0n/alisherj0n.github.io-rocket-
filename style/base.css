@@ -5,7 +5,7 @@ body {
 
 a {
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-duration);
 }
 
 a:hover {
@@ -14,4 +14,8 @@ a:hover {
 
 nav {
   list-style: none;
+}
+
+.icon {
+  font-size: 1.3rem;
 }
