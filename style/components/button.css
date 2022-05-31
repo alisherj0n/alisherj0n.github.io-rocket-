@@ -1,8 +1,9 @@
 .btn {
   cursor: pointer;
-  border: none;
-  background-color: transparent;
+  border: 1px solid transparent;
+  background-color: #fff;
   padding: 0.8rem 1.2rem;
+  display: flex;
   border-radius: var(--border-radius-sm);
   position: relative;
   transition: background-color var(--transition-duration);
@@ -14,4 +15,5 @@
 
 .btn.icon-only {
   padding: 0.5rem;
+  background-color: transparent;
 }

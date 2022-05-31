@@ -1,14 +1,6 @@
 .user-profile {
   display: flex;
   align-items: center;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.user-profile .user-info {
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 

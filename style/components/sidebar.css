@@ -35,7 +35,7 @@
 .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   width: 4px;
   left: 0px;
   height: 100%;
@@ -70,8 +70,8 @@
 }
 
 .app.collapsed .sidebar .nav .item.active {
-  background-color: var(--color-accent);
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 .app.collapsed .sidebar .logo,
@@ -97,8 +97,8 @@
   }
 
   .sidebar .nav .item.active {
-    background-color: var(--color-accent);
-    color: var(--color-white);
+    background-color: var(--color-primary);
+    color: #fff;
   }
 
   .sidebar .logo,
