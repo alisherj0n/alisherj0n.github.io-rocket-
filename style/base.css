@@ -5,7 +5,7 @@ body {
 
 a {
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--transition-duration);
 }
 
 a:hover {

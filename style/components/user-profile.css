@@ -1,18 +1,18 @@
-.user {
+.user-profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.user-profile .user-info {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.user:hover {
-  background-color: transparent;
-}
-
-.user .icon {
-  margin-left: -0.5rem;
-}
-
-.user .avatar {
+.user-profile .avatar {
   width: 2.5rem;
   height: 2.5rem;
   object-fit: cover;

@@ -1,10 +1,11 @@
 .btn {
-  all: unset;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
   padding: 0.8rem 1.2rem;
   border-radius: var(--border-radius-sm);
-  line-height: 0;
-  transition: background-color 0.2s;
+  position: relative;
+  transition: background-color var(--transition-duration);
 }
 
 .btn:hover {

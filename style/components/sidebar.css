@@ -27,7 +27,8 @@
   align-items: center;
   position: relative;
   color: var(--color-body-light);
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
   gap: 1rem;
 }
 

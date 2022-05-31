@@ -1,7 +1,6 @@
 .app-header {
-  padding: 1.5rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   border-bottom: 1px solid var(--color-border);
-  height: 4.1rem;
   display: flex;
   color: var(--color-heading);
   justify-content: space-between;
@@ -11,39 +10,30 @@
 .app-header .right-side-content {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-}
-
-.app-header .right-side-content .user {
-  margin-right: -1.2rem;
+  gap: 1rem;
 }
 
 .app-header .right-side-content .divider {
   height: 2rem;
   width: 1px;
   background-color: var(--color-border);
-  display: inline-block;
 }
 
-.app-header .right-side-content .actions .btn {
-  position: relative;
-}
-
-.app-header .dot {
+.app-header .right-side-content .actions .dot {
   width: 7px;
   height: 7px;
   border: 1px solid var(--color-white);
   border-radius: 50%;
-  display: inline-block;
   background-color: var(--color-red);
   position: absolute;
   top: 0.6rem;
   right: 0.7rem;
 }
 
+/* ----breakpoint-sm---- */
 @media (max-width: 786px) {
-  .app-header .actions .btn:nth-child(2),
-  .app-header .user .avatar {
+  .app-header .actions .btn:last-child,
+  .app-header .user-profile .avatar {
     display: none;
   }
 }
