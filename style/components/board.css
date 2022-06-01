@@ -1,0 +1,57 @@
+.board {
+  background-color: var(--color-bg);
+}
+.board .page-header {
+  margin-bottom: 2rem;
+}
+
+.board .page-header,
+.board .projects-header .tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board .projects-header {
+  display: flex;
+  align-items: center;
+}
+
+.board .page-header .heading,
+.board .projects-header .tabs {
+  margin-right: auto;
+}
+
+.board .projects-header .tab {
+  color: var(--color-body-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color var(--transition-duration);
+  position: relative;
+}
+
+.board .projects-header .tab:hover,
+.board .projects-header .tab.active {
+  color: var(--color-heading);
+}
+
+.board .projects-header .tab.active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 2px;
+  top: 38px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.board .projects-header .btn.active {
+  color: var(--color-primary);
+}
+
+.board .projects-header .divider {
+  height: 1.2rem;
+  width: 1px;
+  background-color: var(--color-border);
+}

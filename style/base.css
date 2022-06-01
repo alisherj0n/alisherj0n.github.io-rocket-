@@ -8,6 +8,10 @@ a {
   transition: color var(--transition-duration);
 }
 
+a:visited {
+  color: inherit;
+}
+
 a:hover {
   color: #000;
 }

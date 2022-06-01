@@ -1,0 +1,4 @@
+.horizontal-divider {
+  border-color: var(--color-border);
+  border-top: none;
+}

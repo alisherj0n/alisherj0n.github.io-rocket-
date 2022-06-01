@@ -1,10 +1,12 @@
 .app-header {
-  padding: 0.7rem 1.2rem;
+  padding: var(--container-padding-y) var(--container-padding-x);
   border-bottom: 1px solid var(--color-border);
+  background-color: #fff;
   display: flex;
   color: var(--color-heading);
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .app-header .app-sidebar-toggle {
@@ -45,7 +47,6 @@
   }
 
   .app-header {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    --container-padding-y: 0.3rem;
   }
 }

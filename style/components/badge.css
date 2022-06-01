@@ -8,3 +8,10 @@
 .badge.warning {
   background-color: var(--color-danger);
 }
+
+.badge.grey {
+  background-color: var(--color-border);
+  color: var(--color-body-light);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
