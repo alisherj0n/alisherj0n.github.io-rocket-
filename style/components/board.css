@@ -5,16 +5,22 @@
   margin-bottom: 2rem;
 }
 
-.board .page-header,
-.board .projects-header .tabs {
+.board .page-header {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+.board .projects-header .tabs {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .board .projects-header {
   display: flex;
   align-items: center;
+  margin-bottom: 0.4rem;
 }
 
 .board .page-header .heading,
@@ -22,10 +28,15 @@
   margin-right: auto;
 }
 
+.board .projects-header .btn {
+  color: var(--color-body-light);
+}
+
 .board .projects-header .tab {
   color: var(--color-body-light);
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
   gap: 0.5rem;
   transition: color var(--transition-duration);
   position: relative;
@@ -42,8 +53,8 @@
   background-color: var(--color-primary);
   width: 100%;
   height: 2px;
-  top: 38px;
-  border-radius: 6px 6px 0px 0px;
+  top: 35px;
+  border-radius: 1px 1px 0px 0px;
 }
 
 .board .projects-header .btn.active {
