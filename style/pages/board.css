@@ -1,0 +1,31 @@
+.board {
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.board .page-view {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.board .page-view .btn {
+  color: var(--color-body-light);
+}
+
+.board .page-view .btn.active {
+  color: var(--color-primary);
+}
+
+.board .page-view .divider {
+  height: 1.5rem;
+  width: 1px;
+  background-color: var(--color-border);
+}
+
+/* ----breakpoint-sm---- */
+@media (max-width: 786px) {
+  .board .page-header .heading {
+    font-size: 1.6rem;
+  }
+}

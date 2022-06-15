@@ -17,6 +17,7 @@
   height: 2rem;
   width: 1px;
   background-color: var(--color-border);
+  margin-right: 1rem;
 }
 
 .app-header .user-profile-dropdown {
@@ -48,5 +49,6 @@
 
   .app-header {
     --container-padding-y: 0.3rem;
+    margin-bottom: 0;
   }
 }
