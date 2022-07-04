@@ -17,12 +17,6 @@
   color: var(--color-primary);
 }
 
-.board .page-view .divider {
-  height: 1.5rem;
-  width: 1px;
-  background-color: var(--color-border);
-}
-
 /* ----breakpoint-sm---- */
 @media (max-width: 786px) {
   .board .page-header .heading {

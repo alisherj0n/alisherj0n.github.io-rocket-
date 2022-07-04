@@ -1,5 +1,6 @@
 .badge {
   --border-radius-sm: 6px;
+  background-color: var(--color-border);
   padding: 0.5px 5px;
   color: #fff;
   font-size: 0.7rem;
@@ -10,8 +11,7 @@
   background-color: var(--color-danger);
 }
 
-.badge.grey {
-  background-color: var(--color-border);
+.badge.wide {
   color: var(--color-body-light);
   padding-right: 0.5rem;
   padding-left: 0.5rem;

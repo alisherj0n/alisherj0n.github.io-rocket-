@@ -1,6 +1,9 @@
-.app {
+:root {
   --container-padding-y: 0.7rem;
   --container-padding-x: 1.2rem;
+}
+
+.app {
   display: grid;
   grid-template-columns: 300px 1fr;
 }

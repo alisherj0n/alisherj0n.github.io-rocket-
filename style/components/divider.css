@@ -1,0 +1,12 @@
+.divider {
+  width: 1px;
+  background-color: var(--color-border);
+}
+
+.divider.tall {
+  height: 2rem;
+}
+
+.divider.small {
+  height: 1.5rem;
+}

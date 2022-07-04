@@ -12,10 +12,15 @@
 
 .tabs .tab {
   padding: 1rem 0;
+  color: var(--color-body-light);
   display: flex;
   align-items: center;
   gap: 0.5rem;
   position: relative;
+}
+
+.tabs .tab:hover {
+  color: #000;
 }
 
 .tabs .tab.active {
