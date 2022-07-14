@@ -1,0 +1,45 @@
+.content {
+  overflow: hidden;
+}
+
+.content .projects-header {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.content .view-type {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.content .view-type .divider {
+  height: 1.5rem;
+}
+
+.content .projects-header .btn.active {
+  color: var(--color-primary);
+}
+
+.content .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content .horizontal-divider {
+  margin-bottom: 2rem;
+}
+
+/* breakpoint-sm */
+@media (max-width: 768px) {
+  .content .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}

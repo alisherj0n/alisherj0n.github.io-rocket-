@@ -16,7 +16,7 @@
 }
 
 .progress-bar .status {
-  background-color: var(--color-green);
+  background-color: var(--color-success);
   height: 0.4rem;
   border-radius: 8px;
   display: block;

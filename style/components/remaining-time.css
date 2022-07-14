@@ -8,11 +8,11 @@
 }
 
 .remaining-time.warning {
-  color: var(--color-orange-dark);
-  background-color: var(--color-orange-light);
+  color: var(--color-warning-dark);
+  background-color: var(--color-warning-light);
 }
 
 .remaining-time.danger {
-  color: var(--color-red);
-  background-color: var(--color-red-light);
+  color: var(--color-danger);
+  background-color: var(--color-danger-light);
 }

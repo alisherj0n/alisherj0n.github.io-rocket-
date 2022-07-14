@@ -1,7 +1,9 @@
 .project {
   padding: 1.3rem;
-  background-color: var(--color-white);
+  background-color: #fff;
   border-radius: 15px;
+  flex-shrink: 0;
+  min-width: 20rem;
 }
 
 .project > *:not(:last-child) {

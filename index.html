@@ -25,6 +25,7 @@
           alt="Geometric shape of rocket"
           class="app-logo"
         />
+
         <img
           src="./images/Rocket.png"
           alt="Geometric shape of rocket"
@@ -34,164 +35,151 @@
         <nav class="nav">
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-grip icon"></i>
-                <span class="name">Dashboard</span>
-              </div>
+              <i class="fa-solid fa-grip icon"></i>
+              <span class="link-txt">Dashboard</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-cart-shopping icon"></i>
-                <span class="name">E-Commerce</span>
-              </div>
-              <i class="fa-solid fa-angle-right icon menu"></i>
+              <i class="fa-solid fa-cart-shopping icon"></i>
+              <span class="link-txt">E-Commerce</span>
+
+              <i class="fa-solid fa-angle-right icon submenu-indicator"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-calendar-days icon"></i>
-                <span class="name">Calendar</span>
-              </div>
+              <i class="fa-solid fa-calendar-days icon"></i>
+              <span class="link-txt">Calendar</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-envelope icon"></i>
-                <span class="name">Mail</span>
-              </div>
-              <span class="notification">8</span>
+              <i class="fa-solid fa-envelope icon"></i>
+              <span class="link-txt">Mail</span>
+
+              <span class="badge warning">8</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-brands fa-rocketchat icon"></i>
-                <span class="name">Chat</span>
-              </div>
+              <i class="fa-brands fa-rocketchat icon"></i>
+              <span class="link-txt">Chat</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-list-check icon"></i>
-                <span class="name">Tasks</span>
-              </div>
+              <i class="fa-solid fa-list-check icon"></i>
+              <span class="link-txt">Tasks</span>
             </a>
           </li>
           <li>
             <a href="#" class="item active">
-              <div class="heading">
-                <i class="fa-solid fa-layer-group icon"></i>
-                <span class="name">Projects</span>
-              </div>
+              <i class="fa-solid fa-layer-group icon"></i>
+              <span class="link-txt">Projects</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-folder-closed icon"></i>
-                <span class="name">File Manager</span>
-              </div>
+              <i class="fa-solid fa-folder-closed icon"></i>
+              <span class="link-txt">File Manager</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-file-lines"></i>
-                <span class="name">Notes</span>
-              </div>
+              <i class="fa-solid fa-file-lines"></i>
+              <span class="link-txt">Notes</span>
             </a>
           </li>
           <li>
             <a href="#" class="item">
-              <div class="heading">
-                <i class="fa-solid fa-address-book icon"></i>
-                <span class="name">Contacts</span>
-              </div>
+              <i class="fa-solid fa-address-book icon"></i>
+              <span class="link-txt">Contacts</span>
             </a>
           </li>
         </nav>
       </div>
       <div class="content">
         <header class="app-header">
-          <button class="btn icon-only">
+          <button class="btn icon-only sidebar-toggle">
             <i class="fa-solid fa-bars-staggered icon"></i>
           </button>
-          <div class="right-side-content">
-            <div class="actions">
-              <button class="btn icon-only">
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-              </button>
 
-              <button class="btn icon-only">
-                <i class="fa-regular fa-bell icon"></i>
-                <span class="notification-dot"></span>
-              </button>
-            </div>
-            <span class="divider"></span>
-            <button class="btn user">
-              <img
-                src="./images/user-33.png"
-                alt="User profile image"
-                class="avatar"
-              />
-              <span class="username">Sorboni S</span>
-              <i class="fa-solid fa-caret-down icon"></i>
-            </button>
-          </div>
+          <button class="btn icon-only">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </button>
+
+          <button class="btn icon-only notification">
+            <i class="fa-regular fa-bell icon"></i>
+            <span class="dot"></span>
+          </button>
+
+          <span class="divider"></span>
+          <button class="user-dropdown">
+            <img
+              src="./images/user-33.png"
+              alt="User profile image"
+              class="avatar"
+            />
+            <span class="username">Sorboni S</span>
+            <i class="fa-solid fa-caret-down icon"></i>
+          </button>
         </header>
 
         <div class="container">
-          <header class="content-header">
+          <header class="page-header">
             <h4 class="heading">Projects</h4>
-            <div class="actions">
-              <button class="btn icon-only white-bg">
-                <i class="fa-solid fa-sliders icon"></i>
-              </button>
-              <button class="btn primary">
-                <i class="fa-solid fa-plus icon"></i>
-                Add Project
-              </button>
-            </div>
+
+            <button class="btn icon-only light">
+              <i class="fa-solid fa-sliders icon"></i>
+            </button>
+            <button class="btn primary">
+              <i class="fa-solid fa-plus icon"></i>
+              Add Project
+            </button>
           </header>
 
           <header class="projects-header">
-            <div class="tabs">
-              <a href="#" class="tab active">
-                <span class="heading">All</span>
-                <span class="counter">151</span>
-              </a>
-              <a href="#" class="tab">
-                <span class="heading">Started</span>
-                <span class="counter">128</span>
-              </a>
-              <a href="#" class="tab">
-                <span class="heading">On Hold</span>
-                <span class="counter">15</span>
-              </a>
-              <a href="#" class="tab">
-                <span class="heading">Completed</span>
-                <span class="counter">8</span>
-              </a>
-            </div>
+            <nav class="tabs">
+              <li>
+                <a href="#" class="tab active">
+                  <span>All</span>
+                  <span class="badge grey">151</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tab">
+                  <span>Started</span>
+                  <span class="badge grey">128</span>
+                </a>
+              </li>
 
-            <div class="view-type">
-              <button class="btn icon-only">
-                <i class="fa-solid fa-bars icon"></i>
-              </button>
-              <span class="divider"></span>
-              <button class="btn icon-only active">
-                <i class="fa-solid fa-border-all icon"></i>
-              </button>
-            </div>
+              <li>
+                <a href="#" class="tab">
+                  <span>On Hold</span>
+                  <span class="badge grey">15</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="tab">
+                  <span>Completed</span>
+                  <span class="badge grey">8</span>
+                </a>
+              </li>
+            </nav>
+
+            <button class="btn icon-only">
+              <i class="fa-solid fa-bars icon"></i>
+            </button>
+
+            <span class="divider small"></span>
+
+            <button class="btn icon-only active">
+              <i class="fa-solid fa-border-all icon"></i>
+            </button>
           </header>
-
-          <hr class="horizontal-divider" />
 
           <div class="projects">
             <div class="project">

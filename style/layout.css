@@ -3,6 +3,10 @@
   grid-template-columns: 320px 1fr;
 }
 
+.app.collapsed {
+  grid-template-columns: auto 1fr;
+}
+
 .container {
   padding: 1.8rem;
   background-color: var(--color-bg);
@@ -16,6 +20,6 @@
 
 @media (max-width: 992px) {
   .app {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: auto 1fr;
   }
 }

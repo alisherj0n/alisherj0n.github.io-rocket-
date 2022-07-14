@@ -1,11 +1,10 @@
 .divider {
   height: 2rem;
-  width: 0.05rem;
+  width: 0.08rem;
   background: var(--color-border);
   display: inline-block;
 }
 
-.horizontal-divider {
-  border-color: var(--color-border);
-  border-top: none;
+.divider.small {
+  height: 1rem;
 }

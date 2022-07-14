@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-header .heading {
+  margin-right: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.page-header .projects-header .btn {
+  color: var(--color-body-light);
+}

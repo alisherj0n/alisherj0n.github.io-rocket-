@@ -1,24 +1,41 @@
 .app-header {
-  background-color: var(--color-white);
-  padding: 1.5rem 1.8rem;
+  background-color: #fff;
+  padding: 0.6rem 1rem;
   border-bottom: 1px solid var(--color-border);
-  height: 4.2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.app-header .right-side-content {
+.app-header .sidebar-toggle {
+  margin-right: auto;
+}
+
+.app-header .user-dropdown {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.app-header .right-side-content .actions {
-  display: flex;
-  gap: 1rem;
+.app-header .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--color-danger);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  border: 1px solid #fff;
 }
 
-.app-header .right-side-content .actions .btn {
-  position: relative;
+/* breakpoint-sm */
+@media (max-width: 786px) {
+  .app-header .btn.notification,
+  .app-header .user-dropdown .avatar {
+    display: none;
+  }
 }
