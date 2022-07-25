@@ -4,6 +4,7 @@
   border-radius: 15px;
   flex-shrink: 0;
   min-width: 20rem;
+  position: relative;
 }
 
 .project > *:not(:last-child) {
@@ -16,28 +17,8 @@
   justify-content: space-between;
 }
 
-.project .header .customer-info {
-  display: flex;
-  gap: 1rem;
-}
-
-.project .header .customer-info .logo {
-  width: 3rem;
-  height: 3rem;
-  padding: 0.4rem;
-  border-radius: 15px;
-  object-fit: contain;
-  border: 1px solid var(--color-border);
-}
-
-.project .header .customer-info .heading {
-  display: block;
-  margin-bottom: -0.2rem;
-  color: var(--color-heading);
-}
-
-.project .header .icon {
-  font-size: 1.5rem;
+.project .header .drop-menu.active {
+  background-color: var(--color-bg);
 }
 
 .project .task-description {

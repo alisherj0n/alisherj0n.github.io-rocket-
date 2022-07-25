@@ -28,13 +28,29 @@
   background-color: #fff;
 }
 
-.btn.icon-only {
-  --form-control-padding-x: 0.7rem;
+.btn.dark {
+  background-color: var(--color-bg);
 }
 
 .btn.primary {
   background-color: var(--color-primary);
   color: #fff;
+}
+.btn.primary-light {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.btn.outline {
+  border: 1px solid var(--color-border);
+}
+
+.btn.icon-only {
+  --form-control-padding-x: 0.7rem;
+}
+
+.btn.big {
+  --form-control-padding-x: 1.2rem;
   box-shadow: 0px 2px 0px 0px #263fca;
 }
 

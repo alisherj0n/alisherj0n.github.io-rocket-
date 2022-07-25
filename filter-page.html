@@ -39,6 +39,7 @@
               <span class="link-txt">Dashboard</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-cart-shopping icon"></i>
@@ -54,6 +55,7 @@
               <span class="link-txt">Calendar</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-envelope icon"></i>
@@ -62,36 +64,42 @@
               <span class="badge warning">8</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-brands fa-rocketchat icon"></i>
               <span class="link-txt">Chat</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-list-check icon"></i>
               <span class="link-txt">Tasks</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item active">
               <i class="fa-solid fa-layer-group icon"></i>
               <span class="link-txt">Projects</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-folder-closed icon"></i>
               <span class="link-txt">File Manager</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-file-lines"></i>
               <span class="link-txt">Notes</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-address-book icon"></i>
@@ -116,6 +124,7 @@
           </button>
 
           <span class="divider"></span>
+
           <button class="user-dropdown">
             <img
               src="./images/user-33.png"
@@ -203,7 +212,7 @@
                     <small>Dropbox, Inc.</small>
                   </div>
                 </div>
-                <button class="btn icon-only drop-menu">
+                <button class="btn icon-only drop-menu active">
                   <i class="fa-solid fa-ellipsis icon"></i>
                 </button>
               </header>
@@ -246,6 +255,36 @@
                   />
                 </div>
               </div>
+
+              <nav class="project-dropdown">
+                <li>
+                  <a href="./edit-project.html" class="option">
+                    <i class="fa-solid fa-pen icon"></i>
+                    Edit
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="option">
+                    <i class="fa-solid fa-user icon"></i>
+                    Add User
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="option">
+                    <i class="fa-solid fa-clock icon"></i>
+                    Add Due Date
+                  </a>
+                </li>
+                <hr class="divider horizontal" />
+                <li>
+                  <a href="#" class="option danger">
+                    <i class="fa-solid fa-trash-can icon"></i>
+                    Delete Project
+                  </a>
+                </li>
+              </nav>
             </div>
 
             <div class="project">
@@ -695,6 +734,48 @@
                   />
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="filter-modal">
+            <header class="header">
+              <h4 class="heading">Filter</h4>
+
+              <a href="./index.html">
+                <button class="btn icon-only dark">
+                  <i class="fa-solid fa-xmark icon"></i>
+                </button>
+              </a>
+            </header>
+
+            <div class="searchbar">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input
+                class="input"
+                type="search"
+                placeholder="Search Projects..."
+              />
+            </div>
+
+            <div>
+              <small class="select-heading">Due Date</small>
+              <select class="select">
+                <option value="1">Due anytime</option>
+                <option value="2">5 days</option>
+              </select>
+            </div>
+
+            <div>
+              <small class="select-heading">Status</small>
+              <select class="select">
+                <option value="1" class="complete-tick">Completed</option>
+                <option value="2">In progress</option>
+              </select>
+            </div>
+
+            <div class="reset">
+              <button class="btn big primary">Apply Filters</button>
+              <button class="btn light">Reset all Filters</button>
             </div>
           </div>
         </div>

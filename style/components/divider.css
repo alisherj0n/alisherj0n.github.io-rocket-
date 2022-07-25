@@ -8,3 +8,10 @@
 .divider.small {
   height: 1rem;
 }
+
+.divider.horizontal {
+  height: 0.1rem;
+  width: 100%;
+  border-top: none;
+  border: transparent;
+}

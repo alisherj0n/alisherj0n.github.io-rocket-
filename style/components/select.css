@@ -1,0 +1,13 @@
+.select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: right 10px center;
+  background-image: url(../../images/select-arrow.png);
+  background-size: 0.6rem;
+  padding: 0.7rem 2rem 0.7rem 1rem;
+  border-color: var(--color-border);
+  color: var(--color-heading);
+  border-radius: var(--border-radius);
+  width: 100%;
+}

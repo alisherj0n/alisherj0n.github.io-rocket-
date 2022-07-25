@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/62c369fab3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/bundle.css" />
+    <title>Rocket</title>
+  </head>
+  <body>
+    <div class="app collapsed">
+      <div class="sidebar">
+        <img
+          src="./images/Basic.png"
+          alt="Geometric shape of rocket"
+          class="app-logo"
+        />
+
+        <img
+          src="./images/Rocket.png"
+          alt="Geometric shape of rocket"
+          class="app-logo icon-only"
+        />
+
+        <nav class="nav">
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-grip icon"></i>
+              <span class="link-txt">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-cart-shopping icon"></i>
+              <span class="link-txt">E-Commerce</span>
+
+              <i class="fa-solid fa-angle-right icon submenu-indicator"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-calendar-days icon"></i>
+              <span class="link-txt">Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-envelope icon"></i>
+              <span class="link-txt">Mail</span>
+
+              <span class="badge warning">8</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-brands fa-rocketchat icon"></i>
+              <span class="link-txt">Chat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-list-check icon"></i>
+              <span class="link-txt">Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item active">
+              <i class="fa-solid fa-layer-group icon"></i>
+              <span class="link-txt">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-folder-closed icon"></i>
+              <span class="link-txt">File Manager</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-file-lines"></i>
+              <span class="link-txt">Notes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <i class="fa-solid fa-address-book icon"></i>
+              <span class="link-txt">Contacts</span>
+            </a>
+          </li>
+        </nav>
+      </div>
+      <div class="content">
+        <header class="app-header">
+          <button class="btn icon-only sidebar-toggle">
+            <i class="fa-solid fa-bars-staggered icon"></i>
+          </button>
+
+          <button class="btn icon-only">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </button>
+
+          <button class="btn icon-only notification">
+            <i class="fa-regular fa-bell icon"></i>
+            <span class="dot"></span>
+          </button>
+
+          <span class="divider"></span>
+          <button class="user-dropdown">
+            <img
+              src="./images/user-33.png"
+              alt="User profile image"
+              class="avatar"
+            />
+            <span class="username">Sorboni S</span>
+            <i class="fa-solid fa-caret-down icon"></i>
+          </button>
+        </header>
+
+        <div class="container">
+          <header class="page-header">
+            <h4 class="heading">Projects</h4>
+
+            <a href="./filter-page.html">
+              <button class="btn icon-only light">
+                <i class="fa-solid fa-sliders icon"></i>
+              </button>
+            </a>
+
+            <a href="./add-project.html">
+              <button class="btn big primary">
+                <i class="fa-solid fa-plus icon"></i>
+                Add Project
+              </button>
+            </a>
+          </header>
+
+          <header class="projects-header">
+            <nav class="tabs">
+              <li>
+                <a href="#" class="tab active">
+                  <span>All</span>
+                  <span class="badge grey">151</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tab">
+                  <span>Started</span>
+                  <span class="badge grey">128</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="tab">
+                  <span>On Hold</span>
+                  <span class="badge grey">15</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="tab">
+                  <span>Completed</span>
+                  <span class="badge grey">8</span>
+                </a>
+              </li>
+            </nav>
+
+            <button class="btn icon-only active">
+              <i class="fa-solid fa-bars icon"></i>
+            </button>
+
+            <span class="divider small"></span>
+
+            <a href="./index.html">
+              <button class="btn icon-only">
+                <i class="fa-solid fa-border-all icon"></i>
+              </button>
+            </a>
+          </header>
+
+          <div class="projects-table">
+            <header class="header">
+              <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input
+                  class="input"
+                  type="search"
+                  placeholder="Search customer..."
+                />
+                <button class="btn icon-only">
+                  <i class="fa-solid fa-sliders icon"></i>
+                </button>
+              </div>
+              <button class="actions-dropdown">
+                Actions
+                <i class="fa-solid fa-chevron-down icon"></i>
+              </button>
+            </header>
+
+            <table class="projects-list">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th>Project name</th>
+                  <th>Created by</th>
+                  <th>Progress</th>
+                  <th>Deadline</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+
+                  <td>
+                    <div class="customer-info">
+                      <img
+                        src="./images/bitbucket.png"
+                        alt="Blue shapes of bucket"
+                        class="logo"
+                      />
+
+                      <div>
+                        <span class="heading">Landing Page</span>
+                        <small class="customer">Bitbucket, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="user">
+                      <img
+                        src="./images/user-11.png"
+                        alt="User profile image"
+                        class="avatar"
+                      />
+                      <div>
+                        <span class="username">Shane Black</span>
+                        <small class="title">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="progress inline">
+                      <div class="progress-bar">
+                        <span class="status half"></span>
+                      </div>
+
+                      <small class="percent">50%</small>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="last-col">
+                      <div class="remaining-time">
+                        <i class="fa-regular fa-clock icon"></i>
+                        <span>1 week left</span>
+                      </div>
+                      <button class="btn icon-only drop-menu">
+                        <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <footer class="footer">
+              <select class="select">
+                <option value="1">10</option>
+                <option value="2">50</option>
+              </select>
+              <span class="show-info">Showing 1-10 of 100</span>
+
+              <nav class="page-nav">
+                <li>
+                  <a href="#" class="page-count light-bg">
+                    <i class="fa-solid fa-chevron-left icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count light-bg">
+                    <i class="fa-solid fa-chevron-left icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count primary">
+                    <i class="fa-solid fa-1 icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count">
+                    <i class="fa-solid fa-2 icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count">
+                    <i class="fa-solid fa-3 icon"></i>
+                  </a>
+                </li>
+                <span>...</span>
+                <li>
+                  <a href="#" class="page-count">
+                    <i class="fa-solid fa-5 icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count primary-light">
+                    <i class="fa-solid fa-chevron-right icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="page-count primary-light">
+                    <i class="fa-solid fa-chevron-right icon"></i>
+                  </a>
+                </li>
+              </nav>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

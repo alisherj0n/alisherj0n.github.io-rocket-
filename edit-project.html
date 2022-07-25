@@ -39,6 +39,7 @@
               <span class="link-txt">Dashboard</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-cart-shopping icon"></i>
@@ -54,6 +55,7 @@
               <span class="link-txt">Calendar</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-envelope icon"></i>
@@ -62,36 +64,42 @@
               <span class="badge warning">8</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-brands fa-rocketchat icon"></i>
               <span class="link-txt">Chat</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-list-check icon"></i>
               <span class="link-txt">Tasks</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item active">
               <i class="fa-solid fa-layer-group icon"></i>
               <span class="link-txt">Projects</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-folder-closed icon"></i>
               <span class="link-txt">File Manager</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-file-lines"></i>
               <span class="link-txt">Notes</span>
             </a>
           </li>
+
           <li>
             <a href="#" class="item">
               <i class="fa-solid fa-address-book icon"></i>
@@ -100,6 +108,7 @@
           </li>
         </nav>
       </div>
+
       <div class="content">
         <header class="app-header">
           <button class="btn icon-only sidebar-toggle">
@@ -116,6 +125,7 @@
           </button>
 
           <span class="divider"></span>
+
           <button class="user-dropdown">
             <img
               src="./images/user-33.png"
@@ -153,6 +163,7 @@
                   <span class="badge grey">151</span>
                 </a>
               </li>
+
               <li>
                 <a href="#" class="tab">
                   <span>Started</span>
@@ -696,6 +707,98 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="popup-modal">
+            <header class="header">
+              <h4 class="heading">Edit project</h4>
+
+              <a href="./index.html">
+                <button class="btn icon-only dark">
+                  <i class="fa-solid fa-xmark icon"></i>
+                </button>
+              </a>
+            </header>
+
+            <div class="photo-upload edit">
+              <img
+                src="./images/firebase.png"
+                class="project-logo"
+                alt="Geometric shapes of fire"
+              />
+
+              <label class="label small">
+                <input
+                  type="file"
+                  class="input"
+                  accept="image/png, image/gif, image/jpeg"
+                />
+                <i class="fa-solid fa-pencil icon"></i>
+              </label>
+            </div>
+
+            <div>
+              <small class="input-name">Status</small>
+              <select class="select">
+                <option value="1">Started</option>
+                <option value="2">Completed</option>
+              </select>
+            </div>
+
+            <div>
+              <small class="input-name">Project Name</small>
+              <div class="input">
+                <input type="text" value="App Development" />
+              </div>
+            </div>
+
+            <div>
+              <small class="input-name">Client Name</small>
+              <div class="input">
+                <input type="text" value="Google Inc." />
+              </div>
+            </div>
+
+            <div>
+              <small class="input-name">Description</small>
+              <div class="input textarea">
+                <textarea cols="30" rows="6">
+You need to develop an application on something like React native, so that it is for Android and IOS. There are about 30 screens, the design and layout in the sketch is ready. The main pages are login, getting a task, a list of tasks, a map, a history of tasks, calling the camera to complete a task.
+                  </textarea
+                >
+              </div>
+            </div>
+
+            <div class="timestamp">
+              <div>
+                <small class="input-name">Start Date</small>
+
+                <div class="time input">
+                  <input type="time" value="00:00" />
+                  <input type="date" value="2020-07-12" />
+                </div>
+              </div>
+
+              <i class="fa-solid fa-minus icon"></i>
+
+              <div>
+                <small class="input-name">Start Date</small>
+                <div class="time input">
+                  <input type="time" value="00:00" />
+                  <input type="date" value="2020-07-12" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <small class="input-name">Budget</small>
+              <div class="input">
+                <i class="fa-solid fa-dollar-sign icon"></i>
+                <input type="text" value="2.500.000" />
+              </div>
+            </div>
+
+            <button class="btn big primary">Save</button>
           </div>
         </div>
       </div>

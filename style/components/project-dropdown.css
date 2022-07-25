@@ -1,0 +1,27 @@
+.project-dropdown {
+  background: #fff;
+  border-radius: var(--border-radius);
+  position: absolute;
+  padding: 0.5rem 0;
+  z-index: 1;
+  right: 1rem;
+  bottom: 0.2rem;
+  box-shadow: 2px 2px 5px 0px #c3c3c3;
+}
+
+.project-dropdown .option {
+  color: var(--color-body-dark);
+  transition: color var(--transition-duration);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 2rem;
+}
+
+.project-dropdown .option:hover {
+  color: var(--color-heading);
+}
+
+.project-dropdown .option.danger {
+  color: var(--color-danger);
+}

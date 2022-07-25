@@ -8,6 +8,17 @@
   color: var(--color-body-light);
 }
 
+.progress.inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress.inline .percent {
+  font-size: 1rem;
+  color: var(--color-body-light);
+}
+
 .progress-bar {
   width: 100%;
   background-color: var(--color-bg);

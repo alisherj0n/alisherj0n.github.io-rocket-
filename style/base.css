@@ -15,3 +15,7 @@ a:hover {
 nav {
   list-style: none;
 }
+
+small {
+  display: block;
+}
