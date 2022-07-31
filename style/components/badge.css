@@ -1,18 +1,18 @@
 .badge {
   --border-radius-sm: 6px;
   background-color: var(--color-border);
+  color: var(--color-body-light);
   padding: 0.5px 5px;
-  color: #fff;
   font-size: 0.7rem;
   border-radius: var(--border-radius-sm);
 }
 
 .badge.warning {
   background-color: var(--color-danger);
+  color: #fff;
 }
 
 .badge.wide {
-  color: var(--color-body-light);
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
