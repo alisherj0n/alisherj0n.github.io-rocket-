@@ -1,18 +1,44 @@
 .btn {
-  cursor: pointer;
-  border: 1px solid transparent;
-  background-color: #fff;
-  padding: 0.8rem 1.2rem;
   display: flex;
-  border-radius: var(--border-radius-sm);
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--color-body-light);
+  font-size: 1rem;
+  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  background-color: transparent;
+  border: 2px solid transparent;
   position: relative;
-  transition: background-color var(--transition-duration);
+  border-radius: var(--form-control-border-radius);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
 }
 
-.btn:hover {
-  background-color: var(--color-bg);
+.btn:hover,
+.btn.light:hover {
+  background-color: var(--color-bg-light);
+}
+
+.btn.light {
+  background-color: #fff;
+  color: var(--color-body-dark);
 }
 
 .btn.icon-only {
-  padding: 0.5rem;
+  --form-control-padding-x: 0.6rem;
+}
+
+.btn.primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-bottom-color: var(--color-primary-dark);
+}
+
+.btn.primary:hover {
+  background-color: var(--color-primary-light);
+}
+
+.btn.primary:active {
+  background-color: var(--color-primary-dark);
 }

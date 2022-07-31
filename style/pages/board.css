@@ -1,0 +1,17 @@
+.board {
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.board .page-view-toggle {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+/* ----breakpoint-sm---- */
+@media (max-width: 786px) {
+  .board .page-header .heading {
+    font-size: 1.6rem;
+  }
+}

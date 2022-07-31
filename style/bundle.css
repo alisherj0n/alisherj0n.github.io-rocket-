@@ -2,6 +2,7 @@
 @import url(./colors.css);
 @import url(./breakpoints.css);
 @import url(./fx.css);
+@import url(./form-controls.css);
 
 @import url(./typography.css);
 @import url(./base.css);
@@ -9,6 +10,11 @@
 
 @import url(./components/badge.css);
 @import url(./components/button.css);
+@import url(./components/tabs.css);
 @import url(./components/user-profile.css);
+@import url(./components/divider.css);
 @import url(./components/sidebar.css);
 @import url(./components/app-header.css);
+@import url(./components/page-header.css);
+
+@import url(./pages/board.css);
