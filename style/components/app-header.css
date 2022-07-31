@@ -36,7 +36,7 @@
 /* ----breakpoint-sm---- */
 @media (max-width: 786px) {
   .app-header .btn.notification,
-  .app-header .user-profile .avatar {
+  .app-header .mini-profile .avatar {
     display: none;
   }
 }
