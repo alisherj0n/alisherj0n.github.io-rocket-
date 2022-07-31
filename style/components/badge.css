@@ -1,5 +1,8 @@
 .badge {
   --border-radius-sm: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   background-color: var(--color-border);
   color: var(--color-body-light);
   padding: 0.5px 5px;
@@ -12,7 +15,25 @@
   color: #fff;
 }
 
+.badge.light {
+  background-color: var(--color-bg);
+  color: var(--color-heading);
+}
+
 .badge.wide {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+
+.badge.large {
+  font-size: 0.875rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.badge.large.icon {
+  padding-left: 0.4rem;
+}
+
+.badge .icon {
+  font-size: 1.1rem;
 }
