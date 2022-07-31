@@ -1,13 +1,18 @@
 .tabs {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin-right: auto;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .tabs > * {
   flex-shrink: 0;
+}
+
+.tabs .actions {
+  margin-left: auto;
 }
 
 .tabs .tab {
