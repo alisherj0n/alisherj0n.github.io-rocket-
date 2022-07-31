@@ -1,0 +1,33 @@
+.progress-bar {
+  width: 100%;
+  background-color: var(--color-bg);
+  height: 100%;
+  border-radius: 8px;
+}
+
+.progress-bar .progress {
+  background-color: var(--color-success);
+  height: 0.4rem;
+  border-radius: 8px;
+  display: block;
+}
+
+.progress-bar .progress.quarter {
+  width: 25%;
+}
+
+.progress-bar .progress.thirty {
+  width: 30%;
+}
+
+.progress-bar .progress.half {
+  width: 50%;
+}
+
+.progress-bar .progress.half-quarter {
+  width: 75%;
+}
+
+.progress-bar .progress.completed {
+  width: 100%;
+}
