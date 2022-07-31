@@ -1,33 +1,26 @@
 .progress-bar {
   width: 100%;
+  height: 0.4rem;
   background-color: var(--color-bg);
-  height: 100%;
-  border-radius: 8px;
+  border-radius: var(--border-radius-sm);
 }
 
 .progress-bar .progress {
-  background-color: var(--color-success);
-  height: 0.4rem;
-  border-radius: 8px;
+  background-color: var(--color-body-light);
+  height: 100%;
   display: block;
+  border-radius: var(--border-radius-sm);
 }
 
-.progress-bar .progress.quarter {
-  width: 25%;
+.progress-bar.success .progress {
+  background-color: var(--color-success);
 }
-
-.progress-bar .progress.thirty {
-  width: 30%;
+.progress-bar.warning .progress {
+  background-color: var(--color-warning);
 }
-
-.progress-bar .progress.half {
-  width: 50%;
+.progress-bar.danger .progress {
+  background-color: var(--color-danger);
 }
-
-.progress-bar .progress.half-quarter {
-  width: 75%;
-}
-
-.progress-bar .progress.completed {
-  width: 100%;
+.progress-bar.primary .progress {
+  background-color: var(--color-primary);
 }
