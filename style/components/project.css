@@ -1,0 +1,44 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+}
+
+.project .header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.project .header .btn {
+  margin-left: auto;
+}
+
+.project .mini-profile .title {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.project .progress-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.project .progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.project .footer {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.project .footer .badge {
+  margin-right: auto;
+}

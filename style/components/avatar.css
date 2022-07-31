@@ -14,3 +14,8 @@
 .avatar.round {
   border-radius: 50%;
 }
+
+.avatar.small {
+  width: 2.2rem;
+  height: 2.2rem;
+}
