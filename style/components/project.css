@@ -19,6 +19,10 @@
 .project .mini-profile .title {
   font-size: 1.125rem;
   font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 12rem;
 }
 
 .project .progress-status {
