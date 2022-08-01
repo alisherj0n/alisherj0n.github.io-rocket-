@@ -9,6 +9,12 @@
   align-items: center;
 }
 
+.board .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
 /* ----breakpoint-sm---- */
 @media (max-width: 786px) {
   .board .page-header .heading {

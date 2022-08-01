@@ -37,3 +37,13 @@
 .badge .icon {
   font-size: 1.1rem;
 }
+
+.badge.large.warning {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning-dark);
+}
+
+.badge.large.danger {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger-dark);
+}
