@@ -10,6 +10,10 @@
   border-radius: var(--border-radius-sm);
 }
 
+.badge .icon {
+  font-size: 1.1rem;
+}
+
 .badge.warning {
   background-color: var(--color-danger);
   color: #fff;
@@ -32,10 +36,6 @@
 
 .badge.large.icon {
   padding-left: 0.4rem;
-}
-
-.badge .icon {
-  font-size: 1.1rem;
 }
 
 .badge.large.warning {

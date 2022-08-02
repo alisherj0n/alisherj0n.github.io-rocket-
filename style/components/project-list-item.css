@@ -1,48 +1,46 @@
-.project {
+.project-list-item {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
   border-radius: var(--border-radius);
 }
 
-.project .header {
+.project-list-item .header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-.project .header .btn {
-  margin-left: auto;
+  justify-content: space-between;
 }
 
-.project .mini-profile .title {
+.project-list-item .mini-profile .title {
   font-size: 1.125rem;
   font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  max-width: 12rem;
 }
 
-.project .progress-status {
+.project-list-item .description {
+  margin-bottom: auto;
+}
+
+.project-list-item .progress-status {
   display: flex;
   flex-direction: column;
 }
 
-.project .progress-header {
+.project-list-item .progress-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.4rem;
 }
 
-.project .footer {
+.project-list-item .footer {
   display: flex;
   align-items: flex-end;
   gap: 0.5rem;
 }
 
-.project .footer .badge {
+.project-list-item .footer .badge {
   margin-right: auto;
 }
