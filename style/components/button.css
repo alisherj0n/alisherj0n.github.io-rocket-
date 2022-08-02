@@ -1,3 +1,8 @@
+:root {
+  --button-padding-x: 0.9rem;
+  --button-padding-y: 0.5rem;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -6,7 +11,7 @@
   cursor: pointer;
   color: var(--color-body-light);
   font-size: 1rem;
-  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 2px solid transparent;
   position: relative;
@@ -26,7 +31,7 @@
 }
 
 .btn.icon-only {
-  --form-control-padding-x: 0.6rem;
+  --button-padding-x: 0.6rem;
 }
 
 .btn.primary {
