@@ -14,6 +14,10 @@
   justify-content: space-between;
 }
 
+.project-list-item .header .actions {
+  margin-right: -0.6rem;
+}
+
 .project-list-item .mini-profile .title {
   font-size: 1.125rem;
   font-weight: 400;
