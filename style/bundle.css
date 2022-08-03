@@ -22,5 +22,6 @@
 @import url(./components/app-header.css);
 @import url(./components/page-header.css);
 @import url(./components/project-list-item.css);
+@import url(./components/pagination.css);
 
 @import url(./pages/board.css);
