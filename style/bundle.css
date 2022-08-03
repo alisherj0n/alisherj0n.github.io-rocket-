@@ -11,6 +11,9 @@
 @import url(./components/badge.css);
 @import url(./components/button.css);
 @import url(./components/avatar.css);
+@import url(./components/select.css);
+@import url(./components/tabs.css);
+@import url(./components/user-profile.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
 @import url(./components/progress-bar.css);
@@ -19,5 +22,6 @@
 @import url(./components/app-header.css);
 @import url(./components/page-header.css);
 @import url(./components/project-list-item.css);
+@import url(./components/pagination.css);
 
 @import url(./pages/board.css);

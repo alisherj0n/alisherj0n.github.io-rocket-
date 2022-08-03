@@ -1,0 +1,14 @@
+select {
+  padding: var(--form-control-padding-y)
+    calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
+    var(--form-control-padding-x);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-image: url(../../images/select-arrow.png);
+  background-size: 0.5rem;
+}

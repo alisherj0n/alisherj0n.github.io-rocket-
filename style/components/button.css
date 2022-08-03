@@ -1,16 +1,24 @@
+:root {
+  --button-padding-x: 0.9rem;
+  --button-padding-y: 0.5rem;
+}
+
 .btn {
+  --color-primary-hover: rgba(48, 79, 253, 0.8);
+
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.3rem;
   flex-shrink: 0;
   cursor: pointer;
   color: var(--color-body-light);
   font-size: 1rem;
-  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 2px solid transparent;
   position: relative;
-  border-radius: var(--form-control-border-radius);
+  border-radius: var(--border-radius);
   transition: background-color var(--transition-duration),
     color var(--transition-duration);
 }
@@ -26,7 +34,12 @@
 }
 
 .btn.icon-only {
-  --form-control-padding-x: 0.6rem;
+  --button-padding-x: 0.6rem;
+}
+
+.btn.small {
+  --button-padding-x: 0.4rem;
+  --button-padding-y: 0.3rem;
 }
 
 .btn.primary {
@@ -36,9 +49,55 @@
 }
 
 .btn.primary:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary-hover);
 }
 
 .btn.primary:active {
   background-color: var(--color-primary-dark);
+}
+
+.btn.primary-light {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.btn.warning-light {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.btn.danger-light {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.btn.success-light {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.btn.primary-light:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn.warning-light:hover {
+  background-color: var(--color-warning);
+  color: #fff;
+}
+
+.btn.danger-light:hover {
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+.btn.success-light:hover {
+  background-color: var(--color-success);
+  color: #fff;
+}
+
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
