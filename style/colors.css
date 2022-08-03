@@ -13,7 +13,11 @@
   --color-orange: #ff965d;
   --color-danger: #fd7972;
   --color-danger-dark: #f05c54;
-  --color-warning: #ffd240;
+  --color-danger-light: #ffeeed;
+  --color-warning: #ff965d;
+  --color-warning-dark: #e56e19;
+  --color-warning-light: #fff5ef;
+  --color-success: #49c96d;
   --color-dark-blue: #009eb3;
   --color-purple: #b656eb;
   --color-pink: #f9ddc5;

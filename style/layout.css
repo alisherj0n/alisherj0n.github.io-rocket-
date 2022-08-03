@@ -13,6 +13,9 @@
 
 .app .container {
   padding: var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (min-width: 1200px) {

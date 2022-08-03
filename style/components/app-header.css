@@ -22,6 +22,10 @@
   margin-left: 1rem;
 }
 
+.app-header .user-profile-dropdown .text-info .title {
+  width: max-content;
+}
+
 .app-header .notification .dot {
   width: 7px;
   height: 7px;
@@ -36,7 +40,7 @@
 /* ----breakpoint-sm---- */
 @media (max-width: 786px) {
   .app-header .btn.notification,
-  .app-header .user-profile .avatar {
+  .app-header .mini-profile .avatar {
     display: none;
   }
 }
