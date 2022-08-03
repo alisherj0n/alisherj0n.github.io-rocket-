@@ -4,6 +4,8 @@
 }
 
 .btn {
+  --color-primary-hover: rgba(48, 79, 253, 0.8);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +48,14 @@
   border-bottom-color: var(--color-primary-dark);
 }
 
+.btn.primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn.primary:active {
+  background-color: var(--color-primary-dark);
+}
+
 .btn.primary-light {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
@@ -84,10 +94,6 @@
 .btn.success-light:hover {
   background-color: var(--color-success);
   color: #fff;
-}
-
-.btn.primary:active {
-  background-color: var(--color-primary-dark);
 }
 
 .btn:disabled,

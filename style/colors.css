@@ -10,12 +10,11 @@
   --color-primary: #304ffd;
   --color-primary-light: rgba(48, 79, 253, 0.1);
   --color-primary-dark: #263fca;
-  --color-primary-hover: #5f77ff;
   --color-danger: #fd7972;
-  --color-danger-light: #ffeeed;
+  --color-danger-light: rgba(253, 121, 114, 0.1);
   --color-danger-dark: #f05c54;
   --color-warning: #ff965d;
-  --color-warning-light: #fff5ef;
+  --color-warning-light: rgba(229, 110, 25, 0.1);
   --color-warning-dark: #e56e19;
   --color-success: #49c96d;
   --color-success-light: rgba(73, 201, 109, 0.1);
