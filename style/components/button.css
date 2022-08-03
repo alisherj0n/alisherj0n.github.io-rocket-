@@ -83,3 +83,9 @@
 .btn.primary:active {
   background-color: var(--color-primary-dark);
 }
+
+.btn:disabled {
+  background-color: var(--color-bg);
+  color: var(--color-body-light);
+  pointer-events: none;
+}
