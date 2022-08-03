@@ -40,8 +40,44 @@
   border-bottom-color: var(--color-primary-dark);
 }
 
-.btn.primary:hover {
+.btn.primary-light {
   background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.btn.warning-light {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.btn.danger-light {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.btn.success-light {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.btn.primary-light:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn.warning-light:hover {
+  background-color: var(--color-warning);
+  color: #fff;
+}
+
+.btn.danger-light:hover {
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+.btn.success-light:hover {
+  background-color: var(--color-success);
+  color: #fff;
 }
 
 .btn.primary:active {
