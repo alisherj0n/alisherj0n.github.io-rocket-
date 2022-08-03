@@ -16,7 +16,7 @@
   background-color: transparent;
   border: 2px solid transparent;
   position: relative;
-  border-radius: var(--form-control-border-radius);
+  border-radius: var(--border-radius);
   transition: background-color var(--transition-duration),
     color var(--transition-duration);
 }
@@ -92,7 +92,6 @@
 
 .btn:disabled,
 .btn.disabled {
-  background-color: var(--color-bg);
-  color: var(--color-body-light);
+  opacity: 0.5;
   pointer-events: none;
 }

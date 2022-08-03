@@ -4,7 +4,7 @@
   gap: 1rem;
 }
 
-.pagination .text-info {
+.pagination .summary {
   margin-right: auto;
   color: var(--color-body-light);
 }
