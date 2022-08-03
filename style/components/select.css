@@ -1,6 +1,6 @@
 select {
   padding: var(--form-control-padding-y)
-    calc(var(--form-control-padding-x) + 0.7rem) var(--form-control-padding-y)
+    calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
     var(--form-control-padding-x);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-sm);
