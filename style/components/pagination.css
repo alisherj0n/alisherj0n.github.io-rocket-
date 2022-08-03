@@ -7,3 +7,9 @@
 .pagination .text-info {
   margin-right: auto;
 }
+
+.pagination .nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
