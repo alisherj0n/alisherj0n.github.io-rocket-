@@ -1,7 +1,6 @@
 .project-list-item {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   gap: 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
@@ -25,11 +24,6 @@
 
 .project-list-item .description {
   margin-bottom: auto;
-}
-
-.project-list-item .progress-status {
-  display: flex;
-  flex-direction: column;
 }
 
 .project-list-item .progress-header {

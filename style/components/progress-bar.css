@@ -8,7 +8,6 @@
 .progress-bar .progress {
   background-color: var(--color-body-light);
   height: 100%;
-  display: block;
   border-radius: var(--border-radius-sm);
 }
 
