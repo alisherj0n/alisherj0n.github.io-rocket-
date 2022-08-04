@@ -1,6 +1,16 @@
-.searchbar {
+input {
   padding: var(--form-control-padding-y) var(--form-control-padding-x);
   width: 100%;
+  outline: none;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+}
+
+input:focus {
+  border-color: var(--color-primary);
+}
+
+input:disabled {
+  background-color: var(--color-bg-dark);
+  pointer-events: none;
 }
