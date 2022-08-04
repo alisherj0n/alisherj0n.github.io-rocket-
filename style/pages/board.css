@@ -3,10 +3,15 @@
   overflow: hidden;
 }
 
-.board .page-view-toggle {
+.board .page-view-toggles {
   display: flex;
   gap: 0.2rem;
   align-items: center;
+}
+
+.board .tabs .actions .page-view-toggles .grid-view-toggle.active,
+.board .tabs .actions .page-view-toggles .list-view-toggle.active {
+  color: var(--color-primary);
 }
 
 .board .projects {
