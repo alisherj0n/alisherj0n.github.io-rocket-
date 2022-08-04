@@ -3,3 +3,9 @@
   border-radius: var(--border-radius);
   background-color: #fff;
 }
+
+.projects-list .header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}

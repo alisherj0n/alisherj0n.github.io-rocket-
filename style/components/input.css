@@ -6,6 +6,27 @@ input {
   border-radius: var(--border-radius);
 }
 
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon input {
+  --form-control-padding-x: 2.8rem;
+}
+
+.input-with-icon .left {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+.input-with-icon .right {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+}
+
 input:focus {
   border-color: var(--color-primary);
 }
