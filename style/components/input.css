@@ -11,8 +11,12 @@ input {
   width: 100%;
 }
 
-.input-with-icon input {
-  --form-control-padding-x: 2.8rem;
+.input-with-icon.left-icon input {
+  padding-left: 2.8rem;
+}
+
+.input-with-icon.right-icon input {
+  padding-right: 2.8rem;
 }
 
 .input-with-icon .left {
