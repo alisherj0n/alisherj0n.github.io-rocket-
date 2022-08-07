@@ -1,10 +1,15 @@
+:root {
+  --list-view-padding-y: 1.3rem;
+  --list-view-padding-x: 1.5rem;
+}
+
 .projects-list {
   border-radius: var(--border-radius);
   background-color: #fff;
 }
 
 .projects-list .header {
-  padding: 1.3rem 1.5rem;
+  padding: var(--list-view-padding-y) var(--list-view-padding-x);
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -15,6 +20,10 @@
   font-size: 1rem;
 }
 
+.projects-list table .mini-profile .subtitle {
+  color: var(--color-body-light);
+}
+
 .projects-list table .progress-header {
   display: flex;
   align-items: center;
@@ -23,21 +32,27 @@
   max-width: 80%;
 }
 
-.projects-list table .project-name {
-  width: 25%;
-}
-
+.projects-list table .project-name,
 .projects-list table .author {
-  width: 25%;
+  min-width: 20rem;
 }
 
 .projects-list table .progress-info {
-  width: 35%;
+  min-width: 25rem;
 }
+
 .projects-list table .deadline {
-  width: 11%;
+  min-width: 10rem;
+}
+
+.projects-list table .actions {
+  width: 100%;
 }
 
 .projects-list table .actions .action {
   margin-right: calc(var(--button-padding-x) * -1);
+}
+
+.projects-list .pagination {
+  padding: var(--list-view-padding-y) var(--list-view-padding-x);
 }
