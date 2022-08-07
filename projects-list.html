@@ -217,80 +217,162 @@
                 <option value="1">Actions</option>
               </select>
             </header>
-          </div>
 
-          <div class="pagination">
-            <div class="left">
-              <select>
-                <option value="1">10</option>
-                <option value="2">50</option>
-                <option value="3">100</option>
-              </select>
+            <table>
+              <thead>
+                <tr>
+                  <th class="checkbox">
+                    <input type="checkbox" />
+                  </th>
+                  <th class="project-name">Project Name</th>
+                  <th class="author">Created By</th>
+                  <th class="progress-info">Progress</th>
+                  <th class="deadline">Deadline</th>
+                  <th class="actions"></th>
+                </tr>
+              </thead>
 
-              <small class="summary">Showing 1 - 10 of 100</small>
+              <tbody>
+                <tr>
+                  <td class="checkbox"><input type="checkbox" /></td>
+
+                  <td class="project-name">
+                    <div class="mini-profile">
+                      <img
+                        src="./images/dropbox.png"
+                        alt="blue shapes of an open box"
+                        class="avatar large"
+                      />
+
+                      <div class="text-info">
+                        <a href="#">
+                          <h2 class="title">App Development</h2>
+                        </a>
+
+                        <small class="subtitle">Dropbox, Inc.</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="author">
+                    <div class="mini-profile">
+                      <img
+                        src="./images/user6.png"
+                        alt="Shane Black avatar"
+                        class="avatar round"
+                      />
+
+                      <div class="text-info">
+                        <a href="#">
+                          <h2 class="title">Shane Black</h2>
+                        </a>
+
+                        <small class="subtitle">Project Manager</small>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="progress-info">
+                    <div class="progress-header">
+                      <div class="progress-bar success">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+
+                      <span>50%</span>
+                    </div>
+                  </td>
+
+                  <td class="deadline">
+                    <div class="badge large icon light">
+                      <span class="material-icons-outlined icon">
+                        watch_later
+                      </span>
+
+                      <span>1 week left</span>
+                    </div>
+                  </td>
+                  <td class="actions">
+                    <button class="btn icon-only action">
+                      <span class="material-icons-outlined">more_vert</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagination">
+              <div class="left">
+                <select>
+                  <option value="1">10</option>
+                  <option value="2">50</option>
+                  <option value="3">100</option>
+                </select>
+
+                <small class="summary">Showing 1 - 10 of 100</small>
+              </div>
+
+              <nav class="pages">
+                <li>
+                  <a
+                    href="#"
+                    class="btn icon-only small primary-light disabled item"
+                  >
+                    <span class="material-icons-outlined">
+                      keyboard_double_arrow_left
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="btn icon-only small primary-light disabled item"
+                  >
+                    <span class="material-icons-outlined">
+                      keyboard_arrow_left
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small item">1</a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small item">2</a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small item">3</a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small item">
+                    <span>...</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small item">5</a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small primary-light item">
+                    <span class="material-icons-outlined">
+                      keyboard_arrow_right
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="btn icon-only small primary-light item">
+                    <span class="material-icons-outlined">
+                      keyboard_double_arrow_right
+                    </span>
+                  </a>
+                </li>
+              </nav>
             </div>
-
-            <nav class="pages">
-              <li>
-                <a
-                  href="#"
-                  class="btn icon-only small primary-light disabled item"
-                >
-                  <span class="material-icons-outlined">
-                    keyboard_double_arrow_left
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="btn icon-only small primary-light disabled item"
-                >
-                  <span class="material-icons-outlined">
-                    keyboard_arrow_left
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small item">1</a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small item">2</a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small item">3</a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small item">
-                  <span>...</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small item">5</a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small primary-light item">
-                  <span class="material-icons-outlined">
-                    keyboard_arrow_right
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="btn icon-only small primary-light item">
-                  <span class="material-icons-outlined">
-                    keyboard_double_arrow_right
-                  </span>
-                </a>
-              </li>
-            </nav>
           </div>
         </main>
       </div>

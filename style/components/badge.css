@@ -2,6 +2,7 @@
   --border-radius-sm: 6px;
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 0.3rem;
   background-color: var(--color-border);
   color: var(--color-body-light);

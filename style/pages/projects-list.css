@@ -1,11 +1,43 @@
 .projects-list {
-  padding: 1.3rem 1.5rem;
   border-radius: var(--border-radius);
   background-color: #fff;
 }
 
 .projects-list .header {
+  padding: 1.3rem 1.5rem;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-list table .mini-profile .title {
+  font-size: 1rem;
+}
+
+.projects-list table .progress-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-body-light);
+  max-width: 80%;
+}
+
+.projects-list table .project-name {
+  width: 25%;
+}
+
+.projects-list table .author {
+  width: 25%;
+}
+
+.projects-list table .progress-info {
+  width: 35%;
+}
+.projects-list table .deadline {
+  width: 11%;
+}
+
+.projects-list table .actions .action {
+  margin-right: calc(var(--button-padding-x) * -1);
 }

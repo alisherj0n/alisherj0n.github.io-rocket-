@@ -13,16 +13,19 @@
 @import url(./components/avatar.css);
 @import url(./components/select.css);
 @import url(./components/tabs.css);
+@import url(./components/checkbox.css);
 @import url(./components/user-profile.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
 @import url(./components/progress-bar.css);
 @import url(./components/input.css);
+@import url(./components/table.css);
 @import url(./components/tabs.css);
 @import url(./components/sidebar.css);
 @import url(./components/app-header.css);
 @import url(./components/page-header.css);
 @import url(./components/project-list-item.css);
+@import url(./components/projects-table.css);
 @import url(./components/pagination.css);
 
 @import url(./pages/board.css);

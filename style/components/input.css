@@ -1,6 +1,5 @@
 input {
   padding: var(--form-control-padding-y) var(--form-control-padding-x);
-  width: 100%;
   outline: none;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -9,6 +8,10 @@ input {
 
 .input-with-icon {
   position: relative;
+  width: 100%;
+}
+
+.input-with-icon input {
   width: 100%;
 }
 
