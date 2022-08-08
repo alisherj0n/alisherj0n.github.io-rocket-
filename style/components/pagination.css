@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.left {
+.pagination .displayable-quantity {
   display: flex;
   align-items: center;
   gap: 1rem;
