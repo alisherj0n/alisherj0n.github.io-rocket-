@@ -6,6 +6,7 @@
 .projects-list {
   border-radius: var(--border-radius);
   background-color: #fff;
+  overflow-x: auto;
 }
 
 .projects-list .header {
@@ -35,14 +36,17 @@
 .projects-list table .project-name,
 .projects-list table .author {
   min-width: 20rem;
+  width: 25%;
 }
 
 .projects-list table .progress-info {
   min-width: 25rem;
+  width: 30%;
 }
 
 .projects-list table .deadline {
-  min-width: 10rem;
+  min-width: 5rem;
+  width: 20%;
 }
 
 .projects-list table .actions {

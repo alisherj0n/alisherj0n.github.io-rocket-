@@ -23,6 +23,7 @@
 .badge.large {
   font-size: 0.875rem;
   padding: 0.2rem 0.5rem;
+  min-width: 7rem;
 }
 
 .badge.large.icon {
