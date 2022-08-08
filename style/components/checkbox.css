@@ -1,7 +1,4 @@
 input[type="checkbox"] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   appearance: none;
   /*   Otherwise inherits border  from input  */
@@ -14,6 +11,8 @@ input[type="checkbox"]::after {
   font-size: 1.25rem;
   color: var(--color-body-light);
   position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 input[type="checkbox"]::before {
@@ -23,14 +22,20 @@ input[type="checkbox"]::before {
 input[type="checkbox"]::after {
   content: "\e834";
   color: var(--color-primary);
+}
 
+input[type="checkbox"]:not(:checked)::before {
+  display: block;
+}
+
+input[type="checkbox"]:checked::before {
   display: none;
 }
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:not(:checked)::after {
   display: none;
 }
 
-input[type="checkbox"]:checked:after {
+input[type="checkbox"]:checked::after {
   display: block;
 }

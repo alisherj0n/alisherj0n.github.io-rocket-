@@ -9,8 +9,7 @@
   align-items: center;
 }
 
-.board .tabs .actions .page-view-toggles .grid-view-toggle.active,
-.board .tabs .actions .page-view-toggles .list-view-toggle.active {
+.board .tabs .actions .page-view-toggles > .active {
   color: var(--color-primary);
 }
 

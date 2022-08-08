@@ -2,8 +2,8 @@
   --border-radius-sm: 6px;
   display: inline-flex;
   align-items: center;
-  flex-shrink: 0;
   gap: 0.3rem;
+  white-space: nowrap;
   background-color: var(--color-border);
   color: var(--color-body-light);
   padding: 0.5px 5px;
@@ -23,7 +23,6 @@
 .badge.large {
   font-size: 0.875rem;
   padding: 0.2rem 0.5rem;
-  min-width: 7rem;
 }
 
 .badge.large.icon {
