@@ -1,20 +1,17 @@
-:root {
-  --list-view-padding-y: 1.3rem;
-  --list-view-padding-x: 1.5rem;
-}
-
 .projects-list {
+  --list-view-padding: 1.5rem;
   border-radius: var(--border-radius);
   background-color: #fff;
-  overflow-x: auto;
 }
 
 .projects-list .header {
-  padding: var(--list-view-padding-y) var(--list-view-padding-x);
+  padding: var(--list-view-padding);
   display: flex;
-  justify-content: space-between;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+}
+
+.projects-list .table-overflow {
+  overflow-x: auto;
 }
 
 .projects-list table .mini-profile .title {
@@ -25,38 +22,22 @@
   color: var(--color-body-light);
 }
 
-.projects-list table .progress-header {
+.projects-list table .progress-info {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--color-body-light);
-  max-width: 80%;
 }
 
-.projects-list table .project-name,
-.projects-list table .author {
-  min-width: 20rem;
-  width: 25%;
+.projects-list .footer {
+  padding: var(--list-view-padding);
 }
 
-.projects-list table .progress-info {
-  min-width: 25rem;
-  width: 30%;
-}
-
-.projects-list table .deadline {
-  min-width: 5rem;
-  width: 20%;
-}
-
-.projects-list table .actions {
+.projects-list .progress {
   width: 100%;
 }
 
-.projects-list table .actions .action {
-  margin-right: calc(var(--button-padding-x) * -1);
-}
-
-.projects-list .pagination {
-  padding: var(--list-view-padding-y) var(--list-view-padding-x);
+.projects-list .project-name,
+.projects-list .author {
+  min-width: 20rem;
 }
