@@ -10,22 +10,20 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before,
 input[type="checkbox"]::after {
-  content: "";
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1rem;
-  height: 1rem;
+  font-family: "Material Icons";
+  font-size: 1.25rem;
+  color: var(--color-body-light);
   position: absolute;
 }
 
 input[type="checkbox"]::before {
-  background-image: url(/images/unchecked.svg);
-  fill: var(--color-heading);
+  content: "\e835";
 }
 
 input[type="checkbox"]::after {
-  background-image: url(/images/checked.svg);
-  fill: var(--color-primary);
+  content: "\e834";
+  color: var(--color-primary);
+
   display: none;
 }
 
