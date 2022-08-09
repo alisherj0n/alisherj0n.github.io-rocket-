@@ -33,7 +33,8 @@
   padding: var(--list-view-padding);
 }
 
-.projects-list .project-name {
+.projects-list .project-name,
+.projects-list .progress .progress-bar {
   min-width: 20rem;
 }
 
@@ -43,8 +44,4 @@
 
 .projects-list .progress {
   width: 100%;
-}
-
-.projects-list .progress .progress-bar {
-  min-width: 20rem;
 }
