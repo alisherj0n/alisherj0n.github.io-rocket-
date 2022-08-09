@@ -33,12 +33,18 @@
   padding: var(--list-view-padding);
 }
 
+.projects-list .project-name {
+  min-width: 20rem;
+}
+
+.projects-list .author {
+  min-width: 17rem;
+}
+
 .projects-list .progress {
   width: 100%;
 }
 
-.projects-list .project-name,
-.projects-list .author,
 .projects-list .progress .progress-bar {
   min-width: 20rem;
 }

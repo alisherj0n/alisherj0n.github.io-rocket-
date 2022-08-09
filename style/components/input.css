@@ -41,6 +41,6 @@ input:focus {
 }
 
 input:disabled {
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-grey);
   pointer-events: none;
 }
