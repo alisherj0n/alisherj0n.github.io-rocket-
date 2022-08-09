@@ -38,6 +38,7 @@
 }
 
 .projects-list .project-name,
-.projects-list .author {
+.projects-list .author,
+.projects-list .progress .progress-bar {
   min-width: 20rem;
 }
