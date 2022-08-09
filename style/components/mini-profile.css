@@ -9,6 +9,7 @@
 .mini-profile .text-info {
   width: 100%;
   overflow: hidden;
+  color: var(--color-heading);
 }
 
 .mini-profile .title,
