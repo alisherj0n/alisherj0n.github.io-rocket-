@@ -1,0 +1,34 @@
+.project-list-dropdown {
+  background: #fff;
+  min-width: 13rem;
+  padding: 0.5rem 0;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 20px 50px 0px rgba(44, 63, 88, 0.15);
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+}
+
+.project-list-dropdown .action {
+  color: var(--color-body-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 1.5rem;
+  transition: color var(--transition-duration),
+    background-color var(--transition-duration);
+}
+
+.project-list-dropdown .action .icon {
+  color: var(--color-body-light);
+}
+
+.project-list-dropdown .action:hover {
+  color: var(--color-heading);
+  background-color: var(--color-bg);
+}
+
+.project-list-dropdown .action.danger,
+.project-list-dropdown .action.danger .icon {
+  color: var(--color-danger);
+}

@@ -19,6 +19,10 @@
   gap: 1.5rem;
 }
 
+.board .projects .project-list-item.active .project-list-dropdown {
+  display: block;
+}
+
 /* ----breakpoint-sm---- */
 @media (max-width: 786px) {
   .board .page-header .heading {
