@@ -3,6 +3,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  white-space: nowrap;
   background-color: var(--color-border);
   color: var(--color-body-light);
   padding: 0.5px 5px;

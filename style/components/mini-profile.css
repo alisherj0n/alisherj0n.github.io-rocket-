@@ -9,11 +9,13 @@
 .mini-profile .text-info {
   width: 100%;
   overflow: hidden;
+  color: var(--color-heading);
 }
 
 .mini-profile .title,
 .mini-profile .subtitle {
   display: block;
+  font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

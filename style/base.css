@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   color: var(--color-body-dark);
 }
 
@@ -14,4 +14,16 @@ nav {
 
 .icon {
   font-size: 1.3rem;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: var(--font-family);
+  color: var(--color-body-light);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: var(--font-family);
+  color: var(--color-heading);
 }

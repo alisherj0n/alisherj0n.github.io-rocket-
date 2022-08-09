@@ -1,0 +1,47 @@
+.projects-list {
+  --list-view-padding: 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
+
+.projects-list .header {
+  padding: var(--list-view-padding);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projects-list .table-overflow {
+  overflow-x: auto;
+}
+
+.projects-list table .mini-profile .title {
+  font-size: 1rem;
+}
+
+.projects-list table .mini-profile .subtitle {
+  color: var(--color-body-light);
+}
+
+.projects-list table .progress-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-body-light);
+}
+
+.projects-list .footer {
+  padding: var(--list-view-padding);
+}
+
+.projects-list .project-name,
+.projects-list .progress .progress-bar {
+  min-width: 20rem;
+}
+
+.projects-list .author {
+  min-width: 17rem;
+}
+
+.projects-list .progress {
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  /*   Otherwise inherits border  from input  */
+  border: none;
+}
+
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+  font-family: "Material Icons";
+  font-size: 1.25rem;
+  color: var(--color-body-light);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+input[type="checkbox"]::before {
+  content: "\e835";
+}
+
+input[type="checkbox"]::after {
+  content: "\e834";
+  color: var(--color-primary);
+}
+
+input[type="checkbox"]:not(:checked)::before {
+  display: block;
+}
+
+input[type="checkbox"]:checked::before {
+  display: none;
+}
+
+input[type="checkbox"]:not(:checked)::after {
+  display: none;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+}

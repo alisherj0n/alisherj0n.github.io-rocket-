@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <link href="https://css.gg/layout-grid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/bundle.css" />
+    <title>Rocket</title>
+  </head>
+  <body>
+    <div class="app collapsed">
+      <div class="sidebar">
+        <img
+          src="./images/Basic.png"
+          alt="Rocket forms and app name"
+          class="logo"
+        />
+
+        <img
+          src="./images/Rocket.png"
+          alt="Rocket icon"
+          class="logo icon-only"
+        />
+
+        <nav class="nav">
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">grid_view</span>
+              <span class="link-txt">Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">shopping_cart</span>
+              <span class="link-txt">E-Commerce</span>
+              <span class="material-icons-outlined icon submenu-indicator">
+                chevron_right
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">calendar_month</span>
+              <span class="link-txt">Calendar</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">mail</span>
+              <span class="link-txt">Mail</span>
+              <span class="badge warning">8</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">message</span>
+              <span class="link-txt">Chat</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">task</span>
+              <span class="link-txt">Tasks</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item active">
+              <span class="material-icons-outlined icon">layers</span>
+              <span class="link-txt">Projects</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">folder</span>
+              <span class="link-txt">Files</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">text_snippet</span>
+              <span class="link-txt">Notes</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">contacts</span>
+              <span class="link-txt">Contacts</span>
+            </a>
+          </li>
+        </nav>
+      </div>
+
+      <div class="content board">
+        <header class="app-header">
+          <button class="btn light icon-only app-sidebar-toggle">
+            <span class="material-icons-outlined icon">menu</span>
+          </button>
+
+          <button class="btn light icon-only">
+            <span class="material-icons-outlined icon">search</span>
+          </button>
+
+          <button class="btn light icon-only notification">
+            <span class="material-icons-outlined icon">notifications</span>
+            <span class="dot"></span>
+          </button>
+
+          <span class="divider tall"></span>
+
+          <button class="user-profile-dropdown">
+            <div class="mini-profile">
+              <img
+                src="./images/user4.png"
+                alt="User profile picture"
+                class="avatar round"
+              />
+              <div class="text-info">
+                <span class="title">John Wick</span>
+              </div>
+            </div>
+
+            <span class="material-icons-outlined icon">arrow_drop_down</span>
+          </button>
+        </header>
+
+        <main class="container">
+          <header class="page-header">
+            <h3 class="heading">Projects</h3>
+
+            <button class="btn icon-only light">
+              <span class="material-icons-outlined icon">sort</span>
+            </button>
+
+            <button class="btn primary">
+              <span class="material-icons-outlined icon">add</span>
+              Add Project
+            </button>
+          </header>
+
+          <nav class="tabs">
+            <li>
+              <a href="#" class="tab active">
+                All
+                <span class="badge wide">151</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="tab">
+                Started
+                <span class="badge wide">128</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="tab">
+                On Hold
+                <span class="badge wide">15</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="tab">
+                Completed
+                <span class="badge wide">8</span>
+              </a>
+            </li>
+
+            <li class="actions">
+              <div class="page-view-toggles">
+                <a
+                  href="/projects-list.html"
+                  class="btn icon-only list-view-toggle active"
+                >
+                  <span class="material-icons-outlined icon">menu</span>
+                </a>
+
+                <span class="divider small"></span>
+
+                <a href="/index.html" class="btn icon-only list-view-toggle">
+                  <span class="material-icons-outlined icon">grid_view</span>
+                </a>
+              </div>
+            </li>
+          </nav>
+
+          <div class="projects-list">
+            <header class="header">
+              <div class="input-with-icon left-icon right-icon">
+                <span class="material-icons-outlined left">search</span>
+                <input type="search" placeholder="Search customer..." />
+                <button class="btn icon-only light small right">
+                  <span class="material-icons-outlined">tune</span>
+                </button>
+              </div>
+              <select>
+                <option value="">Actions</option>
+                <option value="">Delete</option>
+              </select>
+            </header>
+
+            <div class="table-overflow">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="checkbox">
+                      <input type="checkbox" />
+                    </th>
+                    <th class="project-name">Project Name</th>
+                    <th class="author">Created By</th>
+                    <th class="progress">Progress</th>
+                    <th class="deadline">Deadline</th>
+                    <th class="actions"></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/dropbox.png"
+                          alt="blue shapes of an open box"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">Dropbox, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user6.png"
+                          alt="Shane Black avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Shane Black</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 50%"></div>
+                        </div>
+
+                        <span>50%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/gitlab.png"
+                          alt="geometric shapes of fox head"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Website Redesign</span>
+                          <small class="subtitle">GitLab Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user5.png"
+                          alt="Jane Wilson avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Jane Wilson</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 75%"></div>
+                        </div>
+
+                        <span>75%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/bitbucket.png"
+                          alt="blue shapes of a bucket"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Landing Page</span>
+                          <small class="subtitle">Bitbucket, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user6.png"
+                          alt="Shane Black avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Shane Black</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 100%"></div>
+                        </div>
+
+                        <span>100%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/python.png"
+                          alt="blue and yellow shapes of python snake"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Parser Development</span>
+                          <small class="subtitle">Drivewat, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user4.png"
+                          alt="Jacob Hawkins avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Jacob Hawkins</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 50%"></div>
+                        </div>
+
+                        <span>50%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon warning-light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>5 days left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/slack.png"
+                          alt="Multi color rounded shapes "
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">
+                            Slack Technologies, Inc.
+                          </small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user4.png"
+                          alt="Jacob Hawkins avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Jacob Hawkins</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 50%"></div>
+                        </div>
+
+                        <span>50%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon warning-light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>5 days left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/fire.png"
+                          alt="yellow shapes of a fire"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">Google, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user2.png"
+                          alt="Ronald Robertson avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Ronald Robertson</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 25%"></div>
+                        </div>
+
+                        <span>25%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/angular.png"
+                          alt="A red shield with a letter A on it"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Admin Dashboard</span>
+                          <small class="subtitle">ArtTemplate, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user6.png"
+                          alt="Shane Black avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Shane Black</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 30%"></div>
+                        </div>
+
+                        <span>30%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/vue.png"
+                          alt="V shaped grey and turquoise lines"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">Dropbox, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user1.png"
+                          alt="Robert Edwards avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Robert Edwards</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 100%"></div>
+                        </div>
+
+                        <span>100%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/messenger.png"
+                          alt="A blue chat icon with a white thunder sign inside"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">Facebook, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user2.png"
+                          alt="Ronald Robertson avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Ronald Robertson</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 50%"></div>
+                        </div>
+
+                        <span>50%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="checkbox"><input type="checkbox" /></td>
+
+                    <td class="project-name">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/Java.png"
+                          alt="cup with an orange steam icon"
+                          class="avatar large"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">App Development</span>
+                          <small class="subtitle">Leader, Inc.</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="author">
+                      <a href="#" class="mini-profile">
+                        <img
+                          src="./images/user6.png"
+                          alt="Shane Black avatar"
+                          class="avatar round"
+                        />
+
+                        <div class="text-info">
+                          <span class="title">Shane Black</span>
+                          <small class="subtitle">Project Manager</small>
+                        </div>
+                      </a>
+                    </td>
+
+                    <td class="progress">
+                      <div class="progress-info">
+                        <div class="progress-bar success">
+                          <div class="progress" style="width: 75%"></div>
+                        </div>
+
+                        <span>75%</span>
+                      </div>
+                    </td>
+
+                    <td class="deadline">
+                      <div class="badge large icon light">
+                        <span class="material-icons-outlined icon">
+                          watch_later
+                        </span>
+
+                        <span>1 week left</span>
+                      </div>
+                    </td>
+                    <td class="actions">
+                      <button class="btn icon-only action">
+                        <span class="material-icons-outlined">more_vert</span>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <footer class="footer">
+              <div class="pagination">
+                <div class="displayable-quantity">
+                  <select>
+                    <option value="1">10</option>
+                    <option value="2">50</option>
+                    <option value="3">100</option>
+                  </select>
+
+                  <small class="summary">Showing 1 - 10 of 100</small>
+                </div>
+
+                <nav class="pages">
+                  <li>
+                    <a
+                      href="#"
+                      class="btn icon-only small primary-light disabled item"
+                    >
+                      <span class="material-icons-outlined">
+                        keyboard_double_arrow_left
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="btn icon-only small primary-light disabled item"
+                    >
+                      <span class="material-icons-outlined">
+                        keyboard_arrow_left
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small item">1</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small item">2</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small item">3</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small item">
+                      <span>...</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small item">5</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small primary-light item">
+                      <span class="material-icons-outlined">
+                        keyboard_arrow_right
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="btn icon-only small primary-light item">
+                      <span class="material-icons-outlined">
+                        keyboard_double_arrow_right
+                      </span>
+                    </a>
+                  </li>
+                </nav>
+              </div>
+            </footer>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

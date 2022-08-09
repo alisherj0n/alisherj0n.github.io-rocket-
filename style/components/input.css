@@ -1,0 +1,46 @@
+input {
+  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  outline: none;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  transition: border-color var(--transition-duration);
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon.left-icon input {
+  padding-left: 2.8rem;
+}
+
+.input-with-icon.right-icon input {
+  padding-right: 2.8rem;
+}
+
+.input-with-icon .left,
+.input-with-icon .right {
+  position: absolute;
+}
+
+.input-with-icon .left {
+  top: 0.5rem;
+  left: 1rem;
+  color: var(--color-body-light);
+}
+
+.input-with-icon .right {
+  top: 0.1rem;
+  right: 0.1rem;
+}
+
+input:focus {
+  border-color: var(--color-primary);
+}
+
+input:disabled {
+  background-color: var(--color-grey);
+  pointer-events: none;
+}

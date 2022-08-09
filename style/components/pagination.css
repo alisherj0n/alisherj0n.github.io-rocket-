@@ -2,19 +2,31 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-content: space-between;
+}
+
+.pagination .displayable-quantity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .pagination .summary {
-  margin-right: auto;
   color: var(--color-body-light);
 }
 
-.pagination .nav {
+.pagination .pages {
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
 
-.pagination .nav .item {
+.pagination .pages .item {
   min-width: 2.55rem;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+  }
 }
