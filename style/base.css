@@ -8,13 +8,6 @@ a {
   transition: color var(--transition-duration);
 }
 
-nav,
-ul,
-li {
-  list-style: none;
-  margin: 0;
-}
-
 .icon {
   font-size: 1.3rem;
 }
