@@ -18,15 +18,6 @@
   margin-right: calc(var(--form-control-padding-x) * -1);
 }
 
-.project-list-item.active .header .actions {
-  background-color: var(--color-bg);
-  color: var(--color-heading);
-}
-
-.project-list-item .project-list-dropdown {
-  display: none;
-}
-
 .project-list-item .mini-profile .title {
   font-size: 1.125rem;
 }

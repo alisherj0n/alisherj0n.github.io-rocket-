@@ -19,8 +19,9 @@
   gap: 1.5rem;
 }
 
-.board .projects .project-list-item.active .project-list-dropdown {
-  display: block;
+.board .projects .project-list-item .dropdown {
+  top: 4.5rem;
+  right: 1.2rem;
 }
 
 /* ----breakpoint-sm---- */
