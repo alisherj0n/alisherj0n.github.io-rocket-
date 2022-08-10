@@ -33,6 +33,17 @@
   color: var(--color-body-dark);
 }
 
+.btn.dark {
+  background-color: var(--color-bg);
+  color: var(--color-heading);
+}
+
+.btn.link {
+  background-color: transparent;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .btn.icon-only {
   --button-padding-x: 0.6rem;
 }
