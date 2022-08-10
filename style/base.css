@@ -8,6 +8,11 @@ a {
   transition: color var(--transition-duration);
 }
 
+button,
+input {
+  font-size: 1rem;
+}
+
 .icon {
   font-size: 1.3rem;
 }

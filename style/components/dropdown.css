@@ -2,7 +2,6 @@
   background: #fff;
   padding: 0.5rem 0;
   min-width: 10rem;
-  width: 100%;
   max-width: 13rem;
   border-radius: var(--border-radius);
   box-shadow: 0px 20px 50px 0px rgba(44, 63, 88, 0.15);
@@ -20,34 +19,39 @@
   margin: 0;
 }
 
-.dropdown .menu .menu-item {
+.dropdown .menu .item {
   background-color: transparent;
   border: none;
   width: 100%;
-  font-size: 1rem;
   cursor: pointer;
   color: var(--color-body-dark);
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 0.6rem 2.5rem 0.6rem 2rem;
+  padding: 0.6rem 2.3rem;
   transition: color var(--transition-duration),
     background-color var(--transition-duration);
 }
 
-.dropdown .menu-item .icon {
+.dropdown .menu .item .text-info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dropdown .item .icon {
   color: var(--color-body-light);
 }
 
-.dropdown .menu-item:hover {
+.dropdown .item:hover {
   background-color: var(--color-bg);
 }
 
-.dropdown .menu-item.danger,
-.dropdown .menu-item.danger .icon {
+.dropdown .item.danger,
+.dropdown .item.danger .icon {
   color: var(--color-danger);
 }
 
-.dropdown .menu-item.danger:hover {
+.dropdown .item.danger:hover {
   background-color: var(--color-danger-light);
 }
