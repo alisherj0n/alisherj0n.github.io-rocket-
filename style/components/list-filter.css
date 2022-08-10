@@ -1,0 +1,48 @@
+.list-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  width: 24rem;
+  height: 100%;
+  box-shadow: -4px 20px 24px 0px #d6d7d966;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.list-filter.active {
+  display: flex;
+}
+
+.list-filter .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-filter .header .heading {
+  font-weight: 500;
+}
+
+.list-filter .header .icon {
+  font-size: 1.2rem;
+}
+
+.list-filter .input-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.list-filter .input-info .text-info {
+  color: var(--color-body-light);
+}
+
+.list-filter .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
