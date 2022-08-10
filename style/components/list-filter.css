@@ -17,10 +17,18 @@
   display: flex;
 }
 
-.list-filter .header {
+.list-filter .header,
+.list-filter .actions {
   display: flex;
   align-items: center;
+}
+
+.list-filter .header {
   justify-content: space-between;
+}
+
+.list-filter .actions {
+  gap: 0.5rem;
 }
 
 .list-filter .header .heading {
@@ -39,10 +47,4 @@
 
 .list-filter .input-info .text-info {
   color: var(--color-body-light);
-}
-
-.list-filter .actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
