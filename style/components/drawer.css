@@ -1,4 +1,4 @@
-.list-filter {
+.drawer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -13,38 +13,45 @@
   display: none;
 }
 
-.list-filter.active {
+.drawer.active {
   display: flex;
 }
 
-.list-filter .header,
-.list-filter .actions {
+.drawer .header,
+.drawer .actions {
   display: flex;
   align-items: center;
 }
 
-.list-filter .header {
+.drawer .header {
   justify-content: space-between;
 }
 
-.list-filter .actions {
+.drawer .actions {
   gap: 0.5rem;
 }
 
-.list-filter .header .heading {
+.drawer .header .heading {
   font-weight: 500;
 }
 
-.list-filter .header .icon {
+.drawer .header .icon {
   font-size: 1.2rem;
 }
 
-.list-filter .input-info {
+.drawer .input-info {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
 
-.list-filter .input-info .text-info {
+.drawer .input-info .text-info {
   color: var(--color-body-light);
+}
+
+/*   --breakpoint-xs */
+@media (max-width: 576px) {
+  .drawer {
+    width: 100%;
+  }
 }
