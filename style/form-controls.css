@@ -1,6 +1,6 @@
 :root {
   --form-control-padding-x: 0.8rem;
-  --form-control-padding-y: 0.6rem;
+  --form-control-padding-y: 0.4628rem;
 }
 
 select,
@@ -49,20 +49,21 @@ input {
 }
 
 .input-with-icon .left {
-  top: 0.7rem;
+  top: 0.5rem;
   left: 1rem;
   color: var(--color-body-light);
 }
 
 .input-with-icon .right {
-  top: 0.25rem;
+  top: 0.1rem;
   right: 0.1rem;
 }
 
-.input-info {
+.input {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  color: var(--color-body-light);
 }
 
 input:focus,
