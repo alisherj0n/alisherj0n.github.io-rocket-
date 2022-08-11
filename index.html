@@ -135,7 +135,7 @@
                 class="avatar round"
               />
               <div class="text-info">
-                <span class="title">John Wick</span>
+                <span class="title text-ellipsis">John Wick</span>
               </div>
             </div>
 
@@ -147,14 +147,16 @@
           <header class="page-header">
             <h3 class="heading">Projects</h3>
 
-            <button class="btn icon-only light">
-              <span class="material-icons-outlined icon">sort</span>
-            </button>
+            <div class="actions">
+              <button class="btn icon-only light">
+                <span class="material-icons-outlined icon">sort</span>
+              </button>
 
-            <button class="btn primary">
-              <span class="material-icons-outlined icon">add</span>
-              Add Project
-            </button>
+              <button class="btn primary">
+                <span class="material-icons-outlined icon">add</span>
+                Add Project
+              </button>
+            </div>
           </header>
 
           <nav class="tabs">
@@ -218,9 +220,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">App Development</h2>
+                    <h2 class="title text-ellipsis">App Development</h2>
 
-                    <small class="subtitle">Dropbox, Inc.</small>
+                    <small class="subtitle text-ellipsis">Dropbox, Inc.</small>
                   </div>
                 </a>
                 <button class="btn icon-only actions">
@@ -268,6 +270,46 @@
                   alt="Bobby Green avatar"
                 />
               </footer>
+
+              <div class="dropdown active">
+                <ul class="menu">
+                  <li>
+                    <button class="item">
+                      <span class="material-icons-outlined icon">edit</span>
+                      <span class="text-info text-ellipsis">Edit</span>
+                    </button>
+                  </li>
+
+                  <li>
+                    <button class="item">
+                      <span class="material-icons-outlined icon">
+                        person_add_alt
+                      </span>
+                      <span class="text-info text-ellipsis">Add Member</span>
+                    </button>
+                  </li>
+
+                  <li>
+                    <button class="item">
+                      <span class="material-icons-outlined icon">
+                        watch_later
+                      </span>
+                      <span class="text-info text-ellipsis">Add Due Date</span>
+                    </button>
+                  </li>
+
+                  <li>
+                    <hr class="divider horizontal" />
+                  </li>
+
+                  <li>
+                    <button class="item danger">
+                      <span class="material-icons-outlined icon">delete</span>
+                      <span class="text-info text-ellipsis">Delete Project</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-list-item">
@@ -280,9 +322,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">Website Redesign</h2>
+                    <h2 class="title text-ellipsis">Website Redesign</h2>
 
-                    <small class="subtitle">GitLab Inc.</small>
+                    <small class="subtitle text-ellipsis">GitLab Inc.</small>
                   </div>
                 </a>
                 <button class="btn icon-only actions">
@@ -344,9 +386,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">Landing Page</h2>
+                    <h2 class="title text-ellipsis">Landing Page</h2>
 
-                    <small class="subtitle">Bitbucket, Inc.</small>
+                    <small class="subtitle text-ellipsis">Bitbucket, Inc.</small>
                   </div>
                 </a>
 
@@ -403,9 +445,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">Parser Development</h2>
+                    <h2 class="title text-ellipsis">Parser Development</h2>
 
-                    <small class="subtitle">Driveway, Inc.</small>
+                    <small class="subtitle text-ellipsis">Driveway, Inc.</small>
                   </div>
                 </a>
 
@@ -467,9 +509,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">App Development</h2>
+                    <h2 class="title text-ellipsis">App Development</h2>
 
-                    <small class="subtitle">Slack Technologies, Inc.</small>
+                    <small class="subtitle text-ellipsis">Slack Technologies, Inc.</small>
                   </div>
                 </a>
 
@@ -525,9 +567,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">App Development</h2>
+                    <h2 class="title text-ellipsis">App Development</h2>
 
-                    <small class="subtitle">Google, Inc.</small>
+                    <small class="subtitle text-ellipsis">Google, Inc.</small>
                   </div>
                 </a>
 
@@ -583,9 +625,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">Admin Dashboard</h2>
+                    <h2 class="title text-ellipsis">Admin Dashboard</h2>
 
-                    <small class="subtitle">ArtTemplate, Inc.</small>
+                    <small class="subtitle text-ellipsis">ArtTemplate, Inc.</small>
                   </div>
                 </a>
 
@@ -647,9 +689,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">Web App on Vue.js</h2>
+                    <h2 class="title text-ellipsis">Web App on Vue.js</h2>
 
-                    <small class="subtitle">ArtTemplate, Inc.</small>
+                    <small class="subtitle text-ellipsis">ArtTemplate, Inc.</small>
                   </div>
                 </a>
 
@@ -705,9 +747,9 @@
                   />
 
                   <div class="text-info">
-                    <h2 class="title">App Development</h2>
+                    <h2 class="title text-ellipsis">App Development</h2>
 
-                    <small class="subtitle">Facebook, Inc.</small>
+                    <small class="subtitle text-ellipsis">Facebook, Inc.</small>
                   </div>
                 </a>
 
@@ -828,6 +870,7 @@
                 <a href="#" class="btn icon-only small primary-light item">
                   <span class="material-icons-outlined">
                     keyboard_double_arrow_right
+                  </span>
                   </span>
                 </a>
               </li>

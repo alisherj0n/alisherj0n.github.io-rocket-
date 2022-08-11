@@ -16,9 +16,6 @@
 .mini-profile .subtitle {
   display: block;
   font-weight: 400;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   width: 99%;
 }
 

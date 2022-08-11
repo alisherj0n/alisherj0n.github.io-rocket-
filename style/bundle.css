@@ -3,6 +3,7 @@
 @import url(./breakpoints.css);
 @import url(./fx.css);
 @import url(./form-controls.css);
+@import url(./utilities.css);
 
 @import url(./typography.css);
 @import url(./base.css);
@@ -13,9 +14,9 @@
 @import url(./components/avatar.css);
 @import url(./components/select.css);
 @import url(./components/checkbox.css);
+@import url(./components/dropdown.css);
 @import url(./components/input.css);
 @import url(./components/tabs.css);
-@import url(./components/user-profile.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
 @import url(./components/progress-bar.css);

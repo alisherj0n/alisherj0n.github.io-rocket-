@@ -5,6 +5,7 @@
   padding: 1.5rem;
   background-color: #fff;
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 .project-list-item .header {

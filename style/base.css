@@ -8,10 +8,6 @@ a {
   transition: color var(--transition-duration);
 }
 
-nav {
-  list-style: none;
-}
-
 .icon {
   font-size: 1.3rem;
 }

@@ -13,7 +13,6 @@
   flex-shrink: 0;
   cursor: pointer;
   color: var(--color-body-light);
-  font-size: 1rem;
   padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 2px solid transparent;
