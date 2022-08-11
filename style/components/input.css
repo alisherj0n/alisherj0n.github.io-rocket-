@@ -27,7 +27,7 @@ input {
 }
 
 .input-with-icon .left {
-  top: 0.7rem;
+  top: 0.8rem;
   left: 1rem;
   color: var(--color-body-light);
 }
