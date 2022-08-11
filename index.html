@@ -145,7 +145,7 @@
 
         <main class="container">
           <header class="page-header">
-            <h3 class="heading">Projects</h3>
+            <h1>Projects</h1>
 
             <div class="actions">
               <button class="btn icon-only light">
@@ -276,7 +276,7 @@
                   <li>
                     <button class="item">
                       <span class="material-icons-outlined icon">edit</span>
-                      <span class="text-info text-ellipsis">Edit</span>
+                      <span class="text-ellipsis">Edit</span>
                     </button>
                   </li>
 
@@ -285,7 +285,7 @@
                       <span class="material-icons-outlined icon">
                         person_add_alt
                       </span>
-                      <span class="text-info text-ellipsis">Add Member</span>
+                      <span class="text-ellipsis">Add Member</span>
                     </button>
                   </li>
 
@@ -294,7 +294,7 @@
                       <span class="material-icons-outlined icon">
                         watch_later
                       </span>
-                      <span class="text-info text-ellipsis">Add Due Date</span>
+                      <span class="text-ellipsis">Add Due Date</span>
                     </button>
                   </li>
 
@@ -305,7 +305,7 @@
                   <li>
                     <button class="item danger">
                       <span class="material-icons-outlined icon">delete</span>
-                      <span class="text-info text-ellipsis">Delete Project</span>
+                      <span class="text-ellipsis">Delete Project</span>
                     </button>
                   </li>
                 </ul>
@@ -388,7 +388,9 @@
                   <div class="text-info">
                     <h2 class="title text-ellipsis">Landing Page</h2>
 
-                    <small class="subtitle text-ellipsis">Bitbucket, Inc.</small>
+                    <small class="subtitle text-ellipsis">
+                      Bitbucket, Inc.
+                    </small>
                   </div>
                 </a>
 
@@ -511,7 +513,9 @@
                   <div class="text-info">
                     <h2 class="title text-ellipsis">App Development</h2>
 
-                    <small class="subtitle text-ellipsis">Slack Technologies, Inc.</small>
+                    <small class="subtitle text-ellipsis">
+                      Slack Technologies, Inc.
+                    </small>
                   </div>
                 </a>
 
@@ -627,7 +631,9 @@
                   <div class="text-info">
                     <h2 class="title text-ellipsis">Admin Dashboard</h2>
 
-                    <small class="subtitle text-ellipsis">ArtTemplate, Inc.</small>
+                    <small class="subtitle text-ellipsis">
+                      ArtTemplate, Inc.
+                    </small>
                   </div>
                 </a>
 
@@ -691,7 +697,9 @@
                   <div class="text-info">
                     <h2 class="title text-ellipsis">Web App on Vue.js</h2>
 
-                    <small class="subtitle text-ellipsis">ArtTemplate, Inc.</small>
+                    <small class="subtitle text-ellipsis">
+                      ArtTemplate, Inc.
+                    </small>
                   </div>
                 </a>
 
@@ -871,12 +879,44 @@
                   <span class="material-icons-outlined">
                     keyboard_double_arrow_right
                   </span>
-                  </span>
                 </a>
               </li>
             </nav>
           </div>
         </main>
+      </div>
+    </div>
+
+    <div class="drawer active">
+      <header class="header">
+        <h1>Filter</h1>
+        <button class="btn small icon-only">
+          <span class="material-icons-outlined icon">close</span>
+        </button>
+      </header>
+
+      <div class="input-with-icon left-icon">
+        <span class="material-icons-outlined left">search</span>
+        <input type="search" placeholder="Search Projects..." />
+      </div>
+
+      <label class="input">
+        Due date
+        <input type="date" />
+      </label>
+
+      <label class="input">
+        Status
+        <select>
+          <option value="completed">Completed</option>
+          <option value="in progress">In progress</option>
+          <option value="expired">Expired</option>
+        </select>
+      </label>
+
+      <div class="actions">
+        <button class="btn primary">Apply Filters</button>
+        <button class="btn link">Reset all filters</button>
       </div>
     </div>
   </body>

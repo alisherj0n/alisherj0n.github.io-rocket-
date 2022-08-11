@@ -32,6 +32,11 @@
   color: var(--color-body-dark);
 }
 
+.btn.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .btn.icon-only {
   --button-padding-x: 0.6rem;
 }
@@ -39,6 +44,7 @@
 .btn.small {
   --button-padding-x: 0.4rem;
   --button-padding-y: 0.3rem;
+  font-size: 1.2rem;
 }
 
 .btn.primary {

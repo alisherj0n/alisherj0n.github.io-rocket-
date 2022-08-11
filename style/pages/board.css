@@ -1,6 +1,8 @@
 .board {
   background-color: var(--color-bg);
   overflow: hidden;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .board .page-view-toggles {
