@@ -1,16 +1,15 @@
 .drawer {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 1.5rem;
   background-color: #fff;
   width: 24rem;
   height: 100%;
-  box-shadow: -4px 20px 24px 0px #d6d7d966;
-  position: absolute;
+  box-shadow: -4px 20px 24px 0px var(--color-shadow);
+  position: fixed;
+  top: 4rem;
   right: 0;
-  top: 0;
-  display: none;
 }
 
 .drawer.active {
@@ -37,12 +36,6 @@
 
 .drawer .header .icon {
   font-size: 1.2rem;
-}
-
-.drawer .input-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
 }
 
 .drawer .input-info .text-info {

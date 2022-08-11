@@ -1,6 +1,6 @@
 :root {
   --form-control-padding-x: 0.8rem;
-  --form-control-padding-y: 0.744rem;
+  --form-control-padding-y: 0.6rem;
 }
 
 select,
@@ -8,6 +8,7 @@ input {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   transition: border-color var(--transition-duration);
+  outline: none;
 }
 
 select {
@@ -16,7 +17,6 @@ select {
     var(--form-control-padding-x);
   color: var(--color-body-dark);
   background-color: transparent;
-  outline: none;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -26,7 +26,6 @@ select {
 
 input {
   padding: var(--form-control-padding-y) var(--form-control-padding-x);
-  outline: none;
   font-family: var(--font-family);
   width: 100%;
 }
@@ -50,14 +49,20 @@ input {
 }
 
 .input-with-icon .left {
-  top: 0.8rem;
+  top: 0.7rem;
   left: 1rem;
   color: var(--color-body-light);
 }
 
 .input-with-icon .right {
-  top: 0.1rem;
+  top: 0.25rem;
   right: 0.1rem;
+}
+
+.input-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 input:focus,
@@ -65,7 +70,8 @@ select:focus {
   border-color: var(--color-primary);
 }
 
-input:disabled {
+input:disabled,
+select:disabled {
   background-color: var(--color-grey);
   pointer-events: none;
 }
