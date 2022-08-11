@@ -17,7 +17,6 @@ p {
   margin: 0;
 }
 
-button,
-input {
+button {
   font-size: 1rem;
 }

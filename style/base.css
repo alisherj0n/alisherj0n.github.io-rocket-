@@ -18,6 +18,10 @@ a {
   color: var(--color-body-light);
 }
 
+::-webkit-calendar-picker-indicator {
+  filter: invert(0.4);
+}
+
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: var(--font-family);

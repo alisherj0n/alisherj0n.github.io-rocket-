@@ -4,6 +4,7 @@ select {
     var(--form-control-padding-x);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  color: var(--color-body-dark);
   background-color: transparent;
   outline: none;
   appearance: none;

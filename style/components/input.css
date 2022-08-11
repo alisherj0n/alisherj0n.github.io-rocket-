@@ -1,6 +1,7 @@
 input {
   padding: var(--form-control-padding-y) var(--form-control-padding-x);
   outline: none;
+  font-family: var(--font-family);
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -43,4 +44,8 @@ input:focus {
 input:disabled {
   background-color: var(--color-grey);
   pointer-events: none;
+}
+
+input[type="date"] {
+  color: var(--color-body-dark);
 }
