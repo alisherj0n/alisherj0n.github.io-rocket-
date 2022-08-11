@@ -28,15 +28,9 @@
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 0.6rem 2.3rem;
+  padding: 0.6rem 2rem;
   transition: color var(--transition-duration),
     background-color var(--transition-duration);
-}
-
-.dropdown .menu .item .text-info {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .dropdown .item .icon {
