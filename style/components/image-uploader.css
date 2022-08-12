@@ -1,0 +1,21 @@
+.image-uploader {
+  border: 1px dashed var(--color-border-dark);
+  padding: 3rem;
+  border-radius: var(--border-radius-xl);
+  width: 100%;
+  max-width: 6rem;
+  position: relative;
+}
+
+.image-uploader:after {
+  content: "\e145";
+  font-family: "Material Icons";
+  font-size: 2rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.image-uploader input[type="file"] {
+  display: none;
+}
