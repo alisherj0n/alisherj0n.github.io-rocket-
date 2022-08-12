@@ -8,6 +8,7 @@
 @import url(./typography.css);
 @import url(./base.css);
 @import url(./layout.css);
+@import url(./components/overlay.css);
 
 @import url(./components/badge.css);
 @import url(./components/button.css);
