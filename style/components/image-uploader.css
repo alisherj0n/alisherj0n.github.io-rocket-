@@ -2,6 +2,7 @@
   border: 1px dashed var(--color-border-dark);
   padding: 3rem;
   border-radius: var(--border-radius-xl);
+  align-self: center;
   width: 100%;
   max-width: 6rem;
   position: relative;
