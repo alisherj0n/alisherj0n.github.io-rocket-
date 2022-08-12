@@ -10,10 +10,11 @@ h5,
 h6 {
   color: var(--color-heading);
   margin: 0;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.85rem;
   font-weight: 500;
 }
 
