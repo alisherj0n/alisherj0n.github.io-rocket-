@@ -98,16 +98,20 @@ textarea {
   gap: 1rem;
 }
 
+.dialog.large .time-range .input {
+  width: 100%;
+}
+
 .input-group input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
 .input-group input[type="time"] {
-  max-width: 5rem;
+  max-width: 4.5rem;
 }
 
 .input-group input[type="date"] {
-  max-width: 10.5rem;
+  max-width: 10rem;
 }
 
 input:focus,
