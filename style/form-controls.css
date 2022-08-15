@@ -12,6 +12,11 @@ textarea {
   outline: none;
 }
 
+select,
+input {
+  height: 2.625rem;
+}
+
 select {
   padding: var(--form-control-padding-y)
     calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
@@ -56,10 +61,6 @@ textarea {
   color: var(--color-body-light);
 }
 
-.input-with-icon .left.dark {
-  color: var(--color-heading);
-}
-
 .input-with-icon .right {
   top: 0.1rem;
   right: 0.1rem;
@@ -70,6 +71,43 @@ textarea {
   flex-direction: column;
   gap: 0.3rem;
   color: var(--color-body-light);
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group > :first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > :last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+}
+
+.input-group > :focus {
+  z-index: 1;
+}
+
+.time-range {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-group input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.input-group input[type="time"] {
+  max-width: 5rem;
+}
+
+.input-group input[type="date"] {
+  max-width: 9rem;
 }
 
 input:focus,

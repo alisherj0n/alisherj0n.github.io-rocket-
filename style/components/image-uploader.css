@@ -1,22 +1,12 @@
 .image-uploader {
-  border: 1px dashed var(--color-border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-body-light);
   padding: 3rem;
   border-radius: var(--border-radius-xl);
   align-self: center;
   cursor: pointer;
-  width: 100%;
-  max-width: 6rem;
-  position: relative;
-}
-
-.image-uploader:after {
-  content: "\e145";
-  font-family: "Material Icons";
-  color: var(--color-body-light);
-  font-size: 2rem;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
 }
 
 .image-uploader input[type="file"] {

@@ -920,7 +920,7 @@
       </div>
     </div>
 
-    <div class="dialog add-project-modal">
+    <div class="dialog add-project-dialog">
       <header class="header">
         <h1>Add project</h1>
         <button class="btn small icon-only">
@@ -930,6 +930,7 @@
 
       <div class="content">
         <label class="image-uploader">
+          <span class="material-icons-outlined">add</span>
           <input type="file" />
         </label>
 
@@ -947,15 +948,13 @@
           Description
 
           <textarea
-            name=""
-            id=""
             cols="30"
             rows="5"
             placeholder="Create a mobile application on iOS and Android devices."
           ></textarea>
         </label>
 
-        <div class="timeframe">
+        <div class="time-range">
           <label class="input">
             Start Date
             <div class="input-group">
@@ -976,7 +975,7 @@
         <label class="input">
           Budget
           <div class="input-with-icon left-icon">
-            <span class="material-icons-outlined left dark">attach_money</span>
+            <span class="material-icons-outlined left">attach_money</span>
             <input type="text" placeholder="2.500.000" />
           </div>
         </label>
