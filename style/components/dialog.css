@@ -34,3 +34,15 @@
   gap: 1rem;
   justify-content: end;
 }
+
+/*  breakpoint-xs */
+@media (max-width: 576px) {
+  .dialog .timeframe {
+    flex-direction: column;
+  }
+
+  .dialog .timeframe input[type="time"],
+  .dialog .timeframe input[type="date"] {
+    width: 100%;
+  }
+}
