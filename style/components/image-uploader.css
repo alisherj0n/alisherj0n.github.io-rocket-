@@ -3,6 +3,7 @@
   padding: 3rem;
   border-radius: var(--border-radius-xl);
   align-self: center;
+  cursor: pointer;
   width: 100%;
   max-width: 6rem;
   position: relative;
