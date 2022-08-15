@@ -30,5 +30,6 @@
 }
 
 .input-group input[type="date"] {
-  max-width: 9.5rem;
+  --form-control-padding-x: 0.5rem;
+  max-width: 9rem;
 }
