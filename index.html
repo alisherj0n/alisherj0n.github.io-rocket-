@@ -928,18 +928,42 @@
         </button>
       </header>
 
-      <label class="image-uploader">
-        <input type="file" />
-      </label>
+      <div class="content-scroll">
+        <label class="image-uploader">
+          <input type="file" />
+        </label>
+
+        <label class="input">
+          Project Name
+          <input type="text" placeholder="App Development" />
+        </label>
+
+        <label class="input">
+          Client Name
+          <input type="text" placeholder="Dropbox, Inc." />
+        </label>
+
+        <label class="input">
+          Description
+
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Create a mobile application on iOS and Android devices."
+          ></textarea>
+        </label>
 
         <label class="input">
           Start Date
           <div class="input-group">
-            <input type="time" value="00:00" />
-            <input type="date" value="2020-12-07" />
+            <select name="" id=""></select>
+            <input type="text" />
           </div>
         </label>
       </div>
+
       <footer class="actions">
         <button class="btn light">Cancel</button>
         <button class="btn primary">Create</button>

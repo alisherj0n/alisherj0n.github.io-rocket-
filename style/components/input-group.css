@@ -2,12 +2,15 @@
   display: flex;
 }
 
-.input-group input[type="time"] {
-  border-right: transparent;
+.input-group > :first-child {
   border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
-.input-group input[type="date"] {
+.input-group > :last-child {
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   margin-left: -1px;
+}
+
+.input-group > :focus {
+  z-index: 1;
 }
