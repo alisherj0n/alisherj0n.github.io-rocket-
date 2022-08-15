@@ -12,3 +12,9 @@
 .image-uploader input[type="file"] {
   display: none;
 }
+
+.image-uploader .icon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-body-light);
+}

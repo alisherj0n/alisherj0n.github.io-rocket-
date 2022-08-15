@@ -107,7 +107,7 @@ textarea {
 }
 
 .input-group input[type="date"] {
-  max-width: 9rem;
+  max-width: 10.5rem;
 }
 
 input:focus,

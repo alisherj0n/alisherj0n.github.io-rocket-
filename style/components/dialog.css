@@ -8,11 +8,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 33rem;
+  width: 36rem;
   max-width: 85vw;
   max-height: 85vh;
   display: flex;
   flex-direction: column;
+}
+
+.dialog.small {
+  width: 25rem;
+}
+
+.dialog.large {
+  width: 100%;
 }
 
 .dialog .header {
