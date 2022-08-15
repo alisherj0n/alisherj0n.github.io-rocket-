@@ -25,9 +25,9 @@
 }
 
 .input-group input[type="time"] {
-  width: 5rem;
+  max-width: 5rem;
 }
 
 .input-group input[type="date"] {
-  width: 9rem;
+  max-width: 9.1rem;
 }
