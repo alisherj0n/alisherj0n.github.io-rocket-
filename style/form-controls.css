@@ -56,6 +56,10 @@ textarea {
   color: var(--color-body-light);
 }
 
+.input-with-icon .left.dark {
+  color: var(--color-heading);
+}
+
 .input-with-icon .right {
   top: 0.1rem;
   right: 0.1rem;
