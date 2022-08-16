@@ -11,8 +11,20 @@
   width: 36rem;
   max-width: 85vw;
   max-height: 85vh;
+  display: none;
+  flex-direction: column;
+}
+
+.dialog.active {
+  display: flex;
+}
+
+.dialog .content {
+  padding: var(--dialog-padding);
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  overflow-y: auto;
 }
 
 .dialog.small {

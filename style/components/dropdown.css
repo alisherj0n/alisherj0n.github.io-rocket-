@@ -24,7 +24,7 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  color: var(--color-body-dark);
+  color: var(--color-body);
   display: flex;
   align-items: center;
   gap: 0.7rem;
