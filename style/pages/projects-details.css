@@ -1,0 +1,21 @@
+.projects-details {
+  display: grid;
+  grid-template-columns: 300px 1fr 250px;
+}
+
+/* Breakpoint-xl */
+@media (max-width: 1200px) {
+  .projects-details {
+    grid-template-columns: 1fr 250px;
+  }
+  .projects-details .left {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
