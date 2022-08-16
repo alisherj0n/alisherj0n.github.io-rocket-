@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   border: 1px dashed var(--color-body-light);
-  padding: 3rem;
-  border-radius: var(--border-radius-xl);
+  padding: 2.5rem;
+  border-radius: var(--border-radius-xxl);
   align-self: center;
   cursor: pointer;
 }
@@ -14,7 +14,7 @@
 }
 
 .image-uploader .icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--color-body-light);
 }

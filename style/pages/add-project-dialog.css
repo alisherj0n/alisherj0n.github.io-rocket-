@@ -6,6 +6,10 @@
   overflow-y: auto;
 }
 
+.add-project-dialog .input {
+  color: var(--color-body-dark);
+}
+
 /*  breakpoint-sm */
 @media (max-width: 768px) {
   .add-project-dialog .time-range {
