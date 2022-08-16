@@ -4,7 +4,7 @@
   justify-content: center;
   border: 1px dashed var(--color-body-light);
   padding: 2.5rem;
-  border-radius: var(--border-radius-xxl);
+  border-radius: var(--border-radius-xl);
   align-self: center;
   cursor: pointer;
 }
