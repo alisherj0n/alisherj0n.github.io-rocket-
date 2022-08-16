@@ -23,3 +23,7 @@ select,
 textarea {
   font-size: 1rem;
 }
+
+button {
+  cursor: pointer;
+}

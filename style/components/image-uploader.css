@@ -25,8 +25,8 @@
 }
 
 .image-uploader .project-logo {
-  border: 1px solid var(--color-body-light);
-  border-radius: calc(var(--border-radius) + 4px);
+  border: 1px solid var(--color-body);
+  border-radius: var(--border-radius);
 }
 
 .image-uploader .edit-btn {
@@ -34,10 +34,9 @@
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-body);
   background: #fff;
   position: absolute;
   top: -0.7rem;
