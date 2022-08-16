@@ -21,7 +21,7 @@ select {
   padding: var(--form-control-padding-y)
     calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
     var(--form-control-padding-x);
-  color: var(--color-body-dark);
+  color: var(--color-body);
   background-color: transparent;
   appearance: none;
   background-repeat: no-repeat;
@@ -122,10 +122,10 @@ textarea:focus {
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: var(--color-grey);
+  background-color: var(--color-light-grey);
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: var(--color-body-dark);
+  color: var(--color-body);
 }

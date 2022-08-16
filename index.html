@@ -996,14 +996,14 @@
       </header>
 
       <div class="content">
-        <label class="image-uploader edit">
+        <label class="image-uploader">
           <img
             src="/images/fire.png"
             alt="yellow shapes of a fire"
-            class="project-logo"
+            class="image"
           />
           <input type="file" accept="image/png, image/gif, image/jpeg" />
-          <button class="edit-btn">
+          <button class="btn edit-btn">
             <span class="material-icons-outlined icon">edit</span>
           </button>
         </label>
@@ -1019,21 +1019,28 @@
 
         <label class="input">
           Project Name
-          <input type="text" value="App Development" />
+          <input
+            type="text"
+            placeholder="App Development"
+            value="App Development"
+          />
         </label>
 
         <label class="input">
           Client Name
-          <input type="text" value="Google, Inc." />
+          <input type="text" placeholder="Dropbox, Inc." value="Google, Inc." />
         </label>
 
         <label class="input">
           Description
 
-          <textarea cols="30" rows="6">
-You need to develop an application on something like React native, so that it is for Android and IOS. There are about 30 screens, the design and layout in the sketch is ready. The main pages are login, getting a task, a list of tasks, a map, a history of tasks, calling the camera to complete a task.
-
-          </textarea>
+          <textarea
+            cols="30"
+            rows="5"
+            placeholder="Create a mobile application on iOS and Android devices."
+          >
+ You need to develop an application on something like React native, so that it is for Android and IOS. There are about 30 screens, the design and layout in the sketch is ready. The main pages are login, getting a task, a list of tasks, a map, a history of tasks, calling the camera to complete a task.</textarea
+          >
         </label>
 
         <div class="time-range">
