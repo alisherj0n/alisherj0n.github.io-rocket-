@@ -987,6 +987,88 @@
       </footer>
     </div>
 
-    <div class="overlay"></div>
+    <div class="dialog add-update-project-dialog active">
+      <header class="header">
+        <h1>Edit project</h1>
+        <button class="btn small icon-only">
+          <span class="material-icons-outlined">close</span>
+        </button>
+      </header>
+
+      <div class="content">
+        <label class="image-uploader edit">
+          <img
+            src="/images/fire.png"
+            alt="yellow shapes of a fire"
+            class="project-logo"
+          />
+          <input type="file" accept="image/png, image/gif, image/jpeg" />
+          <button class="edit-btn">
+            <span class="material-icons-outlined icon">edit</span>
+          </button>
+        </label>
+
+        <label class="input">
+          Status
+          <select>
+            <option value="Started">Started</option>
+            <option value="In progress">In progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </label>
+
+        <label class="input">
+          Project Name
+          <input type="text" value="App Development" />
+        </label>
+
+        <label class="input">
+          Client Name
+          <input type="text" value="Google, Inc." />
+        </label>
+
+        <label class="input">
+          Description
+
+          <textarea cols="30" rows="5">
+You need to develop an application on something like React native, so that it is for Android and IOS. There are about 30 screens, the design and layout in the sketch is ready. The main pages are login, getting a task, a list of tasks, a map, a history of tasks, calling the camera to complete a task.
+
+          </textarea>
+        </label>
+
+        <div class="time-range">
+          <label class="input">
+            Start Date
+            <div class="input-group">
+              <input type="time" />
+              <input type="date" />
+            </div>
+          </label>
+
+          <label class="input">
+            End Date
+            <div class="input-group">
+              <input type="time" />
+              <input type="date" />
+            </div>
+          </label>
+        </div>
+
+        <label class="input">
+          Budget
+          <div class="input-with-icon left-icon">
+            <span class="material-icons-outlined left">attach_money</span>
+            <input type="text" placeholder="2.500.000" />
+          </div>
+        </label>
+      </div>
+
+      <footer class="actions">
+        <button class="btn light">Cancel</button>
+        <button class="btn primary">Create</button>
+      </footer>
+    </div>
+
+    <div class="overlay active"></div>
   </body>
 </html>
