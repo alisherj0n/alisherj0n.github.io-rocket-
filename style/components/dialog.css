@@ -11,8 +11,12 @@
   width: 36rem;
   max-width: 85vw;
   max-height: 85vh;
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.dialog.active {
+  display: flex;
 }
 
 .dialog .content {

@@ -70,7 +70,6 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  color: var(--color-body-light);
 }
 
 .input-group {
