@@ -107,11 +107,11 @@ textarea {
 }
 
 .input-group input[type="time"] {
-  max-width: 30%;
+  max-width: 5rem;
 }
 
 .input-group input[type="date"] {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 input:focus,

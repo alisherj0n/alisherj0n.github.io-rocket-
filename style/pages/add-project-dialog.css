@@ -15,8 +15,4 @@
   .add-project-dialog .time-range {
     flex-direction: column;
   }
-
-  .add-project-dialog .time-range input {
-    max-width: 100%;
-  }
 }
