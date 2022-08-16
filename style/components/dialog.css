@@ -1,0 +1,39 @@
+.dialog {
+  --dialog-padding: 2rem;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  box-shadow: -4px 8px 24px 0px var(--color-shadow);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36rem;
+  max-width: 85vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog.small {
+  width: 25rem;
+}
+
+.dialog.large {
+  width: 100%;
+}
+
+.dialog .header {
+  padding: var(--dialog-padding);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dialog .actions {
+  padding: var(--dialog-padding);
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  border-top: 1px solid var(--color-border);
+}

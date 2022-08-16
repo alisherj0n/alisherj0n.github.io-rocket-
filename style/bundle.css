@@ -2,20 +2,21 @@
 @import url(./colors.css);
 @import url(./breakpoints.css);
 @import url(./fx.css);
-@import url(./form-controls.css);
-@import url(./utilities.css);
 
+@import url(./utilities.css);
 @import url(./typography.css);
 @import url(./base.css);
 @import url(./layout.css);
+@import url(./components/overlay.css);
 
 @import url(./components/badge.css);
 @import url(./components/button.css);
 @import url(./components/avatar.css);
-@import url(./components/select.css);
 @import url(./components/checkbox.css);
 @import url(./components/dropdown.css);
-@import url(./components/input.css);
+@import url(./form-controls.css);
+@import url(./components/dialog.css);
+@import url(./components/image-uploader.css);
 @import url(./components/tabs.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
@@ -30,3 +31,4 @@
 
 @import url(./pages/board.css);
 @import url(./pages/projects-list.css);
+@import url(./pages/add-project-dialog.css);

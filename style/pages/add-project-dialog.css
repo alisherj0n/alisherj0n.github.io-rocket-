@@ -1,0 +1,18 @@
+.add-project-dialog .content {
+  padding: var(--dialog-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.add-project-dialog .input {
+  color: var(--color-body-dark);
+}
+
+/*  breakpoint-sm */
+@media (max-width: 768px) {
+  .add-project-dialog .time-range {
+    flex-direction: column;
+  }
+}

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
     <link href="https://css.gg/layout-grid.css" rel="stylesheet" />
@@ -887,7 +887,7 @@
       </div>
     </div>
 
-    <div class="drawer active">
+    <div class="drawer">
       <header class="header">
         <h1>Filter</h1>
         <button class="btn small icon-only">
@@ -919,5 +919,74 @@
         <button class="btn link">Reset all filters</button>
       </div>
     </div>
+
+    <div class="dialog add-project-dialog">
+      <header class="header">
+        <h1>Add project</h1>
+        <button class="btn small icon-only">
+          <span class="material-icons-outlined">close</span>
+        </button>
+      </header>
+
+      <div class="content">
+        <label class="image-uploader">
+          <span class="material-icons-round icon">add</span>
+          <input type="file" />
+        </label>
+
+        <label class="input">
+          Project Name
+          <input type="text" placeholder="App Development" />
+        </label>
+
+        <label class="input">
+          Client Name
+          <input type="text" placeholder="Dropbox, Inc." />
+        </label>
+
+        <label class="input">
+          Description
+
+          <textarea
+            cols="30"
+            rows="5"
+            placeholder="Create a mobile application on iOS and Android devices."
+          ></textarea>
+        </label>
+
+        <div class="time-range">
+          <label class="input">
+            Start Date
+            <div class="input-group">
+              <input type="time" />
+              <input type="date" />
+            </div>
+          </label>
+
+          <label class="input">
+            End Date
+            <div class="input-group">
+              <input type="time" />
+              <input type="date" />
+            </div>
+          </label>
+        </div>
+
+        <label class="input">
+          Budget
+          <div class="input-with-icon left-icon">
+            <span class="material-icons-outlined left">attach_money</span>
+            <input type="text" placeholder="2.500.000" />
+          </div>
+        </label>
+      </div>
+
+      <footer class="actions">
+        <button class="btn light">Cancel</button>
+        <button class="btn primary">Create</button>
+      </footer>
+    </div>
+
+    <div class="overlay"></div>
   </body>
 </html>
