@@ -18,6 +18,10 @@
   border: none;
 }
 
+.projects-details .related-projects-list .nav {
+  list-style: none;
+}
+
 /* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {

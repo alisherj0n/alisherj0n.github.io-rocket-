@@ -1,0 +1,26 @@
+.related-projects-list-item {
+  padding: 1.5rem 1.3rem;
+}
+
+.related-projects-list-item > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.related-projects-list-item.active {
+  background-color: #fff;
+}
+
+.related-projects-list-item .footer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: end;
+}
+
+.projects-details .related-projects-list .mini-profile .title {
+  font-size: 1rem;
+}
+
+.projects-details .related-projects-list .mini-profile .subtitle {
+  color: var(--color-body);
+}
