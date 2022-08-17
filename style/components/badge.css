@@ -4,8 +4,8 @@
   align-items: center;
   gap: 0.3rem;
   white-space: nowrap;
-  background-color: var(--color-border);
-  color: var(--color-body-light);
+  background-color: var(--color-bg-light);
+  color: var(--color-heading);
   padding: 0.5px 5px;
   font-size: 0.7rem;
   border-radius: var(--border-radius-sm);
@@ -27,11 +27,6 @@
 
 .badge.large.icon {
   padding-left: 0.4rem;
-}
-
-.badge.light {
-  background-color: var(--color-bg);
-  color: var(--color-heading);
 }
 
 .badge.warning {
