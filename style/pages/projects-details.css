@@ -1,6 +1,6 @@
 .projects-details .grid {
   display: grid;
-  grid-template-columns: 300px 1fr 250px;
+  grid-template-columns: 380px 1fr 320px;
 }
 
 /* Breakpoint-xl */
