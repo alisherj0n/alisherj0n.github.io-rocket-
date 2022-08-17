@@ -8,14 +8,13 @@
   .projects-details {
     grid-template-columns: 1fr 250px;
   }
-  .projects-details .left {
+  .projects-details .projects-list {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
   .projects-details {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
