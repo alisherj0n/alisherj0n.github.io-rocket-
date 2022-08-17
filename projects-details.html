@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link href="https://css.gg/layout-grid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/bundle.css" />
+    <title>Rocket</title>
+  </head>
+  <body>
+    <div class="app collapsed">
+      <div class="sidebar">
+        <img
+          src="./images/Basic.png"
+          alt="Rocket forms and app name"
+          class="logo"
+        />
+
+        <img
+          src="./images/Rocket.png"
+          alt="Rocket icon"
+          class="logo icon-only"
+        />
+
+        <nav class="nav">
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">grid_view</span>
+              <span class="link-txt">Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">shopping_cart</span>
+              <span class="link-txt">E-Commerce</span>
+              <span class="material-icons-outlined icon submenu-indicator">
+                chevron_right
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">calendar_month</span>
+              <span class="link-txt">Calendar</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">mail</span>
+              <span class="link-txt">Mail</span>
+              <span class="badge warning">8</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">message</span>
+              <span class="link-txt">Chat</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">task</span>
+              <span class="link-txt">Tasks</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item active">
+              <span class="material-icons-outlined icon">layers</span>
+              <span class="link-txt">Projects</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">folder</span>
+              <span class="link-txt">Files</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">text_snippet</span>
+              <span class="link-txt">Notes</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="item">
+              <span class="material-icons-outlined icon">contacts</span>
+              <span class="link-txt">Contacts</span>
+            </a>
+          </li>
+        </nav>
+      </div>
+
+      <div class="content projects-details">
+        <header class="app-header">
+          <button class="btn light icon-only app-sidebar-toggle">
+            <span class="material-icons-outlined icon">menu</span>
+          </button>
+
+          <button class="btn light icon-only">
+            <span class="material-icons-outlined icon">search</span>
+          </button>
+
+          <button class="btn light icon-only notification">
+            <span class="material-icons-outlined icon">notifications</span>
+            <span class="dot"></span>
+          </button>
+
+          <span class="divider tall"></span>
+
+          <button class="user-profile-dropdown">
+            <div class="mini-profile">
+              <img
+                src="./images/user4.png"
+                alt="User profile picture"
+                class="avatar round"
+              />
+              <div class="text-info">
+                <span class="title text-ellipsis">John Wick</span>
+              </div>
+            </div>
+
+            <span class="material-icons-outlined icon">arrow_drop_down</span>
+          </button>
+        </header>
+
+        <div class="grid">
+          <div class="related-projects-list">Projects list</div>
+          <main class="container">description</main>
+          <div class="sidebar">Sidebar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </body>
+</html>

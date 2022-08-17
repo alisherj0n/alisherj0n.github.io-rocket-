@@ -1,0 +1,20 @@
+.projects-details .grid {
+  display: grid;
+  grid-template-columns: 380px 1fr 320px;
+}
+
+/* Breakpoint-xl */
+@media (max-width: 1200px) {
+  .projects-details .grid {
+    grid-template-columns: 1fr 250px;
+  }
+  .projects-details .projects-list {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-details .grid {
+    grid-template-columns: 1fr;
+  }
+}
