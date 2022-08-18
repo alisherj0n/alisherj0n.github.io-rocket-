@@ -33,7 +33,6 @@ select {
 input,
 textarea {
   padding: var(--form-control-padding-y) var(--form-control-padding-x);
-  font-family: var(--font-family);
   width: 100%;
 }
 

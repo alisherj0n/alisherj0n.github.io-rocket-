@@ -8,20 +8,23 @@
   border-right: 1px solid var(--color-border);
 }
 
-.projects-details .related-projects-list > * {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.projects-details .related-projects-list input {
+.projects-details .related-projects-list .searchbar input {
   --form-control-padding-y: 2rem;
   --form-control-padding-x: 1rem;
   border: none;
+}
+
+.projects-details .related-projects-list .nav > *,
+.projects-details .related-projects-list .searchbar {
+  border-bottom: 1px solid var(--color-border);
 }
 
 .projects-details .related-projects-list .nav {
   list-style: none;
   overflow-y: auto;
   height: calc(100vh - 130px);
+  margin: 0;
+  padding: 0;
 }
 
 /* Breakpoint-xl */
