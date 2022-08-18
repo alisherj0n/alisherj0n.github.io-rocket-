@@ -32,6 +32,10 @@
 .projects-list .footer {
   padding: var(--list-view-padding);
 }
+.projects-list table thead th:first-child,
+.projects-list table tbody td:first-child {
+  padding-left: 1.5rem;
+}
 
 .projects-list .project-name,
 .projects-list .progress .progress-bar {
