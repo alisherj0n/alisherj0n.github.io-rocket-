@@ -4,6 +4,7 @@ input[type="checkbox"] {
   justify-content: center;
   position: relative;
   appearance: none;
+  padding: 0;
 }
 
 input[type="checkbox"]::before,
@@ -11,7 +12,6 @@ input[type="checkbox"]::after {
   font-family: "Material Icons";
   font-size: 1.25rem;
   color: var(--color-body-light);
-  position: absolute;
 }
 
 input[type="checkbox"]::before {
