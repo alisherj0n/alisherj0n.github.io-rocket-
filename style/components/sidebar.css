@@ -20,10 +20,6 @@
   display: none;
 }
 
-.app > .sidebar .nav {
-  list-style: none;
-}
-
 .app > .sidebar .nav .item {
   --sidebar-padding-x: 1.7rem;
   padding: var(--sidebar-padding-y) var(--sidebar-padding-x);

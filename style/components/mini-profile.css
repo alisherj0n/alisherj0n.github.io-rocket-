@@ -22,3 +22,11 @@
 .mini-profile .title {
   line-height: 1.4;
 }
+
+.mini-profile .subtitle {
+  color: var(--color-body);
+}
+
+.mini-profile .avatar.large {
+  margin-right: 0.3rem;
+}

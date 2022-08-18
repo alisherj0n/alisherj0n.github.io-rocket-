@@ -9,10 +9,6 @@
   background-color: #fff;
 }
 
-.projects-details .related-projects-list .mini-profile .subtitle {
-  color: var(--color-body);
-}
-
 .related-projects-list-item .footer {
   display: flex;
   align-items: center;

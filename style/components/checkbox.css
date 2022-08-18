@@ -3,7 +3,6 @@ input[type="checkbox"] {
   appearance: none;
   /*   Otherwise inherits border  from input  */
   border: none;
-  height: 0;
 }
 
 input[type="checkbox"]::before,
@@ -12,7 +11,7 @@ input[type="checkbox"]::after {
   font-size: 1.25rem;
   color: var(--color-body-light);
   position: absolute;
-  top: 1px;
+  top: 5px;
   right: 0;
 }
 

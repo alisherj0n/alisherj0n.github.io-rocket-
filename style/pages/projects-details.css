@@ -14,17 +14,14 @@
   border: none;
 }
 
-.projects-details .related-projects-list .nav > *,
-.projects-details .related-projects-list .searchbar {
+.projects-details .related-projects-list .searchbar,
+.projects-details .related-projects-list .nav > * {
   border-bottom: 1px solid var(--color-border);
 }
 
 .projects-details .related-projects-list .nav {
-  list-style: none;
   overflow-y: auto;
   height: calc(100vh - 130px);
-  margin: 0;
-  padding: 0;
 }
 
 /* Breakpoint-xl */

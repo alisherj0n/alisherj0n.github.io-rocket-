@@ -14,7 +14,7 @@ textarea {
 }
 
 select,
-input {
+input:not(input[type="checkbox"]) {
   height: 2.625rem;
 }
 
