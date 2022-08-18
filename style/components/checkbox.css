@@ -1,8 +1,10 @@
 input[type="checkbox"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   appearance: none;
-  /*   Otherwise inherits border  from input  */
-  border: none;
+  margin: 0;
 }
 
 input[type="checkbox"]::before,
@@ -10,9 +12,6 @@ input[type="checkbox"]::after {
   font-family: "Material Icons";
   font-size: 1.25rem;
   color: var(--color-body-light);
-  position: absolute;
-  top: 5px;
-  right: 0;
 }
 
 input[type="checkbox"]::before {
