@@ -16,3 +16,13 @@ table td {
   border-bottom: 1px solid var(--color-border);
   padding: 0.8rem 1rem;
 }
+
+table thead th:first-child,
+table tbody td:first-child {
+  padding-left: 1.5rem;
+}
+
+table thead th:last-child,
+table tbody td:last-child {
+  padding-right: 1.5rem;
+}
