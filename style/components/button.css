@@ -82,6 +82,10 @@
   color: var(--color-success);
 }
 
+.btn.transparent {
+  color: var(--color-primary);
+}
+
 .btn.primary-light:hover {
   background-color: var(--color-primary);
   color: #fff;
@@ -100,6 +104,10 @@
 .btn.success-light:hover {
   background-color: var(--color-success);
   color: #fff;
+}
+
+.btn.transparent:hover {
+  background-color: var(--color-primary-light);
 }
 
 .btn:disabled,
