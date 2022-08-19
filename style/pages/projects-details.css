@@ -3,6 +3,10 @@
   grid-template-columns: 380px 1fr 320px;
 }
 
+.projects-details .grid .container {
+  --container-padding: 1.8rem;
+}
+
 .projects-details .related-projects-list {
   background-color: var(--color-bg);
   border-right: 1px solid var(--color-border);
@@ -22,6 +26,24 @@
 .projects-details .related-projects-list .nav {
   overflow-y: auto;
   height: calc(100vh - 130px);
+}
+
+.projects-details .project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.projects-details .project .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projects-details .project .header .mini-profile .title {
+  font-size: 1.25rem;
 }
 
 /* Breakpoint-xl */
