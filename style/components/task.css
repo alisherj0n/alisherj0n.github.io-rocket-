@@ -1,0 +1,60 @@
+.task {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: 0.2rem 0.5rem 0.2rem 3rem;
+  margin-left: -1.3rem;
+  margin-right: -1.3rem;
+  transition: background-color var(--transition-duration);
+  position: relative;
+  height: 2.8rem;
+}
+
+.task:hover {
+  background-color: var(--color-bg);
+}
+
+.task .title {
+  color: var(--color-heading);
+  margin-right: auto;
+}
+
+.task .actions {
+  display: none;
+  gap: 0.2rem;
+}
+
+.task:before,
+.task::after {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 1.2rem;
+}
+
+.task::before {
+  background-image: url(/images/Unchecked.svg);
+}
+
+.task::after {
+  background-image: url(/images/Checked.svg);
+  display: none;
+}
+
+.task.checked:before {
+  display: none;
+}
+
+.task.checked:after {
+  display: block;
+}
+
+.task.checked .title {
+  text-decoration: line-through;
+}
+
+.task:hover .actions {
+  display: flex;
+}
