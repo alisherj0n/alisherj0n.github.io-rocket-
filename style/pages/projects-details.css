@@ -52,6 +52,18 @@
   justify-content: space-around;
 }
 
+.projects-details .project .checklist {
+  margin-bottom: 10rem;
+}
+
+.projects-details .project .checklist .status-bar {
+  margin-bottom: 1rem;
+}
+
+.projects-details .project .checklist .task-add {
+  margin-left: auto;
+}
+
 /* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {
