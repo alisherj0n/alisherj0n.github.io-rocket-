@@ -1,0 +1,31 @@
+.mini-widget {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mini-widget .text-info {
+  width: 100%;
+  overflow: hidden;
+  color: var(--color-heading);
+}
+
+.mini-widget .title,
+.mini-widget .subtitle {
+  display: block;
+  font-weight: 400;
+  width: 99%;
+}
+
+.mini-widget .title {
+  line-height: 1.5;
+}
+
+.mini-widget .title {
+  color: var(--color-body-light);
+}
+.mini-widget .subtitle {
+  color: var(--color-heading);
+}
