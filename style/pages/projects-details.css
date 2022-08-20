@@ -1,6 +1,6 @@
 .projects-details .grid {
   display: grid;
-  grid-template-columns: 380px 1fr 320px;
+  grid-template-columns: 350px 1fr 300px;
 }
 
 .projects-details .related-projects-list {
@@ -22,6 +22,20 @@
 .projects-details .related-projects-list .nav {
   overflow-y: auto;
   height: calc(100vh - 130px);
+}
+
+.projects-details .container {
+  --container-padding: 1.8rem;
+}
+
+.projects-details .project .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-details .project .header .mini-profile .title {
+  font-size: 1.2rem;
 }
 
 /* Breakpoint-xl */
