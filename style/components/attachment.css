@@ -1,0 +1,17 @@
+.attachment {
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--border-radius);
+}
+
+.attachment.small {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.attachment.file {
+  width: 2rem;
+  height: 2.5rem;
+  border-radius: 0;
+}

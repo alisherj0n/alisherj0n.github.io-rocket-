@@ -1,0 +1,10 @@
+.attachments {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.attachments .more-items {
+  --button-padding-x: 0.7rem;
+}
