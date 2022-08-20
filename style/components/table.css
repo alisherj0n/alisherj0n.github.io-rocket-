@@ -1,4 +1,6 @@
 table {
+  --table-side-padding: 1.5rem;
+
   border-collapse: collapse;
   width: 100%;
 }
@@ -19,10 +21,10 @@ table td {
 
 table thead th:first-child,
 table tbody td:first-child {
-  padding-left: 1.5rem;
+  padding-left: var(--table-side-padding);
 }
 
 table thead th:last-child,
 table tbody td:last-child {
-  padding-right: 1.5rem;
+  padding-right: var(--table-side-padding);
 }
