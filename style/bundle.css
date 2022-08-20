@@ -10,6 +10,7 @@
 @import url(./components/overlay.css);
 
 @import url(./components/badge.css);
+@import url(./components/attachment.css);
 @import url(./components/round-badge.css);
 @import url(./components/button.css);
 @import url(./components/avatar.css);
@@ -20,6 +21,7 @@
 @import url(./components/dialog.css);
 @import url(./components/image-uploader.css);
 @import url(./components/tabs.css);
+@import url(./components/attachments.css);
 @import url(./components/comment-section.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);

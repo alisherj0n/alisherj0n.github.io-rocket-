@@ -35,6 +35,10 @@
   justify-content: space-between;
 }
 
+.projects-details .project .content-title {
+  margin-bottom: 0.5rem;
+}
+
 .projects-details .project .header {
   display: flex;
   align-items: center;
@@ -52,16 +56,22 @@
   justify-content: space-around;
 }
 
-.projects-details .project .checklist {
-  margin-bottom: 10rem;
-}
-
 .projects-details .project .checklist .status-bar {
   margin-bottom: 1rem;
 }
 
 .projects-details .project .checklist .task-add {
   margin-left: auto;
+}
+
+.projects-details .activity-section .tabs {
+  margin-left: -1.8rem;
+  margin-right: -1.8rem;
+  padding: 0 1.8rem;
+}
+
+.projects-details .activity-section > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 /* Breakpoint-xl */
