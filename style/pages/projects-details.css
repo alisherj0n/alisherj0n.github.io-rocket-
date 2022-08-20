@@ -32,6 +32,10 @@
   margin-bottom: 2rem;
 }
 
+.projects-details .project .content-title {
+  margin-bottom: 0.7rem;
+}
+
 .projects-details .project .header {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,12 @@
 
 .projects-details .project .header .mini-profile .title {
   font-size: 1.2rem;
+}
+
+.projects-details .project .details .content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
 /* Breakpoint-xl */
