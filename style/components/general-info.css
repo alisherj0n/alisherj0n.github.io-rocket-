@@ -1,0 +1,16 @@
+.general-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.general-info .title {
+  color: var(--color-body-light);
+  display: block;
+  margin-bottom: 0.1rem;
+  width: 99%;
+}
+
+.general-info .subtitle {
+  color: var(--color-heading);
+  width: 99%;
+}
