@@ -1,0 +1,9 @@
+.relevant-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--border-radius);
+}

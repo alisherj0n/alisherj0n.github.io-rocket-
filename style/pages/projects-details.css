@@ -28,6 +28,10 @@
   --container-padding: 1.8rem;
 }
 
+.projects-details .project > * {
+  margin-bottom: 2rem;
+}
+
 .projects-details .project .header {
   display: flex;
   justify-content: space-between;
