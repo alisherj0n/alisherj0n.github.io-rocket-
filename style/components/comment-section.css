@@ -1,0 +1,27 @@
+.comment-section {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.7rem;
+}
+
+.comment-section textarea {
+  border: none;
+  resize: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.comment-section .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-section .actions {
+  display: flex;
+  align-items: center;
+}
+
+.comment-section .footer .btn {
+  font-size: 0.8rem;
+}
