@@ -56,6 +56,10 @@
   margin-bottom: 1rem;
 }
 
+.projects-details .project .checklist .tasks .add-task {
+  margin-left: auto;
+}
+
 /* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {
