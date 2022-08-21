@@ -1,0 +1,15 @@
+.user-comment {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-comment .title {
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.user-comment .time {
+  color: var(--color-body-light);
+}
