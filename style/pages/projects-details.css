@@ -52,6 +52,10 @@
   gap: 4rem;
 }
 
+.projects-details .project .checklist .progress-bar {
+  margin-bottom: 1rem;
+}
+
 /* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {
