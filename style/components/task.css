@@ -1,0 +1,45 @@
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-heading);
+  border-radius: var(--border-radius);
+  height: 2.625rem;
+  padding: 0.1rem 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  transition: background-color var(--transition-duration);
+}
+
+.task:before {
+  content: "\e836";
+  font-family: "Material Icons Round";
+  color: var(--color-border);
+  font-size: 1.2rem;
+}
+
+.task.checked::before {
+  content: "\e2e6";
+  color: var(--color-primary);
+}
+
+.task .task-name {
+  margin-right: auto;
+}
+
+.task.checked .task-name {
+  text-decoration: line-through;
+}
+
+.task .actions {
+  display: none;
+  align-items: center;
+}
+
+.task:hover {
+  background-color: var(--color-bg);
+}
+
+.task:hover .actions {
+  display: flex;
+}
