@@ -13,3 +13,7 @@
 .user-comment .time {
   color: var(--color-body-light);
 }
+
+.user-comment .comment {
+  margin-bottom: 0.5rem;
+}

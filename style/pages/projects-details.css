@@ -28,7 +28,7 @@
   --container-padding: 1.8rem;
 }
 
-.projects-details .project > * {
+.projects-details .project > *:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -58,6 +58,55 @@
 
 .projects-details .project .checklist .tasks .add-task {
   margin-left: auto;
+}
+
+.projects-details .activity .tabs {
+  margin-left: -1.8rem;
+  margin-right: -1.8rem;
+  padding: 0 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-details .activity .comment-section {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-details .activity .comment-section textarea {
+  border: none;
+  border-radius: 0;
+  resize: none;
+  padding: 0;
+}
+.projects-details .activity .comment-section .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-details .activity .comment-section .footer .actions {
+  display: flex;
+  align-items: center;
+}
+
+.projects-details .activity .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-details .activity .comments .attachments {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projects-details .activity .comments .attachments .more-items {
+  --button-padding-x: 1rem;
+  --button-padding-y: 1.5rem;
 }
 
 /* Breakpoint-xl */
