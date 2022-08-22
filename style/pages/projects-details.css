@@ -34,7 +34,7 @@
 }
 
 .projects-details .project .content-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .projects-details .project .header {
@@ -44,13 +44,13 @@
 }
 
 .projects-details .project .header .mini-profile .title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .projects-details .project .details .content {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .projects-details .project .description .task-description {

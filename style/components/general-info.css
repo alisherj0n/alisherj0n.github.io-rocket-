@@ -1,12 +1,12 @@
 .general-info {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .general-info .title {
   color: var(--color-body-light);
   display: block;
-  margin-bottom: 0.1rem;
   width: 99%;
 }
 

@@ -1,11 +1,11 @@
 .task {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   color: var(--color-heading);
   border-radius: var(--border-radius);
   height: 2.625rem;
-  padding: 0.1rem 1rem;
+  padding: 0 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
   transition: background-color var(--transition-duration);
@@ -15,7 +15,7 @@
   content: "\e836";
   font-family: "Material Icons Round";
   color: var(--color-border);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .task.checked::before {

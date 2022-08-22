@@ -5,7 +5,7 @@
 
 .user-comment .title {
   color: var(--color-heading);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   display: inline-block;
 }
 
@@ -15,5 +15,5 @@
 }
 
 .user-comment .comment {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
