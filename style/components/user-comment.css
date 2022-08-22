@@ -7,11 +7,11 @@
   color: var(--color-heading);
   margin-bottom: 0.5rem;
   display: inline-block;
-  font-weight: 500;
 }
 
 .user-comment .time {
   color: var(--color-body-light);
+  margin-left: 0.5rem;
 }
 
 .user-comment .comment {
