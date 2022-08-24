@@ -4,6 +4,9 @@
   border-right: 1px solid var(--color-border);
   min-height: 100vh;
   padding: var(--sidebar-padding-y) var(--sidebar-padding-x);
+  position: sticky;
+  top: 0px;
+  align-self: start;
 }
 
 .app > .sidebar .logo {

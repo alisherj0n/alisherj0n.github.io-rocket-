@@ -6,6 +6,9 @@
 .projects-details .related-projects-list {
   background-color: var(--color-bg);
   border-right: 1px solid var(--color-border);
+  position: sticky;
+  top: 66px;
+  align-self: start;
 }
 
 .projects-details .related-projects-list .searchbar input {
