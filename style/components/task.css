@@ -34,15 +34,17 @@
 .task .actions {
   display: flex;
   align-items: center;
-  margin-right: -1rem;
+  margin-right: -0.8rem;
   opacity: 0;
   transition: opacity var(--transition-duration);
 }
 
-.task:hover {
+.task:hover,
+.task:focus {
   background-color: var(--color-bg);
 }
 
-.task:hover .actions {
+.task:hover .actions,
+.task:focus .actions {
   opacity: 1;
 }
