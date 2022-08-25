@@ -4,6 +4,7 @@
   gap: 1rem;
   color: var(--color-heading);
   border-radius: var(--border-radius);
+  border: 1px solid transparent;
   height: 2.625rem;
   padding: 0 1rem;
   margin-left: -1rem;
@@ -39,12 +40,14 @@
   transition: opacity var(--transition-duration);
 }
 
-.task:hover,
-.task:focus {
+.task:hover {
   background-color: var(--color-bg);
 }
 
-.task:hover .actions,
-.task:focus .actions {
+.task:hover .actions {
   opacity: 1;
+}
+
+.task:focus {
+  border-color: var(--color-primary);
 }
