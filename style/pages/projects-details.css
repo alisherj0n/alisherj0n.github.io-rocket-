@@ -99,6 +99,7 @@
   border-radius: var(--border-radius);
   padding: 0.55rem;
   margin-bottom: 1.5rem;
+  transition: border-color var(--transition-duration);
 }
 
 .projects-details .activity .comment-section:focus-within {
