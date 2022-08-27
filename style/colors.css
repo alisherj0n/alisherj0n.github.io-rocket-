@@ -1,5 +1,4 @@
 :root {
-  --color-background: #e6e6e6;
   --color-heading: #3f434a;
   --color-shadow: #a4a5a566;
   --color-body-light: #8a9099;
@@ -25,8 +24,4 @@
   --color-success-hover: #79cc91;
   --color-success-light: rgba(73, 201, 109, 0.1);
   --color-success-dark: #27b950;
-  --color-dark-blue: #009eb3;
-  --color-orange: #ff965d;
-  --color-purple: #b656eb;
-  --color-pink: #f9ddc5;
 }
