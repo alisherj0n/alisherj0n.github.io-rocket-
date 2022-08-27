@@ -44,6 +44,12 @@
   border-radius: var(--border-radius-sm);
 }
 
+.btn.large {
+  --button-padding-x: 1.3rem;
+  --button-padding-y: 0.56rem;
+  height: var(--form-control-height-lg);
+}
+
 .btn.small .icon {
   font-size: 1rem;
 }
