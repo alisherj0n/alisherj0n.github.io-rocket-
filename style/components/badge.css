@@ -1,18 +1,17 @@
 .badge {
-  --border-radius-sm: 6px;
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.5rem;
   white-space: nowrap;
   background-color: var(--color-bg-light);
   color: var(--color-heading);
   padding: 0.5px 5px;
   font-size: 0.7rem;
-  border-radius: var(--border-radius-sm);
+  border-radius: 6px;
 }
 
 .badge .icon {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .badge.wide {
@@ -23,10 +22,6 @@
 .badge.large {
   font-size: 0.875rem;
   padding: 0.2rem 0.5rem;
-}
-
-.badge.large.icon {
-  padding-left: 0.4rem;
 }
 
 .badge.warning {

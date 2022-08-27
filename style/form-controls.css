@@ -13,11 +13,6 @@ textarea {
   outline: none;
 }
 
-select,
-input:not(input[type="checkbox"]) {
-  height: 2.625rem;
-}
-
 select {
   padding: var(--form-control-padding-y)
     calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
