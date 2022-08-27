@@ -47,7 +47,3 @@
 .task:hover .actions {
   opacity: 1;
 }
-
-.task:focus {
-  border-color: var(--color-primary);
-}

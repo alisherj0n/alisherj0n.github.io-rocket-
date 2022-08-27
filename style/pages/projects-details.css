@@ -70,6 +70,12 @@
   margin-bottom: 1rem;
 }
 
+.projects-details .project .checklist .tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .projects-details .project .checklist .tasks .add-task {
   margin-left: auto;
 }
