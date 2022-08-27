@@ -8,10 +8,6 @@ a {
   transition: color var(--transition-duration);
 }
 
-.icon {
-  font-size: 1.3rem;
-}
-
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: var(--font-family);
