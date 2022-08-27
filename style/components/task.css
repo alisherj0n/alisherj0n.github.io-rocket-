@@ -40,10 +40,14 @@
   transition: opacity var(--transition-duration);
 }
 
-.task:hover {
+.task:hover,
+.task:focus,
+.task:focus-within {
   background-color: var(--color-bg);
 }
 
-.task:hover .actions {
+.task:hover .actions,
+.task:focus .actions,
+.task:focus-within .actions {
   opacity: 1;
 }
