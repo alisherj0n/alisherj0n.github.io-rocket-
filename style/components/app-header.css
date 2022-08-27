@@ -36,8 +36,8 @@
   border-radius: 50%;
   background-color: var(--color-danger);
   position: absolute;
-  top: 0.6rem;
-  right: 0.7rem;
+  top: 10px;
+  right: 12px;
 }
 
 /* ----breakpoint-sm---- */
