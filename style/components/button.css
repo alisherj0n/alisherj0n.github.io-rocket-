@@ -37,7 +37,6 @@
 }
 
 .btn.small {
-  --form-control-height: 2.25rem;
   --button-padding-y: 0.4rem;
   --button-padding-x: 0.75rem;
   font-size: 0.875rem;
@@ -128,21 +127,132 @@
   background-color: var(--color-success-dark);
 }
 
-.btn.primary-light {
+.btn.light {
+  background-color: #fff;
+  border-block-color: transparent;
+}
+
+.btn.light:hover {
+  background-color: var(--color-bg-light);
+}
+
+.btn.light.primary {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
 }
 
-.btn.primary-light:hover,
-.btn.primary-light:focus {
+.btn.light.primary:hover,
+.btn.light.primary:focus {
   background-color: var(--color-primary);
   color: #fff;
 }
 
-.btn.primary-light:focus {
+.btn.light.primary:focus {
   box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
 }
 
-.btn.primary-light:active {
+.btn.light.primary:active {
   background-color: var(--color-primary-dark);
+}
+
+.btn.light.warning {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.btn.light.warning:hover,
+.btn.light.warning:focus {
+  background-color: var(--color-warning);
+  color: #fff;
+}
+
+.btn.light.warning:focus {
+  box-shadow: 0px 0px 0px 3px rgba(229, 110, 25, 0.3);
+}
+
+.btn.light.warning:active {
+  background-color: var(--color-warning-dark);
+}
+
+.btn.light.danger {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.btn.light.danger:hover,
+.btn.light.danger:focus {
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+.btn.light.danger:focus {
+  box-shadow: 0px 0px 0px 3px rgba(253, 121, 114, 0.3);
+}
+
+.btn.light.danger:active {
+  background-color: var(--color-danger-dark);
+}
+
+.btn.light.success {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.btn.light.success:hover,
+.btn.light.success:focus {
+  background-color: var(--color-success);
+  color: #fff;
+}
+
+.btn.light.success:focus {
+  box-shadow: 0px 0px 0px 3px rgba(73, 201, 109, 0.3);
+}
+
+.btn.light.success:active {
+  background-color: var(--color-success-dark);
+}
+
+.btn.link {
+  background-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.btn.link.primary {
+  color: var(--color-primary);
+}
+
+.btn.link.primary:hover,
+.btn.link.primary:focus,
+.btn.link.primary:active {
+  background-color: var(--color-primary-light);
+}
+
+.btn.link.warning {
+  color: var(--color-warning);
+}
+
+.btn.link.warning:hover,
+.btn.link.warning:focus,
+.btn.link.warning:active {
+  background-color: var(--color-warning-light);
+}
+
+.btn.link.danger {
+  color: var(--color-danger);
+}
+
+.btn.link.danger:hover,
+.btn.link.danger:focus,
+.btn.link.danger:active {
+  background-color: var(--color-danger-light);
+}
+
+.btn.link.success {
+  color: var(--color-success);
+}
+
+.btn.link.success:hover,
+.btn.link.success:focus,
+.btn.link.success:active {
+  background-color: var(--color-success-light);
 }
