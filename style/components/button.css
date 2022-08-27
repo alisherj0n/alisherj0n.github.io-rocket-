@@ -1,7 +1,6 @@
 :root {
   --button-padding-x: 0.9rem;
   --button-padding-y: 0.4rem;
-  --button-height: 2.625rem;
 }
 
 .btn {
@@ -14,7 +13,7 @@
   padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 3px solid transparent;
-  height: var(--button-height);
+  height: var(--form-control-height);
   position: relative;
   outline: none;
   border-radius: var(--border-radius);
@@ -38,7 +37,7 @@
 }
 
 .btn.small {
-  --button-height: 2.25rem;
+  --form-control-height: 2.25rem;
   --button-padding-y: 0.4rem;
   --button-padding-x: 0.75rem;
   font-size: 0.875rem;
@@ -50,7 +49,7 @@
 }
 
 .btn.icon-only {
-  width: var(--button-height);
+  width: var(--form-control-height);
 }
 
 .btn.primary {
