@@ -1,0 +1,61 @@
+.project-task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-heading);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: 0.125rem 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  transition: background-color var(--transition-duration);
+}
+
+.project-task .task-name {
+  margin-right: auto;
+}
+
+.project-task .unchecked-state {
+  color: var(--color-border);
+}
+
+.project-task.checked .unchecked-state {
+  display: none;
+}
+
+.project-task .checked-state {
+  color: var(--color-primary);
+  display: none;
+}
+
+.project-task.checked .checked-state {
+  display: block;
+}
+
+.project-task.checked .task-name {
+  text-decoration: line-through;
+}
+
+.project-task .actions {
+  display: flex;
+  align-items: center;
+  margin-right: -0.8rem;
+  opacity: 0;
+  transition: opacity var(--transition-duration);
+}
+
+.project-task.add-project-task {
+  margin-left: auto;
+}
+
+.project-task:hover,
+.project-task:focus,
+.project-task:focus-within {
+  background-color: var(--color-bg);
+}
+
+.project-task:hover .actions,
+.project-task:focus .actions,
+.project-task:focus-within .actions {
+  opacity: 1;
+}

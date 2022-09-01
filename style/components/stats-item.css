@@ -1,16 +1,16 @@
-.general-info {
+.stats-item {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.general-info .title {
+.stats-item .title {
   color: var(--color-body-light);
   display: block;
   width: 99%;
 }
 
-.general-info .subtitle {
+.stats-item .subtitle {
   color: var(--color-heading);
   width: 99%;
 }

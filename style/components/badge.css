@@ -16,8 +16,22 @@
   font-size: 0.7rem;
 }
 
+.badge.large {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--border-radius);
+}
+
+.badge.icon-only {
+  justify-content: center;
+}
+
 .badge .icon {
   font-size: 1.1rem;
+}
+
+.badge.large .icon {
+  font-size: 1.3rem;
 }
 
 .badge.primary {

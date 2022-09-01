@@ -11,10 +11,9 @@
 
 @import url(./components/badge.css);
 @import url(./components/attachment.css);
-@import url(./components/relevant-badge.css);
 @import url(./components/button.css);
 @import url(./components/avatar.css);
-@import url(./components/task.css);
+@import url(./components/project-task.css);
 @import url(./components/checkbox.css);
 @import url(./components/dropdown.css);
 @import url(./form-controls.css);
@@ -23,8 +22,8 @@
 @import url(./components/tabs.css);
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
-@import url(./components/user-comment.css);
-@import url(./components/general-info.css);
+@import url(./components/comment-section.css);
+@import url(./components/stats-item.css);
 @import url(./components/progress-bar.css);
 @import url(./components/drawer.css);
 @import url(./components/table.css);

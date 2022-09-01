@@ -7,7 +7,7 @@
   background-color: var(--color-bg);
   border-right: 1px solid var(--color-border);
   position: sticky;
-  top: 66px;
+  top: var(--app-header-height);
   align-self: start;
 }
 
@@ -33,12 +33,10 @@
   overflow-x: hidden;
 }
 
-.projects-details .project > *:not(:last-child) {
-  margin-bottom: 2.5rem;
-}
-
-.projects-details .project .content-title {
-  margin-bottom: 0.8rem;
+.projects-details .project {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .projects-details .project .header {
@@ -51,19 +49,14 @@
   font-size: 1.25rem;
 }
 
-.projects-details .project .details {
+.projects-details .project .stats {
   overflow-x: auto;
 }
 
-.projects-details .project .details .content {
+.projects-details .project .stats .content {
   display: flex;
   align-items: center;
   gap: 5rem;
-}
-
-.projects-details .project .description .task-description {
-  margin-top: -5px;
-  margin-bottom: -5px;
 }
 
 .projects-details .project .checklist .progress-bar {
@@ -76,15 +69,20 @@
   gap: 3px;
 }
 
-.projects-details .project .checklist .tasks .add-task {
-  margin-left: auto;
+.projects-details .activity .tabs {
+  margin-left: calc(var(--container-padding) * -1);
+  margin-right: calc(var(--container-padding) * -1);
+  padding: 0 var(--container-padding);
 }
 
-.projects-details .activity .tabs {
-  margin-left: -1.8rem;
-  margin-right: -1.8rem;
-  padding: 0 1.8rem;
-  margin-bottom: 1.5rem;
+.projects-details .activity .tabs .content-title {
+  margin-bottom: 0;
+}
+
+.projects-details .activity {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .projects-details .activity .tabs .tab {
@@ -100,54 +98,6 @@
   color: var(--color-primary);
 }
 
-.projects-details .activity .comment-section {
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  padding: 0.55rem;
-  margin-bottom: 1.5rem;
-  transition: border-color var(--transition-duration);
-}
-
-.projects-details .activity .comment-section:focus-within {
-  border-color: var(--color-primary);
-}
-
-.projects-details .activity .comment-section textarea {
-  border: none;
-  border-radius: 0;
-  resize: none;
-  padding: 0 0.4rem;
-}
-
-.projects-details .activity .comment-section .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.projects-details .activity .comment-section .footer .actions {
-  display: flex;
-  align-items: center;
-}
-
-.projects-details .activity .comments {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.projects-details .activity .comments .attachments {
-  padding: 0.5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.projects-details .activity .comments .attachments .more-items {
-  --button-padding-x: 1rem;
-  --button-padding-y: 1.5rem;
-}
-
 /* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {
@@ -160,7 +110,7 @@
 
 /*  Breakpoint-lg */
 @media (max-width: 992px) {
-  .projects-details .project .details .content {
+  .projects-details .project .stats .content {
     gap: 2rem;
   }
 }

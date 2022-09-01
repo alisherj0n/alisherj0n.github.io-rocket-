@@ -1,4 +1,6 @@
 .photo-attachment {
-  max-width: 4.5rem;
+  width: 4.5rem;
   border-radius: var(--border-radius);
+  height: 4.5rem;
+  object-fit: cover;
 }

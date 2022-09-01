@@ -1,6 +1,5 @@
 :root {
   --border-radius-xl: 20px;
-  --border-radius-lg: calc(var(--border-radius-xl) / 2);
   --border-radius: 14px;
   --border-radius-sm: 10px;
   --transition-duration: 0.2s;

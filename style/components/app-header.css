@@ -1,3 +1,7 @@
+:root {
+  --app-header-height: 66px;
+}
+
 .app-header {
   padding: 0.7rem var(--container-padding);
   border-bottom: 1px solid var(--color-border);
@@ -5,6 +9,7 @@
   display: flex;
   color: var(--color-heading);
   align-items: center;
+  height: var(--app-header-height);
   gap: 0.5rem;
   position: sticky;
   top: 0;

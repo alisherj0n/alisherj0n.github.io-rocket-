@@ -1,0 +1,63 @@
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comment-section .comment-input {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.55rem;
+  transition: border-color var(--transition-duration);
+}
+
+.comment-section .comment-input:focus-within {
+  border-color: var(--color-primary);
+}
+
+.comment-section .comment-input textarea {
+  border: none;
+  border-radius: 0;
+  resize: none;
+  padding: 0 0.4rem;
+}
+
+.comment-section .comment-input .actions {
+  display: flex;
+}
+
+.comment-section .comment-input .actions .submit-comment {
+  margin-right: auto;
+}
+
+.comment-section .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.comment-section .comments .attachments {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comment-section .comments .comment {
+  display: flex;
+  gap: 1rem;
+}
+
+.comment-section .comments .comment .user-name {
+  color: var(--color-heading);
+  margin-bottom: 0.2rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.comment-section .comments .comment .time {
+  color: var(--color-body-light);
+}
+
+.comment-section .comments .comment .text {
+  margin-bottom: 0.5rem;
+}
