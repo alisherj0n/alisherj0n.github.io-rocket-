@@ -36,15 +36,14 @@
   gap: 2rem;
 }
 
-.comment-section .comments .attachments {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
+.comment-section .comments .attachments,
 .comment-section .comments .comment {
   display: flex;
   gap: 1rem;
+}
+
+.comment-section .comments .attachments {
+  align-items: center;
 }
 
 .comment-section .comments .comment .user-name {

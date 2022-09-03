@@ -24,7 +24,7 @@
 
 .projects-details .related-projects-list .nav {
   overflow-y: auto;
-  height: calc(100vh - 130px);
+  height: calc(100vh - (var(--app-header-height) + 64px));
 }
 
 .projects-details .container {
@@ -33,16 +33,25 @@
   overflow-x: hidden;
 }
 
-.projects-details .project {
+.projects-details .project,
+.projects-details .project .checklist .tasks,
+.projects-details .activity {
   display: flex;
   flex-direction: column;
+}
+
+.projects-details .project {
   gap: 2.5rem;
 }
 
-.projects-details .project .header {
+.projects-details .project .header,
+.projects-details .project .stats .content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.projects-details .project .header {
+  justify-content: space-between;
 }
 
 .projects-details .project .header .mini-profile .title {
@@ -54,8 +63,6 @@
 }
 
 .projects-details .project .stats .content {
-  display: flex;
-  align-items: center;
   gap: 5rem;
 }
 
@@ -64,9 +71,7 @@
 }
 
 .projects-details .project .checklist .tasks {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+  gap: 0.5rem;
 }
 
 .projects-details .activity .tabs {
@@ -80,8 +85,6 @@
 }
 
 .projects-details .activity {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
@@ -90,10 +93,7 @@
   background: transparent;
 }
 
-.projects-details .activity .tabs .tab.active {
-  color: var(--color-primary);
-}
-
+.projects-details .activity .tabs .tab.active,
 .projects-details .activity .tabs .tab.active .content-title {
   color: var(--color-primary);
 }
