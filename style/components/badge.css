@@ -54,22 +54,22 @@
   color: #fff;
 }
 
-.badge.primary-light {
+.badge.primary.light {
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
 }
 
-.badge.warning-light {
+.badge.warning.light {
   background-color: var(--color-warning-light);
   color: var(--color-warning-dark);
 }
 
-.badge.danger-light {
+.badge.danger.light {
   background-color: var(--color-danger-light);
   color: var(--color-danger-dark);
 }
 
-.badge.success-light {
+.badge.success.light {
   background-color: var(--color-success-light);
   color: var(--color-success-dark);
 }
