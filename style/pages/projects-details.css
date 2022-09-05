@@ -34,7 +34,6 @@
 }
 
 .projects-details .project,
-.projects-details .project .checklist .tasks,
 .projects-details .activity {
   display: flex;
   flex-direction: column;
@@ -54,7 +53,7 @@
   justify-content: space-between;
 }
 
-.projects-details .project .header .mini-profile .title {
+.projects-details .project .mini-profile .title {
   font-size: 1.25rem;
 }
 
@@ -70,10 +69,6 @@
   margin-bottom: 1rem;
 }
 
-.projects-details .project .checklist .tasks {
-  gap: 0.5rem;
-}
-
 .projects-details .activity .tabs {
   margin-left: calc(var(--container-padding) * -1);
   margin-right: calc(var(--container-padding) * -1);
@@ -86,11 +81,6 @@
 
 .projects-details .activity {
   gap: 2rem;
-}
-
-.projects-details .activity .tabs .tab {
-  border: none;
-  background: transparent;
 }
 
 .projects-details .activity .tabs .tab.active,

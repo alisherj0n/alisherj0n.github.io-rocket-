@@ -7,7 +7,7 @@
   white-space: nowrap;
   background-color: var(--color-bg-light);
   color: var(--color-heading);
-  padding: 0.3rem 0.5rem;
+  padding: var(--badge-padding-y) var(--badge-padding-x);
   border-radius: 6px;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .badge.large {
-  width: 3rem;
-  height: 3rem;
+  --badge-padding-y: 1rem;
+  --badge-padding-x: 1rem;
   border-radius: var(--border-radius);
 }
 
@@ -37,39 +37,43 @@
 .badge.primary {
   background-color: var(--color-primary);
   color: #fff;
+  border-bottom-color: var(--color-primary-dark);
 }
 
 .badge.warning {
   background-color: var(--color-warning);
   color: #fff;
+  border-bottom-color: var(--color-warning-dark);
 }
 
 .badge.danger {
   background-color: var(--color-danger);
   color: #fff;
+  border-bottom-color: var(--color-danger-dark);
 }
 
 .badge.success {
   background-color: var(--color-success);
   color: #fff;
+  border-bottom-color: var(--color-success-dark);
 }
 
-.badge.primary.light {
+.badge.light.primary {
   background-color: var(--color-primary-light);
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
-.badge.warning.light {
+.badge.light.warning {
   background-color: var(--color-warning-light);
-  color: var(--color-warning-dark);
+  color: var(--color-warning);
 }
 
-.badge.danger.light {
+.badge.light.danger {
   background-color: var(--color-danger-light);
-  color: var(--color-danger-dark);
+  color: var(--color-danger);
 }
 
-.badge.success.light {
+.badge.light.success {
   background-color: var(--color-success-light);
-  color: var(--color-success-dark);
+  color: var(--color-success);
 }

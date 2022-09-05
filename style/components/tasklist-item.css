@@ -1,4 +1,4 @@
-.project-task {
+.tasklist-item {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -11,32 +11,23 @@
   transition: background-color var(--transition-duration);
 }
 
-.project-task .task-name {
+.tasklist-item .text-info {
   margin-right: auto;
 }
 
-.project-task .unchecked-state {
+.tasklist-item .icon {
   color: var(--color-border);
 }
 
-.project-task.checked .unchecked-state {
-  display: none;
-}
-
-.project-task .checked-state {
+.tasklist-item .checked-state {
   color: var(--color-primary);
-  display: none;
 }
 
-.project-task.checked .checked-state {
-  display: block;
-}
-
-.project-task.checked .task-name {
+.tasklist-item.completed .task-name {
   text-decoration: line-through;
 }
 
-.project-task .actions {
+.tasklist-item .actions {
   display: flex;
   align-items: center;
   margin-right: -0.8rem;
@@ -44,18 +35,18 @@
   transition: opacity var(--transition-duration);
 }
 
-.project-task.add-project-task {
+.tasklist-item.add-tasklist-item {
   margin-left: auto;
 }
 
-.project-task:hover,
-.project-task:focus,
-.project-task:focus-within {
+.tasklist-item:hover,
+.tasklist-item:focus,
+.tasklist-item:focus-within {
   background-color: var(--color-bg);
 }
 
-.project-task:hover .actions,
-.project-task:focus .actions,
-.project-task:focus-within .actions {
+.tasklist-item:hover .actions,
+.tasklist-item:focus .actions,
+.tasklist-item:focus-within .actions {
   opacity: 1;
 }

@@ -130,7 +130,7 @@
 
 .btn.light {
   background-color: #fff;
-  border-block-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .btn.light:hover {

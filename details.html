@@ -670,14 +670,14 @@
                   <div class="progress" style="width: 50%"></div>
                 </div>
 
-                <ul class="tasks list-unstyled">
+                <div class="tasklist list-unstyled">
                   <li>
-                    <div role="button" class="project-task checked">
-                      <span class="material-icons unchecked-state">
-                        radio_button_unchecked
+                    <div role="button" class="tasklist-item completed">
+                      <span class="material-icons icon checked-state">
+                        task_alt
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name"><s>Create wireframes</s></span>
+
+                      <span class="text-info">Create wireframes</span>
 
                       <div class="actions">
                         <button class="btn small transparent icon-only">
@@ -696,12 +696,12 @@
                   </li>
 
                   <li>
-                    <div role="button" class="project-task checked">
-                      <span class="material-icons unchecked-state">
-                        radio_button_unchecked
+                    <div role="button" class="tasklist-item completed">
+                      <span class="material-icons icon checked-state">
+                        task_alt
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name">UI / UX design development</span>
+
+                      <span class="text-info">UI / UX design development</span>
 
                       <div class="actions">
                         <button class="btn small transparent icon-only">
@@ -720,12 +720,12 @@
                   </li>
 
                   <li>
-                    <div role="button" class="project-task checked">
-                      <span class="material-icons unchecked-state">
-                        radio_button_unchecked
+                    <div role="button" class="tasklist-item completed">
+                      <span class="material-icons icon checked-state">
+                        task_alt
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name">Layout design</span>
+
+                      <span class="text-info">Layout design</span>
 
                       <div class="actions">
                         <button class="btn small transparent icon-only">
@@ -744,12 +744,12 @@
                   </li>
 
                   <li>
-                    <div role="button" class="project-task">
-                      <span class="material-icons unchecked-state">
+                    <div role="button" class="tasklist-item">
+                      <span class="material-icons icon">
                         radio_button_unchecked
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name">Functional programming</span>
+
+                      <span class="text-info">Functional programming</span>
 
                       <div class="actions">
                         <button class="btn small transparent icon-only">
@@ -768,12 +768,12 @@
                   </li>
 
                   <li>
-                    <div role="button" class="project-task">
-                      <span class="material-icons unchecked-state">
+                    <div role="button" class="tasklist-item">
+                      <span class="material-icons icon">
                         radio_button_unchecked
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name">Testing for possible errors</span>
+
+                      <span class="text-info">Testing for possible errors</span>
 
                       <div class="actions">
                         <button class="btn small transparent icon-only">
@@ -792,12 +792,12 @@
                   </li>
 
                   <li>
-                    <div role="button" class="project-task">
-                      <span class="material-icons unchecked-state">
+                    <div role="button" class="tasklist-item">
+                      <span class="material-icons icon">
                         radio_button_unchecked
                       </span>
-                      <span class="material-icons checked-state">task_alt</span>
-                      <span class="task-name">
+
+                      <span class="text-info">
                         Final debugging applications
                       </span>
 
@@ -819,13 +819,13 @@
 
                   <li>
                     <button
-                      class="btn link primary project-task add-project-task"
+                      class="btn link primary tasklist-item add-tasklist-item"
                     >
                       <span class="material-icons-round">add</span>
                       Add Checklist Item
                     </button>
                   </li>
-                </ul>
+                </div>
               </section>
             </article>
 
@@ -840,18 +840,12 @@
                 </li>
               </nav>
 
-              <section class="comment-section">
-                <div class="comment-input">
-                  <textarea
-                    cols="30"
-                    rows="3"
-                    placeholder="Add Comment..."
-                  ></textarea>
+              <section class="comments">
+                <div class="textarea">
+                  <textarea rows="3" placeholder="Add Comment..."></textarea>
 
                   <div class="actions">
-                    <button class="btn small primary submit-comment">
-                      Comment
-                    </button>
+                    <button class="btn small primary submit">Comment</button>
 
                     <button class="btn small icon-only">
                       <span class="material-icons-round">attach_file</span>
@@ -869,80 +863,76 @@
                   </div>
                 </div>
 
-                <div class="comments">
-                  <div class="comment">
-                    <img
-                      src="./images/user5.png"
-                      alt="Jane Wilson avatar"
-                      class="avatar round small"
-                    />
+                <div class="comment">
+                  <img
+                    src="./images/user5.png"
+                    alt="Jane Wilson avatar"
+                    class="avatar round small"
+                  />
 
-                    <div class="text-info">
-                      <span class="user-name">Jane Wilson</span>
-                      <small class="time">5 min ago</small>
+                  <div class="text-info">
+                    <span class="author">Jane Wilson</span>
+                    <small class="time">5 min ago</small>
 
-                      <p class="text">Hi Cody, any progress on the project?</p>
+                    <p>Hi Cody, any progress on the project?</p>
+                  </div>
+                </div>
+
+                <div class="comment">
+                  <img
+                    src="./images/user4.png"
+                    alt="Jacob Hawkins avatar"
+                    class="avatar round small"
+                  />
+
+                  <div class="text-info">
+                    <span class="author">Jacob Hawkins</span>
+                    <small class="time">1 day ago</small>
+
+                    <p>Hi Jane!</p>
+                    <p>Yes. I just finished developing the "Chat" template.</p>
+
+                    <div class="attachments">
+                      <img
+                        src="/images/1.jpg"
+                        alt="green leave"
+                        class="photo-attachment"
+                      />
+
+                      <img
+                        src="/images/2.jpg"
+                        alt="multiply colors"
+                        class="photo-attachment"
+                      />
+
+                      <img
+                        src="/images/3.jpg"
+                        alt="color x form shapes"
+                        class="photo-attachment"
+                      />
+
+                      <button class="btn large icon-only primary light">
+                        +3
+                      </button>
                     </div>
                   </div>
+                </div>
 
-                  <div class="comment">
-                    <img
-                      src="./images/user4.png"
-                      alt="Jacob Hawkins avatar"
-                      class="avatar round small"
-                    />
+                <div class="comment">
+                  <img
+                    src="./images/user3.png"
+                    alt="Regina Cooper avatar"
+                    class="avatar round small"
+                  />
 
-                    <div class="text-info">
-                      <span class="user-name">Jacob Hawkins</span>
-                      <small class="time">1 day ago</small>
+                  <div class="text-info">
+                    <span class="author">Regina Cooper</span>
+                    <small class="time">5 min ago</small>
 
-                      <p class="text">Hi Jane!</p>
-                      <p class="text">
-                        Yes. I just finished developing the "Chat" template.
-                      </p>
-
-                      <div class="attachments">
-                        <img
-                          src="/images/1.jpg"
-                          alt="green leave"
-                          class="photo-attachment"
-                        />
-
-                        <img
-                          src="/images/2.jpg"
-                          alt="multiply colors"
-                          class="photo-attachment"
-                        />
-
-                        <img
-                          src="/images/3.jpg"
-                          alt="color x form shapes"
-                          class="photo-attachment"
-                        />
-
-                        <button class="btn large icon-only primary light">
-                          +3
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="comment">
-                    <img
-                      src="./images/user3.png"
-                      alt="Regina Cooper avatar"
-                      class="avatar round small"
-                    />
-
-                    <div class="text-info">
-                      <span class="user-name">Regina Cooper</span>
-                      <small class="time">5 min ago</small>
-
-                      <p class="text">
-                        Hi Jacob. Will you be able to finish the last item of
-                        the task by tomorrow?
-                      </p>
-                    </div>
+                    <p>
+                      Hi Jacob. Will you be able to finish the last item of the
+                      task by tomorrow?
+                    </p>
                   </div>
                 </div>
               </section>
