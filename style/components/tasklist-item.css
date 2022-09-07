@@ -11,7 +11,7 @@
   transition: background-color var(--transition-duration);
 }
 
-.tasklist-item .text {
+.tasklist-item .text-info {
   margin-right: auto;
 }
 
