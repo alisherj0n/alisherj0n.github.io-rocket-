@@ -33,9 +33,15 @@
   overflow-x: hidden;
 }
 
+.projects-details .project .header,
+.projects-details .project .details .stats,
 .projects-details .project,
 .projects-details .activity {
   display: flex;
+}
+
+.projects-details .project,
+.projects-details .activity {
   flex-direction: column;
 }
 
@@ -44,8 +50,7 @@
 }
 
 .projects-details .project .header,
-.projects-details .project .stats .content {
-  display: flex;
+.projects-details .project .details .stats {
   align-items: center;
 }
 
@@ -57,11 +62,11 @@
   font-size: 1.25rem;
 }
 
-.projects-details .project .stats {
+.projects-details .project .details {
   overflow-x: auto;
 }
 
-.projects-details .project .stats .content {
+.projects-details .project .details .stats {
   gap: 5rem;
 }
 
@@ -81,11 +86,6 @@
 
 .projects-details .activity {
   gap: 2rem;
-}
-
-.projects-details .activity .tabs .tab.active,
-.projects-details .activity .tabs .tab.active .content-title {
-  color: var(--color-primary);
 }
 
 /* Breakpoint-xl */

@@ -1,14 +1,15 @@
 .badge {
   --badge-padding-y: 0.3rem;
-  --badge-padding-x: 0.5rem;
+  --badge-padding-x: 0.7rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  justify-content: center;
   white-space: nowrap;
   background-color: var(--color-bg-light);
   color: var(--color-heading);
   padding: var(--badge-padding-y) var(--badge-padding-x);
-  border-radius: 6px;
+  border-radius: var(--border-radius-sm);
 }
 
 .badge.small {
@@ -22,10 +23,6 @@
   border-radius: var(--border-radius);
 }
 
-.badge.icon-only {
-  justify-content: center;
-}
-
 .badge .icon {
   font-size: 1.1rem;
 }
@@ -37,25 +34,21 @@
 .badge.primary {
   background-color: var(--color-primary);
   color: #fff;
-  border-bottom-color: var(--color-primary-dark);
 }
 
 .badge.warning {
   background-color: var(--color-warning);
   color: #fff;
-  border-bottom-color: var(--color-warning-dark);
 }
 
 .badge.danger {
   background-color: var(--color-danger);
   color: #fff;
-  border-bottom-color: var(--color-danger-dark);
 }
 
 .badge.success {
   background-color: var(--color-success);
   color: #fff;
-  border-bottom-color: var(--color-success-dark);
 }
 
 .badge.light.primary {

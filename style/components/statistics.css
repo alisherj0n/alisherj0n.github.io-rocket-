@@ -1,16 +1,16 @@
-.stats-item {
+.statistics {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.stats-item .title {
+.statistics .title {
   color: var(--color-body-light);
   display: block;
   width: 99%;
 }
 
-.stats-item .subtitle {
+.statistics .subtitle {
   color: var(--color-heading);
   width: 99%;
 }

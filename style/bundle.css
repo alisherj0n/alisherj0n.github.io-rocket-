@@ -13,7 +13,6 @@
 @import url(./components/attachment.css);
 @import url(./components/button.css);
 @import url(./components/avatar.css);
-@import url(./components/tasklist-item.css);
 @import url(./components/checkbox.css);
 @import url(./components/dropdown.css);
 @import url(./form-controls.css);
@@ -23,7 +22,7 @@
 @import url(./components/divider.css);
 @import url(./components/mini-profile.css);
 @import url(./components/comments.css);
-@import url(./components/stats-item.css);
+@import url(./components/statistics.css);
 @import url(./components/progress-bar.css);
 @import url(./components/drawer.css);
 @import url(./components/table.css);
@@ -38,4 +37,4 @@
 @import url(./pages/board.css);
 @import url(./pages/projects-list.css);
 @import url(./pages/projects-details.css);
-@import url(./pages/add-update-project-dialog.css); ;
+@import url(./pages/add-update-project-dialog.css);

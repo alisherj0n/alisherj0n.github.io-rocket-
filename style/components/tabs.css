@@ -10,8 +10,9 @@
 .tabs .badge {
   background-color: var(--color-border);
   color: var(--color-body-light);
-  padding: 0rem 0.6rem;
+  padding: 0rem 0.5rem;
   font-size: 0.8rem;
+  border-radius: var(--border-radius-xs);
 }
 
 .tabs > * {
@@ -35,11 +36,11 @@
 }
 
 .tabs .tab:hover {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .tabs .tab.active {
-  color: var(--color-heading);
+  color: var(--color-primary);
 }
 
 .tabs .tab.active::after {
