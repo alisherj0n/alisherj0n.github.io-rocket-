@@ -18,11 +18,11 @@
 }
 
 .projects-details .related-projects-list .searchbar,
-.projects-details .related-projects-list .nav > * {
+.projects-details .related-projects-list .projects > * {
   border-bottom: 1px solid var(--color-border);
 }
 
-.projects-details .related-projects-list .nav {
+.projects-details .related-projects-list .projects {
   overflow-y: auto;
   height: calc(100vh - (var(--app-header-height) + 64px));
 }
@@ -34,7 +34,7 @@
 }
 
 .projects-details .project .header,
-.projects-details .project .details .stats,
+.projects-details .project .intro .stats,
 .projects-details .project,
 .projects-details .activity {
   display: flex;
@@ -50,7 +50,7 @@
 }
 
 .projects-details .project .header,
-.projects-details .project .details .stats {
+.projects-details .project .intro .stats {
   align-items: center;
 }
 
@@ -62,16 +62,20 @@
   font-size: 1.25rem;
 }
 
-.projects-details .project .details {
+.projects-details .project .intro {
   overflow-x: auto;
 }
 
-.projects-details .project .details .stats {
+.projects-details .project .intro .stats {
   gap: 5rem;
 }
 
 .projects-details .project .checklist .progress-bar {
   margin-bottom: 1rem;
+}
+
+.projects-details .project .checklist .tasks .add-task {
+  margin-left: auto;
 }
 
 .projects-details .activity .tabs {
@@ -100,7 +104,7 @@
 
 /*  Breakpoint-lg */
 @media (max-width: 992px) {
-  .projects-details .project .stats .content {
+  .projects-details .project .intro .stats {
     gap: 2rem;
   }
 }

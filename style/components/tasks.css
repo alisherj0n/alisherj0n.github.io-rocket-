@@ -1,10 +1,10 @@
-.tasklist {
+.tasks {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.tasklist .task {
+.tasks .task {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -17,19 +17,19 @@
   transition: background-color var(--transition-duration);
 }
 
-.tasklist .task .description {
+.tasks .task .task-txt {
   margin-right: auto;
 }
 
-.tasklist .task .icon {
+.tasks .task .icon {
   color: var(--color-border);
 }
 
-.tasklist .task.completed .icon {
+.tasks .task.completed .icon {
   color: var(--color-primary);
 }
 
-.tasklist .task .actions {
+.tasks .task .actions {
   display: flex;
   align-items: center;
   margin-right: -0.8rem;
@@ -37,18 +37,14 @@
   transition: opacity var(--transition-duration);
 }
 
-.tasklist .add-task {
-  margin-left: auto;
-}
-
-.tasklist .task:hover,
-.tasklist .task:focus,
-.tasklist .task:focus-within {
+.tasks .task:hover,
+.tasks .task:focus,
+.tasks .task:focus-within {
   background-color: var(--color-bg);
 }
 
-.tasklist .task:hover .actions,
-.tasklist .task:focus .actions,
-.tasklist .task:focus-within .actions {
+.tasks .task:hover .actions,
+.tasks .task:focus .actions,
+.tasks .task:focus-within .actions {
   opacity: 1;
 }
