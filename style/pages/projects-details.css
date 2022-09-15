@@ -41,7 +41,7 @@
   overflow-x: hidden;
 }
 
-.projects-details .project .header,
+.projects-details .header,
 .projects-details .project,
 .projects-details .activity {
   display: flex;
