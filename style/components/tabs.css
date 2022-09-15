@@ -8,9 +8,10 @@
 }
 
 .tabs .badge {
+  --badge-padding-y: 0;
+  --badge-padding-x: 0.5rem;
   background-color: var(--color-border);
   color: var(--color-body-light);
-  padding: 0rem 0.5rem;
   font-size: 0.8rem;
   border-radius: var(--border-radius-xs);
 }
