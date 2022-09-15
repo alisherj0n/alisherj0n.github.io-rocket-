@@ -9,7 +9,7 @@
   background-color: var(--color-bg-light);
   color: var(--color-heading);
   padding: var(--badge-padding-y) var(--badge-padding-x);
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-xs);
 }
 
 .badge.small {

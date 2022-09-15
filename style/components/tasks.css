@@ -1,12 +1,20 @@
-.tasks {
+.tasks,
+.tasks .task,
+.tasks .task .actions {
   display: flex;
+}
+
+.tasks {
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.tasks .task {
-  display: flex;
+.tasks .task,
+.tasks .task .actions {
   align-items: center;
+}
+
+.tasks .task {
   gap: 1rem;
   color: var(--color-heading);
   border-radius: var(--border-radius);
@@ -17,7 +25,7 @@
   transition: background-color var(--transition-duration);
 }
 
-.tasks .task .task-txt {
+.tasks .task .description {
   margin-right: auto;
 }
 
@@ -25,13 +33,15 @@
   color: var(--color-border);
 }
 
+.tasks .task.completed .description {
+  text-decoration: line-through;
+}
+
 .tasks .task.completed .icon {
   color: var(--color-primary);
 }
 
 .tasks .task .actions {
-  display: flex;
-  align-items: center;
   margin-right: -0.8rem;
   opacity: 0;
   transition: opacity var(--transition-duration);

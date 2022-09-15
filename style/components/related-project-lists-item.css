@@ -16,3 +16,7 @@
   justify-content: space-between;
   padding-left: 3.5rem;
 }
+
+.related-projects-list-item .footer .users {
+  flex-shrink: 0;
+}

@@ -1,54 +1,51 @@
-.comments {
+.comments,
+.comments .comment,
+.comments .comment .text-info .header,
+.comments .comment-field .actions,
+.comments .attachments {
   display: flex;
+}
+
+.comments {
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.comments .comment-input-area {
+.comments .comment-field {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: 0.55rem;
   transition: border-color var(--transition-duration);
 }
 
-.comments .comment-input-area:focus-within {
+.comments .comment-field:focus-within {
   border-color: var(--color-primary);
 }
 
-.comments .comment-input-area textarea {
+.comments .comment-field textarea {
   border: none;
   resize: none;
   padding: 0 0.4rem;
 }
 
-.comments .comment-input-area .actions {
-  display: flex;
-}
-
-.comments .comment-input-area .actions .submit {
+.comments .comment-field .actions .submit {
   margin-right: auto;
 }
 
-.comments .comment {
-  display: flex;
+.comments .comment,
+.comments .comment .text-info .header,
+.comments .attachments {
   gap: 1rem;
 }
 
-.comments .comment .text-info .header {
-  display: flex;
+.comments .comment .text-info .header,
+.comments .attachments {
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
 }
 
+.comments .comment .text-info .header,
 .comments .comment p {
   margin-bottom: 0.5rem;
-}
-
-.comments .attachments {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
 }
 
 .comments .comment .author {

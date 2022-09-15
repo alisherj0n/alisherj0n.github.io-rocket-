@@ -13,13 +13,14 @@
   right: 0;
 }
 
-.drawer.active {
+.drawer.active,
+.drawer .header,
+.drawer .actions {
   display: flex;
 }
 
 .drawer .header,
 .drawer .actions {
-  display: flex;
   align-items: center;
 }
 

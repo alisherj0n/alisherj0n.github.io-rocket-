@@ -1,5 +1,11 @@
-.project-list-item {
+.project-list-item,
+.project-list-item .footer,
+.project-list-item .header,
+.project-list-item .progress-header {
   display: flex;
+}
+
+.project-list-item {
   flex-direction: column;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -8,8 +14,8 @@
   position: relative;
 }
 
-.project-list-item .header {
-  display: flex;
+.project-list-item .header,
+.project-list-item .progress-header {
   align-items: center;
   justify-content: space-between;
 }
@@ -27,14 +33,10 @@
 }
 
 .project-list-item .progress-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 0.4rem;
 }
 
 .project-list-item .footer {
-  display: flex;
   align-items: flex-end;
   gap: 0.5rem;
 }
