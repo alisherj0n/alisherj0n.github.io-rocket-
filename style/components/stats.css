@@ -5,7 +5,7 @@
 }
 
 .stats {
-  gap: 5rem;
+  justify-content: space-between;
 }
 
 .stats .item {

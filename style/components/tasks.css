@@ -9,16 +9,12 @@
   gap: 0.5rem;
 }
 
-.tasks .task,
-.tasks .task .actions {
-  align-items: center;
-}
-
 .tasks .task {
   gap: 1rem;
+  align-items: center;
   color: var(--color-heading);
   border-radius: var(--border-radius);
-  border: 1px solid transparent;
+
   padding: 0.125rem 1rem;
   margin-left: -1rem;
   margin-right: -1rem;

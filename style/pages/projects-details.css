@@ -56,12 +56,8 @@
   gap: 2.5rem;
 }
 
-.projects-details .project .header {
+.projects-details .header {
   align-items: center;
-}
-
-.projects-details .project .header {
-  justify-content: space-between;
 }
 
 .projects-details .project .mini-profile .title {
