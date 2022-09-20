@@ -14,11 +14,11 @@
   align-items: center;
   color: var(--color-heading);
   border-radius: var(--border-radius);
-
   padding: 0.125rem 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
-  transition: background-color var(--transition-duration);
+  transition: background-color var(--transition-duration),
+    box-shadow var(--transition-duration);
 }
 
 .tasks .task .description {

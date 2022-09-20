@@ -265,6 +265,10 @@
   border-bottom-color: transparent;
 }
 
+[role="button"] {
+  transition: box-shadow var(--transition-duration);
+}
+
 [role="button"]:focus {
   box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
   outline: none;

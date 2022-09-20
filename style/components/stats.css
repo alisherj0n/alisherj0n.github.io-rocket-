@@ -4,10 +4,6 @@
   align-items: center;
 }
 
-.stats {
-  justify-content: space-between;
-}
-
 .stats .item {
   gap: 1rem;
 }

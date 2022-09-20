@@ -68,11 +68,19 @@
   overflow-x: auto;
 }
 
+.projects-details .stats {
+  gap: 5rem;
+}
+
 .projects-details .project .checklist .progress-bar {
   margin-bottom: 1rem;
 }
 
-.projects-details .project .checklist .tasks .add-task {
+.projects-details .project .checklist .tasks {
+  margin-bottom: 0.5rem;
+}
+
+.projects-details .project .checklist .add-task {
   margin-left: auto;
 }
 
