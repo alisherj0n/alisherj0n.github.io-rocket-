@@ -4,6 +4,7 @@
   align-items: center;
 }
 
+.stats,
 .stats .item {
   gap: 1rem;
 }
