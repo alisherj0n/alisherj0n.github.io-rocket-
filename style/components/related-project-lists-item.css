@@ -31,3 +31,9 @@
 .related-projects-list-item .footer .users {
   gap: 0.3rem;
 }
+
+.related-projects-list-item .more-users {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}

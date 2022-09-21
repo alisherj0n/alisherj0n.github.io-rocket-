@@ -4,9 +4,12 @@
   align-items: center;
 }
 
-.stats,
+.stats {
+  gap: 2.5rem;
+}
+
 .stats .item {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .stats .item .title {
