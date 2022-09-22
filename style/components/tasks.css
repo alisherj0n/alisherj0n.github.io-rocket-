@@ -1,0 +1,56 @@
+.tasks,
+.tasks .task,
+.tasks .task .actions {
+  display: flex;
+}
+
+.tasks {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tasks .task {
+  gap: 1rem;
+  align-items: center;
+  color: var(--color-heading);
+  border-radius: var(--border-radius);
+  padding: 0.125rem 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  transition: background-color var(--transition-duration),
+    box-shadow var(--transition-duration);
+}
+
+.tasks .task .description {
+  margin-right: auto;
+}
+
+.tasks .task .icon {
+  color: var(--color-border);
+}
+
+.tasks .task.completed .description {
+  text-decoration: line-through;
+}
+
+.tasks .task.completed .icon {
+  color: var(--color-primary);
+}
+
+.tasks .task .actions {
+  margin-right: -0.8rem;
+  opacity: 0;
+  transition: opacity var(--transition-duration);
+}
+
+.tasks .task:hover,
+.tasks .task:focus,
+.tasks .task:focus-within {
+  background-color: var(--color-bg);
+}
+
+.tasks .task:hover .actions,
+.tasks .task:focus .actions,
+.tasks .task:focus-within .actions {
+  opacity: 1;
+}

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Rocket</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
@@ -16,7 +19,8 @@
     />
     <link href="https://css.gg/layout-grid.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/bundle.css" />
-    <title>Rocket</title>
+
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
     <div class="app collapsed">
@@ -152,434 +156,706 @@
               <input type="search" placeholder="Search ..." />
             </div>
 
-            <ul class="nav list-unstyled">
-              <li>
-                <div class="related-projects-list-item active">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/dropbox.jpg"
-                      alt="blue shapes of an open box"
-                      class="avatar large"
-                    />
+            <div class="related-projects-list-item active">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/dropbox.jpg"
+                  alt="blue shapes of an open box"
+                  class="avatar large"
+                />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">App Development</p>
+                <div class="text-info">
+                  <span class="title text-ellipsis">App Development</span>
 
-                      <small class="subtitle text-ellipsis">
-                        Dropbox, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user2.png"
-                        class="avatar round small"
-                        alt="John Doe Avatar"
-                      />
-
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Shane Roe avatar"
-                      />
-
-                      <img
-                        src="./images/user4.png"
-                        class="avatar round small"
-                        alt="Bobby Green avatar"
-                      />
-                    </div>
-
-                    <div class="badge large icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 week left</span>
-                    </div>
-                  </footer>
+                  <small class="subtitle text-ellipsis">Dropbox, Inc.</small>
                 </div>
-              </li>
+              </a>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/gitlab.jpg"
-                      alt="geometric shapes of fox head"
-                      class="avatar large"
-                    />
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user2.png"
+                    class="avatar round small"
+                    alt="John Doe Avatar"
+                  />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">Website Redesign</p>
-
-                      <small class="subtitle text-ellipsis">GitLab Inc.</small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user5.png"
-                        class="avatar round small"
-                        alt="George Washington avatar"
-                      />
-
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Barack Obama avatar"
-                      />
-
-                      <img
-                        src="./images/user4.png"
-                        class="avatar round small"
-                        alt="Khabib Nurmagomedov avatar"
-                      />
-                    </div>
-
-                    <div class="badge large icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 week left</span>
-                    </div>
-                  </footer>
+                  <button class="btn small icon-only primary light more-users">
+                    +2
+                  </button>
                 </div>
-              </li>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/bitbucket.jpg"
-                      alt="blue shapes of a bucket"
-                      class="avatar large"
-                    />
+                <div class="badge icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">Landing Page</p>
-
-                      <small class="subtitle text-ellipsis">
-                        Bitbucket, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user6.png"
-                        class="avatar round small"
-                        alt="Sorbon Sirojiddin avatar"
-                      />
-
-                      <img
-                        src="./images/user4.png"
-                        class="avatar round small"
-                        alt="Boris Johnson avatar"
-                      />
-                    </div>
-
-                    <div class="badge large icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 week left</span>
-                    </div>
-                  </footer>
+                  <span>1 week left</span>
                 </div>
-              </li>
+              </footer>
+            </div>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/python.jpg"
-                      alt="blue and yellow shapes of python snake"
-                      class="avatar large"
-                    />
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/gitlab.jpg"
+                  alt="geometric shapes of fox head"
+                  class="avatar large"
+                />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">Parser Development</p>
+                <div class="text-info">
+                  <span class="title text-ellipsis">Website Redesign</span>
 
-                      <small class="subtitle text-ellipsis">
-                        Driveway, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user5.png"
-                        class="avatar round small"
-                        alt="Bobby Williams avatar"
-                      />
-
-                      <img
-                        src="./images/user6.png"
-                        class="avatar round small"
-                        alt="Anna Pestereva avatar"
-                      />
-
-                      <img
-                        src="./images/user4.png"
-                        class="avatar round small"
-                        alt="Brian Welleck avatar"
-                      />
-                    </div>
-
-                    <div class="badge large warning-light icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>5 days left</span>
-                    </div>
-                  </footer>
+                  <small class="subtitle text-ellipsis">GitLab Inc.</small>
                 </div>
-              </li>
+              </a>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/slack.jpg"
-                      alt="Multi color rounded shapes "
-                      class="avatar large"
-                    />
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user5.png"
+                    class="avatar round small"
+                    alt="George Washington avatar"
+                  />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">App Development</p>
-
-                      <small class="subtitle text-ellipsis">
-                        Slack Technologies, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Angelina Rose avatar"
-                      />
-
-                      <img
-                        src="./images/user4.png"
-                        class="avatar round small"
-                        alt="Monica Bellucci avatar"
-                      />
-                    </div>
-
-                    <div class="badge large warning-light icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>5 days left</span>
-                    </div>
-                  </footer>
+                  <button class="btn small icon-only primary light more-users">
+                    +2
+                  </button>
                 </div>
-              </li>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/fire.jpg"
-                      alt="yellow shapes of a fire"
-                      class="avatar large"
-                    />
+                <div class="badge icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">App Development</p>
-
-                      <small class="subtitle text-ellipsis">Google, Inc.</small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Manizha Rasulova avatar"
-                      />
-
-                      <img
-                        src="./images/user5.png"
-                        class="avatar round small"
-                        alt="Safina Dushanbieva avatar"
-                      />
-                    </div>
-
-                    <div class="badge large icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 week left</span>
-                    </div>
-                  </footer>
+                  <span>1 week left</span>
                 </div>
-              </li>
+              </footer>
+            </div>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/angular.jpg"
-                      alt="A red shield with a letter A on it"
-                      class="avatar large"
-                    />
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/bitbucket.jpg"
+                  alt="blue shapes of a bucket"
+                  class="avatar large"
+                />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">Admin Dashboard</p>
+                <div class="text-info">
+                  <span class="title text-ellipsis">Landing Page</span>
 
-                      <small class="subtitle text-ellipsis">
-                        ArtTemplate, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user1.png"
-                        class="avatar round small"
-                        alt="Raykhona Ramazonovna avatar"
-                      />
-
-                      <img
-                        src="./images/user2.png"
-                        class="avatar round small"
-                        alt="Shakhnoza Sirojiddin avatar"
-                      />
-
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Shavkat Mirzoev avatar"
-                      />
-                    </div>
-
-                    <div class="badge large danger-light icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>2 days left</span>
-                    </div>
-                  </footer>
+                  <small class="subtitle text-ellipsis">Bitbucket, Inc.</small>
                 </div>
-              </li>
+              </a>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/vue.jpg"
-                      alt="V shaped grey and turquoise lines"
-                      class="avatar large"
-                    />
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user6.png"
+                    class="avatar round small"
+                    alt="Sorbon Sirojiddin avatar"
+                  />
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">Web App on Vue.js</p>
-
-                      <small class="subtitle text-ellipsis">
-                        ArtTemplate, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user1.png"
-                        class="avatar round small"
-                        alt="Bahtovar Shoev avatar"
-                      />
-
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Rakhim Garmiev avatar"
-                      />
-                    </div>
-
-                    <div class="badge large icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 week left</span>
-                    </div>
-                  </footer>
+                  <img
+                    src="./images/user4.png"
+                    class="avatar round small"
+                    alt="Boris Johnson avatar"
+                  />
                 </div>
-              </li>
 
-              <li>
-                <div class="related-projects-list-item">
-                  <a href="#" class="mini-profile">
-                    <img
-                      src="./images/messenger.jpg"
-                      alt="A blue chat icon with a white thunder sign inside"
-                      class="avatar large"
-                    />
+                <div class="badge icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
 
-                    <div class="text-info">
-                      <p class="title text-ellipsis">App Development</p>
-
-                      <small class="subtitle text-ellipsis">
-                        Facebook, Inc.
-                      </small>
-                    </div>
-                  </a>
-
-                  <footer class="footer">
-                    <div>
-                      <img
-                        src="./images/user1.png"
-                        class="avatar round small"
-                        alt="Bashar Asadov avatar"
-                      />
-
-                      <img
-                        src="./images/user2.png"
-                        class="avatar round small"
-                        alt="Valijon Putinov avatar"
-                      />
-
-                      <img
-                        src="./images/user3.png"
-                        class="avatar round small"
-                        alt="Ibrokhim Alisherov"
-                      />
-                    </div>
-
-                    <div class="badge large danger-light icon">
-                      <span class="material-icons-outlined icon">
-                        watch_later
-                      </span>
-
-                      <span>1 day left</span>
-                    </div>
-                  </footer>
+                  <span>1 week left</span>
                 </div>
-              </li>
-            </ul>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/python.jpg"
+                  alt="blue and yellow shapes of python snake"
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Parser Development</span>
+
+                  <small class="subtitle text-ellipsis">Driveway, Inc.</small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user5.png"
+                    class="avatar round small"
+                    alt="Bobby Williams avatar"
+                  />
+
+                  <button class="btn small icon-only primary light more-users">
+                    +2
+                  </button>
+                </div>
+
+                <div class="badge warning light icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>5 days left</span>
+                </div>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/slack.jpg"
+                  alt="Multi color rounded shapes "
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">App Development</span>
+
+                  <small class="subtitle text-ellipsis">
+                    Slack Technologies, Inc.
+                  </small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user3.png"
+                    class="avatar round small"
+                    alt="Angelina Rose avatar"
+                  />
+
+                  <img
+                    src="./images/user4.png"
+                    class="avatar round small"
+                    alt="Monica Bellucci avatar"
+                  />
+                </div>
+
+                <div class="badge warning light icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>5 days left</span>
+                </div>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/fire.jpg"
+                  alt="yellow shapes of a fire"
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">App Development</span>
+
+                  <small class="subtitle text-ellipsis">Google, Inc.</small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user3.png"
+                    class="avatar round small"
+                    alt="Manizha Rasulova avatar"
+                  />
+
+                  <img
+                    src="./images/user5.png"
+                    class="avatar round small"
+                    alt="Safina Dushanbieva avatar"
+                  />
+                </div>
+
+                <div class="badge icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>1 week left</span>
+                </div>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/angular.jpg"
+                  alt="A red shield with a letter A on it"
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Admin Dashboard</span>
+
+                  <small class="subtitle text-ellipsis">
+                    ArtTemplate, Inc.
+                  </small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user1.png"
+                    class="avatar round small"
+                    alt="Raykhona Ramazonovna avatar"
+                  />
+
+                  <button class="btn small icon-only primary light more-users">
+                    +2
+                  </button>
+                </div>
+
+                <div class="badge danger light icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>2 days left</span>
+                </div>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/vue.jpg"
+                  alt="V shaped grey and turquoise lines"
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Web App on Vue.js</span>
+
+                  <small class="subtitle text-ellipsis">
+                    ArtTemplate, Inc.
+                  </small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user1.png"
+                    class="avatar round small"
+                    alt="Bahtovar Shoev avatar"
+                  />
+
+                  <img
+                    src="./images/user3.png"
+                    class="avatar round small"
+                    alt="Rakhim Garmiev avatar"
+                  />
+                </div>
+
+                <div class="badge icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>1 week left</span>
+                </div>
+              </footer>
+            </div>
+
+            <div class="related-projects-list-item">
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/messenger.jpg"
+                  alt="A blue chat icon with a white thunder sign inside"
+                  class="avatar large"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">App Development</span>
+
+                  <small class="subtitle text-ellipsis">Facebook, Inc.</small>
+                </div>
+              </a>
+
+              <footer class="footer">
+                <div class="users">
+                  <img
+                    src="./images/user1.png"
+                    class="avatar round small"
+                    alt="Bashar Asadov avatar"
+                  />
+
+                  <button class="btn small icon-only primary light more-users">
+                    +2
+                  </button>
+                </div>
+
+                <div class="badge danger light icon">
+                  <span class="material-icons-outlined icon">watch_later</span>
+
+                  <span>1 day left</span>
+                </div>
+              </footer>
+            </div>
           </div>
 
-          <main class="container">description</main>
+          <main class="container">
+            <article class="project">
+              <header class="header">
+                <div class="mini-profile">
+                  <img
+                    src="./images/dropbox.jpg"
+                    alt="blue shapes of an open box"
+                    class="avatar large"
+                  />
 
-          <div class="sidebar">Sidebar</div>
+                  <div class="text-info">
+                    <h1 class="title">App Development</h1>
+                    <small class="subtitle">Dropbox, Inc.</small>
+                  </div>
+                </div>
+
+                <button class="btn icon-only">
+                  <span class="material-icons-round">more_horiz</span>
+                </button>
+              </header>
+
+              <section class="intro">
+                <h2 class="content-title">Details</h2>
+
+                <div class="stats">
+                  <div class="item">
+                    <div class="badge large icon-only success light">
+                      <span class="material-icons-round icon">
+                        attach_money
+                      </span>
+                    </div>
+
+                    <div>
+                      <span class="title text-ellipsis">Budget</span>
+                      <span class="subtitle text-ellipsis">2.500.000</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="badge large icon-only primary light">
+                      <span class="material-icons-round icon">
+                        calendar_month
+                      </span>
+                    </div>
+
+                    <div>
+                      <span class="title text-ellipsis">Start Date</span>
+                      <span class="subtitle text-ellipsis">17 Jun, 2020</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="badge large icon-only warning light">
+                      <span class="material-icons-round icon">
+                        calendar_month
+                      </span>
+                    </div>
+
+                    <div>
+                      <span class="title text-ellipsis">End Date</span>
+                      <span class="subtitle text-ellipsis">04 Jul, 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="description">
+                <h2 class="content-title">description</h2>
+                <p>
+                  You need to develop an application on something like React
+                  native, so that it is for Android and IOS. There are about 30
+                  screens, the design and layout in the sketch is ready. The
+                  main pages are login, getting a task, a list of tasks, a map,
+                  a history of tasks, calling the camera to complete a task. The
+                  storage and processing server is on our side, there is a
+                  ready-made api for the web service that you will need to use.
+                </p>
+              </section>
+
+              <section class="checklist">
+                <h2 class="content-title">checklist (50%)</h2>
+
+                <div class="progress-bar primary">
+                  <div class="progress" style="width: 50%"></div>
+                </div>
+
+                <ul class="tasks list-unstyled">
+                  <li>
+                    <div role="button" class="task completed">
+                      <span class="material-icons icon">task_alt</span>
+                      <span class="description">Create wireframes</span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div role="button" class="task completed">
+                      <span class="material-icons icon">task_alt</span>
+
+                      <span class="description">
+                        UI / UX design development
+                      </span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div role="button" class="task completed">
+                      <span class="material-icons icon">task_alt</span>
+
+                      <span class="description">Layout design</span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div role="button" class="task">
+                      <span class="material-icons icon">
+                        radio_button_unchecked
+                      </span>
+
+                      <span class="description">Functional programming</span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div role="button" class="task">
+                      <span class="material-icons icon">
+                        radio_button_unchecked
+                      </span>
+
+                      <span class="description">
+                        Testing for possible errors
+                      </span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div role="button" class="task">
+                      <span class="material-icons icon">
+                        radio_button_unchecked
+                      </span>
+
+                      <span class="description">
+                        Final debugging applications
+                      </span>
+
+                      <div class="actions">
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            drag_indicator
+                          </span>
+                        </button>
+
+                        <button class="btn small icon-only">
+                          <span class="material-icons-round">
+                            delete_outline
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="btn link primary add-task">
+                  <span class="material-icons-round">add</span>
+                  Add Checklist Item
+                </button>
+              </section>
+            </article>
+
+            <section class="activity">
+              <nav class="tabs list-unstyled">
+                <li>
+                  <button class="tab content-title active">comments</button>
+                </li>
+
+                <li>
+                  <button class="tab content-title">activity</button>
+                </li>
+              </nav>
+
+              <section class="comments">
+                <div class="comment-field">
+                  <textarea rows="3" placeholder="Add Comment..."></textarea>
+
+                  <div class="actions">
+                    <button class="btn small primary submit">Comment</button>
+
+                    <button class="btn small icon-only">
+                      <span class="material-icons-round">attach_file</span>
+                    </button>
+
+                    <button class="btn small icon-only">
+                      <span class="material-icons-round">
+                        sentiment_satisfied_alt
+                      </span>
+                    </button>
+
+                    <button class="btn small icon-only">
+                      <span class="material-icons-round">insert_photo</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="comment">
+                  <img
+                    src="./images/user5.png"
+                    alt="Jane Wilson avatar"
+                    class="avatar round small"
+                  />
+
+                  <div class="text-info">
+                    <header class="header">
+                      <span class="author">Jane Wilson</span>
+                      <small class="time">5 min ago</small>
+                    </header>
+
+                    <p>Hi Cody, any progress on the project?</p>
+                  </div>
+                </div>
+
+                <div class="comment">
+                  <img
+                    src="./images/user4.png"
+                    alt="Jacob Hawkins avatar"
+                    class="avatar round small"
+                  />
+
+                  <div class="text-info">
+                    <header class="header">
+                      <span class="author">Jacob Hawkins</span>
+                      <small class="time">1 day ago</small>
+                    </header>
+
+                    <p>Hi Jane!</p>
+                    <p>Yes. I just finished developing the "Chat" template.</p>
+
+                    <div class="attachments">
+                      <img
+                        src="/images/1.jpg"
+                        alt="green leave"
+                        class="photo-attachment"
+                      />
+
+                      <img
+                        src="/images/2.jpg"
+                        alt="multiply colors"
+                        class="photo-attachment"
+                      />
+
+                      <img
+                        src="/images/3.jpg"
+                        alt="color x form shapes"
+                        class="photo-attachment"
+                      />
+
+                      <button class="btn large icon-only primary light">
+                        +3
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment">
+                  <img
+                    src="./images/user3.png"
+                    alt="Regina Cooper avatar"
+                    class="avatar round small"
+                  />
+
+                  <div class="text-info">
+                    <header class="header">
+                      <span class="author">Regina Cooper</span>
+                      <small class="time">5 min ago</small>
+                    </header>
+
+                    <p>
+                      Hi Jacob. Will you be able to finish the last item of the
+                      task by tomorrow?
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </main>
+
+          <!-- TODO: Border for presentational purposes -->
+          <div
+            class="sidebar"
+            style="border-left: 1px solid var(--color-border)"
+          >
+            Sidebar
+          </div>
         </div>
       </div>
     </div>

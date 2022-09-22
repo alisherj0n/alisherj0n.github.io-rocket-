@@ -1,3 +1,8 @@
+.dialog,
+.dialog .content {
+  flex-direction: column;
+}
+
 .dialog {
   --dialog-padding: 2rem;
   position: fixed;
@@ -12,17 +17,22 @@
   max-width: 85vw;
   max-height: 85vh;
   display: none;
-  flex-direction: column;
 }
 
-.dialog.active {
+.dialog.active,
+.dialog .content,
+.dialog .header,
+.dialog .actions {
   display: flex;
+}
+
+.dialog .content,
+.dialog .header,
+.dialog .actions {
+  padding: var(--dialog-padding);
 }
 
 .dialog .content {
-  padding: var(--dialog-padding);
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   overflow-y: auto;
 }
@@ -35,17 +45,16 @@
   width: 100%;
 }
 
-.dialog .header {
-  padding: var(--dialog-padding);
-  display: flex;
-  justify-content: space-between;
+.dialog .header,
+.dialog .actions {
   gap: 1rem;
 }
 
+.dialog .header {
+  justify-content: space-between;
+}
+
 .dialog .actions {
-  padding: var(--dialog-padding);
-  display: flex;
-  gap: 1rem;
   justify-content: end;
   border-top: 1px solid var(--color-border);
 }

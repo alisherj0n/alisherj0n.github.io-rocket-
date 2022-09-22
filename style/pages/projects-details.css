@@ -1,11 +1,22 @@
 .projects-details .grid {
   display: grid;
-  grid-template-columns: 380px 1fr 320px;
+  grid-template-columns: 350px 1fr 300px;
+}
+
+.projects-details .related-projects-list,
+.projects-details .related-projects-list .searchbar {
+  background-color: var(--color-bg);
+  position: sticky;
+  align-self: start;
 }
 
 .projects-details .related-projects-list {
-  background-color: var(--color-bg);
   border-right: 1px solid var(--color-border);
+  top: var(--app-header-height);
+}
+
+.projects-details .related-projects-list .searchbar {
+  top: 0;
 }
 
 .projects-details .related-projects-list .searchbar input {
@@ -15,13 +26,76 @@
 }
 
 .projects-details .related-projects-list .searchbar,
-.projects-details .related-projects-list .nav > * {
+.projects-details .related-projects-list .related-projects-list-item {
   border-bottom: 1px solid var(--color-border);
 }
 
-.projects-details .related-projects-list .nav {
+.projects-details .related-projects-list {
   overflow-y: auto;
-  height: calc(100vh - 130px);
+  height: calc(100vh - var(--app-header-height));
+}
+
+.projects-details .container {
+  --container-padding: 1.8rem;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.projects-details .header,
+.projects-details .project,
+.projects-details .activity {
+  display: flex;
+}
+
+.projects-details .project,
+.projects-details .activity {
+  flex-direction: column;
+}
+
+.projects-details .project {
+  gap: 2.5rem;
+}
+
+.projects-details .header {
+  align-items: center;
+}
+
+.projects-details .project .mini-profile .title {
+  font-size: 1.25rem;
+}
+
+.projects-details .project .intro {
+  overflow-x: auto;
+}
+
+.projects-details .stats {
+  gap: 5rem;
+}
+
+.projects-details .project .checklist .progress-bar {
+  margin-bottom: 1rem;
+}
+
+.projects-details .project .checklist .tasks {
+  margin-bottom: 0.5rem;
+}
+
+.projects-details .project .checklist .add-task {
+  margin-left: auto;
+}
+
+.projects-details .activity .tabs {
+  margin-left: calc(var(--container-padding) * -1);
+  margin-right: calc(var(--container-padding) * -1);
+  padding: 0 var(--container-padding);
+}
+
+.projects-details .activity .tabs .content-title {
+  margin-bottom: 0;
+}
+
+.projects-details .activity {
+  gap: 2rem;
 }
 
 /* Breakpoint-xl */
@@ -34,6 +108,14 @@
   }
 }
 
+/*  Breakpoint-lg */
+@media (max-width: 992px) {
+  .projects-details .project .intro .stats {
+    gap: 2rem;
+  }
+}
+
+/* Breakpoint-sm */
 @media (max-width: 768px) {
   .projects-details .grid {
     grid-template-columns: 1fr;

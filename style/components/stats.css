@@ -1,0 +1,24 @@
+.stats,
+.stats .item {
+  display: flex;
+  align-items: center;
+}
+
+.stats {
+  gap: 2.5rem;
+}
+
+.stats .item {
+  gap: 1rem;
+}
+
+.stats .item .title {
+  color: var(--color-body-light);
+  display: block;
+  width: 99%;
+}
+
+.stats .item .subtitle {
+  color: var(--color-heading);
+  width: 99%;
+}

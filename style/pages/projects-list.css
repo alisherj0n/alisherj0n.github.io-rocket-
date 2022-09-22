@@ -18,7 +18,8 @@
   font-size: 1rem;
 }
 
-.projects-list table .mini-profile .subtitle {
+.projects-list table .mini-profile .subtitle,
+.projects-list table .progress-info {
   color: var(--color-body-light);
 }
 
@@ -26,7 +27,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--color-body-light);
 }
 
 .projects-list .footer {

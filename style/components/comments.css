@@ -1,0 +1,58 @@
+.comments,
+.comments .comment,
+.comments .comment .text-info .header,
+.comments .comment-field .actions,
+.comments .attachments {
+  display: flex;
+}
+
+.comments {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comments .comment-field {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.55rem;
+  transition: border-color var(--transition-duration);
+}
+
+.comments .comment-field:focus-within {
+  border-color: var(--color-primary);
+}
+
+.comments .comment-field textarea {
+  border: none;
+  resize: none;
+  padding: 0 0.4rem;
+}
+
+.comments .comment-field .actions .submit {
+  margin-right: auto;
+}
+
+.comments .comment,
+.comments .comment .text-info .header,
+.comments .attachments {
+  gap: 1rem;
+}
+
+.comments .comment .text-info .header,
+.comments .attachments {
+  align-items: center;
+}
+
+.comments .comment .text-info .header,
+.comments .comment p {
+  margin-bottom: 0.5rem;
+}
+
+.comments .comment .author {
+  color: var(--color-heading);
+  display: inline-block;
+}
+
+.comments .comment .time {
+  color: var(--color-body-light);
+}
