@@ -43,12 +43,15 @@
 
 .projects-details .header,
 .projects-details .project,
-.projects-details .activity {
+.projects-details .activity,
+.projects-details .sidebar .header,
+.projects-details .sidebar .members {
   display: flex;
 }
 
 .projects-details .project,
-.projects-details .activity {
+.projects-details .activity,
+.projects-details .sidebar .members {
   flex-direction: column;
 }
 
@@ -56,7 +59,8 @@
   gap: 2.5rem;
 }
 
-.projects-details .header {
+.projects-details .header,
+.projects-details .sidebar .header {
   align-items: center;
 }
 
@@ -90,12 +94,29 @@
   padding: 0 var(--container-padding);
 }
 
-.projects-details .activity .tabs .content-title {
+.projects-details .activity .tabs .content-title,
+.projects-details .sidebar .content-title {
   margin-bottom: 0;
 }
 
 .projects-details .activity {
   gap: 2rem;
+}
+
+.projects-details .sidebar {
+  border-left: 1px solid var(--color-border);
+}
+
+.projects-details .sidebar .header {
+  justify-content: space-between;
+}
+
+.projects-details .sidebar .header .add {
+  margin-right: calc(var(--button-padding-x) * -1);
+}
+
+.projects-details .sidebar .members {
+  gap: 1.5rem;
 }
 
 /* Breakpoint-xl */
