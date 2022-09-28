@@ -62,7 +62,8 @@
 }
 
 .projects-details .header,
-.projects-details .sidebar .header {
+.projects-details .sidebar .members .header,
+.projects-details .sidebar .files .header {
   align-items: center;
 }
 
@@ -110,7 +111,12 @@
   border-left: 1px solid var(--color-border);
 }
 
-.projects-details .sidebar .header {
+.projects-details .sidebar .project-status {
+  width: 100%;
+}
+
+.projects-details .sidebar .members .header,
+.projects-details .sidebar .files .header {
   justify-content: space-between;
 }
 
