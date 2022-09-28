@@ -75,6 +75,7 @@
 }
 
 .projects-details .project .intro .lead,
+.projects-details .project .description .lead,
 .projects-details .project .checklist .lead {
   margin-bottom: 0.8rem;
 }
