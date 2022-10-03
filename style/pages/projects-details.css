@@ -41,7 +41,7 @@
   overflow-x: hidden;
 }
 
-.projects-details .header,
+.projects-details .project .header,
 .projects-details .project,
 .projects-details .activity {
   display: flex;
@@ -56,7 +56,7 @@
   gap: 2.5rem;
 }
 
-.projects-details .header {
+.projects-details .project .header {
   align-items: center;
 }
 
@@ -115,7 +115,7 @@
 .projects-details .sidebar .widget {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .projects-details .sidebar .add,
