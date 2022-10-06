@@ -1,6 +1,6 @@
 .projects-details .grid {
   display: grid;
-  grid-template-columns: 350px 1fr 300px;
+  grid-template-columns: 350px 1fr 310px;
 }
 
 .projects-details .related-projects-list,
@@ -41,7 +41,7 @@
   overflow-x: hidden;
 }
 
-.projects-details .header,
+.projects-details .project .header,
 .projects-details .project,
 .projects-details .activity {
   display: flex;
@@ -56,7 +56,7 @@
   gap: 2.5rem;
 }
 
-.projects-details .header {
+.projects-details .project .header {
   align-items: center;
 }
 
@@ -66,6 +66,12 @@
 
 .projects-details .project .intro {
   overflow-x: auto;
+}
+
+.projects-details .project .intro .lead,
+.projects-details .project .description .lead,
+.projects-details .project .checklist .lead {
+  margin-bottom: 0.8rem;
 }
 
 .projects-details .stats {
@@ -90,12 +96,31 @@
   padding: 0 var(--container-padding);
 }
 
-.projects-details .activity .tabs .content-title {
-  margin-bottom: 0;
-}
-
 .projects-details .activity {
   gap: 2rem;
+}
+
+.projects-details .sidebar {
+  border-left: 1px solid var(--color-border);
+}
+
+.projects-details .sidebar.container {
+  gap: 1.5rem;
+}
+
+.projects-details .sidebar .project-status {
+  width: 100%;
+}
+
+.projects-details .sidebar .widget {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-details .sidebar .add,
+.projects-details .sidebar .download {
+  margin-right: calc(var(--button-padding-x) * -1);
 }
 
 /* Breakpoint-xl */

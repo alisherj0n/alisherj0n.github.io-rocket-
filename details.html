@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link href="https://css.gg/layout-grid.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style/bundle.css" />
+    <link rel="stylesheet" href="/style/bundle.css" />
 
     <script src="/js/index.js" defer></script>
   </head>
@@ -517,7 +517,7 @@
               </header>
 
               <section class="intro">
-                <h2 class="content-title">Details</h2>
+                <h2 class="lead">Details</h2>
 
                 <div class="stats">
                   <div class="item">
@@ -562,7 +562,7 @@
               </section>
 
               <section class="description">
-                <h2 class="content-title">description</h2>
+                <h2 class="lead">description</h2>
                 <p>
                   You need to develop an application on something like React
                   native, so that it is for Android and IOS. There are about 30
@@ -575,7 +575,7 @@
               </section>
 
               <section class="checklist">
-                <h2 class="content-title">checklist (50%)</h2>
+                <h2 class="lead">checklist (50%)</h2>
 
                 <div class="progress-bar primary">
                   <div class="progress" style="width: 50%"></div>
@@ -736,11 +736,11 @@
             <section class="activity">
               <nav class="tabs list-unstyled">
                 <li>
-                  <button class="tab content-title active">comments</button>
+                  <button class="tab lead active">comments</button>
                 </li>
 
                 <li>
-                  <button class="tab content-title">activity</button>
+                  <button class="tab lead">activity</button>
                 </li>
               </nav>
 
@@ -849,12 +849,235 @@
             </section>
           </main>
 
-          <!-- TODO: Border for presentational purposes -->
-          <div
-            class="sidebar"
-            style="border-left: 1px solid var(--color-border)"
-          >
-            Sidebar
+          <div class="sidebar container">
+            <select>
+              <option value="started">Started</option>
+              <option value="on-hold">On Hold</option>
+              <option value="completed">Completed</option>
+            </select>
+
+            <div class="widget">
+              <header class="header">
+                <span class="lead">Created by</span>
+              </header>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user6.png"
+                  alt="Shane Black avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Shane Black</span>
+                </div>
+              </a>
+            </div>
+
+            <hr class="divider horizontal" />
+
+            <div class="widget">
+              <header class="header">
+                <h1 class="lead">Members</h1>
+
+                <button class="btn small icon-only add">
+                  <span class="material-icons">add</span>
+                </button>
+              </header>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user4.png"
+                  alt="Jacob Hawkins avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Jacob Hawkins</span>
+                  <small class="subtitle text-ellipsis">UI/UX Designer</small>
+                </div>
+              </a>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user3.png"
+                  alt="Regina Cooper avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Regina Cooper</span>
+                  <small class="subtitle text-ellipsis">
+                    Back-End Developer
+                  </small>
+                </div>
+              </a>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user5.png"
+                  alt="Jane Wilson avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Jane Wilson</span>
+                  <small class="subtitle text-ellipsis">Project Manager</small>
+                </div>
+              </a>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user1.png"
+                  alt="Ronald Robertson avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Ronald Robertson</span>
+                  <small class="subtitle text-ellipsis">Product Designer</small>
+                </div>
+              </a>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user2.png"
+                  alt="Dustin Williamson avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Dustin Williamson</span>
+                  <small class="subtitle text-ellipsis">Web Developer</small>
+                </div>
+              </a>
+
+              <a href="#" class="mini-profile">
+                <img
+                  src="./images/user6.png"
+                  alt="Robert Edwards avatar"
+                  class="avatar round"
+                />
+
+                <div class="text-info">
+                  <span class="title text-ellipsis">Robert Edwards</span>
+                  <small class="subtitle text-ellipsis">Project Manager</small>
+                </div>
+              </a>
+            </div>
+
+            <hr class="divider horizontal" />
+
+            <div class="widget">
+              <header class="header">
+                <h1 class="lead">files</h1>
+
+                <button class="btn small icon-only add">
+                  <span class="material-icons">add</span>
+                </button>
+              </header>
+
+              <div class="attachment">
+                <div class="file">
+                  <img
+                    src="/images/ZIP 3.png"
+                    alt="zip folder image"
+                    class="file-icon"
+                  />
+
+                  <div class="text-info">
+                    <span class="file-name text-ellipsis">
+                      Wireframe UI Kit.zip
+                    </span>
+                    <small class="file-size">5.8 mb</small>
+                  </div>
+                </div>
+
+                <button class="btn small icon-only download">
+                  <span class="material-icons">save_alt</span>
+                </button>
+              </div>
+
+              <div class="attachment">
+                <div class="file">
+                  <img
+                    src="/images/PDF 3.png"
+                    alt="adobe red lines icon"
+                    class="file-icon"
+                  />
+
+                  <div class="text-info">
+                    <span class="file-name text-ellipsis">
+                      Brand Styles Guide.pdf
+                    </span>
+                    <small class="file-size">487KB</small>
+                  </div>
+                </div>
+
+                <button class="btn small icon-only download">
+                  <span class="material-icons">save_alt</span>
+                </button>
+              </div>
+
+              <div class="attachment">
+                <div class="file">
+                  <img
+                    src="/images/Figma 3.png"
+                    alt="figma icon colors"
+                    class="file-icon"
+                  />
+
+                  <div class="text-info">
+                    <span class="file-name text-ellipsis">
+                      Rocket – Admin Dashboard
+                    </span>
+                    <small class="file-size">5.8 mb</small>
+                  </div>
+                </div>
+
+                <button class="btn small icon-only download">
+                  <span class="material-icons">save_alt</span>
+                </button>
+              </div>
+
+              <div class="attachment">
+                <div class="file">
+                  <img
+                    src="/images/image1.png"
+                    alt="green ocen and beach image"
+                    class="photo-attachment small"
+                  />
+
+                  <div class="text-info">
+                    <span class="file-name text-ellipsis">Picture 01.png</span>
+                    <small class="file-size">1.2 MB</small>
+                  </div>
+                </div>
+
+                <button class="btn small icon-only download">
+                  <span class="material-icons">save_alt</span>
+                </button>
+              </div>
+
+              <div class="attachment">
+                <div class="file">
+                  <img
+                    src="/images/image2.png"
+                    alt="desert image"
+                    class="photo-attachment small"
+                  />
+
+                  <div class="text-info">
+                    <span class="file-name text-ellipsis">Picture 02.png</span>
+                    <small class="file-size">1.5 MB</small>
+                  </div>
+                </div>
+
+                <button class="btn small icon-only download">
+                  <span class="material-icons">save_alt</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

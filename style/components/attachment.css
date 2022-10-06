@@ -1,6 +1,18 @@
+.attachment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .photo-attachment {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: var(--border-radius);
   object-fit: cover;
+}
+
+.photo-attachment.small {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--border-radius-xs);
 }

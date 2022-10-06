@@ -1,0 +1,27 @@
+.file {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.file .text-info {
+  width: 100%;
+  overflow: hidden;
+}
+
+.file .file-icon {
+  width: 2.3rem;
+  object-fit: cover;
+}
+
+.file .file-name {
+  display: block;
+  color: var(--color-heading);
+  line-height: 1.7;
+}
+
+.file .file-size {
+  color: var(--color-body-light);
+  text-transform: uppercase;
+}
