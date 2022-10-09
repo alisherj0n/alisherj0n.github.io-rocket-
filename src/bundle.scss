@@ -1,0 +1,42 @@
+@forward "../src/normalize";
+@forward "../src/colors";
+@forward "../src/breakpoints";
+@forward "../src/fx";
+
+@forward "../src/utilities";
+@forward "../src/typography";
+@forward "../src/base";
+@forward "../src/layout";
+@forward "../src/components/overlay";
+
+@forward "../src/components/badge";
+@forward "../src/components/widget";
+@forward "../src/components/attachment";
+@forward "../src/components/file";
+@forward "../src/components/button";
+@forward "../src/components/avatar";
+@forward "../src/components/checkbox";
+@forward "../src/components/dropdown";
+@forward "../src/form-controls";
+@forward "../src/components/dialog";
+@forward "../src/components/image-uploader";
+@forward "../src/components/tabs";
+@forward "../src/components/divider";
+@forward "../src/components/mini-profile";
+@forward "../src/components/comments";
+@forward "../src/components/stats";
+@forward "../src/components/progress-bar";
+@forward "../src/components/drawer";
+@forward "../src/components/table";
+@forward "../src/components/sidebar";
+@forward "../src/components/app-header";
+@forward "../src/components/page-header";
+@forward "../src/components/project-list-item";
+@forward "../src/components/related-project-lists-item";
+@forward "../src/components/pagination";
+@forward "../src/components/tasks";
+
+@forward "../src/pages/board";
+@forward "../src/pages/projects-list";
+@forward "../src/pages/projects-details";
+@forward "../src/pages/add-update-project-dialog";
