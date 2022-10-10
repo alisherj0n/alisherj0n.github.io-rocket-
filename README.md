@@ -1,5 +1,5 @@
 # rocket
 
-# Watch scss command
+# Watch commands:
 
-Run the following command to watch scss changes: "sass --watch ./src/:./style"
+Run the following command to watch scss changes: "<code>sass --watch ./src/:./style</code>"
