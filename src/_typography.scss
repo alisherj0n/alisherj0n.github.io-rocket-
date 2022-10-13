@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 :root {
   --font-family: "Poppins", sans-serif;
 }
@@ -8,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-heading);
+  color: $color-heading;
   margin: 0;
   line-height: 1.2;
 }
@@ -40,7 +42,7 @@ h6 {
 
 .lead {
   text-transform: uppercase;
-  color: var(--color-body);
+  color: $color-body;
   font-size: 1rem;
   font-weight: 500;
 }

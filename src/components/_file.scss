@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .file {
   display: flex;
   align-items: center;
@@ -17,11 +19,11 @@
 
 .file .file-name {
   display: block;
-  color: var(--color-heading);
+  color: $color-heading;
   line-height: 1.7;
 }
 
 .file .file-size {
-  color: var(--color-body-light);
+  color: $color-body-light;
   text-transform: uppercase;
 }

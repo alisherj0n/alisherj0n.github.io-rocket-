@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .tasks,
 .tasks .task,
 .tasks .task .actions {
@@ -12,7 +14,7 @@
 .tasks .task {
   gap: 1rem;
   align-items: center;
-  color: var(--color-heading);
+  color: $color-heading;
   border-radius: var(--border-radius);
   padding: 0.125rem 1rem;
   margin-left: -1rem;
@@ -26,7 +28,7 @@
 }
 
 .tasks .task .icon {
-  color: var(--color-border);
+  color: $color-border;
 }
 
 .tasks .task.completed .description {
@@ -34,7 +36,7 @@
 }
 
 .tasks .task.completed .icon {
-  color: var(--color-primary);
+  color: $color-primary;
 }
 
 .tasks .task .actions {
@@ -46,7 +48,7 @@
 .tasks .task:hover,
 .tasks .task:focus,
 .tasks .task:focus-within {
-  background-color: var(--color-bg);
+  background-color: $color-bg;
 }
 
 .tasks .task:hover .actions,

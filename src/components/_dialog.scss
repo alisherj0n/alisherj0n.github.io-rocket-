@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .dialog,
 .dialog .content {
   flex-direction: column;
@@ -9,7 +11,7 @@
   z-index: 100;
   background: #fff;
   border-radius: var(--border-radius-xl);
-  box-shadow: -4px 8px 24px 0px var(--color-shadow);
+  box-shadow: -4px 8px 24px 0px $color-shadow;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -56,5 +58,5 @@
 
 .dialog .actions {
   justify-content: end;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid $color-border;
 }

@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 :root {
   --app-header-height: 66px;
 }
@@ -10,9 +12,9 @@
 
 .app-header {
   padding: 0.7rem var(--container-padding);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid $color-border;
   background-color: #fff;
-  color: var(--color-heading);
+  color: $color-heading;
   height: var(--app-header-height);
   gap: 0.5rem;
   position: sticky;
@@ -41,7 +43,7 @@
   height: 7px;
   border: 1px solid #fff;
   border-radius: 50%;
-  background-color: var(--color-danger);
+  background-color: $color-danger;
   position: absolute;
   top: 9px;
   right: 10px;

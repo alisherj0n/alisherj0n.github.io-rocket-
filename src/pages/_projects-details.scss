@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .projects-details .grid {
   display: grid;
   grid-template-columns: 350px 1fr 310px;
@@ -5,13 +7,13 @@
 
 .projects-details .related-projects-list,
 .projects-details .related-projects-list .searchbar {
-  background-color: var(--color-bg);
+  background-color: $color-bg;
   position: sticky;
   align-self: start;
 }
 
 .projects-details .related-projects-list {
-  border-right: 1px solid var(--color-border);
+  border-right: 1px solid $color-border;
   top: var(--app-header-height);
 }
 
@@ -27,7 +29,7 @@
 
 .projects-details .related-projects-list .searchbar,
 .projects-details .related-projects-list .related-projects-list-item {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid $color-border;
 }
 
 .projects-details .related-projects-list {
@@ -101,7 +103,7 @@
 }
 
 .projects-details .sidebar {
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid $color-border;
 }
 
 .projects-details .sidebar.container {

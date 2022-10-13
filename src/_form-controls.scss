@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 :root {
   --form-control-padding-x: 0.8rem;
   --form-control-padding-y: 0.4628rem;
@@ -9,7 +11,7 @@
 select,
 input:not([type="checkbox"]),
 textarea {
-  border: 1px solid var(--color-border);
+  border: 1px solid $color-border;
   border-radius: var(--border-radius);
   background-color: transparent;
 
@@ -39,7 +41,7 @@ select {
   padding: var(--form-control-padding-y)
     calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
     var(--form-control-padding-x);
-  color: var(--color-body);
+  color: $color-body;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -76,7 +78,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: var(--color-body-light);
+  color: $color-body-light;
   margin: 0;
 }
 
@@ -138,16 +140,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-primary);
+  border-color: $color-primary;
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: var(--color-grey-light);
+  background-color: $color-grey-light;
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: var(--color-body);
+  color: $color-body;
 }

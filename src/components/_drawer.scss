@@ -1,13 +1,15 @@
+@use "../colors" as *;
+
 .drawer {
   display: none;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 1.5rem;
   background-color: #fff;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid $color-border;
   width: 24rem;
   height: 100%;
-  box-shadow: -4px 20px 24px 0px var(--color-shadow);
+  box-shadow: -4px 20px 24px 0px $color-shadow;
   position: fixed;
   top: 4rem;
   right: 0;

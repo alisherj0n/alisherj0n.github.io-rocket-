@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .stats,
 .stats .item {
   display: flex;
@@ -13,12 +15,12 @@
 }
 
 .stats .item .title {
-  color: var(--color-body-light);
+  color: $color-body-light;
   display: block;
   width: 99%;
 }
 
 .stats .item .subtitle {
-  color: var(--color-heading);
+  color: $color-heading;
   width: 99%;
 }

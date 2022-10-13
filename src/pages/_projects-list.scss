@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 .projects-list {
   --list-view-padding: 1.5rem;
   border-radius: var(--border-radius);
@@ -20,7 +22,7 @@
 
 .projects-list table .mini-profile .subtitle,
 .projects-list table .progress-info {
-  color: var(--color-body-light);
+  color: $color-body-light;
 }
 
 .projects-list table .progress-info {

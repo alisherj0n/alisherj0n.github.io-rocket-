@@ -1,3 +1,5 @@
+@use "../colors" as *;
+
 table {
   --table-side-padding: 1.5rem;
 
@@ -8,14 +10,14 @@ table {
 table th {
   text-align: start;
   text-transform: uppercase;
-  color: var(--color-body-light);
+  color: $color-body-light;
   font-weight: 400;
   font-size: 0.9rem;
 }
 
 table th,
 table td {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid $color-border;
   padding: 0.8rem 1rem;
 }
 

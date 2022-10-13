@@ -1,10 +1,12 @@
+@use "../colors" as *;
+
 .image-uploader {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 6rem;
   min-height: 6rem;
-  border: 1px dashed var(--color-body-light);
+  border: 1px dashed $color-body-light;
   padding: 0.5rem;
   border-radius: var(--border-radius-xl);
   align-self: center;
@@ -19,11 +21,11 @@
 .image-uploader .icon {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-body-light);
+  color: $color-body-light;
 }
 
 .image-uploader .image {
-  border: 1px solid var(--color-grey);
+  border: 1px solid $color-grey;
   border-radius: var(--border-radius);
   max-width: 99%;
 }
@@ -32,7 +34,7 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid var(--color-grey);
+  border: 1px solid $color-grey;
   background: #fff;
   position: absolute;
   top: -0.7rem;
@@ -41,5 +43,5 @@
 
 .image-uploader .edit-btn .icon {
   font-size: 1.5rem;
-  color: var(--color-heading);
+  color: $color-heading;
 }

@@ -1,6 +1,8 @@
+@use "./colors" as *;
+
 body {
   font-family: var(--font-family);
-  color: var(--color-body);
+  color: $color-body;
 }
 
 a {
@@ -11,7 +13,7 @@ a {
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: var(--font-family);
-  color: var(--color-body-light);
+  color: $color-body-light;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -21,5 +23,5 @@ a {
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: var(--font-family);
-  color: var(--color-heading);
+  color: $color-heading;
 }
