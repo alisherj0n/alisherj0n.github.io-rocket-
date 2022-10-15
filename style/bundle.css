@@ -337,6 +337,14 @@ a {
 }
 
 :root {
+  --form-control-padding-x: 0.8rem;
+  --form-control-padding-y: 0.4628rem;
+  --form-control-height: 2.625rem;
+  --form-control-height-lg: 3rem;
+  --form-control-height-sm: 2.25rem;
+}
+
+:root {
   --button-padding-x: 0.9rem;
   --button-padding-y: 0.4rem;
 }
@@ -720,14 +728,6 @@ input[type=checkbox]:checked::after {
   background-color: var(--color-danger-light);
 }
 
-:root {
-  --form-control-padding-x: 0.8rem;
-  --form-control-padding-y: 0.4628rem;
-  --form-control-height: 2.625rem;
-  --form-control-height-lg: 3rem;
-  --form-control-height-sm: 2.25rem;
-}
-
 select,
 input:not([type=checkbox]),
 textarea {
@@ -745,8 +745,8 @@ input:not([type=checkbox]) {
 
 select.small,
 input.small:not([type=checkbox]) {
-  --form-control-padding-y: 0.4rem;
   --form-control-padding-x: 0.5625rem;
+  font-size: 0.875rem;
   height: var(--form-control-height-sm);
   border-radius: var(--border-radius-sm);
 }
@@ -1737,7 +1737,6 @@ table tbody td:last-child {
 
 .projects-details .related-projects-list .searchbar input {
   --form-control-padding-y: 2rem;
-  --form-control-padding-x: 1rem;
   border: none;
 }
 
