@@ -323,7 +323,7 @@ a {
   padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 3px solid transparent;
-  height: var(--form-control-height);
+  height: 2.625rem;
   position: relative;
   outline: none;
   border-radius: var(--border-radius);
@@ -342,7 +342,7 @@ a {
 .btn.small {
   --button-padding-y: 0.4rem;
   --button-padding-x: 0.75rem;
-  height: var(--form-control-height-sm);
+  height: 2.25rem;
   font-size: 0.875rem;
   border-radius: var(--border-radius-sm);
 }
@@ -350,7 +350,7 @@ a {
 .btn.large {
   --button-padding-x: 1.3rem;
   --button-padding-y: 0.56rem;
-  height: var(--form-control-height-lg);
+  height: 3rem;
 }
 
 .btn.small .icon {
@@ -358,7 +358,7 @@ a {
 }
 
 .btn.icon-only {
-  width: var(--form-control-height);
+  width: 2.625rem;
 }
 
 .btn.primary {
@@ -692,18 +692,10 @@ input[type=checkbox]:checked::after {
   background-color: rgba(253, 121, 114, 0.1);
 }
 
-:root {
-  --form-control-padding-x: 0.8rem;
-  --form-control-padding-y: 0.4628rem;
-  --form-control-height: 2.625rem;
-  --form-control-height-lg: 3rem;
-  --form-control-height-sm: 2.25rem;
-}
-
 select,
 input:not([type=checkbox]),
 textarea {
-  border: 1px solid var(--color-border);
+  border: 1px solid #e8e9eb;
   border-radius: var(--border-radius);
   background-color: transparent;
   transition: border-color var(--transition-duration);
@@ -712,25 +704,24 @@ textarea {
 
 select,
 input:not([type=checkbox]) {
-  height: var(--form-control-height);
+  height: 2.625rem;
 }
 
 select.small,
 input.small:not([type=checkbox]) {
-  --form-control-padding-x: 0.5625rem;
   font-size: 0.875rem;
-  height: var(--form-control-height-sm);
+  height: 2.25rem;
   border-radius: var(--border-radius-sm);
 }
 
 select.large,
 input.large:not([type=checkbox]) {
-  height: var(--form-control-height-lg);
+  height: 3rem;
 }
 
 select {
-  padding: var(--form-control-padding-y) calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y) var(--form-control-padding-x);
-  color: var(--color-body);
+  padding: 0.4628rem 1.8rem 0.4628rem 0.8rem;
+  color: #595f69;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -740,7 +731,7 @@ select {
 
 input:not([type=checkbox]),
 textarea {
-  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  padding: 0.4628rem 0.8rem;
   font-family: var(--font-family);
   width: 100%;
 }
@@ -767,7 +758,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: var(--color-body-light);
+  color: #8a9099;
   margin: 0;
 }
 
@@ -829,18 +820,18 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-primary);
+  border-color: #304ffd;
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: var(--color-grey-light);
+  background-color: #eeeeee;
   pointer-events: none;
 }
 
 input[type=date] {
-  color: var(--color-body);
+  color: #595f69;
 }
 
 .dialog,
@@ -1451,7 +1442,7 @@ table tbody td:last-child {
 }
 
 .project-list-item .header .actions {
-  margin-right: calc(var(--form-control-padding-x) * -1);
+  margin-right: -0.8rem;
 }
 
 .project-list-item .mini-profile .title {
@@ -1708,7 +1699,8 @@ table tbody td:last-child {
 }
 
 .projects-details .related-projects-list .searchbar input {
-  --form-control-padding-y: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border: none;
 }
 

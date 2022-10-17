@@ -1,9 +1,10 @@
+@use "../colors";
 @use "../form-controls";
 
 select,
 input:not([type="checkbox"]),
 textarea {
-  border: 1px solid var(--color-border);
+  border: 1px solid colors.$border;
   border-radius: var(--border-radius);
   background-color: transparent;
   transition: border-color var(--transition-duration);
@@ -12,27 +13,25 @@ textarea {
 
 select,
 input:not([type="checkbox"]) {
-  height: var(--form-control-height);
+  height: form-controls.$height;
 }
 
 select.small,
 input.small:not([type="checkbox"]) {
-  --form-control-padding-x: 0.5625rem;
   font-size: 0.875rem;
-  height: var(--form-control-height-sm);
+  height: form-controls.$height-sm;
   border-radius: var(--border-radius-sm);
 }
 
 select.large,
 input.large:not([type="checkbox"]) {
-  height: var(--form-control-height-lg);
+  height: form-controls.$height-lg;
 }
 
 select {
-  padding: var(--form-control-padding-y)
-    calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
-    var(--form-control-padding-x);
-  color: var(--color-body);
+  padding: form-controls.$padding-y calc(form-controls.$padding-x + 1rem)
+    form-controls.$padding-y form-controls.$padding-x;
+  color: colors.$body;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -42,7 +41,7 @@ select {
 
 input:not([type="checkbox"]),
 textarea {
-  padding: var(--form-control-padding-y) var(--form-control-padding-x);
+  padding: form-controls.$padding-y form-controls.$padding-x;
   font-family: var(--font-family);
   width: 100%;
 }
@@ -69,7 +68,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: var(--color-body-light);
+  color: colors.$body-light;
   margin: 0;
 }
 
@@ -131,16 +130,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-primary);
+  border-color: colors.$primary;
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: var(--color-grey-light);
+  background-color: colors.$grey-light;
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: var(--color-body);
+  color: colors.$body;
 }

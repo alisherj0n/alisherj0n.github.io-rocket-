@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../form-controls";
 
 .projects-details .grid {
   display: grid;
@@ -22,7 +23,9 @@
 }
 
 .projects-details .related-projects-list .searchbar input {
-  --form-control-padding-y: 2rem;
+  form-controls.$padding-y: 2rem;
+  padding-top: form-controls.$padding-y;
+  padding-bottom: form-controls.$padding-y;
   border: none;
 }
 
