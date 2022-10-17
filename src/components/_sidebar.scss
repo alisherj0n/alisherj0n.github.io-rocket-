@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../fx";
 
 .app > .sidebar {
   --sidebar-padding-y: 1rem;
@@ -32,8 +33,8 @@
   align-items: center;
   position: relative;
   color: colors.$body-light;
-  transition: background-color var(--transition-duration),
-    color var(--transition-duration);
+  transition: background-color fx.$transition-duration,
+    color fx.$transition-duration;
   gap: 1rem;
 }
 
@@ -74,7 +75,7 @@
 }
 
 .app.collapsed > .sidebar .nav .item {
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   padding: 0.8rem;
 }
 
@@ -101,7 +102,7 @@
   }
 
   .app > .sidebar .nav .item {
-    border-radius: var(--border-radius);
+    border-radius: fx.$radius;
     padding: 0.8rem;
   }
 

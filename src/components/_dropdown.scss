@@ -1,11 +1,12 @@
 @use "../colors";
+@use "../fx";
 
 .dropdown {
   background: #fff;
   padding: 0.5rem 0;
   min-width: 10rem;
   max-width: 13rem;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   box-shadow: 0px 20px 50px 0px colors.$shadow;
   position: absolute;
   display: none;
@@ -25,8 +26,8 @@
   align-items: center;
   gap: 0.7rem;
   padding: 0.6rem 2rem;
-  transition: color var(--transition-duration),
-    background-color var(--transition-duration);
+  transition: color fx.$transition-duration,
+    background-color fx.$transition-duration;
 }
 
 .dropdown .item .icon {

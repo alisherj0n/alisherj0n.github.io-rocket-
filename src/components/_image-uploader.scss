@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../fx";
 
 .image-uploader {
   display: flex;
@@ -8,7 +9,7 @@
   min-height: 6rem;
   border: 1px dashed colors.$body-light;
   padding: 0.5rem;
-  border-radius: var(--border-radius-xl);
+  border-radius: fx.$radius-xl;
   align-self: center;
   cursor: pointer;
   position: relative;
@@ -26,7 +27,7 @@
 
 .image-uploader .image {
   border: 1px solid colors.$grey;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   max-width: 99%;
 }
 

@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../fx";
 
 .tabs {
   display: flex;
@@ -15,7 +16,7 @@
   background-color: colors.$border;
   color: colors.$body-light;
   font-size: 0.8rem;
-  border-radius: var(--border-radius-xs);
+  border-radius: fx.$radius-xs;
 }
 
 .tabs > * {
@@ -33,7 +34,7 @@
   align-items: center;
   gap: 0.5rem;
   position: relative;
-  transition: color var(--transition-duration);
+  transition: color fx.$transition-duration;
   border: none;
   background: transparent;
 }

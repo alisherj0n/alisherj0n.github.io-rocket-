@@ -1,3 +1,5 @@
+@use "../fx";
+
 .attachment {
   display: flex;
   align-items: center;
@@ -7,12 +9,12 @@
 .photo-attachment {
   width: 4.5rem;
   height: 4.5rem;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   object-fit: cover;
 }
 
 .photo-attachment.small {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: var(--border-radius-xs);
+  border-radius: fx.$radius-xs;
 }

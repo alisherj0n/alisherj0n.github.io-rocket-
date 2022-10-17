@@ -38,14 +38,6 @@ button {
   font-size: 1.3rem;
 }
 
-:root {
-  --border-radius-xl: 20px;
-  --border-radius: 14px;
-  --border-radius-sm: 10px;
-  --border-radius-xs: 6px;
-  --transition-duration: 0.2s;
-}
-
 .text-ellipsis {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -112,7 +104,7 @@ body {
 
 a {
   text-decoration: none;
-  transition: color var(--transition-duration);
+  transition: color 0.2s;
 }
 
 ::-webkit-input-placeholder {
@@ -186,7 +178,7 @@ a {
   background-color: #efeff1;
   color: #3f434a;
   padding: var(--badge-padding-y) var(--badge-padding-x);
-  border-radius: var(--border-radius-xs);
+  border-radius: 6px;
 }
 
 .badge.small {
@@ -197,7 +189,7 @@ a {
 .badge.large {
   --badge-padding-y: 1rem;
   --badge-padding-x: 1rem;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
 }
 
 .badge .icon {
@@ -263,14 +255,14 @@ a {
 .photo-attachment {
   width: 4.5rem;
   height: 4.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   object-fit: cover;
 }
 
 .photo-attachment.small {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: var(--border-radius-xs);
+  border-radius: 6px;
 }
 
 .file {
@@ -319,8 +311,8 @@ a {
   height: 2.625rem;
   position: relative;
   outline: none;
-  border-radius: var(--border-radius);
-  transition: background-color var(--transition-duration), color var(--transition-duration), box-shadow var(--transition-duration);
+  border-radius: 14px;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover,
@@ -337,7 +329,7 @@ a {
   --button-padding-x: 0.75rem;
   height: 2.25rem;
   font-size: 0.875rem;
-  border-radius: var(--border-radius-sm);
+  border-radius: 10px;
 }
 
 .btn.large {
@@ -568,7 +560,7 @@ a {
 }
 
 [role=button] {
-  transition: box-shadow var(--transition-duration);
+  transition: box-shadow 0.2s;
 }
 
 [role=button]:focus {
@@ -581,7 +573,7 @@ a {
   height: 2.5rem;
   border: 1px solid #e8e9eb;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
 }
 
 .avatar.large {
@@ -645,7 +637,7 @@ input[type=checkbox]:checked::after {
   padding: 0.5rem 0;
   min-width: 10rem;
   max-width: 13rem;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   box-shadow: 0px 20px 50px 0px rgba(164, 165, 165, 0.4);
   position: absolute;
   display: none;
@@ -665,7 +657,7 @@ input[type=checkbox]:checked::after {
   align-items: center;
   gap: 0.7rem;
   padding: 0.6rem 2rem;
-  transition: color var(--transition-duration), background-color var(--transition-duration);
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .dropdown .item .icon {
@@ -689,9 +681,9 @@ select,
 input:not([type=checkbox]),
 textarea {
   border: 1px solid #e8e9eb;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   background-color: transparent;
-  transition: border-color var(--transition-duration);
+  transition: border-color 0.2s;
   outline: none;
 }
 
@@ -704,7 +696,7 @@ select.small,
 input.small:not([type=checkbox]) {
   font-size: 0.875rem;
   height: 2.25rem;
-  border-radius: var(--border-radius-sm);
+  border-radius: 10px;
 }
 
 select.large,
@@ -837,7 +829,7 @@ input[type=date] {
   position: fixed;
   z-index: 100;
   background: #fff;
-  border-radius: var(--border-radius-xl);
+  border-radius: 20px;
   box-shadow: -4px 8px 24px 0px rgba(164, 165, 165, 0.4);
   top: 50%;
   left: 50%;
@@ -896,7 +888,7 @@ input[type=date] {
   min-height: 6rem;
   border: 1px dashed #8a9099;
   padding: 0.5rem;
-  border-radius: var(--border-radius-xl);
+  border-radius: 20px;
   align-self: center;
   cursor: pointer;
   position: relative;
@@ -914,7 +906,7 @@ input[type=date] {
 
 .image-uploader .image {
   border: 1px solid #c6c9cc;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   max-width: 99%;
 }
 
@@ -949,7 +941,7 @@ input[type=date] {
   background-color: #e8e9eb;
   color: #8a9099;
   font-size: 0.8rem;
-  border-radius: var(--border-radius-xs);
+  border-radius: 6px;
 }
 
 .tabs > * {
@@ -967,7 +959,7 @@ input[type=date] {
   align-items: center;
   gap: 0.5rem;
   position: relative;
-  transition: color var(--transition-duration);
+  transition: color 0.2s;
   border: none;
   background: transparent;
 }
@@ -1058,9 +1050,9 @@ input[type=date] {
 
 .comments .comment-field {
   border: 1px solid #e8e9eb;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   padding: 0.55rem;
-  transition: border-color var(--transition-duration);
+  transition: border-color 0.2s;
 }
 
 .comments .comment-field:focus-within {
@@ -1131,13 +1123,13 @@ input[type=date] {
   width: 100%;
   height: 0.4rem;
   background-color: #f8f8f8;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
 }
 
 .progress-bar .progress {
   background-color: #8a9099;
   height: 100%;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
 }
 
 .progress-bar.success .progress {
@@ -1258,7 +1250,7 @@ table tbody td:last-child {
   align-items: center;
   position: relative;
   color: #8a9099;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
+  transition: background-color 0.2s, color 0.2s;
   gap: 1rem;
 }
 
@@ -1299,7 +1291,7 @@ table tbody td:last-child {
 }
 
 .app.collapsed > .sidebar .nav .item {
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   padding: 0.8rem;
 }
 
@@ -1324,7 +1316,7 @@ table tbody td:last-child {
     display: block;
   }
   .app > .sidebar .nav .item {
-    border-radius: var(--border-radius);
+    border-radius: 14px;
     padding: 0.8rem;
   }
   .app > .sidebar .nav .item.active {
@@ -1424,7 +1416,7 @@ table tbody td:last-child {
   gap: 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   position: relative;
 }
 
@@ -1547,11 +1539,11 @@ table tbody td:last-child {
   gap: 1rem;
   align-items: center;
   color: #3f434a;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   padding: 0.125rem 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
-  transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .tasks .task .description {
@@ -1573,7 +1565,7 @@ table tbody td:last-child {
 .tasks .task .actions {
   margin-right: -0.8rem;
   opacity: 0;
-  transition: opacity var(--transition-duration);
+  transition: opacity 0.2s;
 }
 
 .tasks .task:hover,
@@ -1624,7 +1616,7 @@ table tbody td:last-child {
 }
 .projects-list {
   --list-view-padding: 1.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 14px;
   background-color: #fff;
 }
 

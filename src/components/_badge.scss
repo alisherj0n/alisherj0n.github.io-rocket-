@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../fx";
 
 .badge {
   --badge-padding-y: 0.3rem;
@@ -11,7 +12,7 @@
   background-color: colors.$bg-light;
   color: colors.$heading;
   padding: var(--badge-padding-y) var(--badge-padding-x);
-  border-radius: var(--border-radius-xs);
+  border-radius: fx.$radius-xs;
 }
 
 .badge.small {
@@ -22,7 +23,7 @@
 .badge.large {
   --badge-padding-y: 1rem;
   --badge-padding-x: 1rem;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
 }
 
 .badge .icon {

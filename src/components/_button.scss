@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../form-controls";
+@use "../fx";
 
 :root {
   --button-padding-x: 0.9rem;
@@ -19,9 +20,9 @@
   height: form-controls.$height;
   position: relative;
   outline: none;
-  border-radius: var(--border-radius);
-  transition: background-color var(--transition-duration),
-    color var(--transition-duration), box-shadow var(--transition-duration);
+  border-radius: fx.$radius;
+  transition: background-color fx.$transition-duration,
+    color fx.$transition-duration, box-shadow fx.$transition-duration;
 }
 
 .btn:hover,
@@ -38,7 +39,7 @@
   --button-padding-x: 0.75rem;
   height: form-controls.$height-sm;
   font-size: 0.875rem;
-  border-radius: var(--border-radius-sm);
+  border-radius: fx.$radius-sm;
 }
 
 .btn.large {
@@ -269,7 +270,7 @@
 }
 
 [role="button"] {
-  transition: box-shadow var(--transition-duration);
+  transition: box-shadow fx.$transition-duration;
 }
 
 [role="button"]:focus {

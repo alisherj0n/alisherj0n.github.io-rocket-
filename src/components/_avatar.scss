@@ -1,11 +1,12 @@
 @use "../colors";
+@use "../fx";
 
 .avatar {
   width: 2.5rem;
   height: 2.5rem;
   border: 1px solid colors.$border;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
 }
 
 .avatar.large {

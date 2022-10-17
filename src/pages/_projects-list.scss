@@ -1,8 +1,9 @@
 @use "../colors";
+@use "../fx";
 
 .projects-list {
   --list-view-padding: 1.5rem;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   background-color: #fff;
 }
 

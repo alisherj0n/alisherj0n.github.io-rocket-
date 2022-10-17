@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../fx";
 
 .comments,
 .comments .comment,
@@ -15,9 +16,9 @@
 
 .comments .comment-field {
   border: 1px solid colors.$border;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   padding: 0.55rem;
-  transition: border-color var(--transition-duration);
+  transition: border-color fx.$transition-duration;
 }
 
 .comments .comment-field:focus-within {

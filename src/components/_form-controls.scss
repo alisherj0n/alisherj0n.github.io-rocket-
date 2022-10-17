@@ -1,13 +1,14 @@
 @use "../colors";
 @use "../form-controls";
+@use "../fx";
 
 select,
 input:not([type="checkbox"]),
 textarea {
   border: 1px solid colors.$border;
-  border-radius: var(--border-radius);
+  border-radius: fx.$radius;
   background-color: transparent;
-  transition: border-color var(--transition-duration);
+  transition: border-color fx.$transition-duration;
   outline: none;
 }
 
@@ -20,7 +21,7 @@ select.small,
 input.small:not([type="checkbox"]) {
   font-size: 0.875rem;
   height: form-controls.$height-sm;
-  border-radius: var(--border-radius-sm);
+  border-radius: fx.$radius-sm;
 }
 
 select.large,
