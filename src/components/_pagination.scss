@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .pagination,
 .pagination .displayable-quantity,
@@ -17,7 +17,7 @@
 }
 
 .pagination .summary {
-  color: $color-body-light;
+  color: colors.$body-light;
 }
 
 .pagination .pages {

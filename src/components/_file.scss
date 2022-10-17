@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .file {
   display: flex;
@@ -19,11 +19,11 @@
 
 .file .file-name {
   display: block;
-  color: $color-heading;
+  color: colors.$heading;
   line-height: 1.7;
 }
 
 .file .file-size {
-  color: $color-body-light;
+  color: colors.$body-light;
   text-transform: uppercase;
 }

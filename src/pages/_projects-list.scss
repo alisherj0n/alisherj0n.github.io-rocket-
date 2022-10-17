@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .projects-list {
   --list-view-padding: 1.5rem;
@@ -22,7 +22,7 @@
 
 .projects-list table .mini-profile .subtitle,
 .projects-list table .progress-info {
-  color: $color-body-light;
+  color: colors.$body-light;
 }
 
 .projects-list table .progress-info {

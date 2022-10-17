@@ -1,9 +1,9 @@
-@use "../colors" as *;
+@use "../colors";
 
 .app > .sidebar {
   --sidebar-padding-y: 1rem;
   --sidebar-padding-x: 0;
-  border-right: 1px solid $color-border;
+  border-right: 1px solid colors.$border;
   min-height: 100vh;
   padding: var(--sidebar-padding-y) var(--sidebar-padding-x);
   position: sticky;
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  color: $color-body-light;
+  color: colors.$body-light;
   transition: background-color var(--transition-duration),
     color var(--transition-duration);
   gap: 1rem;
@@ -40,7 +40,7 @@
 .app > .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
-  background-color: $color-primary;
+  background-color: colors.$primary;
   width: 4px;
   left: 0px;
   height: 100%;
@@ -49,16 +49,16 @@
 
 .app > .sidebar .nav .item:hover,
 .app > .sidebar .nav .item.active {
-  background-color: $color-bg;
+  background-color: colors.$bg;
 }
 
 .app > .sidebar .nav .item.active {
-  background-color: $color-bg;
+  background-color: colors.$bg;
 }
 
 .app > .sidebar .nav .item .link-txt {
   margin-right: auto;
-  color: $color-heading;
+  color: colors.$heading;
 }
 
 .app > .sidebar .nav .item .submenu-indicator {
@@ -79,7 +79,7 @@
 }
 
 .app.collapsed > .sidebar .nav .item.active {
-  background-color: $color-primary;
+  background-color: colors.$primary;
   color: #fff;
 }
 
@@ -106,7 +106,7 @@
   }
 
   .app > .sidebar .nav .item.active {
-    background-color: $color-primary;
+    background-color: colors.$primary;
     color: #fff;
   }
 

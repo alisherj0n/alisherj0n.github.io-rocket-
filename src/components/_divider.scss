@@ -1,8 +1,8 @@
-@use "../colors" as *;
+@use "../colors";
 
 .divider {
   width: 1px;
-  background-color: $color-border;
+  background-color: colors.$border;
 }
 
 .divider.tall {
@@ -14,7 +14,7 @@
 }
 
 .divider.horizontal {
-  border-top: 1px solid $color-border;
+  border-top: 1px solid colors.$border;
   border-bottom: transparent;
   width: 100%;
   margin: 0.5rem 0;

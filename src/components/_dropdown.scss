@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .dropdown {
   background: #fff;
@@ -6,7 +6,7 @@
   min-width: 10rem;
   max-width: 13rem;
   border-radius: var(--border-radius);
-  box-shadow: 0px 20px 50px 0px $color-shadow;
+  box-shadow: 0px 20px 50px 0px colors.$shadow;
   position: absolute;
   display: none;
 }
@@ -20,7 +20,7 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  color: $color-body;
+  color: colors.$body;
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -30,18 +30,18 @@
 }
 
 .dropdown .item .icon {
-  color: $color-body-light;
+  color: colors.$body-light;
 }
 
 .dropdown .item:hover {
-  background-color: $color-bg;
+  background-color: colors.$bg;
 }
 
 .dropdown .item.danger,
 .dropdown .item.danger .icon {
-  color: $color-danger;
+  color: colors.$danger;
 }
 
 .dropdown .item.danger:hover {
-  background-color: $color-danger-light;
+  background-color: colors.$danger-light;
 }

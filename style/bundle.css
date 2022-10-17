@@ -309,14 +309,6 @@ a {
 }
 
 :root {
-  --form-control-padding-x: 0.8rem;
-  --form-control-padding-y: 0.4628rem;
-  --form-control-height: 2.625rem;
-  --form-control-height-lg: 3rem;
-  --form-control-height-sm: 2.25rem;
-}
-
-:root {
   --button-padding-x: 0.9rem;
   --button-padding-y: 0.4rem;
 }
@@ -700,10 +692,18 @@ input[type=checkbox]:checked::after {
   background-color: rgba(253, 121, 114, 0.1);
 }
 
+:root {
+  --form-control-padding-x: 0.8rem;
+  --form-control-padding-y: 0.4628rem;
+  --form-control-height: 2.625rem;
+  --form-control-height-lg: 3rem;
+  --form-control-height-sm: 2.25rem;
+}
+
 select,
 input:not([type=checkbox]),
 textarea {
-  border: 1px solid #e8e9eb;
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   background-color: transparent;
   transition: border-color var(--transition-duration);
@@ -730,7 +730,7 @@ input.large:not([type=checkbox]) {
 
 select {
   padding: var(--form-control-padding-y) calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y) var(--form-control-padding-x);
-  color: #595f69;
+  color: var(--color-body);
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -767,7 +767,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: #8a9099;
+  color: var(--color-body-light);
   margin: 0;
 }
 
@@ -829,18 +829,18 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #304ffd;
+  border-color: var(--color-primary);
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: #eeeeee;
+  background-color: var(--color-grey-light);
   pointer-events: none;
 }
 
 input[type=date] {
-  color: #595f69;
+  color: var(--color-body);
 }
 
 .dialog,

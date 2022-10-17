@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .comments,
 .comments .comment,
@@ -14,14 +14,14 @@
 }
 
 .comments .comment-field {
-  border: 1px solid $color-border;
+  border: 1px solid colors.$border;
   border-radius: var(--border-radius);
   padding: 0.55rem;
   transition: border-color var(--transition-duration);
 }
 
 .comments .comment-field:focus-within {
-  border-color: $color-primary;
+  border-color: colors.$primary;
 }
 
 .comments .comment-field textarea {
@@ -51,10 +51,10 @@
 }
 
 .comments .comment .author {
-  color: $color-heading;
+  color: colors.$heading;
   display: inline-block;
 }
 
 .comments .comment .time {
-  color: $color-body-light;
+  color: colors.$body-light;
 }

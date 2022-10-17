@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .drawer {
   display: none;
@@ -6,10 +6,10 @@
   gap: 2rem;
   padding: 1rem 1.5rem;
   background-color: #fff;
-  border-top: 1px solid $color-border;
+  border-top: 1px solid colors.$border;
   width: 24rem;
   height: 100%;
-  box-shadow: -4px 20px 24px 0px $color-shadow;
+  box-shadow: -4px 20px 24px 0px colors.$shadow;
   position: fixed;
   top: 4rem;
   right: 0;

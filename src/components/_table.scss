@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 table {
   --table-side-padding: 1.5rem;
@@ -10,14 +10,14 @@ table {
 table th {
   text-align: start;
   text-transform: uppercase;
-  color: $color-body-light;
+  color: colors.$body-light;
   font-weight: 400;
   font-size: 0.9rem;
 }
 
 table th,
 table td {
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid colors.$border;
   padding: 0.8rem 1rem;
 }
 

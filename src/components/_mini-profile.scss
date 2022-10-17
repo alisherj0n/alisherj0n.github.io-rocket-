@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .mini-profile {
   display: flex;
@@ -11,7 +11,7 @@
 .mini-profile .text-info {
   width: 100%;
   overflow: hidden;
-  color: $color-heading;
+  color: colors.$heading;
 }
 
 .mini-profile .title,
@@ -26,7 +26,7 @@
 }
 
 .mini-profile .subtitle {
-  color: $color-body;
+  color: colors.$body;
 }
 
 .mini-profile .avatar.large {

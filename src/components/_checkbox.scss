@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 input[type="checkbox"] {
   display: flex;
@@ -13,7 +13,7 @@ input[type="checkbox"]::before,
 input[type="checkbox"]::after {
   font-family: "Material Icons Round";
   font-size: 1.25rem;
-  color: $color-body-light;
+  color: colors.$body-light;
   margin: -2px;
 }
 
@@ -23,7 +23,7 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]::after {
   content: "\e834";
-  color: $color-primary;
+  color: colors.$primary;
 }
 
 input[type="checkbox"]:not(:checked)::before {

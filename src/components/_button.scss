@@ -1,4 +1,4 @@
-@use "../form-controls";
+@use "../colors";
 
 :root {
   --button-padding-x: 0.9rem;
@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 0.4rem;
   flex-shrink: 0;
-  color: $color-body-light;
+  color: colors.$body-light;
   padding: var(--button-padding-y) var(--button-padding-x);
   background-color: transparent;
   border: 3px solid transparent;
@@ -25,7 +25,7 @@
 
 .btn:hover,
 .btn:focus {
-  background-color: $color-bg-light;
+  background-color: colors.$bg-light;
 }
 
 .btn:focus {
@@ -55,14 +55,14 @@
 }
 
 .btn.primary {
-  background-color: $color-primary;
+  background-color: colors.$primary;
   color: #fff;
-  border-bottom-color: $color-primary-dark;
+  border-bottom-color: colors.$primary-dark;
 }
 
 .btn.primary:hover,
 .btn.primary:focus {
-  background-color: $color-primary-hover;
+  background-color: colors.$primary-hover;
 }
 
 .btn.primary:focus {
@@ -70,18 +70,18 @@
 }
 
 .btn.primary:active {
-  background-color: $color-primary-dark;
+  background-color: colors.$primary-dark;
 }
 
 .btn.warning {
-  background-color: $color-warning;
+  background-color: colors.$warning;
   color: #fff;
-  border-bottom-color: $color-warning-dark;
+  border-bottom-color: colors.$warning-dark;
 }
 
 .btn.warning:hover,
 .btn.warning:focus {
-  background-color: $color-warning-hover;
+  background-color: colors.$warning-hover;
 }
 
 .btn.warning:focus {
@@ -89,18 +89,18 @@
 }
 
 .btn.warning:active {
-  background-color: $color-warning-dark;
+  background-color: colors.$warning-dark;
 }
 
 .btn.danger {
-  background-color: $color-danger;
+  background-color: colors.$danger;
   color: #fff;
-  border-bottom-color: $color-danger-dark;
+  border-bottom-color: colors.$danger-dark;
 }
 
 .btn.danger:hover,
 .btn.danger:focus {
-  background-color: $color-danger-hover;
+  background-color: colors.$danger-hover;
 }
 
 .btn.danger:focus {
@@ -108,18 +108,18 @@
 }
 
 .btn.danger:active {
-  background-color: $color-danger-dark;
+  background-color: colors.$danger-dark;
 }
 
 .btn.success {
-  background-color: $color-success;
+  background-color: colors.$success;
   color: #fff;
-  border-bottom-color: $color-success-dark;
+  border-bottom-color: colors.$success-dark;
 }
 
 .btn.success:hover,
 .btn.success:focus {
-  background-color: $color-success-hover;
+  background-color: colors.$success-hover;
 }
 
 .btn.success:focus {
@@ -127,7 +127,7 @@
 }
 
 .btn.success:active {
-  background-color: $color-success-dark;
+  background-color: colors.$success-dark;
 }
 
 .btn.light {
@@ -136,17 +136,17 @@
 }
 
 .btn.light:hover {
-  background-color: $color-bg-light;
+  background-color: colors.$bg-light;
 }
 
 .btn.light.primary {
-  background-color: $color-primary-light;
-  color: $color-primary;
+  background-color: colors.$primary-light;
+  color: colors.$primary;
 }
 
 .btn.light.primary:hover,
 .btn.light.primary:focus {
-  background-color: $color-primary;
+  background-color: colors.$primary;
   color: #fff;
 }
 
@@ -155,17 +155,17 @@
 }
 
 .btn.light.primary:active {
-  background-color: $color-primary-dark;
+  background-color: colors.$primary-dark;
 }
 
 .btn.light.warning {
-  background-color: $color-warning-light;
-  color: $color-warning;
+  background-color: colors.$warning-light;
+  color: colors.$warning;
 }
 
 .btn.light.warning:hover,
 .btn.light.warning:focus {
-  background-color: $color-warning;
+  background-color: colors.$warning;
   color: #fff;
 }
 
@@ -174,17 +174,17 @@
 }
 
 .btn.light.warning:active {
-  background-color: $color-warning-dark;
+  background-color: colors.$warning-dark;
 }
 
 .btn.light.danger {
-  background-color: $color-danger-light;
-  color: $color-danger;
+  background-color: colors.$danger-light;
+  color: colors.$danger;
 }
 
 .btn.light.danger:hover,
 .btn.light.danger:focus {
-  background-color: $color-danger;
+  background-color: colors.$danger;
   color: #fff;
 }
 
@@ -193,17 +193,17 @@
 }
 
 .btn.light.danger:active {
-  background-color: $color-danger-dark;
+  background-color: colors.$danger-dark;
 }
 
 .btn.light.success {
-  background-color: $color-success-light;
-  color: $color-success;
+  background-color: colors.$success-light;
+  color: colors.$success;
 }
 
 .btn.light.success:hover,
 .btn.light.success:focus {
-  background-color: $color-success;
+  background-color: colors.$success;
   color: #fff;
 }
 
@@ -212,7 +212,7 @@
 }
 
 .btn.light.success:active {
-  background-color: $color-success-dark;
+  background-color: colors.$success-dark;
 }
 
 .btn.link {
@@ -221,43 +221,43 @@
 }
 
 .btn.link.primary {
-  color: $color-primary;
+  color: colors.$primary;
 }
 
 .btn.link.primary:hover,
 .btn.link.primary:focus,
 .btn.link.primary:active {
-  background-color: $color-primary-light;
+  background-color: colors.$primary-light;
 }
 
 .btn.link.warning {
-  color: $color-warning;
+  color: colors.$warning;
 }
 
 .btn.link.warning:hover,
 .btn.link.warning:focus,
 .btn.link.warning:active {
-  background-color: $color-warning-light;
+  background-color: colors.$warning-light;
 }
 
 .btn.link.danger {
-  color: $color-danger;
+  color: colors.$danger;
 }
 
 .btn.link.danger:hover,
 .btn.link.danger:focus,
 .btn.link.danger:active {
-  background-color: $color-danger-light;
+  background-color: colors.$danger-light;
 }
 
 .btn.link.success {
-  color: $color-success;
+  color: colors.$success;
 }
 
 .btn.link.success:hover,
 .btn.link.success:focus,
 .btn.link.success:active {
-  background-color: $color-success-light;
+  background-color: colors.$success-light;
 }
 
 .btn:disabled,

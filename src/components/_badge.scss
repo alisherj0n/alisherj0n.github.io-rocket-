@@ -1,4 +1,4 @@
-@use "../colors" as *;
+@use "../colors";
 
 .badge {
   --badge-padding-y: 0.3rem;
@@ -8,8 +8,8 @@
   gap: 0.5rem;
   justify-content: center;
   white-space: nowrap;
-  background-color: $color-bg-light;
-  color: $color-heading;
+  background-color: colors.$bg-light;
+  color: colors.$heading;
   padding: var(--badge-padding-y) var(--badge-padding-x);
   border-radius: var(--border-radius-xs);
 }
@@ -34,41 +34,41 @@
 }
 
 .badge.primary {
-  background-color: $color-primary;
+  background-color: colors.$primary;
   color: #fff;
 }
 
 .badge.warning {
-  background-color: $color-warning;
+  background-color: colors.$warning;
   color: #fff;
 }
 
 .badge.danger {
-  background-color: $color-danger;
+  background-color: colors.$danger;
   color: #fff;
 }
 
 .badge.success {
-  background-color: $color-success;
+  background-color: colors.$success;
   color: #fff;
 }
 
 .badge.light.primary {
-  background-color: $color-primary-light;
-  color: $color-primary;
+  background-color: colors.$primary-light;
+  color: colors.$primary;
 }
 
 .badge.light.warning {
-  background-color: $color-warning-light;
-  color: $color-warning;
+  background-color: colors.$warning-light;
+  color: colors.$warning;
 }
 
 .badge.light.danger {
-  background-color: $color-danger-light;
-  color: $color-danger;
+  background-color: colors.$danger-light;
+  color: colors.$danger;
 }
 
 .badge.light.success {
-  background-color: $color-success-light;
-  color: $color-success;
+  background-color: colors.$success-light;
+  color: colors.$success;
 }
