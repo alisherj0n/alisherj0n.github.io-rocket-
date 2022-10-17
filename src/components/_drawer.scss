@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../breakpoints";
 
 .drawer {
   display: none;
@@ -35,7 +36,7 @@
 }
 
 /*  breakpoint-xs */
-@media (max-width: 576px) {
+@media (max-width: breakpoints.$xs) {
   .drawer {
     width: 100%;
   }

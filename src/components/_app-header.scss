@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../breakpoints";
 
 :root {
   --app-header-height: 66px;
@@ -50,7 +51,7 @@
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: 786px) {
+@media (max-width: breakpoints.$sm) {
   .app-header .btn.notification,
   .app-header .mini-profile .avatar {
     display: none;

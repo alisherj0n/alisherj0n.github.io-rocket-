@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../form-controls";
+@use "../breakpoints";
 
 .projects-details .grid {
   display: grid;
@@ -128,7 +129,7 @@
 }
 
 /* Breakpoint-xl */
-@media (max-width: 1200px) {
+@media (max-width: breakpoints.$xl) {
   .projects-details .grid {
     grid-template-columns: 1fr 250px;
   }
@@ -138,14 +139,14 @@
 }
 
 /*  Breakpoint-lg */
-@media (max-width: 992px) {
+@media (max-width: breakpoints.$lg) {
   .projects-details .project .intro .stats {
     gap: 2rem;
   }
 }
 
 /* Breakpoint-sm */
-@media (max-width: 768px) {
+@media (max-width: breakpoints.$sm) {
   .projects-details .grid {
     grid-template-columns: 1fr;
   }

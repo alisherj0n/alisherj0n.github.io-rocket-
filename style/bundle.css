@@ -39,13 +39,6 @@ button {
 }
 
 :root {
-  --breakpoint-xs: 576px;
-  --breakpoint-sm: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-}
-
-:root {
   --border-radius-xl: 20px;
   --border-radius: 14px;
   --border-radius-sm: 10px;
@@ -1396,7 +1389,7 @@ table tbody td:last-child {
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .app-header .btn.notification,
 .app-header .mini-profile .avatar {
     display: none;
@@ -1414,7 +1407,7 @@ table tbody td:last-child {
 }
 
 /* --breakpoint-sm-- */
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .page-header {
     flex-direction: column;
   }
@@ -1624,7 +1617,7 @@ table tbody td:last-child {
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .board .page-header .heading {
     font-size: 1.6rem;
   }
