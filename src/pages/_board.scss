@@ -1,5 +1,4 @@
 @use "../colors";
-@use "../breakpoints";
 
 .board {
   background-color: colors.$bg;
@@ -30,7 +29,7 @@
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: breakpoints.$sm) {
+@media (max-width: 786px) {
   .board .page-header .heading {
     font-size: 1.6rem;
   }

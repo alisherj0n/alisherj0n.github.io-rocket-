@@ -1,7 +1,5 @@
-@use "../breakpoints";
-
 /*  breakpoint-sm */
-@media (max-width: breakpoints.$sm) {
+@media (max-width: 768px) {
   .add-update-project-dialog .time-range {
     flex-direction: column;
   }

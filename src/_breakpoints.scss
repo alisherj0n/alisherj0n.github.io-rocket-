@@ -1,4 +1,6 @@
-$xs: 576px;
-$sm: 768px;
-$lg: 992px;
-$xl: 1200px;
+:root {
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
