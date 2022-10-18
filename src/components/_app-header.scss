@@ -1,9 +1,7 @@
 @use "../colors";
 @use "../breakpoints";
 
-:root {
-  --app-header-height: 66px;
-}
+$app-header-height: 66px;
 
 .app-header,
 .app-header .user-profile-dropdown {
@@ -16,7 +14,7 @@
   border-bottom: 1px solid colors.$border;
   background-color: #fff;
   color: colors.$heading;
-  height: var(--app-header-height);
+  height: $app-header-height;
   gap: 0.5rem;
   position: sticky;
   top: 0;

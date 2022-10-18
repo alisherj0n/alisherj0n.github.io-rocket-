@@ -1327,10 +1327,6 @@ table tbody td:last-child {
     display: none;
   }
 }
-:root {
-  --app-header-height: 66px;
-}
-
 .app-header,
 .app-header .user-profile-dropdown {
   display: flex;
@@ -1342,7 +1338,7 @@ table tbody td:last-child {
   border-bottom: 1px solid #e8e9eb;
   background-color: #fff;
   color: #3f434a;
-  height: var(--app-header-height);
+  height: 66px;
   gap: 0.5rem;
   position: sticky;
   top: 0;
@@ -1672,7 +1668,7 @@ table tbody td:last-child {
 
 .projects-details .related-projects-list {
   border-right: 1px solid #e8e9eb;
-  top: var(--app-header-height);
+  top: 66px;
 }
 
 .projects-details .related-projects-list .searchbar {
@@ -1692,7 +1688,7 @@ table tbody td:last-child {
 
 .projects-details .related-projects-list {
   overflow-y: auto;
-  height: calc(100vh - var(--app-header-height));
+  height: calc(100vh - 66px);
 }
 
 .projects-details .container {

@@ -1,6 +1,7 @@
 @use "../colors";
 @use "../form-controls";
 @use "../breakpoints";
+@use "../components/app-header";
 
 .projects-details .grid {
   display: grid;
@@ -16,7 +17,7 @@
 
 .projects-details .related-projects-list {
   border-right: 1px solid colors.$border;
-  top: var(--app-header-height);
+  top: app-header.$app-header-height;
 }
 
 .projects-details .related-projects-list .searchbar {
@@ -37,7 +38,7 @@
 
 .projects-details .related-projects-list {
   overflow-y: auto;
-  height: calc(100vh - var(--app-header-height));
+  height: calc(100vh - app-header.$app-header-height);
 }
 
 .projects-details .container {
