@@ -15,12 +15,12 @@
 }
 
 .stats .item .title {
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
   display: block;
   width: 99%;
 }
 
 .stats .item .subtitle {
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   width: 99%;
 }

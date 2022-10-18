@@ -15,7 +15,7 @@
 .tasks .task {
   gap: 1rem;
   align-items: center;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   border-radius: fx.$radius;
   padding: 0.125rem 1rem;
   margin-left: -1rem;
@@ -29,7 +29,7 @@
 }
 
 .tasks .task .icon {
-  color: colors.$border;
+  color: map-get(colors.$color, "border");
 }
 
 .tasks .task.completed .description {
@@ -37,7 +37,7 @@
 }
 
 .tasks .task.completed .icon {
-  color: colors.$primary;
+  color: map-get(colors.$color, "primary");
 }
 
 .tasks .task .actions {
@@ -49,7 +49,7 @@
 .tasks .task:hover,
 .tasks .task:focus,
 .tasks .task:focus-within {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, "bg");
 }
 
 .tasks .task:hover .actions,

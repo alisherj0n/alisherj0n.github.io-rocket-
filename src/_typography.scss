@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   margin: 0;
   line-height: 1.2;
 }
@@ -40,7 +40,7 @@ h6 {
 
 .lead {
   text-transform: uppercase;
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
   font-size: 1rem;
   font-weight: 500;
 }

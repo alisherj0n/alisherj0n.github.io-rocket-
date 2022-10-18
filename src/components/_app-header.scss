@@ -12,9 +12,9 @@ $app-header-height: 66px;
 
 .app-header {
   padding: 0.7rem layout.$container-padding;
-  border-bottom: 1px solid colors.$border;
+  border-bottom: 1px solid map-get(colors.$color, "border");
   background-color: #fff;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   height: $app-header-height;
   gap: 0.5rem;
   position: sticky;
@@ -43,7 +43,7 @@ $app-header-height: 66px;
   height: 7px;
   border: 1px solid #fff;
   border-radius: 50%;
-  background-color: colors.$danger;
+  background-color: map-get(colors.$color, "danger");
   position: absolute;
   top: 9px;
   right: 10px;

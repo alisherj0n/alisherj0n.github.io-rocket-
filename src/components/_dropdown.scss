@@ -7,7 +7,7 @@
   min-width: 10rem;
   max-width: 13rem;
   border-radius: fx.$radius;
-  box-shadow: 0px 20px 50px 0px colors.$shadow;
+  box-shadow: 0px 20px 50px 0px map-get(colors.$color, "shadow");
   position: absolute;
   display: none;
 }
@@ -21,7 +21,7 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -31,18 +31,18 @@
 }
 
 .dropdown .item .icon {
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
 }
 
 .dropdown .item:hover {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, " bg");
 }
 
 .dropdown .item.danger,
 .dropdown .item.danger .icon {
-  color: colors.$danger;
+  color: map-get(colors.$color, "danger");
 }
 
 .dropdown .item.danger:hover {
-  background-color: colors.$danger-light;
+  background-color: map-get(colors.$color, "danger-light");
 }

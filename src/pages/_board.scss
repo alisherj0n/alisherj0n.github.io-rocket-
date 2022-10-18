@@ -2,7 +2,7 @@
 @use "../breakpoints";
 
 .board {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, "bg");
   overflow: hidden;
   max-height: 100vh;
   overflow-y: scroll;
@@ -15,7 +15,7 @@
 }
 
 .board .tabs .actions .page-view-toggles > .active {
-  color: colors.$primary;
+  color: map-get(colors.$color, "primary");
 }
 
 .board .projects {

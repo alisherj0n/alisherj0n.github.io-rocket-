@@ -15,14 +15,14 @@
 }
 
 .comments .comment-field {
-  border: 1px solid colors.$border;
+  border: 1px solid map-get(colors.$color, "border");
   border-radius: fx.$radius;
   padding: 0.55rem;
   transition: border-color fx.$transition-duration;
 }
 
 .comments .comment-field:focus-within {
-  border-color: colors.$primary;
+  border-color: map-get(colors.$color, "primary");
 }
 
 .comments .comment-field textarea {
@@ -52,10 +52,10 @@
 }
 
 .comments .comment .author {
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   display: inline-block;
 }
 
 .comments .comment .time {
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
 }

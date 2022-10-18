@@ -4,7 +4,7 @@
 
 body {
   font-family: typography.$font-family;
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
 }
 
 a {
@@ -15,7 +15,7 @@ a {
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: typography.$font-family;
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -25,5 +25,5 @@ a {
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: typography.$font-family;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
 }

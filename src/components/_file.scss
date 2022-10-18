@@ -19,11 +19,11 @@
 
 .file .file-name {
   display: block;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
   line-height: 1.7;
 }
 
 .file .file-size {
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
   text-transform: uppercase;
 }

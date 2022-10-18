@@ -2,7 +2,7 @@
 
 .divider {
   width: 1px;
-  background-color: colors.$border;
+  background-color: map-get(colors.$color, "border");
 }
 
 .divider.tall {
@@ -14,7 +14,7 @@
 }
 
 .divider.horizontal {
-  border-top: 1px solid colors.$border;
+  border-top: 1px solid map-get(colors.$color, "border");
   border-bottom: transparent;
   width: 100%;
   margin: 0.5rem 0;

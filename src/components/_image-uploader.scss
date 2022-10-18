@@ -7,7 +7,7 @@
   justify-content: center;
   width: 6rem;
   min-height: 6rem;
-  border: 1px dashed colors.$body-light;
+  border: 1px dashed map-get(colors.$color, "body-light");
   padding: 0.5rem;
   border-radius: fx.$radius-xl;
   align-self: center;
@@ -22,11 +22,11 @@
 .image-uploader .icon {
   font-size: 2rem;
   font-weight: bold;
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
 }
 
 .image-uploader .image {
-  border: 1px solid colors.$grey;
+  border: 1px solid map-get(colors.$color, "grey");
   border-radius: fx.$radius;
   max-width: 99%;
 }
@@ -35,7 +35,7 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid colors.$grey;
+  border: 1px solid map-get(colors.$color, "grey");
   background: #fff;
   position: absolute;
   top: -0.7rem;
@@ -44,5 +44,5 @@
 
 .image-uploader .edit-btn .icon {
   font-size: 1.5rem;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
 }

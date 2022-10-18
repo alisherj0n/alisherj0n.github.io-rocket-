@@ -6,7 +6,7 @@ $sidebar-padding-y: 1rem;
 $sidebar-padding-x: 0;
 
 .app > .sidebar {
-  border-right: 1px solid colors.$border;
+  border-right: 1px solid map-get(colors.$color, "border");
   min-height: 100vh;
   padding: $sidebar-padding-y $sidebar-padding-x;
   position: sticky;
@@ -34,7 +34,7 @@ $sidebar-padding-x: 0;
   display: flex;
   align-items: center;
   position: relative;
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
   transition: background-color fx.$transition-duration,
     color fx.$transition-duration;
   gap: 1rem;
@@ -43,7 +43,7 @@ $sidebar-padding-x: 0;
 .app > .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
-  background-color: colors.$primary;
+  background-color: map-get(colors.$color, "primary");
   width: 4px;
   left: 0px;
   height: 100%;
@@ -52,16 +52,16 @@ $sidebar-padding-x: 0;
 
 .app > .sidebar .nav .item:hover,
 .app > .sidebar .nav .item.active {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, "bg");
 }
 
 .app > .sidebar .nav .item.active {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, "bg");
 }
 
 .app > .sidebar .nav .item .link-txt {
   margin-right: auto;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
 }
 
 .app > .sidebar .nav .item .submenu-indicator {
@@ -84,7 +84,7 @@ $sidebar-padding-x: 0;
 }
 
 .app.collapsed > .sidebar .nav .item.active {
-  background-color: colors.$primary;
+  background-color: map-get(colors.$color, "primary");
   color: #fff;
 }
 
@@ -114,7 +114,7 @@ $sidebar-padding-x: 0;
   }
 
   .app > .sidebar .nav .item.active {
-    background-color: colors.$primary;
+    background-color: map-get(colors.$color, "primary");
     color: #fff;
   }
 

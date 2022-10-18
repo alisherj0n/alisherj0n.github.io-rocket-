@@ -11,7 +11,7 @@
 .mini-profile .text-info {
   width: 100%;
   overflow: hidden;
-  color: colors.$heading;
+  color: map-get(colors.$color, "heading");
 }
 
 .mini-profile .title,
@@ -26,7 +26,7 @@
 }
 
 .mini-profile .subtitle {
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
 }
 
 .mini-profile .avatar.large {

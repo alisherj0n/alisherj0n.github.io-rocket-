@@ -24,7 +24,7 @@ $list-view-padding: 1.5rem;
 
 .projects-list table .mini-profile .subtitle,
 .projects-list table .progress-info {
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
 }
 
 .projects-list table .progress-info {

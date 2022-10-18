@@ -12,13 +12,13 @@
 
 .projects-details .related-projects-list,
 .projects-details .related-projects-list .searchbar {
-  background-color: colors.$bg;
+  background-color: map-get(colors.$color, "bg");
   position: sticky;
   align-self: start;
 }
 
 .projects-details .related-projects-list {
-  border-right: 1px solid colors.$border;
+  border-right: 1px solid map-get(colors.$color, "border");
   top: app-header.$app-header-height;
 }
 
@@ -35,7 +35,7 @@
 
 .projects-details .related-projects-list .searchbar,
 .projects-details .related-projects-list .related-projects-list-item {
-  border-bottom: 1px solid colors.$border;
+  border-bottom: 1px solid map-get(colors.$color, "border");
 }
 
 .projects-details .related-projects-list {
@@ -110,7 +110,7 @@
 }
 
 .projects-details .sidebar {
-  border-left: 1px solid colors.$border;
+  border-left: 1px solid map-get(colors.$color, "border");
 }
 
 .projects-details .sidebar.container {

@@ -6,7 +6,7 @@
 select,
 input:not([type="checkbox"]),
 textarea {
-  border: 1px solid colors.$border;
+  border: 1px solid map-get(colors.$color, "border");
   border-radius: fx.$radius;
   background-color: transparent;
   transition: border-color fx.$transition-duration;
@@ -33,7 +33,7 @@ input.large:not([type="checkbox"]) {
 select {
   padding: form-controls.$padding-y calc(form-controls.$padding-x + 1rem)
     form-controls.$padding-y form-controls.$padding-x;
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -70,7 +70,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: colors.$body-light;
+  color: map-get(colors.$color, "body-light");
   margin: 0;
 }
 
@@ -121,27 +121,27 @@ textarea {
   display: none;
 }
 
-.input-group input[type="time"] {
+.input-group input[type="time "] {
   max-width: 5rem;
 }
 
-.input-group input[type="date"] {
+.input-group input[type=" date"] {
   max-width: 100%;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: colors.$primary;
+  border-color: map-get(colors.$color, "primary");
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: colors.$grey-light;
+  background-color: map-get(colors.$color, "grey-light");
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: colors.$body;
+  color: map-get(colors.$color, "body");
 }
