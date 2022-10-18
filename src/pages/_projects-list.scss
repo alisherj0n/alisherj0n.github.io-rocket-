@@ -1,14 +1,15 @@
 @use "../colors";
 @use "../fx";
 
+$list-view-padding: 1.5rem;
+
 .projects-list {
-  --list-view-padding: 1.5rem;
   border-radius: fx.$radius;
   background-color: #fff;
 }
 
 .projects-list .header {
-  padding: var(--list-view-padding);
+  padding: $list-view-padding;
   display: flex;
   gap: 1.5rem;
 }
@@ -33,7 +34,7 @@
 }
 
 .projects-list .footer {
-  padding: var(--list-view-padding);
+  padding: $list-view-padding;
 }
 
 .projects-list .project-name,

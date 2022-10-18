@@ -1592,13 +1592,12 @@ table tbody td:last-child {
   }
 }
 .projects-list {
-  --list-view-padding: 1.5rem;
   border-radius: 14px;
   background-color: #fff;
 }
 
 .projects-list .header {
-  padding: var(--list-view-padding);
+  padding: 1.5rem;
   display: flex;
   gap: 1.5rem;
 }
@@ -1623,7 +1622,7 @@ table tbody td:last-child {
 }
 
 .projects-list .footer {
-  padding: var(--list-view-padding);
+  padding: 1.5rem;
 }
 
 .projects-list .project-name,
