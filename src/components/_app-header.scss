@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../breakpoints";
+@use "../layout";
 
 $app-header-height: 66px;
 
@@ -10,7 +11,7 @@ $app-header-height: 66px;
 }
 
 .app-header {
-  padding: 0.7rem var(--container-padding);
+  padding: 0.7rem layout.$container-padding;
   border-bottom: 1px solid colors.$border;
   background-color: #fff;
   color: colors.$heading;
