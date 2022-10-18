@@ -164,8 +164,6 @@ a {
 }
 
 .badge {
-  --badge-padding-y: 0.3rem;
-  --badge-padding-x: 0.7rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -173,7 +171,7 @@ a {
   white-space: nowrap;
   background-color: #efeff1;
   color: #3f434a;
-  padding: var(--badge-padding-y) var(--badge-padding-x);
+  padding: 0.3rem 0.7rem;
   border-radius: 6px;
 }
 
@@ -183,8 +181,7 @@ a {
 }
 
 .badge.large {
-  --badge-padding-y: 1rem;
-  --badge-padding-x: 1rem;
+  padding: 1rem 1rem;
   border-radius: 14px;
 }
 
@@ -932,8 +929,7 @@ input[type=date] {
 }
 
 .tabs .badge {
-  --badge-padding-y: 0;
-  --badge-padding-x: 0.5rem;
+  padding: 0 0.5rem;
   background-color: #e8e9eb;
   color: #8a9099;
   font-size: 0.8rem;

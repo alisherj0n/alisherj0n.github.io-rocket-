@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../fx";
+@use "./badge";
 
 .tabs {
   display: flex;
@@ -11,8 +12,10 @@
 }
 
 .tabs .badge {
-  --badge-padding-y: 0;
-  --badge-padding-x: 0.5rem;
+  badge.$badge-padding-y: 0;
+  badge.$badge-padding-x: 0.5rem;
+
+  padding: badge.$badge-padding-y badge.$badge-padding-x;
   background-color: colors.$border;
   color: colors.$body-light;
   font-size: 0.8rem;

@@ -1,9 +1,10 @@
 @use "../colors";
 @use "../fx";
 
+$badge-padding-y: 0.3rem;
+$badge-padding-x: 0.7rem;
+
 .badge {
-  --badge-padding-y: 0.3rem;
-  --badge-padding-x: 0.7rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -11,7 +12,7 @@
   white-space: nowrap;
   background-color: colors.$bg-light;
   color: colors.$heading;
-  padding: var(--badge-padding-y) var(--badge-padding-x);
+  padding: $badge-padding-y $badge-padding-x;
   border-radius: fx.$radius-xs;
 }
 
@@ -21,8 +22,9 @@
 }
 
 .badge.large {
-  --badge-padding-y: 1rem;
-  --badge-padding-x: 1rem;
+  $badge-padding-y: 1rem;
+  $badge-padding-x: 1rem;
+  padding: $badge-padding-y $badge-padding-x;
   border-radius: fx.$radius;
 }
 
