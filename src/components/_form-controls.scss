@@ -1,6 +1,7 @@
 @use "../colors";
 @use "../form-controls";
 @use "../fx";
+@use "../typography";
 
 select,
 input:not([type="checkbox"]),
@@ -43,7 +44,7 @@ select {
 input:not([type="checkbox"]),
 textarea {
   padding: form-controls.$padding-y form-controls.$padding-x;
-  font-family: var(--font-family);
+  font-family: typography.$font-family;
   width: 100%;
 }
 

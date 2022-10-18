@@ -1,8 +1,9 @@
 @use "./colors";
 @use "./fx";
+@use "./typography";
 
 body {
-  font-family: var(--font-family);
+  font-family: typography.$font-family;
   color: colors.$body;
 }
 
@@ -13,7 +14,7 @@ a {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-family: var(--font-family);
+  font-family: typography.$font-family;
   color: colors.$body-light;
 }
 
@@ -23,6 +24,6 @@ a {
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: var(--font-family);
+  font-family: typography.$font-family;
   color: colors.$heading;
 }
