@@ -6,8 +6,9 @@
   flex-direction: column;
 }
 
+$dialog-padding: 2rem;
+
 .dialog {
-  --dialog-padding: 2rem;
   position: fixed;
   z-index: 100;
   background: #fff;
@@ -32,7 +33,7 @@
 .dialog .content,
 .dialog .header,
 .dialog .actions {
-  padding: var(--dialog-padding);
+  padding: $dialog-padding;
 }
 
 .dialog .content {

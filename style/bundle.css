@@ -811,7 +811,6 @@ input[type=date] {
 }
 
 .dialog {
-  --dialog-padding: 2rem;
   position: fixed;
   z-index: 100;
   background: #fff;
@@ -836,7 +835,7 @@ input[type=date] {
 .dialog .content,
 .dialog .header,
 .dialog .actions {
-  padding: var(--dialog-padding);
+  padding: 2rem;
 }
 
 .dialog .content {
