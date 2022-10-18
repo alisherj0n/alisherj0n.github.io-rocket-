@@ -1,4 +1,5 @@
 @use "../colors";
+@use "../breakpoints";
 
 .pagination,
 .pagination .displayable-quantity,
@@ -28,7 +29,8 @@
   min-width: 2.55rem;
 }
 
-@media (max-width: 768px) {
+// breakpoint sm
+@media (max-width: breakpoints.$sm) {
   .pagination {
     flex-direction: column;
   }
