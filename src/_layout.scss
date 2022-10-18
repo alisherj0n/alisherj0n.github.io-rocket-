@@ -19,14 +19,14 @@ $container-padding: 1.2rem;
 }
 
 // breakpoint xl
-@media (min-width: breakpoints.$xl) {
+@media (min-width: map-get(breakpoints.$breakpoints, "xl")) {
   .app {
     grid-template-columns: 320px 1fr;
   }
 }
 
 // breakpoint lg
-@media (max-width: breakpoints.$lg) {
+@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
   .app {
     grid-template-columns: auto 1fr;
   }

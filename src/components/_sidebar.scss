@@ -97,7 +97,7 @@ $sidebar-padding-x: 0;
 }
 
 // breakpoint lg
-@media (max-width: breakpoints.$lg) {
+@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
   .app > .sidebar {
     $sidebar-padding-x: 0.6rem;
     padding-left: $sidebar-padding-x;

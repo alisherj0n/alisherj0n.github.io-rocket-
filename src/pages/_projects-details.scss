@@ -133,7 +133,7 @@
 }
 
 /* Breakpoint-xl */
-@media (max-width: 1200px) {
+@media (max-width: map-get(breakpoints.$breakpoints, "xl")) {
   .projects-details .grid {
     grid-template-columns: 1fr 250px;
   }
@@ -143,14 +143,14 @@
 }
 
 /*  Breakpoint-lg */
-@media (max-width: breakpoints.$lg) {
+@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
   .projects-details .project .intro .stats {
     gap: 2rem;
   }
 }
 
 /* Breakpoint-sm */
-@media (max-width: breakpoints.$sm) {
+@media (max-width: map-get(breakpoints.$breakpoints, "sm")) {
   .projects-details .grid {
     grid-template-columns: 1fr;
   }

@@ -36,7 +36,7 @@
 }
 
 /*  breakpoint-xs */
-@media (max-width: breakpoints.$xs) {
+@media (max-width: map-get(breakpoints.$breakpoints, "xs")) {
   .drawer {
     width: 100%;
   }

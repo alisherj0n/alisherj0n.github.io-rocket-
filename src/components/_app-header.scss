@@ -50,7 +50,7 @@ $app-header-height: 66px;
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: breakpoints.$sm) {
+@media (max-width: map-get(breakpoints.$breakpoints, "sm")) {
   .app-header .btn.notification,
   .app-header .mini-profile .avatar {
     display: none;
