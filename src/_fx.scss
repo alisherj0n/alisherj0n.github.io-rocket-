@@ -3,3 +3,10 @@ $radius: 14px;
 $radius-sm: 10px;
 $radius-xs: 6px;
 $transition-duration: 0.2s;
+
+$radius: (
+  "xs": $radius-xs,
+  "sm": $radius-sm,
+  "radius": $radius,
+  "xl": $radius-xl,
+);

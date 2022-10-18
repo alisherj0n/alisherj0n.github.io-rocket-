@@ -7,7 +7,7 @@ select,
 input:not([type="checkbox"]),
 textarea {
   border: 1px solid map-get(colors.$color, "border");
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
   background-color: transparent;
   transition: border-color fx.$transition-duration;
   outline: none;
@@ -22,7 +22,7 @@ select.small,
 input.small:not([type="checkbox"]) {
   font-size: 0.875rem;
   height: form-controls.$height-sm;
-  border-radius: fx.$radius-sm;
+  border-radius: map-get(fx.$radius, "sm");
 }
 
 select.large,
@@ -121,11 +121,11 @@ textarea {
   display: none;
 }
 
-.input-group input[type="time "] {
+.input-group input[type="time"] {
   max-width: 5rem;
 }
 
-.input-group input[type=" date"] {
+.input-group input[type="date"] {
   max-width: 100%;
 }
 

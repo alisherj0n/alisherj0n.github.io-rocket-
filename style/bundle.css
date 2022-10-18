@@ -646,6 +646,10 @@ input[type=checkbox]:checked::after {
   color: #8a9099;
 }
 
+.dropdown .item:hover {
+  background-color: #f8f8f8;
+}
+
 .dropdown .item.danger,
 .dropdown .item.danger .icon {
   color: #ff5950;
@@ -772,11 +776,11 @@ textarea {
   display: none;
 }
 
-.input-group input[type="time "] {
+.input-group input[type=time] {
   max-width: 5rem;
 }
 
-.input-group input[type=" date"] {
+.input-group input[type=date] {
   max-width: 100%;
 }
 

@@ -5,13 +5,13 @@
   width: 100%;
   height: 0.4rem;
   background-color: map-get(colors.$color, "bg");
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
 }
 
 .progress-bar .progress {
   background-color: map-get(colors.$color, "body-light");
   height: 100%;
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
 }
 
 .progress-bar.success .progress {

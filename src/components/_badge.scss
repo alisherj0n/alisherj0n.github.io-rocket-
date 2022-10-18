@@ -13,7 +13,7 @@ $badge-padding-x: 0.7rem;
   background-color: map-get(colors.$color, "bg-light");
   color: map-get(colors.$color, "heading");
   padding: $badge-padding-y $badge-padding-x;
-  border-radius: fx.$radius-xs;
+  border-radius: map-get(fx.$radius, "xs");
 }
 
 .badge.small {
@@ -25,7 +25,7 @@ $badge-padding-x: 0.7rem;
   $badge-padding-y: 1rem;
   $badge-padding-x: 1rem;
   padding: $badge-padding-y $badge-padding-x;
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
 }
 
 .badge .icon {

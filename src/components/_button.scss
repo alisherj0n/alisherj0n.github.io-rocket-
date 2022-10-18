@@ -18,7 +18,7 @@ $button-padding-y: 0.4rem;
   height: form-controls.$height;
   position: relative;
   outline: none;
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
   transition: background-color fx.$transition-duration,
     color fx.$transition-duration, box-shadow fx.$transition-duration;
 }
@@ -38,7 +38,7 @@ $button-padding-y: 0.4rem;
   padding: $button-padding-y $button-padding-x;
   height: form-controls.$height-sm;
   font-size: 0.875rem;
-  border-radius: fx.$radius-sm;
+  border-radius: map-get(fx.$radius, "sm");
 }
 
 .btn.large {

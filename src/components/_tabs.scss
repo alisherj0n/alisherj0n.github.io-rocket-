@@ -19,7 +19,7 @@
   background-color: map-get(colors.$color, "border");
   color: map-get(colors.$color, "body-light");
   font-size: 0.8rem;
-  border-radius: fx.$radius-xs;
+  border-radius: map-get(fx.$radius, "xs");
 }
 
 .tabs > * {

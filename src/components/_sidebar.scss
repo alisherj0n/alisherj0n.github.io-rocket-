@@ -79,7 +79,7 @@ $sidebar-padding-x: 0;
 }
 
 .app.collapsed > .sidebar .nav .item {
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
   padding: 0.8rem;
 }
 
@@ -109,7 +109,7 @@ $sidebar-padding-x: 0;
   }
 
   .app > .sidebar .nav .item {
-    border-radius: fx.$radius;
+    border-radius: map-get(fx.$radius, "radius");
     padding: 0.8rem;
   }
 

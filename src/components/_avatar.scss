@@ -6,7 +6,7 @@
   height: 2.5rem;
   border: 1px solid map-get(colors.$color, "border");
   object-fit: cover;
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
 }
 
 .avatar.large {

@@ -16,7 +16,7 @@
 
 .comments .comment-field {
   border: 1px solid map-get(colors.$color, "border");
-  border-radius: fx.$radius;
+  border-radius: map-get(fx.$radius, "radius");
   padding: 0.55rem;
   transition: border-color fx.$transition-duration;
 }
