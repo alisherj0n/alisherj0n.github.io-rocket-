@@ -1,4 +1,4 @@
-@use "./colors";
+@use "./variables";
 
 $font-family: "Poppins", sans-serif;
 
@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
   margin: 0;
   line-height: 1.2;
 }
@@ -40,7 +40,7 @@ h6 {
 
 .lead {
   text-transform: uppercase;
-  color: map-get(colors.$color, "body");
+  color: map-get(variables.$colors, "body");
   font-size: 1rem;
   font-weight: 500;
 }

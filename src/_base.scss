@@ -1,21 +1,20 @@
-@use "./colors";
-@use "./fx";
+@use "./variables";
 @use "./typography";
 
 body {
   font-family: typography.$font-family;
-  color: map-get(colors.$color, "body");
+  color: map-get(variables.$colors, "body");
 }
 
 a {
   text-decoration: none;
-  transition: color fx.$transition-duration;
+  transition: color variables.$transition-duration;
 }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: typography.$font-family;
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -25,5 +24,5 @@ a {
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: typography.$font-family;
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
 }

@@ -1,4 +1,4 @@
-@use "../colors";
+@use "../variables";
 
 .file {
   display: flex;
@@ -19,11 +19,11 @@
 
 .file .file-name {
   display: block;
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
   line-height: 1.7;
 }
 
 .file .file-size {
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
   text-transform: uppercase;
 }

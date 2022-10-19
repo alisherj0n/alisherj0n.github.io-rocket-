@@ -1,4 +1,4 @@
-$color: (
+$colors: (
   "heading": #3f434a,
   "shadow": #a4a5a566,
   "body-light": #8a9099,
@@ -25,3 +25,26 @@ $color: (
   "success-light": rgba(73, 201, 109, 0.1),
   "success-dark": #27b950,
 );
+
+$radius: (
+  "xl": 20px,
+  "lg": 14px,
+  "sm": 10px,
+  "xs": 6px,
+);
+
+$breakpoints: (
+  "xs": 576px,
+  "sm": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+$form-controls: (
+  "height": 2.625rem,
+  "height-lg": 3rem,
+  "height-sm": 2.25rem,
+);
+
+$container-padding: 1.2rem;
+$transition-duration: 0.2s;

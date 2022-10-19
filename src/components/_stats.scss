@@ -1,4 +1,4 @@
-@use "../colors";
+@use "../variables";
 
 .stats,
 .stats .item {
@@ -15,12 +15,12 @@
 }
 
 .stats .item .title {
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
   display: block;
   width: 99%;
 }
 
 .stats .item .subtitle {
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
   width: 99%;
 }

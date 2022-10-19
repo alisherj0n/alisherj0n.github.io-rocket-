@@ -1,7 +1,7 @@
-@use "../breakpoints";
+@use "../variables";
 
 /*  breakpoint-sm */
-@media (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+@media (max-width: map-get(variables.$breakpoints, "sm")) {
   .add-update-project-dialog .time-range {
     flex-direction: column;
   }

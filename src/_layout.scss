@@ -1,6 +1,4 @@
-@use "./breakpoints";
-
-$container-padding: 1.2rem;
+@use "./variables";
 
 .app {
   display: grid;
@@ -12,21 +10,21 @@ $container-padding: 1.2rem;
 }
 
 .container {
-  padding: $container-padding;
+  padding: variables.$container-padding;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 // breakpoint xl
-@media (min-width: map-get(breakpoints.$breakpoints, "xl")) {
+@media (min-width: map-get(variables.$breakpoints, "xl")) {
   .app {
     grid-template-columns: 320px 1fr;
   }
 }
 
 // breakpoint lg
-@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
+@media (max-width: map-get(variables.$breakpoints, "lg")) {
   .app {
     grid-template-columns: auto 1fr;
   }

@@ -1,9 +1,7 @@
-@use "../colors";
+@use "../variables";
 @use "../form-controls";
-@use "../breakpoints";
 @use "../components/app-header";
 @use "../components/button";
-@use "../layout";
 
 .projects-details .grid {
   display: grid;
@@ -12,13 +10,13 @@
 
 .projects-details .related-projects-list,
 .projects-details .related-projects-list .searchbar {
-  background-color: map-get(colors.$color, "bg");
+  background-color: map-get(variables.$colors, "bg");
   position: sticky;
   align-self: start;
 }
 
 .projects-details .related-projects-list {
-  border-right: 1px solid map-get(colors.$color, "border");
+  border-right: 1px solid map-get(variables.$colors, "border");
   top: app-header.$app-header-height;
 }
 
@@ -35,7 +33,7 @@
 
 .projects-details .related-projects-list .searchbar,
 .projects-details .related-projects-list .related-projects-list-item {
-  border-bottom: 1px solid map-get(colors.$color, "border");
+  border-bottom: 1px solid map-get(variables.$colors, "border");
 }
 
 .projects-details .related-projects-list {
@@ -44,8 +42,8 @@
 }
 
 .projects-details .container {
-  layout.$container-padding: 1.8rem;
-  padding: layout.$container-padding;
+  variables.$container-padding: 1.8rem;
+  padding: variables.$container-padding;
   gap: 1rem;
   overflow-x: hidden;
 }
@@ -100,9 +98,9 @@
 }
 
 .projects-details .activity .tabs {
-  margin-left: layout.$container-padding * -1;
-  margin-right: layout.$container-padding * -1;
-  padding: 0 layout.$container-padding;
+  margin-left: variables.$container-padding * -1;
+  margin-right: variables.$container-padding * -1;
+  padding: 0 variables.$container-padding;
 }
 
 .projects-details .activity {
@@ -110,7 +108,7 @@
 }
 
 .projects-details .sidebar {
-  border-left: 1px solid map-get(colors.$color, "border");
+  border-left: 1px solid map-get(variables.$colors, "border");
 }
 
 .projects-details .sidebar.container {
@@ -133,7 +131,7 @@
 }
 
 /* Breakpoint-xl */
-@media (max-width: map-get(breakpoints.$breakpoints, "xl")) {
+@media (max-width: map-get(variables.$breakpoints, "xl")) {
   .projects-details .grid {
     grid-template-columns: 1fr 250px;
   }
@@ -143,14 +141,14 @@
 }
 
 /*  Breakpoint-lg */
-@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
+@media (max-width: map-get(variables.$breakpoints, "lg")) {
   .projects-details .project .intro .stats {
     gap: 2rem;
   }
 }
 
 /* Breakpoint-sm */
-@media (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+@media (max-width: map-get(variables.$breakpoints, "sm")) {
   .projects-details .grid {
     grid-template-columns: 1fr;
   }

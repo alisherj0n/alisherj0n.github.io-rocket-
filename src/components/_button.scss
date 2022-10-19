@@ -1,6 +1,5 @@
-@use "../colors";
+@use "../variables";
 @use "../form-controls";
-@use "../fx";
 
 $button-padding-x: 0.9rem;
 $button-padding-y: 0.4rem;
@@ -11,21 +10,22 @@ $button-padding-y: 0.4rem;
   justify-content: center;
   gap: 0.4rem;
   flex-shrink: 0;
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
   padding: $button-padding-y $button-padding-x;
   background-color: transparent;
   border: 3px solid transparent;
-  height: form-controls.$height;
+  height: map-get(variables.$form-controls, "height");
   position: relative;
   outline: none;
-  border-radius: map-get(fx.$radius, "radius");
-  transition: background-color fx.$transition-duration,
-    color fx.$transition-duration, box-shadow fx.$transition-duration;
+  border-radius: map-get(variables.$radius, "lg");
+  transition: background-color variables.$transition-duration,
+    color variables.$transition-duration,
+    box-shadow variables.$transition-duration;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: map-get(colors.$color, "bg-light");
+  background-color: map-get(variables.$colors, "bg-light");
 }
 
 .btn:focus {
@@ -36,16 +36,16 @@ $button-padding-y: 0.4rem;
   $button-padding-y: 0.4rem;
   $button-padding-x: 0.75rem;
   padding: $button-padding-y $button-padding-x;
-  height: form-controls.$height-sm;
+  height: map-get(variables.$form-controls, "height-sm");
   font-size: 0.875rem;
-  border-radius: map-get(fx.$radius, "sm");
+  border-radius: map-get(variables.$radius, "sm");
 }
 
 .btn.large {
   $button-padding-x: 1.3rem;
   $button-padding-y: 0.56rem;
   padding: $button-padding-x $button-padding-y;
-  height: form-controls.$height-lg;
+  height: map-get(variables.$form-controls, "height-lg");
 }
 
 .btn.small .icon {
@@ -53,18 +53,18 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.icon-only {
-  width: form-controls.$height;
+  width: map-get(variables.$form-controls, "height");
 }
 
 .btn.primary {
-  background-color: map-get(colors.$color, "primary");
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
-  border-bottom-color: map-get(colors.$color, "primary-dark");
+  border-bottom-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.primary:hover,
 .btn.primary:focus {
-  background-color: map-get(colors.$color, "primary-hover");
+  background-color: map-get(variables.$colors, "primary-hover");
 }
 
 .btn.primary:focus {
@@ -72,18 +72,18 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.primary:active {
-  background-color: map-get(colors.$color, "primary-dark");
+  background-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.warning {
-  background-color: map-get(colors.$color, "warning");
+  background-color: map-get(variables.$colors, "warning");
   color: #fff;
-  border-bottom-color: map-get(colors.$color, "warning-dark");
+  border-bottom-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.warning:hover,
 .btn.warning:focus {
-  background-color: map-get(colors.$color, "warning-hover");
+  background-color: map-get(variables.$colors, "warning-hover");
 }
 
 .btn.warning:focus {
@@ -91,18 +91,18 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.warning:active {
-  background-color: map-get(colors.$color, "warning-dark");
+  background-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.danger {
-  background-color: map-get(colors.$color, "danger");
+  background-color: map-get(variables.$colors, "danger");
   color: #fff;
-  border-bottom-color: map-get(colors.$color, "danger-dark");
+  border-bottom-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.danger:hover,
 .btn.danger:focus {
-  background-color: map-get(colors.$color, "danger-hover");
+  background-color: map-get(variables.$colors, "danger-hover");
 }
 
 .btn.danger:focus {
@@ -110,18 +110,18 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.danger:active {
-  background-color: map-get(colors.$color, "danger-dark");
+  background-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.success {
-  background-color: map-get(colors.$color, "success");
+  background-color: map-get(variables.$colors, "success");
   color: #fff;
-  border-bottom-color: map-get(colors.$color, "success-dark");
+  border-bottom-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.success:hover,
 .btn.success:focus {
-  background-color: map-get(colors.$color, "success-hover");
+  background-color: map-get(variables.$colors, "success-hover");
 }
 
 .btn.success:focus {
@@ -129,7 +129,7 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.success:active {
-  background-color: map-get(colors.$color, "success-dark");
+  background-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.light {
@@ -138,17 +138,17 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.light:hover {
-  background-color: map-get(colors.$color, "bg-light");
+  background-color: map-get(variables.$colors, "bg-light");
 }
 
 .btn.light.primary {
-  background-color: map-get(colors.$color, "primary-light");
-  color: map-get(colors.$color, "primary");
+  background-color: map-get(variables.$colors, "primary-light");
+  color: map-get(variables.$colors, "primary");
 }
 
 .btn.light.primary:hover,
 .btn.light.primary:focus {
-  background-color: map-get(colors.$color, "primary");
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
 }
 
@@ -157,17 +157,17 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.light.primary:active {
-  background-color: map-get(colors.$color, "primary-dark");
+  background-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.light.warning {
-  background-color: map-get(colors.$color, "warning-light");
-  color: map-get(colors.$color, "warning");
+  background-color: map-get(variables.$colors, "warning-light");
+  color: map-get(variables.$colors, "warning");
 }
 
 .btn.light.warning:hover,
 .btn.light.warning:focus {
-  background-color: map-get(colors.$color, "warning");
+  background-color: map-get(variables.$colors, "warning");
   color: #fff;
 }
 
@@ -176,17 +176,17 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.light.warning:active {
-  background-color: map-get(colors.$color, "warning-dark");
+  background-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.light.danger {
-  background-color: map-get(colors.$color, "danger-light");
-  color: map-get(colors.$color, "danger");
+  background-color: map-get(variables.$colors, "danger-light");
+  color: map-get(variables.$colors, "danger");
 }
 
 .btn.light.danger:hover,
 .btn.light.danger:focus {
-  background-color: map-get(colors.$color, "danger");
+  background-color: map-get(variables.$colors, "danger");
   color: #fff;
 }
 
@@ -195,17 +195,17 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.light.danger:active {
-  background-color: map-get(colors.$color, "danger-dark");
+  background-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.light.success {
-  background-color: map-get(colors.$color, "success-light");
-  color: map-get(colors.$color, "success");
+  background-color: map-get(variables.$colors, "success-light");
+  color: map-get(variables.$colors, "success");
 }
 
 .btn.light.success:hover,
 .btn.light.success:focus {
-  background-color: map-get(colors.$color, "success");
+  background-color: map-get(variables.$colors, "success");
   color: #fff;
 }
 
@@ -214,7 +214,7 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.light.success:active {
-  background-color: map-get(colors.$color, "success-dark");
+  background-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.link {
@@ -223,43 +223,43 @@ $button-padding-y: 0.4rem;
 }
 
 .btn.link.primary {
-  color: map-get(colors.$color, "primary");
+  color: map-get(variables.$colors, "primary");
 }
 
 .btn.link.primary:hover,
 .btn.link.primary:focus,
 .btn.link.primary:active {
-  background-color: map-get(colors.$color, "primary-light");
+  background-color: map-get(variables.$colors, "primary-light");
 }
 
 .btn.link.warning {
-  color: map-get(colors.$color, "warning");
+  color: map-get(variables.$colors, "warning");
 }
 
 .btn.link.warning:hover,
 .btn.link.warning:focus,
 .btn.link.warning:active {
-  background-color: map-get(colors.$color, "warning-light");
+  background-color: map-get(variables.$colors, "warning-light");
 }
 
 .btn.link.danger {
-  color: map-get(colors.$color, "danger");
+  color: map-get(variables.$colors, "danger");
 }
 
 .btn.link.danger:hover,
 .btn.link.danger:focus,
 .btn.link.danger:active {
-  background-color: map-get(colors.$color, "danger-light");
+  background-color: map-get(variables.$colors, "danger-light");
 }
 
 .btn.link.success {
-  color: map-get(colors.$color, "success");
+  color: map-get(variables.$colors, "success");
 }
 
 .btn.link.success:hover,
 .btn.link.success:focus,
 .btn.link.success:active {
-  background-color: map-get(colors.$color, "success-light");
+  background-color: map-get(variables.$colors, "success-light");
 }
 
 .btn:disabled,
@@ -270,7 +270,7 @@ $button-padding-y: 0.4rem;
 }
 
 [role="button"] {
-  transition: box-shadow fx.$transition-duration;
+  transition: box-shadow variables.$transition-duration;
 }
 
 [role="button"]:focus {

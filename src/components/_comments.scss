@@ -1,5 +1,4 @@
-@use "../colors";
-@use "../fx";
+@use "../variables";
 
 .comments,
 .comments .comment,
@@ -15,14 +14,14 @@
 }
 
 .comments .comment-field {
-  border: 1px solid map-get(colors.$color, "border");
-  border-radius: map-get(fx.$radius, "radius");
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
   padding: 0.55rem;
-  transition: border-color fx.$transition-duration;
+  transition: border-color variables.$transition-duration;
 }
 
 .comments .comment-field:focus-within {
-  border-color: map-get(colors.$color, "primary");
+  border-color: map-get(variables.$colors, "primary");
 }
 
 .comments .comment-field textarea {
@@ -52,10 +51,10 @@
 }
 
 .comments .comment .author {
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
   display: inline-block;
 }
 
 .comments .comment .time {
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
 }

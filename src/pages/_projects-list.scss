@@ -1,10 +1,9 @@
-@use "../colors";
-@use "../fx";
+@use "../variables";
 
 $list-view-padding: 1.5rem;
 
 .projects-list {
-  border-radius: map-get(fx.$radius, "radius");
+  border-radius: map-get(variables.$radius, "lg");
   background-color: #fff;
 }
 
@@ -24,7 +23,7 @@ $list-view-padding: 1.5rem;
 
 .projects-list table .mini-profile .subtitle,
 .projects-list table .progress-info {
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
 }
 
 .projects-list table .progress-info {

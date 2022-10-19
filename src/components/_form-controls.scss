@@ -1,39 +1,39 @@
-@use "../colors";
+@use "../variables";
 @use "../form-controls";
-@use "../fx";
+
 @use "../typography";
 
 select,
 input:not([type="checkbox"]),
 textarea {
-  border: 1px solid map-get(colors.$color, "border");
-  border-radius: map-get(fx.$radius, "radius");
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
   background-color: transparent;
-  transition: border-color fx.$transition-duration;
+  transition: border-color variables.$transition-duration;
   outline: none;
 }
 
 select,
 input:not([type="checkbox"]) {
-  height: form-controls.$height;
+  height: map-get(variables.$form-controls, "height");
 }
 
 select.small,
 input.small:not([type="checkbox"]) {
   font-size: 0.875rem;
-  height: form-controls.$height-sm;
-  border-radius: map-get(fx.$radius, "sm");
+  height: map-get(variables.$form-controls, "height-sm");
+  border-radius: map-get(variables.$radius, "sm");
 }
 
 select.large,
 input.large:not([type="checkbox"]) {
-  height: form-controls.$height-lg;
+  height: map-get(variables.$form-controls, "height-lg");
 }
 
 select {
   padding: form-controls.$padding-y calc(form-controls.$padding-x + 1rem)
     form-controls.$padding-y form-controls.$padding-x;
-  color: map-get(colors.$color, "body");
+  color: map-get(variables.$colors, "body");
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -70,7 +70,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
   margin: 0;
 }
 
@@ -132,16 +132,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: map-get(colors.$color, "primary");
+  border-color: map-get(variables.$colors, "primary");
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: map-get(colors.$color, "grey-light");
+  background-color: map-get(variables.$colors, "grey-light");
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: map-get(colors.$color, "body");
+  color: map-get(variables.$colors, "body");
 }

@@ -1,4 +1,4 @@
-@use "../breakpoints";
+@use "../variables";
 
 .page-header,
 .page-header .actions {
@@ -12,7 +12,7 @@
 }
 
 /* --breakpoint-sm-- */
-@media (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+@media (max-width: map-get(variables.$breakpoints, "sm")) {
   .page-header {
     flex-direction: column;
   }

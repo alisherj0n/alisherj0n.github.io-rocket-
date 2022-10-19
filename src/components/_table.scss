@@ -1,4 +1,4 @@
-@use "../colors";
+@use "../variables";
 
 $table-side-padding: 1.5rem;
 
@@ -10,14 +10,14 @@ table {
 table th {
   text-align: start;
   text-transform: uppercase;
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
   font-weight: 400;
   font-size: 0.9rem;
 }
 
 table th,
 table td {
-  border-bottom: 1px solid map-get(colors.$color, "border");
+  border-bottom: 1px solid map-get(variables.$colors, "border");
   padding: 0.8rem 1rem;
 }
 

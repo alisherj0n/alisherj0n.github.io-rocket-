@@ -1,13 +1,12 @@
-@use "../colors";
-@use "../fx";
+@use "../variables";
 
 .dropdown {
   background: #fff;
   padding: 0.5rem 0;
   min-width: 10rem;
   max-width: 13rem;
-  border-radius: map-get(fx.$radius, "radius");
-  box-shadow: 0px 20px 50px 0px map-get(colors.$color, "shadow");
+  border-radius: map-get(variables.$radius, "lg");
+  box-shadow: 0px 20px 50px 0px map-get(variables.$colors, "shadow");
   position: absolute;
   display: none;
 }
@@ -21,28 +20,28 @@
   border: none;
   width: 100%;
   cursor: pointer;
-  color: map-get(colors.$color, "body");
+  color: map-get(variables.$colors, "body");
   display: flex;
   align-items: center;
   gap: 0.7rem;
   padding: 0.6rem 2rem;
-  transition: color fx.$transition-duration,
-    background-color fx.$transition-duration;
+  transition: color variables.$transition-duration,
+    background-color variables.$transition-duration;
 }
 
 .dropdown .item .icon {
-  color: map-get(colors.$color, "body-light");
+  color: map-get(variables.$colors, "body-light");
 }
 
 .dropdown .item:hover {
-  background-color: map-get(colors.$color, "bg");
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .dropdown .item.danger,
 .dropdown .item.danger .icon {
-  color: map-get(colors.$color, "danger");
+  color: map-get(variables.$colors, "danger");
 }
 
 .dropdown .item.danger:hover {
-  background-color: map-get(colors.$color, "danger-light");
+  background-color: map-get(variables.$colors, "danger-light");
 }

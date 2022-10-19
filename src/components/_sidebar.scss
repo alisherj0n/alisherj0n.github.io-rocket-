@@ -1,12 +1,10 @@
-@use "../colors";
-@use "../fx";
-@use "../breakpoints";
+@use "../variables";
 
 $sidebar-padding-y: 1rem;
 $sidebar-padding-x: 0;
 
 .app > .sidebar {
-  border-right: 1px solid map-get(colors.$color, "border");
+  border-right: 1px solid map-get(variables.$colors, "border");
   min-height: 100vh;
   padding: $sidebar-padding-y $sidebar-padding-x;
   position: sticky;
@@ -34,16 +32,16 @@ $sidebar-padding-x: 0;
   display: flex;
   align-items: center;
   position: relative;
-  color: map-get(colors.$color, "body-light");
-  transition: background-color fx.$transition-duration,
-    color fx.$transition-duration;
+  color: map-get(variables.$colors, "body-light");
+  transition: background-color variables.$transition-duration,
+    color variables.$transition-duration;
   gap: 1rem;
 }
 
 .app > .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
-  background-color: map-get(colors.$color, "primary");
+  background-color: map-get(variables.$colors, "primary");
   width: 4px;
   left: 0px;
   height: 100%;
@@ -52,16 +50,16 @@ $sidebar-padding-x: 0;
 
 .app > .sidebar .nav .item:hover,
 .app > .sidebar .nav .item.active {
-  background-color: map-get(colors.$color, "bg");
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .app > .sidebar .nav .item.active {
-  background-color: map-get(colors.$color, "bg");
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .app > .sidebar .nav .item .link-txt {
   margin-right: auto;
-  color: map-get(colors.$color, "heading");
+  color: map-get(variables.$colors, "heading");
 }
 
 .app > .sidebar .nav .item .submenu-indicator {
@@ -79,12 +77,12 @@ $sidebar-padding-x: 0;
 }
 
 .app.collapsed > .sidebar .nav .item {
-  border-radius: map-get(fx.$radius, "radius");
+  border-radius: map-get(variables.$radius, "lg");
   padding: 0.8rem;
 }
 
 .app.collapsed > .sidebar .nav .item.active {
-  background-color: map-get(colors.$color, "primary");
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
 }
 
@@ -97,7 +95,7 @@ $sidebar-padding-x: 0;
 }
 
 // breakpoint lg
-@media (max-width: map-get(breakpoints.$breakpoints, "lg")) {
+@media (max-width: map-get(variables.$breakpoints, "lg")) {
   .app > .sidebar {
     $sidebar-padding-x: 0.6rem;
     padding-left: $sidebar-padding-x;
@@ -109,12 +107,12 @@ $sidebar-padding-x: 0;
   }
 
   .app > .sidebar .nav .item {
-    border-radius: map-get(fx.$radius, "radius");
+    border-radius: map-get(variables.$radius, "lg");
     padding: 0.8rem;
   }
 
   .app > .sidebar .nav .item.active {
-    background-color: map-get(colors.$color, "primary");
+    background-color: map-get(variables.$colors, "primary");
     color: #fff;
   }
 
