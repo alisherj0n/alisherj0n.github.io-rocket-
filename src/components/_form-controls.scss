@@ -1,7 +1,4 @@
 @use "../variables";
-@use "../form-controls";
-
-@use "../typography";
 
 select,
 input:not([type="checkbox"]),
@@ -15,13 +12,13 @@ textarea {
 
 select,
 input:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls, "height");
+  height: map-get(variables.$form-controls, "height-sm");
 }
 
 select.small,
 input.small:not([type="checkbox"]) {
   font-size: 0.875rem;
-  height: map-get(variables.$form-controls, "height-sm");
+  height: map-get(variables.$form-controls, "height-xs");
   border-radius: map-get(variables.$radius, "sm");
 }
 
@@ -31,8 +28,9 @@ input.large:not([type="checkbox"]) {
 }
 
 select {
-  padding: form-controls.$padding-y calc(form-controls.$padding-x + 1rem)
-    form-controls.$padding-y form-controls.$padding-x;
+  padding: variables.$formControl-padding-y
+    calc(variables.$formControl-padding-x + 1rem)
+    variables.$formControl-padding-y variables.$formControl-padding-x;
   color: map-get(variables.$colors, "body");
   appearance: none;
   background-repeat: no-repeat;
@@ -43,8 +41,8 @@ select {
 
 input:not([type="checkbox"]),
 textarea {
-  padding: form-controls.$padding-y form-controls.$padding-x;
-  font-family: typography.$font-family;
+  padding: variables.$formControl-padding-y variables.$formControl-padding-x;
+  font-family: variables.$font-family;
   width: 100%;
 }
 

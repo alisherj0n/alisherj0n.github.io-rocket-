@@ -1,8 +1,7 @@
 @use "./variables";
-@use "./typography";
 
 body {
-  font-family: typography.$font-family;
+  font-family: variables.$font-family;
   color: map-get(variables.$colors, "body");
 }
 
@@ -13,7 +12,7 @@ a {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-family: typography.$font-family;
+  font-family: variables.$font-family;
   color: map-get(variables.$colors, "body-light");
 }
 
@@ -23,6 +22,6 @@ a {
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: typography.$font-family;
+  font-family: variables.$font-family;
   color: map-get(variables.$colors, "heading");
 }

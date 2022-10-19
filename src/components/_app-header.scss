@@ -1,7 +1,5 @@
 @use "../variables";
 
-$app-header-height: 66px;
-
 .app-header,
 .app-header .user-profile-dropdown {
   display: flex;
@@ -13,7 +11,7 @@ $app-header-height: 66px;
   border-bottom: 1px solid map-get(variables.$colors, "border");
   background-color: #fff;
   color: map-get(variables.$colors, "heading");
-  height: $app-header-height;
+  height: variables.$app-header-height;
   gap: 0.5rem;
   position: sticky;
   top: 0;

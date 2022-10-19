@@ -27,10 +27,10 @@ $colors: (
 );
 
 $radius: (
-  "xl": 20px,
-  "lg": 14px,
-  "sm": 10px,
   "xs": 6px,
+  "sm": 10px,
+  "lg": 14px,
+  "xl": 20px,
 );
 
 $breakpoints: (
@@ -41,10 +41,18 @@ $breakpoints: (
 );
 
 $form-controls: (
-  "height": 2.625rem,
+  "height-xs": 2.25rem,
+  "height-sm": 2.625rem,
   "height-lg": 3rem,
-  "height-sm": 2.25rem,
 );
 
 $container-padding: 1.2rem;
 $transition-duration: 0.2s;
+$font-family: "Poppins", sans-serif;
+$formControl-padding-x: 0.8rem;
+$formControl-padding-y: 0.4628rem;
+$badge-padding-y: 0.3rem;
+$badge-padding-x: 0.7rem;
+$app-header-height: 66px;
+$button-padding-x: 0.9rem;
+$button-padding-y: 0.4rem;

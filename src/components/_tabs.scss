@@ -1,7 +1,5 @@
 @use "../variables";
 
-@use "./badge";
-
 .tabs {
   display: flex;
   align-items: center;
@@ -12,10 +10,9 @@
 }
 
 .tabs .badge {
-  badge.$badge-padding-y: 0;
-  badge.$badge-padding-x: 0.5rem;
-
-  padding: badge.$badge-padding-y badge.$badge-padding-x;
+  variables.$badge-padding-y: 0;
+  variables.$badge-padding-x: 0.5rem;
+  padding: variables.$badge-padding-y variables.$badge-padding-x;
   background-color: map-get(variables.$colors, "border");
   color: map-get(variables.$colors, "body-light");
   font-size: 0.8rem;

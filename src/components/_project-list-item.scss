@@ -1,4 +1,3 @@
-@use "../form-controls";
 @use "../variables";
 
 .project-list-item,
@@ -24,7 +23,7 @@
 }
 
 .project-list-item .header .actions {
-  margin-right: form-controls.$padding-x * -1;
+  margin-right: variables.$formControl-padding-x * -1;
 }
 
 .project-list-item .mini-profile .title {
