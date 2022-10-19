@@ -1,4 +1,6 @@
 @use "../variables";
+@use "../components/app-header";
+@use "../components/button";
 
 .projects-details .grid {
   display: grid;
@@ -14,7 +16,7 @@
 
 .projects-details .related-projects-list {
   border-right: 1px solid map-get(variables.$colors, "border");
-  top: variables.$app-header-height;
+  top: app-header.$app-header-height;
 }
 
 .projects-details .related-projects-list .searchbar {
@@ -22,9 +24,9 @@
 }
 
 .projects-details .related-projects-list .searchbar input {
-  variables.$formControl-padding-y: 2rem;
-  padding-top: variables.$formControl-padding-y;
-  padding-bottom: variables.$formControl-padding-y;
+  variables.$form-controls-padding-y: 2rem;
+  padding-top: variables.$form-controls-padding-y;
+  padding-bottom: variables.$form-controls-padding-y;
   border: none;
 }
 
@@ -35,7 +37,7 @@
 
 .projects-details .related-projects-list {
   overflow-y: auto;
-  height: calc(100vh - variables.$app-header-height);
+  height: calc(100vh - app-header.$app-header-height);
 }
 
 .projects-details .container {
@@ -124,7 +126,7 @@
 
 .projects-details .sidebar .add,
 .projects-details .sidebar .download {
-  margin-right: variables.$button-padding-x * -1;
+  margin-right: button.$button-padding-x * -1;
 }
 
 /* Breakpoint-xl */

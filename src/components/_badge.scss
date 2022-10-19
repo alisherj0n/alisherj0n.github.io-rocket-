@@ -1,5 +1,8 @@
 @use "../variables";
 
+$badge-padding-y: 0.3rem;
+$badge-padding-x: 0.7rem;
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -8,7 +11,7 @@
   white-space: nowrap;
   background-color: map-get(variables.$colors, "bg-light");
   color: map-get(variables.$colors, "heading");
-  padding: variables.$badge-padding-y variables.$badge-padding-x;
+  padding: $badge-padding-y $badge-padding-x;
   border-radius: map-get(variables.$radius, "xs");
 }
 
@@ -18,9 +21,9 @@
 }
 
 .badge.large {
-  variables.$badge-padding-y: 1rem;
-  variables.$badge-padding-x: 1rem;
-  padding: variables.$badge-padding-y variables.$badge-padding-x;
+  $badge-padding-y: 1rem;
+  $badge-padding-x: 1rem;
+  padding: $badge-padding-y $badge-padding-x;
   border-radius: map-get(variables.$radius, "lg");
 }
 

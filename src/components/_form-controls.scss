@@ -28,9 +28,9 @@ input.large:not([type="checkbox"]) {
 }
 
 select {
-  padding: variables.$formControl-padding-y
-    calc(variables.$formControl-padding-x + 1rem)
-    variables.$formControl-padding-y variables.$formControl-padding-x;
+  padding: variables.$form-controls-padding-y
+    calc(variables.$form-controls-padding-x + 1rem)
+    variables.$form-controls-padding-y variables.$form-controls-padding-x;
   color: map-get(variables.$colors, "body");
   appearance: none;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ select {
 
 input:not([type="checkbox"]),
 textarea {
-  padding: variables.$formControl-padding-y variables.$formControl-padding-x;
+  padding: variables.$form-controls-padding-y variables.$form-controls-padding-x;
   font-family: variables.$font-family;
   width: 100%;
 }
