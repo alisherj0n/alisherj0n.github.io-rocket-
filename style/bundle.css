@@ -316,7 +316,7 @@ a {
 }
 
 .btn.large {
-  padding: 1.3rem 0.56rem;
+  padding: 0.56rem 1.3rem;
   height: 3rem;
 }
 
@@ -1756,7 +1756,7 @@ table tbody td:last-child {
 
 .projects-details .sidebar .add,
 .projects-details .sidebar .download {
-  margin-right: -0.9rem;
+  margin-right: -0.75rem;
 }
 
 /* Breakpoint-xl */

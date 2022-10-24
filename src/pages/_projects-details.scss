@@ -1,6 +1,5 @@
 @use "../variables";
 @use "../components/app-header";
-@use "../components/button";
 
 .projects-details .grid {
   display: grid;
@@ -24,9 +23,8 @@
 }
 
 .projects-details .related-projects-list .searchbar input {
-  variables.$form-controls-padding-y: 2rem;
-  padding-top: variables.$form-controls-padding-y;
-  padding-bottom: variables.$form-controls-padding-y;
+  padding-top: variables.$form-controls-padding-y-xl;
+  padding-bottom: variables.$form-controls-padding-y-xl;
   border: none;
 }
 
@@ -41,8 +39,7 @@
 }
 
 .projects-details .container {
-  variables.$container-padding: 1.8rem;
-  padding: variables.$container-padding;
+  padding: variables.$container-padding-xl;
   gap: 1rem;
   overflow-x: hidden;
 }
@@ -97,9 +94,9 @@
 }
 
 .projects-details .activity .tabs {
-  margin-left: variables.$container-padding * -1;
-  margin-right: variables.$container-padding * -1;
-  padding: 0 variables.$container-padding;
+  margin-left: variables.$container-padding-xl * -1;
+  margin-right: variables.$container-padding-xl * -1;
+  padding: 0 variables.$container-padding-xl;
 }
 
 .projects-details .activity {
@@ -126,7 +123,7 @@
 
 .projects-details .sidebar .add,
 .projects-details .sidebar .download {
-  margin-right: button.$button-padding-x * -1;
+  margin-right: map-get(variables.$btn-padding-x, "sm") * -1;
 }
 
 /* Breakpoint-xl */

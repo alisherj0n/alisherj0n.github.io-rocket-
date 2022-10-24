@@ -1,5 +1,4 @@
 @use "../variables";
-@use "./badge";
 
 .tabs {
   display: flex;
@@ -11,9 +10,7 @@
 }
 
 .tabs .badge {
-  badge.$badge-padding-y: 0;
-  badge.$badge-padding-x: 0.5rem;
-  padding: badge.$badge-padding-y badge.$badge-padding-x;
+  padding: 0 map-get(variables.$badge-padding-x, "sm");
   background-color: map-get(variables.$colors, "border");
   color: map-get(variables.$colors, "body-light");
   font-size: 0.8rem;

@@ -46,8 +46,37 @@ $form-controls: (
   "height-lg": 3rem,
 );
 
+$badge-padding-y: (
+  "sm": 0.3rem,
+  "lg": 1rem,
+);
+
+$badge-padding-x: (
+  "sm": 0.5rem,
+  "lg": 0.7rem,
+  "xl": 1rem,
+);
+
+$btn-padding-y: (
+  "sm": 0.4rem,
+  "lg": 0.56rem,
+);
+
+$btn-padding-x: (
+  "sm": 0.75rem,
+  "lg": 0.9rem,
+  "xl": 1.3rem,
+);
+
+$sidebar-padding-x: (
+  "sm": 0.6rem,
+  "lg": 1.7rem,
+);
+
 $container-padding: 1.2rem;
+$container-padding-xl: 1.8rem;
 $transition-duration: 0.2s;
 $font-family: "Poppins", sans-serif;
 $form-controls-padding-x: 0.8rem;
 $form-controls-padding-y: 0.4628rem;
+$form-controls-padding-y-xl: 2rem;
