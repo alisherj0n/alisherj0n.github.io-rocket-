@@ -55,7 +55,10 @@ $form-controls-padding-x: (
   "sm": 0.8rem,
 );
 
-$container-padding: 1.2rem;
-$container-padding-xl: 1.8rem;
+$container-padding: (
+  "sm": 1.2rem,
+  "lg": 1.8rem,
+);
+
 $transition-duration: 0.2s;
 $font-family: "Poppins", sans-serif;

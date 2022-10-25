@@ -10,7 +10,7 @@
 }
 
 .container {
-  padding: variables.$container-padding;
+  padding: map-get(variables.$container-padding, "sm");
   display: flex;
   flex-direction: column;
   gap: 2rem;

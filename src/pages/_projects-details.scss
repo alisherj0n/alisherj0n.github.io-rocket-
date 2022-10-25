@@ -40,7 +40,7 @@
 }
 
 .projects-details .container {
-  padding: variables.$container-padding-xl;
+  padding: map-get(variables.$container-padding, "lg");
   gap: 1rem;
   overflow-x: hidden;
 }
@@ -95,9 +95,9 @@
 }
 
 .projects-details .activity .tabs {
-  margin-left: variables.$container-padding-xl * -1;
-  margin-right: variables.$container-padding-xl * -1;
-  padding: 0 variables.$container-padding-xl;
+  margin-left: map-get(variables.$container-padding, "lg") * -1;
+  margin-right: map-get(variables.$container-padding, "lg") * -1;
+  padding: 0 map-get(variables.$container-padding, "lg");
 }
 
 .projects-details .activity {
