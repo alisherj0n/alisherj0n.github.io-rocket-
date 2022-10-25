@@ -1,5 +1,10 @@
 @use "../variables";
 
+$sidebar-padding-x: (
+  "sm": 0.6rem,
+  "lg": 1.7rem,
+);
+
 .app > .sidebar {
   border-right: 1px solid map-get(variables.$colors, "border");
   min-height: 100vh;
@@ -11,7 +16,7 @@
 
 .app > .sidebar .logo {
   max-width: 10rem;
-  padding: 0 map-get(variables.$sidebar-padding-x, "lg");
+  padding: 0 map-get($sidebar-padding-x, "lg");
   margin: 0 auto 1rem;
 }
 
@@ -23,7 +28,7 @@
 }
 
 .app > .sidebar .nav .item {
-  padding: 1rem map-get(variables.$sidebar-padding-x, "lg");
+  padding: 1rem map-get($sidebar-padding-x, "lg");
   display: flex;
   align-items: center;
   position: relative;
@@ -62,8 +67,8 @@
 }
 
 .app.collapsed > .sidebar {
-  padding-left: map-get(variables.$sidebar-padding-x, "sm");
-  padding-right: map-get(variables.$sidebar-padding-x, "sm");
+  padding-left: map-get($sidebar-padding-x, "sm");
+  padding-right: map-get($sidebar-padding-x, "sm");
 }
 
 .app.collapsed > .sidebar .logo.icon-only {
@@ -91,8 +96,8 @@
 // breakpoint lg
 @media (max-width: map-get(variables.$breakpoints, "lg")) {
   .app > .sidebar {
-    padding-left: map-get(variables.$sidebar-padding-x, "sm");
-    padding-right: map-get(variables.$sidebar-padding-x, "sm");
+    padding-left: map-get($sidebar-padding-x, "sm");
+    padding-right: map-get($sidebar-padding-x, "sm");
   }
 
   .app > .sidebar .logo.icon-only {
