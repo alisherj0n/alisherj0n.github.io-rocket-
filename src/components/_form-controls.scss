@@ -29,9 +29,9 @@ input.large:not([type="checkbox"]) {
 
 select {
   padding: map-get(variables.$form-controls-padding-y, "sm")
-    calc(variables.$form-controls-padding-x + 1rem)
+    map-get(variables.$form-controls-padding-x, "sm") + 1rem
     map-get(variables.$form-controls-padding-y, "sm")
-    variables.$form-controls-padding-x;
+    map-get(variables.$form-controls-padding-x, "sm");
   color: map-get(variables.$colors, "body");
   appearance: none;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ select {
 input:not([type="checkbox"]),
 textarea {
   padding: map-get(variables.$form-controls-padding-y, "sm")
-    variables.$form-controls-padding-x;
+    map-get(variables.$form-controls-padding-x, "sm");
   font-family: variables.$font-family;
   width: 100%;
 }

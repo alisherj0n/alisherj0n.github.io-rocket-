@@ -23,7 +23,7 @@
 }
 
 .project-list-item .header .actions {
-  margin-right: variables.$form-controls-padding-x * -1;
+  margin-right: map-get(variables.$form-controls-padding-x, "sm") * -1;
 }
 
 .project-list-item .mini-profile .title {
