@@ -11,7 +11,7 @@
     map-get(variables.$btn-padding-x, "lg");
   background-color: transparent;
   border: 3px solid transparent;
-  height: map-get(variables.$form-controls, "height-sm");
+  height: map-get(variables.$form-controls-height, "sm");
   position: relative;
   outline: none;
   border-radius: map-get(variables.$radius, "lg");
@@ -32,7 +32,7 @@
 .btn.small {
   padding: map-get(variables.$btn-padding-y, "sm")
     map-get(variables.$btn-padding-x, "sm");
-  height: map-get(variables.$form-controls, "height-xs");
+  height: map-get(variables.$form-controls-height, "height-xs");
   font-size: 0.875rem;
   border-radius: map-get(variables.$radius, "sm");
 }
@@ -40,7 +40,7 @@
 .btn.large {
   padding: map-get(variables.$btn-padding-y, "lg")
     map-get(variables.$btn-padding-x, "xl");
-  height: map-get(variables.$form-controls, "height-lg");
+  height: map-get(variables.$form-controls-height, "height-lg");
 }
 
 .btn.small .icon {
@@ -48,7 +48,7 @@
 }
 
 .btn.icon-only {
-  width: map-get(variables.$form-controls, "height-sm");
+  width: map-get(variables.$form-controls-height, "height-sm");
 }
 
 .btn.primary {

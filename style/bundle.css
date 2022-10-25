@@ -310,22 +310,16 @@ a {
 
 .btn.small {
   padding: 0.4rem 0.75rem;
-  height: 2.25rem;
   font-size: 0.875rem;
   border-radius: 10px;
 }
 
 .btn.large {
   padding: 0.56rem 1.3rem;
-  height: 3rem;
 }
 
 .btn.small .icon {
   font-size: 1rem;
-}
-
-.btn.icon-only {
-  width: 2.625rem;
 }
 
 .btn.primary {

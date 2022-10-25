@@ -12,19 +12,19 @@ textarea {
 
 select,
 input:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls, "height-sm");
+  height: map-get(variables.$form-controls-height, "sm");
 }
 
 select.small,
 input.small:not([type="checkbox"]) {
   font-size: 0.875rem;
-  height: map-get(variables.$form-controls, "height-xs");
+  height: map-get(variables.$form-controls-height, "xs");
   border-radius: map-get(variables.$radius, "sm");
 }
 
 select.large,
 input.large:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls, "height-lg");
+  height: map-get(variables.$form-controls-height, "lg");
 }
 
 select {
