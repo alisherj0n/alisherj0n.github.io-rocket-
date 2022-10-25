@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../components/app-header";
+@use "../components/button";
 
 .projects-details .grid {
   display: grid;
@@ -123,7 +124,7 @@
 
 .projects-details .sidebar .add,
 .projects-details .sidebar .download {
-  margin-right: map-get(variables.$btn-padding-x, "sm") * -1;
+  margin-right: map-get(button.$btn-padding-x, "sm") * -1;
 }
 
 /* Breakpoint-xl */

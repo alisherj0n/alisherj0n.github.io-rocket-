@@ -1,5 +1,16 @@
 @use "../variables";
 
+$btn-padding-y: (
+  "sm": 0.4rem,
+  "lg": 0.56rem,
+);
+
+$btn-padding-x: (
+  "sm": 0.75rem,
+  "lg": 0.9rem,
+  "xl": 1.3rem,
+);
+
 .btn {
   display: flex;
   align-items: center;
@@ -7,8 +18,7 @@
   gap: 0.4rem;
   flex-shrink: 0;
   color: map-get(variables.$colors, "body-light");
-  padding: map-get(variables.$btn-padding-y, "sm")
-    map-get(variables.$btn-padding-x, "lg");
+  padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "lg");
   background-color: transparent;
   border: 3px solid transparent;
   height: map-get(variables.$form-controls-height, "sm");
@@ -30,16 +40,14 @@
 }
 
 .btn.small {
-  padding: map-get(variables.$btn-padding-y, "sm")
-    map-get(variables.$btn-padding-x, "sm");
+  padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "sm");
   height: map-get(variables.$form-controls-height, "height-xs");
   font-size: 0.875rem;
   border-radius: map-get(variables.$radius, "sm");
 }
 
 .btn.large {
-  padding: map-get(variables.$btn-padding-y, "lg")
-    map-get(variables.$btn-padding-x, "xl");
+  padding: map-get($btn-padding-y, "lg") map-get($btn-padding-x, "xl");
   height: map-get(variables.$form-controls-height, "height-lg");
 }
 
