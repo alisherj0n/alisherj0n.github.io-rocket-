@@ -24,8 +24,8 @@
 }
 
 .projects-details .related-projects-list .searchbar input {
-  padding-top: variables.$form-controls-padding-y-xl;
-  padding-bottom: variables.$form-controls-padding-y-xl;
+  padding-top: map-get(variables.$form-controls-padding-y, "lg");
+  padding-bottom: map-get(variables.$form-controls-padding-y, "lg");
   border: none;
 }
 
