@@ -28,255 +28,255 @@ $btn-padding-x: (
   transition: background-color variables.$transition-duration,
     color variables.$transition-duration,
     box-shadow variables.$transition-duration;
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: map-get(variables.$colors, "bg-light");
-}
+  &:hover,
+  &:focus {
+    background-color: map-get(variables.$colors, "bg-light");
+  }
 
-.btn:focus {
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
-}
+  &:focus {
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
 
-.btn.small {
-  padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "sm");
-  height: map-get(variables.$form-controls-height, "xs");
-  font-size: 0.875rem;
-  border-radius: map-get(variables.$radius, "sm");
-}
+  &.small {
+    padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "sm");
+    height: map-get(variables.$form-controls-height, "xs");
+    font-size: 0.875rem;
+    border-radius: map-get(variables.$radius, "sm");
 
-.btn.large {
-  padding: map-get($btn-padding-y, "lg") map-get($btn-padding-x, "xl");
-  height: map-get(variables.$form-controls-height, "lg");
-}
+    &.icon {
+      font-size: 1rem;
+    }
+  }
 
-.btn.small .icon {
-  font-size: 1rem;
-}
+  &.large {
+    padding: map-get($btn-padding-y, "lg") map-get($btn-padding-x, "xl");
+    height: map-get(variables.$form-controls-height, "lg");
+  }
 
-.btn.icon-only {
-  width: map-get(variables.$form-controls-height, "sm");
-}
+  &.icon-only {
+    width: map-get(variables.$form-controls-height, "sm");
+  }
 
-.btn.primary {
-  background-color: map-get(variables.$colors, "primary");
-  color: #fff;
-  border-bottom-color: map-get(variables.$colors, "primary-dark");
-}
+  &.primary {
+    background-color: map-get(variables.$colors, "primary");
+    color: #fff;
+    border-bottom-color: map-get(variables.$colors, "primary-dark");
 
-.btn.primary:hover,
-.btn.primary:focus {
-  background-color: map-get(variables.$colors, "primary-hover");
-}
+    &:hover,
+    &:focus {
+      background-color: map-get(variables.$colors, "primary-hover");
+    }
 
-.btn.primary:focus {
-  box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
-}
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
+    }
 
-.btn.primary:active {
-  background-color: map-get(variables.$colors, "primary-dark");
-}
+    &:active {
+      background-color: map-get(variables.$colors, "primary-dark");
+    }
+  }
 
-.btn.warning {
-  background-color: map-get(variables.$colors, "warning");
-  color: #fff;
-  border-bottom-color: map-get(variables.$colors, "warning-dark");
-}
+  &.warning {
+    background-color: map-get(variables.$colors, "warning");
+    color: #fff;
+    border-bottom-color: map-get(variables.$colors, "warning-dark");
 
-.btn.warning:hover,
-.btn.warning:focus {
-  background-color: map-get(variables.$colors, "warning-hover");
-}
+    &:hover,
+    &:focus {
+      background-color: map-get(variables.$colors, "warning-hover");
+    }
 
-.btn.warning:focus {
-  box-shadow: 0px 0px 0px 3px rgba(229, 110, 25, 0.3);
-}
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(229, 110, 25, 0.3);
+    }
 
-.btn.warning:active {
-  background-color: map-get(variables.$colors, "warning-dark");
-}
+    &:active {
+      background-color: map-get(variables.$colors, "warning-dark");
+    }
+  }
 
-.btn.danger {
-  background-color: map-get(variables.$colors, "danger");
-  color: #fff;
-  border-bottom-color: map-get(variables.$colors, "danger-dark");
-}
+  &.danger {
+    background-color: map-get(variables.$colors, "danger");
+    color: #fff;
+    border-bottom-color: map-get(variables.$colors, "danger-dark");
 
-.btn.danger:hover,
-.btn.danger:focus {
-  background-color: map-get(variables.$colors, "danger-hover");
-}
+    &:hover,
+    &:focus {
+      background-color: map-get(variables.$colors, "danger-hover");
+    }
 
-.btn.danger:focus {
-  box-shadow: 0px 0px 0px 3px rgba(253, 121, 114, 0.3);
-}
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(253, 121, 114, 0.3);
+    }
 
-.btn.danger:active {
-  background-color: map-get(variables.$colors, "danger-dark");
-}
+    &:active {
+      background-color: map-get(variables.$colors, "danger-dark");
+    }
+  }
 
-.btn.success {
-  background-color: map-get(variables.$colors, "success");
-  color: #fff;
-  border-bottom-color: map-get(variables.$colors, "success-dark");
-}
+  &.success {
+    background-color: map-get(variables.$colors, "success");
+    color: #fff;
+    border-bottom-color: map-get(variables.$colors, "success-dark");
 
-.btn.success:hover,
-.btn.success:focus {
-  background-color: map-get(variables.$colors, "success-hover");
-}
+    &:hover,
+    &:focus {
+      background-color: map-get(variables.$colors, "success-hover");
+    }
 
-.btn.success:focus {
-  box-shadow: 0px 0px 0px 3px rgba(73, 201, 109, 0.3);
-}
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(73, 201, 109, 0.3);
+    }
 
-.btn.success:active {
-  background-color: map-get(variables.$colors, "success-dark");
-}
+    &:active {
+      background-color: map-get(variables.$colors, "success-dark");
+    }
+  }
 
-.btn.light {
-  background-color: #fff;
-  border-bottom-color: transparent;
-}
+  &.light {
+    background-color: #fff;
+    border-bottom-color: transparent;
 
-.btn.light:hover {
-  background-color: map-get(variables.$colors, "bg-light");
-}
+    &:hover {
+      background-color: map-get(variables.$colors, "bg-light");
+    }
 
-.btn.light.primary {
-  background-color: map-get(variables.$colors, "primary-light");
-  color: map-get(variables.$colors, "primary");
-}
+    &.primary {
+      background-color: map-get(variables.$colors, "primary-light");
+      color: map-get(variables.$colors, "primary");
 
-.btn.light.primary:hover,
-.btn.light.primary:focus {
-  background-color: map-get(variables.$colors, "primary");
-  color: #fff;
-}
+      &:hover,
+      &:focus {
+        background-color: map-get(variables.$colors, "primary");
+        color: #fff;
+      }
 
-.btn.light.primary:focus {
-  box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
-}
+      &:focus {
+        box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
+      }
 
-.btn.light.primary:active {
-  background-color: map-get(variables.$colors, "primary-dark");
-}
+      &:active {
+        background-color: map-get(variables.$colors, "primary-dark");
+      }
+    }
 
-.btn.light.warning {
-  background-color: map-get(variables.$colors, "warning-light");
-  color: map-get(variables.$colors, "warning");
-}
+    &.warning {
+      background-color: map-get(variables.$colors, "warning-light");
+      color: map-get(variables.$colors, "warning");
 
-.btn.light.warning:hover,
-.btn.light.warning:focus {
-  background-color: map-get(variables.$colors, "warning");
-  color: #fff;
-}
+      &:hover,
+      &:focus {
+        background-color: map-get(variables.$colors, "warning");
+        color: #fff;
+      }
 
-.btn.light.warning:focus {
-  box-shadow: 0px 0px 0px 3px rgba(229, 110, 25, 0.3);
-}
+      &:focus {
+        box-shadow: 0px 0px 0px 3px rgba(229, 110, 25, 0.3);
+      }
 
-.btn.light.warning:active {
-  background-color: map-get(variables.$colors, "warning-dark");
-}
+      &:active {
+        background-color: map-get(variables.$colors, "warning-dark");
+      }
+    }
 
-.btn.light.danger {
-  background-color: map-get(variables.$colors, "danger-light");
-  color: map-get(variables.$colors, "danger");
-}
+    &.danger {
+      background-color: map-get(variables.$colors, "danger-light");
+      color: map-get(variables.$colors, "danger");
 
-.btn.light.danger:hover,
-.btn.light.danger:focus {
-  background-color: map-get(variables.$colors, "danger");
-  color: #fff;
-}
+      &:hover,
+      &:focus {
+        background-color: map-get(variables.$colors, "danger");
+        color: #fff;
+      }
 
-.btn.light.danger:focus {
-  box-shadow: 0px 0px 0px 3px rgba(253, 121, 114, 0.3);
-}
+      &:focus {
+        box-shadow: 0px 0px 0px 3px rgba(253, 121, 114, 0.3);
+      }
 
-.btn.light.danger:active {
-  background-color: map-get(variables.$colors, "danger-dark");
-}
+      &:active {
+        background-color: map-get(variables.$colors, "danger-dark");
+      }
+    }
 
-.btn.light.success {
-  background-color: map-get(variables.$colors, "success-light");
-  color: map-get(variables.$colors, "success");
-}
+    &.success {
+      background-color: map-get(variables.$colors, "success-light");
+      color: map-get(variables.$colors, "success");
 
-.btn.light.success:hover,
-.btn.light.success:focus {
-  background-color: map-get(variables.$colors, "success");
-  color: #fff;
-}
+      &:hover,
+      &:focus {
+        background-color: map-get(variables.$colors, "success");
+        color: #fff;
+      }
 
-.btn.light.success:focus {
-  box-shadow: 0px 0px 0px 3px rgba(73, 201, 109, 0.3);
-}
+      &:focus {
+        box-shadow: 0px 0px 0px 3px rgba(73, 201, 109, 0.3);
+      }
 
-.btn.light.success:active {
-  background-color: map-get(variables.$colors, "success-dark");
-}
+      &:active {
+        background-color: map-get(variables.$colors, "success-dark");
+      }
+    }
+  }
 
-.btn.link {
-  background-color: transparent;
-  border-bottom-color: transparent;
-}
+  &.link {
+    background-color: transparent;
+    border-bottom-color: transparent;
 
-.btn.link.primary {
-  color: map-get(variables.$colors, "primary");
-}
+    &.primary {
+      color: map-get(variables.$colors, "primary");
 
-.btn.link.primary:hover,
-.btn.link.primary:focus,
-.btn.link.primary:active {
-  background-color: map-get(variables.$colors, "primary-light");
-}
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: map-get(variables.$colors, "primary-light");
+      }
+    }
 
-.btn.link.warning {
-  color: map-get(variables.$colors, "warning");
-}
+    &.warning {
+      color: map-get(variables.$colors, "warning");
 
-.btn.link.warning:hover,
-.btn.link.warning:focus,
-.btn.link.warning:active {
-  background-color: map-get(variables.$colors, "warning-light");
-}
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: map-get(variables.$colors, "warning-light");
+      }
+    }
 
-.btn.link.danger {
-  color: map-get(variables.$colors, "danger");
-}
+    &.danger {
+      color: map-get(variables.$colors, "danger");
 
-.btn.link.danger:hover,
-.btn.link.danger:focus,
-.btn.link.danger:active {
-  background-color: map-get(variables.$colors, "danger-light");
-}
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: map-get(variables.$colors, "danger-light");
+      }
+    }
 
-.btn.link.success {
-  color: map-get(variables.$colors, "success");
-}
+    &.success {
+      color: map-get(variables.$colors, "success");
 
-.btn.link.success:hover,
-.btn.link.success:focus,
-.btn.link.success:active {
-  background-color: map-get(variables.$colors, "success-light");
-}
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: map-get(variables.$colors, "success-light");
+      }
+    }
+  }
 
-.btn:disabled,
-.btn.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  border-bottom-color: transparent;
+  &:disabled,
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    border-bottom-color: transparent;
+  }
 }
 
 [role="button"] {
   transition: box-shadow variables.$transition-duration;
-}
 
-[role="button"]:focus {
-  box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
-  outline: none;
+  &:focus {
+    box-shadow: 0px 0px 0px 3px rgba(48, 79, 253, 0.3);
+    outline: none;
+  }
 }
