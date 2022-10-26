@@ -1239,40 +1239,35 @@ table tbody td:last-child {
     display: none;
   }
 }
-.app-header,
-.app-header .user-profile-dropdown {
-  display: flex;
-  align-items: center;
-}
-
 .app-header {
   padding: 0.7rem 1.2rem;
   border-bottom: 1px solid #e8e9eb;
   background-color: #fff;
   color: #3f434a;
   height: 66px;
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 1;
+  /* ----breakpoint-sm---- */
 }
-
 .app-header .app-sidebar-toggle {
   margin-right: auto;
 }
-
 .app-header .user-profile-dropdown {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   background: transparent;
   border: none;
   padding: 0;
   margin-left: 1rem;
 }
-
 .app-header .user-profile-dropdown .text-info .title {
   width: max-content;
 }
-
 .app-header .notification .dot {
   width: 7px;
   height: 7px;
@@ -1283,14 +1278,13 @@ table tbody td:last-child {
   top: 9px;
   right: 10px;
 }
-
-/* ----breakpoint-sm---- */
 @media (max-width: 768px) {
   .app-header .btn.notification,
 .app-header .mini-profile .avatar {
     display: none;
   }
 }
+
 .page-header,
 .page-header .actions {
   display: flex;
