@@ -1251,6 +1251,7 @@ table tbody td:last-child {
   position: sticky;
   top: 0;
   z-index: 1;
+  /* ----breakpoint-sm---- */
 }
 .app-header .app-sidebar-toggle {
   margin-right: auto;
@@ -1277,19 +1278,9 @@ table tbody td:last-child {
   top: 9px;
   right: 10px;
 }
-.app-header .btn.notification {
-  /* ----breakpoint-sm---- */
-}
 @media (max-width: 768px) {
-  .app-header .btn.notification {
-    display: none;
-  }
-}
+  .app-header .btn.notification,
 .app-header .mini-profile .avatar {
-  /* ----breakpoint-sm---- */
-}
-@media (max-width: 768px) {
-  .app-header .mini-profile .avatar {
     display: none;
   }
 }

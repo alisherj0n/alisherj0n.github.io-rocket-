@@ -27,42 +27,28 @@ $app-header-height: 66px;
     border: none;
     padding: 0;
     margin-left: 1rem;
-  }
 
-  .user-profile-dropdown {
     .text-info .title {
       width: max-content;
     }
   }
 
-  .notification {
-    .dot {
-      width: 7px;
-      height: 7px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      background-color: map-get(variables.$colors, "danger");
-      position: absolute;
-      top: 9px;
-      right: 10px;
-    }
+  .notification .dot {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: map-get(variables.$colors, "danger");
+    position: absolute;
+    top: 9px;
+    right: 10px;
   }
 
-  .btn {
-    &.notification {
-      /* ----breakpoint-sm---- */
-      @media (max-width: map-get(variables.$breakpoints, "sm")) {
-        display: none;
-      }
-    }
-  }
-
-  .mini-profile {
-    .avatar {
-      /* ----breakpoint-sm---- */
-      @media (max-width: map-get(variables.$breakpoints, "sm")) {
-        display: none;
-      }
+  /* ----breakpoint-sm---- */
+  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+    .btn.notification,
+    .mini-profile .avatar {
+      display: none;
     }
   }
 }
