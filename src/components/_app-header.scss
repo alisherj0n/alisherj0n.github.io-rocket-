@@ -2,55 +2,67 @@
 
 $app-header-height: 66px;
 
-.app-header,
-.app-header .user-profile-dropdown {
-  display: flex;
-  align-items: center;
-}
-
 .app-header {
   padding: 0.7rem map-get(variables.$container-padding, "sm");
   border-bottom: 1px solid map-get(variables.$colors, "border");
   background-color: #fff;
   color: map-get(variables.$colors, "heading");
   height: $app-header-height;
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 1;
-}
 
-.app-header .app-sidebar-toggle {
-  margin-right: auto;
-}
+  .app-sidebar-toggle {
+    margin-right: auto;
+  }
 
-.app-header .user-profile-dropdown {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin-left: 1rem;
-}
+  .user-profile-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 1rem;
+  }
 
-.app-header .user-profile-dropdown .text-info .title {
-  width: max-content;
-}
+  .user-profile-dropdown {
+    .text-info .title {
+      width: max-content;
+    }
+  }
 
-.app-header .notification .dot {
-  width: 7px;
-  height: 7px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  background-color: map-get(variables.$colors, "danger");
-  position: absolute;
-  top: 9px;
-  right: 10px;
-}
+  .notification {
+    .dot {
+      width: 7px;
+      height: 7px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      background-color: map-get(variables.$colors, "danger");
+      position: absolute;
+      top: 9px;
+      right: 10px;
+    }
+  }
 
-/* ----breakpoint-sm---- */
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
-  .app-header .btn.notification,
-  .app-header .mini-profile .avatar {
-    display: none;
+  .btn {
+    &.notification {
+      /* ----breakpoint-sm---- */
+      @media (max-width: map-get(variables.$breakpoints, "sm")) {
+        display: none;
+      }
+    }
+  }
+
+  .mini-profile {
+    .avatar {
+      /* ----breakpoint-sm---- */
+      @media (max-width: map-get(variables.$breakpoints, "sm")) {
+        display: none;
+      }
+    }
   }
 }
