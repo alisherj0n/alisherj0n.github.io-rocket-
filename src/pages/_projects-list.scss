@@ -1,11 +1,14 @@
+@use "../variables";
+
+$list-view-padding: 1.5rem;
+
 .projects-list {
-  --list-view-padding: 1.5rem;
-  border-radius: var(--border-radius);
+  border-radius: map-get(variables.$radius, "lg");
   background-color: #fff;
 }
 
 .projects-list .header {
-  padding: var(--list-view-padding);
+  padding: $list-view-padding;
   display: flex;
   gap: 1.5rem;
 }
@@ -20,7 +23,7 @@
 
 .projects-list table .mini-profile .subtitle,
 .projects-list table .progress-info {
-  color: var(--color-body-light);
+  color: map-get(variables.$colors, "body-light");
 }
 
 .projects-list table .progress-info {
@@ -30,7 +33,7 @@
 }
 
 .projects-list .footer {
-  padding: var(--list-view-padding);
+  padding: $list-view-padding;
 }
 
 .projects-list .project-name,

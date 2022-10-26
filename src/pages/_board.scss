@@ -1,5 +1,7 @@
+@use "../variables";
+
 .board {
-  background-color: var(--color-bg);
+  background-color: map-get(variables.$colors, "bg");
   overflow: hidden;
   max-height: 100vh;
   overflow-y: scroll;
@@ -12,7 +14,7 @@
 }
 
 .board .tabs .actions .page-view-toggles > .active {
-  color: var(--color-primary);
+  color: map-get(variables.$colors, "primary");
 }
 
 .board .projects {
@@ -27,7 +29,7 @@
 }
 
 /* ----breakpoint-sm---- */
-@media (max-width: 786px) {
+@media (max-width: map-get(variables.$breakpoints, "sm")) {
   .board .page-header .heading {
     font-size: 1.6rem;
   }

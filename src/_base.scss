@@ -1,17 +1,19 @@
+@use "./variables";
+
 body {
-  font-family: var(--font-family);
-  color: var(--color-body);
+  font-family: variables.$font-family;
+  color: map-get(variables.$colors, "body");
 }
 
 a {
   text-decoration: none;
-  transition: color var(--transition-duration);
+  transition: color variables.$transition-duration;
 }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-family: var(--font-family);
-  color: var(--color-body-light);
+  font-family: variables.$font-family;
+  color: map-get(variables.$colors, "body-light");
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -20,6 +22,6 @@ a {
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: var(--font-family);
-  color: var(--color-heading);
+  font-family: variables.$font-family;
+  color: map-get(variables.$colors, "heading");
 }

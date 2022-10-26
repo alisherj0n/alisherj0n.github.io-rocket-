@@ -1,9 +1,15 @@
-@use "../form-controls";
+@use "../variables";
 
-:root {
-  --button-padding-x: 0.9rem;
-  --button-padding-y: 0.4rem;
-}
+$btn-padding-y: (
+  "sm": 0.4rem,
+  "lg": 0.56rem,
+);
+
+$btn-padding-x: (
+  "sm": 0.75rem,
+  "lg": 0.9rem,
+  "xl": 1.3rem,
+);
 
 .btn {
   display: flex;
@@ -11,21 +17,22 @@
   justify-content: center;
   gap: 0.4rem;
   flex-shrink: 0;
-  color: var(--color-body-light);
-  padding: var(--button-padding-y) var(--button-padding-x);
+  color: map-get(variables.$colors, "body-light");
+  padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "lg");
   background-color: transparent;
   border: 3px solid transparent;
-  height: var(--form-control-height);
+  height: map-get(variables.$form-controls-height, "sm");
   position: relative;
   outline: none;
-  border-radius: var(--border-radius);
-  transition: background-color var(--transition-duration),
-    color var(--transition-duration), box-shadow var(--transition-duration);
+  border-radius: map-get(variables.$radius, "lg");
+  transition: background-color variables.$transition-duration,
+    color variables.$transition-duration,
+    box-shadow variables.$transition-duration;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--color-bg-light);
+  background-color: map-get(variables.$colors, "bg-light");
 }
 
 .btn:focus {
@@ -33,17 +40,15 @@
 }
 
 .btn.small {
-  --button-padding-y: 0.4rem;
-  --button-padding-x: 0.75rem;
-  height: var(--form-control-height-sm);
+  padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "sm");
+  height: map-get(variables.$form-controls-height, "xs");
   font-size: 0.875rem;
-  border-radius: var(--border-radius-sm);
+  border-radius: map-get(variables.$radius, "sm");
 }
 
 .btn.large {
-  --button-padding-x: 1.3rem;
-  --button-padding-y: 0.56rem;
-  height: var(--form-control-height-lg);
+  padding: map-get($btn-padding-y, "lg") map-get($btn-padding-x, "xl");
+  height: map-get(variables.$form-controls-height, "lg");
 }
 
 .btn.small .icon {
@@ -51,18 +56,18 @@
 }
 
 .btn.icon-only {
-  width: var(--form-control-height);
+  width: map-get(variables.$form-controls-height, "sm");
 }
 
 .btn.primary {
-  background-color: var(--color-primary);
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
-  border-bottom-color: var(--color-primary-dark);
+  border-bottom-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.primary:hover,
 .btn.primary:focus {
-  background-color: var(--color-primary-hover);
+  background-color: map-get(variables.$colors, "primary-hover");
 }
 
 .btn.primary:focus {
@@ -70,18 +75,18 @@
 }
 
 .btn.primary:active {
-  background-color: var(--color-primary-dark);
+  background-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.warning {
-  background-color: var(--color-warning);
+  background-color: map-get(variables.$colors, "warning");
   color: #fff;
-  border-bottom-color: var(--color-warning-dark);
+  border-bottom-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.warning:hover,
 .btn.warning:focus {
-  background-color: var(--color-warning-hover);
+  background-color: map-get(variables.$colors, "warning-hover");
 }
 
 .btn.warning:focus {
@@ -89,18 +94,18 @@
 }
 
 .btn.warning:active {
-  background-color: var(--color-warning-dark);
+  background-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.danger {
-  background-color: var(--color-danger);
+  background-color: map-get(variables.$colors, "danger");
   color: #fff;
-  border-bottom-color: var(--color-danger-dark);
+  border-bottom-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.danger:hover,
 .btn.danger:focus {
-  background-color: var(--color-danger-hover);
+  background-color: map-get(variables.$colors, "danger-hover");
 }
 
 .btn.danger:focus {
@@ -108,18 +113,18 @@
 }
 
 .btn.danger:active {
-  background-color: var(--color-danger-dark);
+  background-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.success {
-  background-color: var(--color-success);
+  background-color: map-get(variables.$colors, "success");
   color: #fff;
-  border-bottom-color: var(--color-success-dark);
+  border-bottom-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.success:hover,
 .btn.success:focus {
-  background-color: var(--color-success-hover);
+  background-color: map-get(variables.$colors, "success-hover");
 }
 
 .btn.success:focus {
@@ -127,7 +132,7 @@
 }
 
 .btn.success:active {
-  background-color: var(--color-success-dark);
+  background-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.light {
@@ -136,17 +141,17 @@
 }
 
 .btn.light:hover {
-  background-color: var(--color-bg-light);
+  background-color: map-get(variables.$colors, "bg-light");
 }
 
 .btn.light.primary {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary);
+  background-color: map-get(variables.$colors, "primary-light");
+  color: map-get(variables.$colors, "primary");
 }
 
 .btn.light.primary:hover,
 .btn.light.primary:focus {
-  background-color: var(--color-primary);
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
 }
 
@@ -155,17 +160,17 @@
 }
 
 .btn.light.primary:active {
-  background-color: var(--color-primary-dark);
+  background-color: map-get(variables.$colors, "primary-dark");
 }
 
 .btn.light.warning {
-  background-color: var(--color-warning-light);
-  color: var(--color-warning);
+  background-color: map-get(variables.$colors, "warning-light");
+  color: map-get(variables.$colors, "warning");
 }
 
 .btn.light.warning:hover,
 .btn.light.warning:focus {
-  background-color: var(--color-warning);
+  background-color: map-get(variables.$colors, "warning");
   color: #fff;
 }
 
@@ -174,17 +179,17 @@
 }
 
 .btn.light.warning:active {
-  background-color: var(--color-warning-dark);
+  background-color: map-get(variables.$colors, "warning-dark");
 }
 
 .btn.light.danger {
-  background-color: var(--color-danger-light);
-  color: var(--color-danger);
+  background-color: map-get(variables.$colors, "danger-light");
+  color: map-get(variables.$colors, "danger");
 }
 
 .btn.light.danger:hover,
 .btn.light.danger:focus {
-  background-color: var(--color-danger);
+  background-color: map-get(variables.$colors, "danger");
   color: #fff;
 }
 
@@ -193,17 +198,17 @@
 }
 
 .btn.light.danger:active {
-  background-color: var(--color-danger-dark);
+  background-color: map-get(variables.$colors, "danger-dark");
 }
 
 .btn.light.success {
-  background-color: var(--color-success-light);
-  color: var(--color-success);
+  background-color: map-get(variables.$colors, "success-light");
+  color: map-get(variables.$colors, "success");
 }
 
 .btn.light.success:hover,
 .btn.light.success:focus {
-  background-color: var(--color-success);
+  background-color: map-get(variables.$colors, "success");
   color: #fff;
 }
 
@@ -212,7 +217,7 @@
 }
 
 .btn.light.success:active {
-  background-color: var(--color-success-dark);
+  background-color: map-get(variables.$colors, "success-dark");
 }
 
 .btn.link {
@@ -221,43 +226,43 @@
 }
 
 .btn.link.primary {
-  color: var(--color-primary);
+  color: map-get(variables.$colors, "primary");
 }
 
 .btn.link.primary:hover,
 .btn.link.primary:focus,
 .btn.link.primary:active {
-  background-color: var(--color-primary-light);
+  background-color: map-get(variables.$colors, "primary-light");
 }
 
 .btn.link.warning {
-  color: var(--color-warning);
+  color: map-get(variables.$colors, "warning");
 }
 
 .btn.link.warning:hover,
 .btn.link.warning:focus,
 .btn.link.warning:active {
-  background-color: var(--color-warning-light);
+  background-color: map-get(variables.$colors, "warning-light");
 }
 
 .btn.link.danger {
-  color: var(--color-danger);
+  color: map-get(variables.$colors, "danger");
 }
 
 .btn.link.danger:hover,
 .btn.link.danger:focus,
 .btn.link.danger:active {
-  background-color: var(--color-danger-light);
+  background-color: map-get(variables.$colors, "danger-light");
 }
 
 .btn.link.success {
-  color: var(--color-success);
+  color: map-get(variables.$colors, "success");
 }
 
 .btn.link.success:hover,
 .btn.link.success:focus,
 .btn.link.success:active {
-  background-color: var(--color-success-light);
+  background-color: map-get(variables.$colors, "success-light");
 }
 
 .btn:disabled,
@@ -268,7 +273,7 @@
 }
 
 [role="button"] {
-  transition: box-shadow var(--transition-duration);
+  transition: box-shadow variables.$transition-duration;
 }
 
 [role="button"]:focus {

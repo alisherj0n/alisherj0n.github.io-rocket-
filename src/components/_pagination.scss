@@ -1,3 +1,5 @@
+@use "../variables";
+
 .pagination,
 .pagination .displayable-quantity,
 .pagination .pages {
@@ -15,7 +17,7 @@
 }
 
 .pagination .summary {
-  color: var(--color-body-light);
+  color: map-get(variables.$colors, "body-light");
 }
 
 .pagination .pages {
@@ -26,7 +28,8 @@
   min-width: 2.55rem;
 }
 
-@media (max-width: 768px) {
+// breakpoint sm
+@media (max-width: map-get(variables.$breakpoints, "sm")) {
   .pagination {
     flex-direction: column;
   }

@@ -1,0 +1,64 @@
+$colors: (
+  "heading": #3f434a,
+  "shadow": #a4a5a566,
+  "body-light": #8a9099,
+  "body": #595f69,
+  "grey-light": #eeeeee,
+  "grey": #c6c9cc,
+  "border": #e8e9eb,
+  "bg": #f8f8f8,
+  "bg-light": #efeff1,
+  "primary": #304ffd,
+  "primary-hover": #445ffc,
+  "primary-light": rgba(48, 79, 253, 0.1),
+  "primary-dark": #263fca,
+  "danger": #ff5950,
+  "danger-hover": #fe6f67,
+  "danger-light": rgba(253, 121, 114, 0.1),
+  "danger-dark": #ea2b21,
+  "warning": #ff965d,
+  "warning-hover": #ffa778,
+  "warning-light": rgba(229, 110, 25, 0.1),
+  "warning-dark": #e56e19,
+  "success": #49c96d,
+  "success-hover": #79cc91,
+  "success-light": rgba(73, 201, 109, 0.1),
+  "success-dark": #27b950,
+);
+
+$radius: (
+  "xs": 6px,
+  "sm": 10px,
+  "lg": 14px,
+  "xl": 20px,
+);
+
+$breakpoints: (
+  "xs": 576px,
+  "sm": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+$form-controls-height: (
+  "xs": 2.25rem,
+  "sm": 2.625rem,
+  "lg": 3rem,
+);
+
+$form-controls-padding-y: (
+  "sm": 0.4628rem,
+  "lg": 2rem,
+);
+
+$form-controls-padding-x: (
+  "sm": 0.8rem,
+);
+
+$container-padding: (
+  "sm": 1.2rem,
+  "lg": 1.8rem,
+);
+
+$transition-duration: 0.2s;
+$font-family: "Poppins", sans-serif;

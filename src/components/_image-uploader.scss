@@ -1,12 +1,14 @@
+@use "../variables";
+
 .image-uploader {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 6rem;
   min-height: 6rem;
-  border: 1px dashed var(--color-body-light);
+  border: 1px dashed map-get(variables.$colors, "body-light");
   padding: 0.5rem;
-  border-radius: var(--border-radius-xl);
+  border-radius: map-get(variables.$radius, "xl");
   align-self: center;
   cursor: pointer;
   position: relative;
@@ -19,12 +21,12 @@
 .image-uploader .icon {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-body-light);
+  color: map-get(variables.$colors, "body-light");
 }
 
 .image-uploader .image {
-  border: 1px solid var(--color-grey);
-  border-radius: var(--border-radius);
+  border: 1px solid map-get(variables.$colors, "grey");
+  border-radius: map-get(variables.$radius, "lg");
   max-width: 99%;
 }
 
@@ -32,7 +34,7 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid var(--color-grey);
+  border: 1px solid map-get(variables.$colors, "grey");
   background: #fff;
   position: absolute;
   top: -0.7rem;
@@ -41,5 +43,5 @@
 
 .image-uploader .edit-btn .icon {
   font-size: 1.5rem;
-  color: var(--color-heading);
+  color: map-get(variables.$colors, "heading");
 }

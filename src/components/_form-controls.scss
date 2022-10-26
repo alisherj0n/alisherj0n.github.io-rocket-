@@ -1,38 +1,38 @@
-@use "../form-controls";
+@use "../variables";
 
 select,
 input:not([type="checkbox"]),
 textarea {
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
   background-color: transparent;
-  transition: border-color var(--transition-duration);
+  transition: border-color variables.$transition-duration;
   outline: none;
 }
 
 select,
 input:not([type="checkbox"]) {
-  height: var(--form-control-height);
+  height: map-get(variables.$form-controls-height, "sm");
 }
 
 select.small,
 input.small:not([type="checkbox"]) {
-  --form-control-padding-x: 0.5625rem;
   font-size: 0.875rem;
-  height: var(--form-control-height-sm);
-  border-radius: var(--border-radius-sm);
+  height: map-get(variables.$form-controls-height, "xs");
+  border-radius: map-get(variables.$radius, "sm");
 }
 
 select.large,
 input.large:not([type="checkbox"]) {
-  height: var(--form-control-height-lg);
+  height: map-get(variables.$form-controls-height, "lg");
 }
 
 select {
-  padding: var(--form-control-padding-y)
-    calc(var(--form-control-padding-x) + 1rem) var(--form-control-padding-y)
-    var(--form-control-padding-x);
-  color: var(--color-body);
+  padding: map-get(variables.$form-controls-padding-y, "sm")
+    map-get(variables.$form-controls-padding-x, "sm") + 1rem
+    map-get(variables.$form-controls-padding-y, "sm")
+    map-get(variables.$form-controls-padding-x, "sm");
+  color: map-get(variables.$colors, "body");
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
@@ -42,8 +42,9 @@ select {
 
 input:not([type="checkbox"]),
 textarea {
-  padding: var(--form-control-padding-y) var(--form-control-padding-x);
-  font-family: var(--font-family);
+  padding: map-get(variables.$form-controls-padding-y, "sm")
+    map-get(variables.$form-controls-padding-x, "sm");
+  font-family: variables.$font-family;
   width: 100%;
 }
 
@@ -69,7 +70,7 @@ textarea {
 
 .input-with-icon .left {
   left: 1rem;
-  color: var(--color-body-light);
+  color: map-get(variables.$colors, "body-light");
   margin: 0;
 }
 
@@ -131,16 +132,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-primary);
+  border-color: map-get(variables.$colors, "primary");
 }
 
 input:disabled,
 select:disabled,
 textarea:disabled {
-  background-color: var(--color-grey-light);
+  background-color: map-get(variables.$colors, "grey-light");
   pointer-events: none;
 }
 
 input[type="date"] {
-  color: var(--color-body);
+  color: map-get(variables.$colors, "body");
 }

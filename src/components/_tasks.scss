@@ -1,3 +1,5 @@
+@use "../variables";
+
 .tasks,
 .tasks .task,
 .tasks .task .actions {
@@ -12,13 +14,13 @@
 .tasks .task {
   gap: 1rem;
   align-items: center;
-  color: var(--color-heading);
-  border-radius: var(--border-radius);
+  color: map-get(variables.$colors, "heading");
+  border-radius: map-get(variables.$radius, "lg");
   padding: 0.125rem 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
-  transition: background-color var(--transition-duration),
-    box-shadow var(--transition-duration);
+  transition: background-color variables.$transition-duration,
+    box-shadow variables.$transition-duration;
 }
 
 .tasks .task .description {
@@ -26,7 +28,7 @@
 }
 
 .tasks .task .icon {
-  color: var(--color-border);
+  color: map-get(variables.$colors, "border");
 }
 
 .tasks .task.completed .description {
@@ -34,19 +36,19 @@
 }
 
 .tasks .task.completed .icon {
-  color: var(--color-primary);
+  color: map-get(variables.$colors, "primary");
 }
 
 .tasks .task .actions {
   margin-right: -0.8rem;
   opacity: 0;
-  transition: opacity var(--transition-duration);
+  transition: opacity variables.$transition-duration;
 }
 
 .tasks .task:hover,
 .tasks .task:focus,
 .tasks .task:focus-within {
-  background-color: var(--color-bg);
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .tasks .task:hover .actions,

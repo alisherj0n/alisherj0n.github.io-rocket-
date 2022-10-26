@@ -1,3 +1,5 @@
+@use "../variables";
+
 .project-list-item,
 .project-list-item .footer,
 .project-list-item .header,
@@ -10,7 +12,7 @@
   gap: 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
-  border-radius: var(--border-radius);
+  border-radius: map-get(variables.$radius, "lg");
   position: relative;
 }
 
@@ -21,7 +23,7 @@
 }
 
 .project-list-item .header .actions {
-  margin-right: calc(var(--form-control-padding-x) * -1);
+  margin-right: map-get(variables.$form-controls-padding-x, "sm") * -1;
 }
 
 .project-list-item .mini-profile .title {

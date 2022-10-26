@@ -1,3 +1,5 @@
+@use "../variables";
+
 .mini-profile {
   display: flex;
   align-items: center;
@@ -9,7 +11,7 @@
 .mini-profile .text-info {
   width: 100%;
   overflow: hidden;
-  color: var(--color-heading);
+  color: map-get(variables.$colors, "heading");
 }
 
 .mini-profile .title,
@@ -24,7 +26,7 @@
 }
 
 .mini-profile .subtitle {
-  color: var(--color-body);
+  color: map-get(variables.$colors, "body");
 }
 
 .mini-profile .avatar.large {

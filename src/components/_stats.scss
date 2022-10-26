@@ -1,3 +1,5 @@
+@use "../variables";
+
 .stats,
 .stats .item {
   display: flex;
@@ -13,12 +15,12 @@
 }
 
 .stats .item .title {
-  color: var(--color-body-light);
+  color: map-get(variables.$colors, "body-light");
   display: block;
   width: 99%;
 }
 
 .stats .item .subtitle {
-  color: var(--color-heading);
+  color: map-get(variables.$colors, "heading");
   width: 99%;
 }

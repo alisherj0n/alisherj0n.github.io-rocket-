@@ -1,13 +1,15 @@
+@use "../variables";
+
 .drawer {
   display: none;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 1.5rem;
   background-color: #fff;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid map-get(variables.$colors, "border");
   width: 24rem;
   height: 100%;
-  box-shadow: -4px 20px 24px 0px var(--color-shadow);
+  box-shadow: -4px 20px 24px 0px map-get(variables.$colors, "shadow");
   position: fixed;
   top: 4rem;
   right: 0;
@@ -33,7 +35,7 @@
 }
 
 /*  breakpoint-xs */
-@media (max-width: 576px) {
+@media (max-width: map-get(variables.$breakpoints, "xs")) {
   .drawer {
     width: 100%;
   }

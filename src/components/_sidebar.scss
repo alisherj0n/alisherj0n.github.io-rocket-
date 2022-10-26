@@ -1,18 +1,22 @@
+@use "../variables";
+
+$sidebar-padding-x: (
+  "sm": 0.6rem,
+  "lg": 1.7rem,
+);
+
 .app > .sidebar {
-  --sidebar-padding-y: 1rem;
-  --sidebar-padding-x: 0;
-  border-right: 1px solid var(--color-border);
+  border-right: 1px solid map-get(variables.$colors, "border");
   min-height: 100vh;
-  padding: var(--sidebar-padding-y) var(--sidebar-padding-x);
+  padding: 1rem 0;
   position: sticky;
   top: 0px;
   align-self: start;
 }
 
 .app > .sidebar .logo {
-  --sidebar-padding-x: 1.7rem;
   max-width: 10rem;
-  padding: 0 var(--sidebar-padding-x);
+  padding: 0 map-get($sidebar-padding-x, "lg");
   margin: 0 auto 1rem;
 }
 
@@ -24,21 +28,20 @@
 }
 
 .app > .sidebar .nav .item {
-  --sidebar-padding-x: 1.7rem;
-  padding: var(--sidebar-padding-y) var(--sidebar-padding-x);
+  padding: 1rem map-get($sidebar-padding-x, "lg");
   display: flex;
   align-items: center;
   position: relative;
-  color: var(--color-body-light);
-  transition: background-color var(--transition-duration),
-    color var(--transition-duration);
+  color: map-get(variables.$colors, "body-light");
+  transition: background-color variables.$transition-duration,
+    color variables.$transition-duration;
   gap: 1rem;
 }
 
 .app > .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
-  background-color: var(--color-primary);
+  background-color: map-get(variables.$colors, "primary");
   width: 4px;
   left: 0px;
   height: 100%;
@@ -47,16 +50,16 @@
 
 .app > .sidebar .nav .item:hover,
 .app > .sidebar .nav .item.active {
-  background-color: var(--color-bg);
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .app > .sidebar .nav .item.active {
-  background-color: var(--color-bg);
+  background-color: map-get(variables.$colors, "bg");
 }
 
 .app > .sidebar .nav .item .link-txt {
   margin-right: auto;
-  color: var(--color-heading);
+  color: map-get(variables.$colors, "heading");
 }
 
 .app > .sidebar .nav .item .submenu-indicator {
@@ -64,7 +67,8 @@
 }
 
 .app.collapsed > .sidebar {
-  --sidebar-padding-x: 0.6rem;
+  padding-left: map-get($sidebar-padding-x, "sm");
+  padding-right: map-get($sidebar-padding-x, "sm");
 }
 
 .app.collapsed > .sidebar .logo.icon-only {
@@ -72,12 +76,12 @@
 }
 
 .app.collapsed > .sidebar .nav .item {
-  border-radius: var(--border-radius);
+  border-radius: map-get(variables.$radius, "lg");
   padding: 0.8rem;
 }
 
 .app.collapsed > .sidebar .nav .item.active {
-  background-color: var(--color-primary);
+  background-color: map-get(variables.$colors, "primary");
   color: #fff;
 }
 
@@ -89,9 +93,11 @@
   display: none;
 }
 
-@media (max-width: 992px) {
+// breakpoint lg
+@media (max-width: map-get(variables.$breakpoints, "lg")) {
   .app > .sidebar {
-    --sidebar-padding-x: 0.6rem;
+    padding-left: map-get($sidebar-padding-x, "sm");
+    padding-right: map-get($sidebar-padding-x, "sm");
   }
 
   .app > .sidebar .logo.icon-only {
@@ -99,12 +105,12 @@
   }
 
   .app > .sidebar .nav .item {
-    border-radius: var(--border-radius);
+    border-radius: map-get(variables.$radius, "lg");
     padding: 0.8rem;
   }
 
   .app > .sidebar .nav .item.active {
-    background-color: var(--color-primary);
+    background-color: map-get(variables.$colors, "primary");
     color: #fff;
   }
 
