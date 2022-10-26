@@ -22,6 +22,10 @@ $badge-padding-x: (
   padding: map-get($badge-padding-y, "sm") map-get($badge-padding-x, "lg");
   border-radius: map-get(variables.$radius, "xs");
 
+  .icon {
+    font-size: 1.1rem;
+  }
+
   &.small {
     padding: 0.5px 5px;
     font-size: 0.7rem;
@@ -34,10 +38,6 @@ $badge-padding-x: (
     .icon {
       font-size: 1.3rem;
     }
-  }
-
-  .icon {
-    font-size: 1.1rem;
   }
 
   &.primary {

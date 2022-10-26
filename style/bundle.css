@@ -170,6 +170,9 @@ a {
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
 }
+.badge .icon {
+  font-size: 1.1rem;
+}
 .badge.small {
   padding: 0.5px 5px;
   font-size: 0.7rem;
@@ -180,9 +183,6 @@ a {
 }
 .badge.large .icon {
   font-size: 1.3rem;
-}
-.badge .icon {
-  font-size: 1.1rem;
 }
 .badge.primary {
   background-color: #304ffd;
