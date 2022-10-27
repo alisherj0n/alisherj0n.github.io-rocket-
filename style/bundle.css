@@ -1633,8 +1633,6 @@ table tbody td:last-child {
 }
 .projects-details .sidebar {
   border-left: 1px solid #e8e9eb;
-}
-.projects-details .sidebar.container {
   gap: 1.5rem;
 }
 .projects-details .sidebar .project-status {
