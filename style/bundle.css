@@ -1547,132 +1547,110 @@ table tbody td:last-child {
   width: 100%;
 }
 
+.projects-details {
+  /* Breakpoint-xl */
+  /*  Breakpoint-lg */
+  /* Breakpoint-sm */
+}
 .projects-details .grid {
   display: grid;
   grid-template-columns: 350px 1fr 310px;
 }
-
-.projects-details .related-projects-list,
-.projects-details .related-projects-list .searchbar {
-  background-color: #f8f8f8;
-  position: sticky;
-  align-self: start;
-}
-
-.projects-details .related-projects-list {
-  border-right: 1px solid #e8e9eb;
-  top: 66px;
-}
-
-.projects-details .related-projects-list .searchbar {
-  top: 0;
-}
-
-.projects-details .related-projects-list .searchbar input {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border: none;
-}
-
-.projects-details .related-projects-list .searchbar,
-.projects-details .related-projects-list .related-projects-list-item {
-  border-bottom: 1px solid #e8e9eb;
-}
-
-.projects-details .related-projects-list {
-  overflow-y: auto;
-  height: calc(100vh - 66px);
-}
-
 .projects-details .container {
   padding: 1.8rem;
   gap: 1rem;
   overflow-x: hidden;
 }
-
-.projects-details .project .header,
-.projects-details .project,
-.projects-details .activity {
-  display: flex;
+.projects-details .related-projects-list {
+  background-color: #f8f8f8;
+  position: sticky;
+  align-self: start;
+  border-right: 1px solid #e8e9eb;
+  top: 66px;
+  overflow-y: auto;
+  height: calc(100vh - 66px);
 }
-
-.projects-details .project,
-.projects-details .activity {
-  flex-direction: column;
+.projects-details .related-projects-list .searchbar {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e8e9eb;
+  position: sticky;
+  align-self: start;
+  top: 0;
 }
-
+.projects-details .related-projects-list .searchbar input {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: none;
+}
+.projects-details .related-projects-list .related-projects-list-item {
+  border-bottom: 1px solid #e8e9eb;
+}
 .projects-details .project {
+  display: flex;
+  flex-direction: column;
   gap: 2.5rem;
 }
-
 .projects-details .project .header {
+  display: flex;
   align-items: center;
 }
-
 .projects-details .project .mini-profile .title {
   font-size: 1.25rem;
 }
-
 .projects-details .project .intro {
   overflow-x: auto;
 }
-
-.projects-details .project .intro .lead,
-.projects-details .project .description .lead,
+.projects-details .project .intro .lead {
+  margin-bottom: 0.8rem;
+}
+.projects-details .project .description .lead {
+  margin-bottom: 0.8rem;
+}
 .projects-details .project .checklist .lead {
   margin-bottom: 0.8rem;
 }
-
-.projects-details .stats {
-  gap: 5rem;
+.projects-details .project .checklist .lead .tasks {
+  margin-bottom: 0.5rem;
 }
-
 .projects-details .project .checklist .progress-bar {
   margin-bottom: 1rem;
 }
-
-.projects-details .project .checklist .tasks {
-  margin-bottom: 0.5rem;
-}
-
 .projects-details .project .checklist .add-task {
   margin-left: auto;
 }
-
+.projects-details .activity {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .projects-details .activity .tabs {
   margin-left: -1.8rem;
   margin-right: -1.8rem;
   padding: 0 1.8rem;
 }
-
-.projects-details .activity {
-  gap: 2rem;
+.projects-details .stats {
+  gap: 5rem;
 }
-
 .projects-details .sidebar {
   border-left: 1px solid #e8e9eb;
 }
-
 .projects-details .sidebar.container {
   gap: 1.5rem;
 }
-
 .projects-details .sidebar .project-status {
   width: 100%;
 }
-
 .projects-details .sidebar .widget {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
-.projects-details .sidebar .add,
+.projects-details .sidebar .add {
+  margin-right: -0.75rem;
+}
 .projects-details .sidebar .download {
   margin-right: -0.75rem;
 }
-
-/* Breakpoint-xl */
 @media (max-width: 1200px) {
   .projects-details .grid {
     grid-template-columns: 1fr 250px;
@@ -1681,18 +1659,17 @@ table tbody td:last-child {
     display: none;
   }
 }
-/*  Breakpoint-lg */
 @media (max-width: 992px) {
   .projects-details .project .intro .stats {
     gap: 2rem;
   }
 }
-/* Breakpoint-sm */
 @media (max-width: 768px) {
   .projects-details .grid {
     grid-template-columns: 1fr;
   }
 }
+
 /*  breakpoint-sm */
 @media (max-width: 768px) {
   .add-update-project-dialog .time-range {
