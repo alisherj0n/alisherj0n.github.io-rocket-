@@ -578,7 +578,37 @@ input[type=checkbox]:checked::after {
   background-color: rgba(253, 121, 114, 0.1);
 }
 
-select,
+select {
+  padding: 0.4628rem 1.8rem 0.4628rem 0.8rem;
+  color: #595f69;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-image: url(../../images/select-arrow.png);
+  background-size: 0.5rem;
+  height: 2.625rem;
+  border: 1px solid #e8e9eb;
+  border-radius: 14px;
+  background-color: transparent;
+  transition: border-color 0.2s;
+  outline: none;
+}
+select.small {
+  font-size: 0.875rem;
+  height: 2.25rem;
+  border-radius: 10px;
+}
+select.large {
+  height: 3rem;
+}
+select:focus {
+  border-color: #304ffd;
+}
+select:disabled {
+  background-color: #eeeeee;
+  pointer-events: none;
+}
+
 input:not([type=checkbox]),
 textarea {
   border: 1px solid #e8e9eb;
@@ -588,31 +618,18 @@ textarea {
   outline: none;
 }
 
-select,
 input:not([type=checkbox]) {
   height: 2.625rem;
 }
 
-select.small,
 input.small:not([type=checkbox]) {
   font-size: 0.875rem;
   height: 2.25rem;
   border-radius: 10px;
 }
 
-select.large,
 input.large:not([type=checkbox]) {
   height: 3rem;
-}
-
-select {
-  padding: 0.4628rem 1.8rem 0.4628rem 0.8rem;
-  color: #595f69;
-  appearance: none;
-  background-repeat: no-repeat;
-  background-position: right 0.8rem center;
-  background-image: url(../../images/select-arrow.png);
-  background-size: 0.5rem;
 }
 
 input:not([type=checkbox]),
@@ -704,13 +721,11 @@ textarea {
 }
 
 input:focus,
-select:focus,
 textarea:focus {
   border-color: #304ffd;
 }
 
 input:disabled,
-select:disabled,
 textarea:disabled {
   background-color: #eeeeee;
   pointer-events: none;

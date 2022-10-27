@@ -1,32 +1,5 @@
 @use "../variables";
 
-select,
-input:not([type="checkbox"]),
-textarea {
-  border: 1px solid map-get(variables.$colors, "border");
-  border-radius: map-get(variables.$radius, "lg");
-  background-color: transparent;
-  transition: border-color variables.$transition-duration;
-  outline: none;
-}
-
-select,
-input:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls-height, "sm");
-}
-
-select.small,
-input.small:not([type="checkbox"]) {
-  font-size: 0.875rem;
-  height: map-get(variables.$form-controls-height, "xs");
-  border-radius: map-get(variables.$radius, "sm");
-}
-
-select.large,
-input.large:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls-height, "lg");
-}
-
 select {
   padding: map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm") + 1rem
@@ -38,6 +11,54 @@ select {
   background-position: right 0.8rem center;
   background-image: url(../../images/select-arrow.png);
   background-size: 0.5rem;
+  height: map-get(variables.$form-controls-height, "sm");
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
+  background-color: transparent;
+  transition: border-color variables.$transition-duration;
+  outline: none;
+
+  &.small {
+    font-size: 0.875rem;
+    height: map-get(variables.$form-controls-height, "xs");
+    border-radius: map-get(variables.$radius, "sm");
+  }
+
+  &.large {
+    height: map-get(variables.$form-controls-height, "lg");
+  }
+
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
+
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
+}
+
+input:not([type="checkbox"]),
+textarea {
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
+  background-color: transparent;
+  transition: border-color variables.$transition-duration;
+  outline: none;
+}
+
+input:not([type="checkbox"]) {
+  height: map-get(variables.$form-controls-height, "sm");
+}
+
+input.small:not([type="checkbox"]) {
+  font-size: 0.875rem;
+  height: map-get(variables.$form-controls-height, "xs");
+  border-radius: map-get(variables.$radius, "sm");
+}
+
+input.large:not([type="checkbox"]) {
+  height: map-get(variables.$form-controls-height, "lg");
 }
 
 input:not([type="checkbox"]),
@@ -130,13 +151,11 @@ textarea {
 }
 
 input:focus,
-select:focus,
 textarea:focus {
   border-color: map-get(variables.$colors, "primary");
 }
 
 input:disabled,
-select:disabled,
 textarea:disabled {
   background-color: map-get(variables.$colors, "grey-light");
   pointer-events: none;
