@@ -2,151 +2,151 @@
 @use "../components/app-header";
 @use "../components/button";
 
-.projects-details .grid {
-  display: grid;
-  grid-template-columns: 350px 1fr 310px;
-}
-
-.projects-details .related-projects-list,
-.projects-details .related-projects-list .searchbar {
-  background-color: map-get(variables.$colors, "bg");
-  position: sticky;
-  align-self: start;
-}
-
-.projects-details .related-projects-list {
-  border-right: 1px solid map-get(variables.$colors, "border");
-  top: app-header.$app-header-height;
-}
-
-.projects-details .related-projects-list .searchbar {
-  top: 0;
-}
-
-.projects-details .related-projects-list .searchbar input {
-  padding-top: map-get(variables.$form-controls-padding-y, "lg");
-  padding-bottom: map-get(variables.$form-controls-padding-y, "lg");
-  border: none;
-}
-
-.projects-details .related-projects-list .searchbar,
-.projects-details .related-projects-list .related-projects-list-item {
-  border-bottom: 1px solid map-get(variables.$colors, "border");
-}
-
-.projects-details .related-projects-list {
-  overflow-y: auto;
-  height: calc(100vh - app-header.$app-header-height);
-}
-
-.projects-details .container {
-  padding: map-get(variables.$container-padding, "lg");
-  gap: 1rem;
-  overflow-x: hidden;
-}
-
-.projects-details .project .header,
-.projects-details .project,
-.projects-details .activity {
-  display: flex;
-}
-
-.projects-details .project,
-.projects-details .activity {
-  flex-direction: column;
-}
-
-.projects-details .project {
-  gap: 2.5rem;
-}
-
-.projects-details .project .header {
-  align-items: center;
-}
-
-.projects-details .project .mini-profile .title {
-  font-size: 1.25rem;
-}
-
-.projects-details .project .intro {
-  overflow-x: auto;
-}
-
-.projects-details .project .intro .lead,
-.projects-details .project .description .lead,
-.projects-details .project .checklist .lead {
-  margin-bottom: 0.8rem;
-}
-
-.projects-details .stats {
-  gap: 5rem;
-}
-
-.projects-details .project .checklist .progress-bar {
-  margin-bottom: 1rem;
-}
-
-.projects-details .project .checklist .tasks {
-  margin-bottom: 0.5rem;
-}
-
-.projects-details .project .checklist .add-task {
-  margin-left: auto;
-}
-
-.projects-details .activity .tabs {
-  margin-left: map-get(variables.$container-padding, "lg") * -1;
-  margin-right: map-get(variables.$container-padding, "lg") * -1;
-  padding: 0 map-get(variables.$container-padding, "lg");
-}
-
-.projects-details .activity {
-  gap: 2rem;
-}
-
-.projects-details .sidebar {
-  border-left: 1px solid map-get(variables.$colors, "border");
-}
-
-.projects-details .sidebar.container {
-  gap: 1.5rem;
-}
-
-.projects-details .sidebar .project-status {
-  width: 100%;
-}
-
-.projects-details .sidebar .widget {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.projects-details .sidebar .add,
-.projects-details .sidebar .download {
-  margin-right: map-get(button.$btn-padding-x, "sm") * -1;
-}
-
-/* Breakpoint-xl */
-@media (max-width: map-get(variables.$breakpoints, "xl")) {
-  .projects-details .grid {
-    grid-template-columns: 1fr 250px;
+.projects-details {
+  .grid {
+    display: grid;
+    grid-template-columns: 350px 1fr 310px;
   }
-  .projects-details .related-projects-list {
-    display: none;
-  }
-}
 
-/*  Breakpoint-lg */
-@media (max-width: map-get(variables.$breakpoints, "lg")) {
-  .projects-details .project .intro .stats {
+  .container {
+    padding: map-get(variables.$container-padding, "lg");
+    gap: 1rem;
+    overflow-x: hidden;
+  }
+
+  .related-projects-list {
+    background-color: map-get(variables.$colors, "bg");
+    position: sticky;
+    align-self: start;
+    border-right: 1px solid map-get(variables.$colors, "border");
+    top: app-header.$app-header-height;
+    overflow-y: auto;
+    height: calc(100vh - app-header.$app-header-height);
+
+    .searchbar {
+      background-color: map-get(variables.$colors, "bg");
+      border-bottom: 1px solid map-get(variables.$colors, "border");
+      position: sticky;
+      align-self: start;
+      top: 0;
+
+      input {
+        padding-top: map-get(variables.$form-controls-padding-y, "lg");
+        padding-bottom: map-get(variables.$form-controls-padding-y, "lg");
+        border: none;
+      }
+    }
+
+    &-item {
+      border-bottom: 1px solid map-get(variables.$colors, "border");
+    }
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .header {
+      display: flex;
+      align-items: center;
+    }
+
+    .mini-profile .title {
+      font-size: 1.25rem;
+    }
+
+    .intro {
+      overflow-x: auto;
+
+      .lead {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    .description .lead {
+      margin-bottom: 0.8rem;
+    }
+
+    .checklist {
+      .lead {
+        margin-bottom: 0.8rem;
+
+        .tasks {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .progress-bar {
+        margin-bottom: 1rem;
+      }
+
+      .add-task {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .activity {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-  }
-}
 
-/* Breakpoint-sm */
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
-  .projects-details .grid {
-    grid-template-columns: 1fr;
+    .tabs {
+      margin-left: -(map-get(variables.$container-padding, "lg"));
+      margin-right: -(map-get(variables.$container-padding, "lg"));
+      padding: 0 map-get(variables.$container-padding, "lg");
+    }
+  }
+
+  .stats {
+    gap: 5rem;
+  }
+
+  .sidebar {
+    border-left: 1px solid map-get(variables.$colors, "border");
+    gap: 1.5rem;
+
+    .project-status {
+      width: 100%;
+    }
+
+    .widget {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .add {
+      margin-right: map-get(button.$btn-padding-x, "sm") * -1;
+    }
+
+    .download {
+      margin-right: map-get(button.$btn-padding-x, "sm") * -1;
+    }
+  }
+
+  /* Breakpoint-xl */
+  @media (max-width: map-get(variables.$breakpoints, "xl")) {
+    .grid {
+      grid-template-columns: 1fr 250px;
+    }
+    .related-projects-list {
+      display: none;
+    }
+  }
+
+  /*  Breakpoint-lg */
+  @media (max-width: map-get(variables.$breakpoints, "lg")) {
+    .project .intro .stats {
+      gap: 2rem;
+    }
+  }
+
+  /* Breakpoint-sm */
+  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
 }
