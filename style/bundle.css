@@ -1582,7 +1582,7 @@ table tbody td:last-child {
   padding-bottom: 2rem;
   border: none;
 }
-.projects-details .related-projects-list .related-projects-list-item {
+.projects-details .related-projects-list-item {
   border-bottom: 1px solid #e8e9eb;
 }
 .projects-details .project {
