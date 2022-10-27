@@ -21,62 +21,64 @@ $badge-padding-x: (
   color: map-get(variables.$colors, "heading");
   padding: map-get($badge-padding-y, "sm") map-get($badge-padding-x, "lg");
   border-radius: map-get(variables.$radius, "xs");
-}
 
-.badge.small {
-  padding: 0.5px 5px;
-  font-size: 0.7rem;
-}
+  .icon {
+    font-size: 1.1rem;
+  }
 
-.badge.large {
-  padding: map-get($badge-padding-y, "lg") map-get($badge-padding-x, "xl");
-  border-radius: map-get(variables.$radius, "lg");
-}
+  &.small {
+    padding: 0.5px 5px;
+    font-size: 0.7rem;
+  }
 
-.badge .icon {
-  font-size: 1.1rem;
-}
+  &.large {
+    padding: map-get($badge-padding-y, "lg") map-get($badge-padding-x, "xl");
+    border-radius: map-get(variables.$radius, "lg");
 
-.badge.large .icon {
-  font-size: 1.3rem;
-}
+    .icon {
+      font-size: 1.3rem;
+    }
+  }
 
-.badge.primary {
-  background-color: map-get(variables.$colors, "primary");
-  color: #fff;
-}
+  &.primary {
+    background-color: map-get(variables.$colors, "primary");
+    color: #fff;
+  }
 
-.badge.warning {
-  background-color: map-get(variables.$colors, "warning");
-  color: #fff;
-}
+  &.warning {
+    background-color: map-get(variables.$colors, "warning");
+    color: #fff;
+  }
 
-.badge.danger {
-  background-color: map-get(variables.$colors, "danger");
-  color: #fff;
-}
+  &.danger {
+    background-color: map-get(variables.$colors, "danger");
+    color: #fff;
+  }
 
-.badge.success {
-  background-color: map-get(variables.$colors, "success");
-  color: #fff;
-}
+  &.success {
+    background-color: map-get(variables.$colors, "success");
+    color: #fff;
+  }
 
-.badge.light.primary {
-  background-color: map-get(variables.$colors, "primary-light");
-  color: map-get(variables.$colors, "primary");
-}
+  &.light {
+    &.primary {
+      background-color: map-get(variables.$colors, "primary-light");
+      color: map-get(variables.$colors, "primary");
+    }
 
-.badge.light.warning {
-  background-color: map-get(variables.$colors, "warning-light");
-  color: map-get(variables.$colors, "warning");
-}
+    &.warning {
+      background-color: map-get(variables.$colors, "warning-light");
+      color: map-get(variables.$colors, "warning");
+    }
 
-.badge.light.danger {
-  background-color: map-get(variables.$colors, "danger-light");
-  color: map-get(variables.$colors, "danger");
-}
+    &.danger {
+      background-color: map-get(variables.$colors, "danger-light");
+      color: map-get(variables.$colors, "danger");
+    }
 
-.badge.light.success {
-  background-color: map-get(variables.$colors, "success-light");
-  color: map-get(variables.$colors, "success");
+    &.success {
+      background-color: map-get(variables.$colors, "success-light");
+      color: map-get(variables.$colors, "success");
+    }
+  }
 }

@@ -170,60 +170,48 @@ a {
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
 }
-
+.badge .icon {
+  font-size: 1.1rem;
+}
 .badge.small {
   padding: 0.5px 5px;
   font-size: 0.7rem;
 }
-
 .badge.large {
   padding: 1rem 1rem;
   border-radius: 14px;
 }
-
-.badge .icon {
-  font-size: 1.1rem;
-}
-
 .badge.large .icon {
   font-size: 1.3rem;
 }
-
 .badge.primary {
   background-color: #304ffd;
   color: #fff;
 }
-
 .badge.warning {
   background-color: #ff965d;
   color: #fff;
 }
-
 .badge.danger {
   background-color: #ff5950;
   color: #fff;
 }
-
 .badge.success {
   background-color: #49c96d;
   color: #fff;
 }
-
 .badge.light.primary {
   background-color: rgba(48, 79, 253, 0.1);
   color: #304ffd;
 }
-
 .badge.light.warning {
   background-color: rgba(229, 110, 25, 0.1);
   color: #ff965d;
 }
-
 .badge.light.danger {
   background-color: rgba(253, 121, 114, 0.1);
   color: #ff5950;
 }
-
 .badge.light.success {
   background-color: rgba(73, 201, 109, 0.1);
   color: #49c96d;
