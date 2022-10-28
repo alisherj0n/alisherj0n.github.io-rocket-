@@ -926,63 +926,55 @@ textarea:disabled {
   margin-right: 0.3rem;
 }
 
-.comments,
-.comments .comment,
-.comments .comment .text-info .header,
-.comments .comment-field .actions,
-.comments .attachments {
-  display: flex;
-}
-
 .comments {
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
+.comments .comment {
+  display: flex;
+  gap: 1rem;
+}
+.comments .comment .text-info .header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.comments .comment p {
+  margin-bottom: 0.5rem;
+}
+.comments .comment .author {
+  color: #3f434a;
+  display: inline-block;
+}
+.comments .comment .time {
+  color: #8a9099;
+}
 .comments .comment-field {
   border: 1px solid #e8e9eb;
   border-radius: 14px;
   padding: 0.55rem;
   transition: border-color 0.2s;
 }
-
 .comments .comment-field:focus-within {
   border-color: #304ffd;
 }
-
 .comments .comment-field textarea {
   border: none;
   resize: none;
   padding: 0 0.4rem;
 }
-
+.comments .comment-field .actions {
+  display: flex;
+}
 .comments .comment-field .actions .submit {
   margin-right: auto;
 }
-
-.comments .comment,
-.comments .comment .text-info .header,
 .comments .attachments {
+  display: flex;
   gap: 1rem;
-}
-
-.comments .comment .text-info .header,
-.comments .attachments {
   align-items: center;
-}
-
-.comments .comment .text-info .header,
-.comments .comment p {
-  margin-bottom: 0.5rem;
-}
-
-.comments .comment .author {
-  color: #3f434a;
-  display: inline-block;
-}
-
-.comments .comment .time {
-  color: #8a9099;
 }
 
 .stats,
