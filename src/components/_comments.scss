@@ -1,60 +1,63 @@
 @use "../variables";
 
-.comments,
-.comments .comment,
-.comments .comment .text-info .header,
-.comments .comment-field .actions,
-.comments .attachments {
-  display: flex;
-}
-
 .comments {
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
 
-.comments .comment-field {
-  border: 1px solid map-get(variables.$colors, "border");
-  border-radius: map-get(variables.$radius, "lg");
-  padding: 0.55rem;
-  transition: border-color variables.$transition-duration;
-}
+  .comment {
+    display: flex;
+    gap: 1rem;
 
-.comments .comment-field:focus-within {
-  border-color: map-get(variables.$colors, "primary");
-}
+    .text-info .header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
 
-.comments .comment-field textarea {
-  border: none;
-  resize: none;
-  padding: 0 0.4rem;
-}
+    p {
+      margin-bottom: 0.5rem;
+    }
 
-.comments .comment-field .actions .submit {
-  margin-right: auto;
-}
+    .author {
+      color: map-get(variables.$colors, "heading");
+      display: inline-block;
+    }
 
-.comments .comment,
-.comments .comment .text-info .header,
-.comments .attachments {
-  gap: 1rem;
-}
+    .time {
+      color: map-get(variables.$colors, "body-light");
+    }
+  }
 
-.comments .comment .text-info .header,
-.comments .attachments {
-  align-items: center;
-}
+  .comment-field {
+    border: 1px solid map-get(variables.$colors, "border");
+    border-radius: map-get(variables.$radius, "lg");
+    padding: 0.55rem;
+    transition: border-color variables.$transition-duration;
 
-.comments .comment .text-info .header,
-.comments .comment p {
-  margin-bottom: 0.5rem;
-}
+    &:focus-within {
+      border-color: map-get(variables.$colors, "primary");
+    }
 
-.comments .comment .author {
-  color: map-get(variables.$colors, "heading");
-  display: inline-block;
-}
+    textarea {
+      border: none;
+      resize: none;
+      padding: 0 0.4rem;
+    }
 
-.comments .comment .time {
-  color: map-get(variables.$colors, "body-light");
+    .actions {
+      display: flex;
+
+      .submit {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .attachments {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
 }
