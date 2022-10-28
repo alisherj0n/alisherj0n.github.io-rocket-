@@ -620,14 +620,6 @@ input:not([type=checkbox]) {
   font-family: "Poppins", sans-serif;
   width: 100%;
 }
-input:not([type=checkbox]).small:not([type=checkbox]) {
-  font-size: 0.875rem;
-  height: 2.25rem;
-  border-radius: 10px;
-}
-input:not([type=checkbox]).large:not([type=checkbox]) {
-  height: 3rem;
-}
 input:not([type=checkbox]):focus {
   border-color: #304ffd;
 }
@@ -637,6 +629,14 @@ input:not([type=checkbox]):disabled {
 }
 input:not([type=checkbox])[type=date] {
   color: #595f69;
+}
+input:not([type=checkbox]).small:not([type=checkbox]) {
+  font-size: 0.875rem;
+  height: 2.25rem;
+  border-radius: 10px;
+}
+input:not([type=checkbox]).large:not([type=checkbox]) {
+  height: 3rem;
 }
 
 textarea {

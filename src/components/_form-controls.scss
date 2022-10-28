@@ -50,16 +50,6 @@ input:not([type="checkbox"]) {
   font-family: variables.$font-family;
   width: 100%;
 
-  &.small:not([type="checkbox"]) {
-    font-size: 0.875rem;
-    height: map-get(variables.$form-controls-height, "xs");
-    border-radius: map-get(variables.$radius, "sm");
-  }
-
-  &.large:not([type="checkbox"]) {
-    height: map-get(variables.$form-controls-height, "lg");
-  }
-
   &:focus {
     border-color: map-get(variables.$colors, "primary");
   }
@@ -71,6 +61,16 @@ input:not([type="checkbox"]) {
 
   &[type="date"] {
     color: map-get(variables.$colors, "body");
+  }
+
+  &.small:not([type="checkbox"]) {
+    font-size: 0.875rem;
+    height: map-get(variables.$form-controls-height, "xs");
+    border-radius: map-get(variables.$radius, "sm");
+  }
+
+  &.large:not([type="checkbox"]) {
+    height: map-get(variables.$form-controls-height, "lg");
   }
 }
 
