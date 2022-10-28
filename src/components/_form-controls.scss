@@ -18,6 +18,15 @@ select {
   transition: border-color variables.$transition-duration;
   outline: none;
 
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
+
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
+
   &.small {
     font-size: 0.875rem;
     height: map-get(variables.$form-controls-height, "xs");
@@ -26,15 +35,6 @@ select {
 
   &.large {
     height: map-get(variables.$form-controls-height, "lg");
-  }
-
-  &:focus {
-    border-color: map-get(variables.$colors, "primary");
-  }
-
-  &:disabled {
-    background-color: map-get(variables.$colors, "grey-light");
-    pointer-events: none;
   }
 }
 
@@ -113,18 +113,19 @@ textarea {
     padding-right: 2.8rem;
   }
 
-  .left {
+  .left,
+  .right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .left {
     left: 1rem;
     color: map-get(variables.$colors, "body-light");
     margin: 0;
   }
   .right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     right: 0.2rem;
   }
 
@@ -160,16 +161,18 @@ textarea {
   .input {
     width: 100%;
   }
+}
 
-  .input-group input[type="time"]::-webkit-calendar-picker-indicator {
+.input-group {
+  input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
   }
 
-  .input-group input[type="time"] {
+  input[type="time"] {
     max-width: 5rem;
   }
 
-  .input-group input[type="date"] {
+  input[type="date"] {
     max-width: 100%;
   }
 }

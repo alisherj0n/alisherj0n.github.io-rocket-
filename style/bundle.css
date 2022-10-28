@@ -593,6 +593,13 @@ select {
   transition: border-color 0.2s;
   outline: none;
 }
+select:focus {
+  border-color: #304ffd;
+}
+select:disabled {
+  background-color: #eeeeee;
+  pointer-events: none;
+}
 select.small {
   font-size: 0.875rem;
   height: 2.25rem;
@@ -600,13 +607,6 @@ select.small {
 }
 select.large {
   height: 3rem;
-}
-select:focus {
-  border-color: #304ffd;
-}
-select:disabled {
-  background-color: #eeeeee;
-  pointer-events: none;
 }
 
 input:not([type=checkbox]) {
@@ -673,18 +673,18 @@ textarea:disabled {
 .input-with-icon.right-icon input {
   padding-right: 2.8rem;
 }
-.input-with-icon .left {
+.input-with-icon .left,
+.input-with-icon .right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.input-with-icon .left {
   left: 1rem;
   color: #8a9099;
   margin: 0;
 }
 .input-with-icon .right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   right: 0.2rem;
 }
 .input-with-icon input.large + .right {
@@ -715,13 +715,14 @@ textarea:disabled {
 .time-range .input {
   width: 100%;
 }
-.time-range .input-group input[type=time]::-webkit-calendar-picker-indicator {
+
+.input-group input[type=time]::-webkit-calendar-picker-indicator {
   display: none;
 }
-.time-range .input-group input[type=time] {
+.input-group input[type=time] {
   max-width: 5rem;
 }
-.time-range .input-group input[type=date] {
+.input-group input[type=date] {
   max-width: 100%;
 }
 
