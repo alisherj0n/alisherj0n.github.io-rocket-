@@ -645,12 +645,16 @@ textarea {
   background-color: transparent;
   transition: border-color 0.2s;
   outline: none;
-}
-
-textarea {
   padding: 0.4628rem 0.8rem;
   font-family: "Poppins", sans-serif;
   width: 100%;
+}
+textarea:focus {
+  border-color: #304ffd;
+}
+textarea:disabled {
+  background-color: #eeeeee;
+  pointer-events: none;
 }
 
 .input-with-icon {
@@ -732,15 +736,6 @@ textarea {
 
 .input-group input[type=date] {
   max-width: 100%;
-}
-
-textarea:focus {
-  border-color: #304ffd;
-}
-
-textarea:disabled {
-  background-color: #eeeeee;
-  pointer-events: none;
 }
 
 .dialog,

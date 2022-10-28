@@ -80,13 +80,19 @@ textarea {
   background-color: transparent;
   transition: border-color variables.$transition-duration;
   outline: none;
-}
-
-textarea {
   padding: map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm");
   font-family: variables.$font-family;
   width: 100%;
+
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
+
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
 }
 
 .input-with-icon {
@@ -168,13 +174,4 @@ textarea {
 
 .input-group input[type="date"] {
   max-width: 100%;
-}
-
-textarea:focus {
-  border-color: map-get(variables.$colors, "primary");
-}
-
-textarea:disabled {
-  background-color: map-get(variables.$colors, "grey-light");
-  pointer-events: none;
 }
