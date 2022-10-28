@@ -1,32 +1,5 @@
 @use "../variables";
 
-select,
-input:not([type="checkbox"]),
-textarea {
-  border: 1px solid map-get(variables.$colors, "border");
-  border-radius: map-get(variables.$radius, "lg");
-  background-color: transparent;
-  transition: border-color variables.$transition-duration;
-  outline: none;
-}
-
-select,
-input:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls-height, "sm");
-}
-
-select.small,
-input.small:not([type="checkbox"]) {
-  font-size: 0.875rem;
-  height: map-get(variables.$form-controls-height, "xs");
-  border-radius: map-get(variables.$radius, "sm");
-}
-
-select.large,
-input.large:not([type="checkbox"]) {
-  height: map-get(variables.$form-controls-height, "lg");
-}
-
 select {
   padding: map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm") + 1rem
@@ -38,48 +11,88 @@ select {
   background-position: right 0.8rem center;
   background-image: url(../../images/select-arrow.png);
   background-size: 0.5rem;
+  height: map-get(variables.$form-controls-height, "sm");
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
+  background-color: transparent;
+  transition: border-color variables.$transition-duration;
+  outline: none;
+
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
+
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
+
+  &.small {
+    font-size: 0.875rem;
+    height: map-get(variables.$form-controls-height, "xs");
+    border-radius: map-get(variables.$radius, "sm");
+  }
+
+  &.large {
+    height: map-get(variables.$form-controls-height, "lg");
+  }
 }
 
-input:not([type="checkbox"]),
-textarea {
+input:not([type="checkbox"]) {
+  height: map-get(variables.$form-controls-height, "sm");
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
+  background-color: transparent;
+  transition: border-color variables.$transition-duration;
+  outline: none;
   padding: map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm");
   font-family: variables.$font-family;
   width: 100%;
+
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
+
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
+
+  &[type="date"] {
+    color: map-get(variables.$colors, "body");
+  }
+
+  &.small:not([type="checkbox"]) {
+    font-size: 0.875rem;
+    height: map-get(variables.$form-controls-height, "xs");
+    border-radius: map-get(variables.$radius, "sm");
+  }
+
+  &.large:not([type="checkbox"]) {
+    height: map-get(variables.$form-controls-height, "lg");
+  }
 }
 
-.input-with-icon {
-  position: relative;
+textarea {
+  border: 1px solid map-get(variables.$colors, "border");
+  border-radius: map-get(variables.$radius, "lg");
+  background-color: transparent;
+  transition: border-color variables.$transition-duration;
+  outline: none;
+  padding: map-get(variables.$form-controls-padding-y, "sm")
+    map-get(variables.$form-controls-padding-x, "sm");
+  font-family: variables.$font-family;
   width: 100%;
-}
 
-.input-with-icon.left-icon input {
-  padding-left: 2.8rem;
-}
+  &:focus {
+    border-color: map-get(variables.$colors, "primary");
+  }
 
-.input-with-icon.right-icon input {
-  padding-right: 2.8rem;
-}
-
-.input-with-icon .left,
-.input-with-icon .right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.input-with-icon .left {
-  left: 1rem;
-  color: map-get(variables.$colors, "body-light");
-  margin: 0;
-}
-
-.input-with-icon .right {
-  right: 0.2rem;
-}
-
-.input-with-icon input.large + .right {
-  right: 0.4rem;
+  &:disabled {
+    background-color: map-get(variables.$colors, "grey-light");
+    pointer-events: none;
+  }
 }
 
 .input {
@@ -88,60 +101,78 @@ textarea {
   gap: 0.3rem;
 }
 
+.input-with-icon {
+  position: relative;
+  width: 100%;
+
+  &.left-icon input {
+    padding-left: 2.8rem;
+  }
+
+  &.right-icon input {
+    padding-right: 2.8rem;
+  }
+
+  .left,
+  .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .left {
+    left: 1rem;
+    color: map-get(variables.$colors, "body-light");
+    margin: 0;
+  }
+  .right {
+    right: 0.2rem;
+  }
+
+  input.large + .right {
+    right: 0.4rem;
+  }
+}
+
 .input-group {
   display: flex;
-}
 
-.input-group > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
+  > :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-.input-group > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: -1px;
-}
+  > :last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
 
-.input-group > :focus {
-  z-index: 1;
+  > :focus {
+    z-index: 1;
+  }
 }
 
 .time-range {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+
+  .input {
+    width: 100%;
+  }
 }
 
-.time-range .input {
-  width: 100%;
-}
+.input-group {
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
 
-.input-group input[type="time"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
+  input[type="time"] {
+    max-width: 5rem;
+  }
 
-.input-group input[type="time"] {
-  max-width: 5rem;
-}
-
-.input-group input[type="date"] {
-  max-width: 100%;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: map-get(variables.$colors, "primary");
-}
-
-input:disabled,
-select:disabled,
-textarea:disabled {
-  background-color: map-get(variables.$colors, "grey-light");
-  pointer-events: none;
-}
-
-input[type="date"] {
-  color: map-get(variables.$colors, "body");
+  input[type="date"] {
+    max-width: 100%;
+  }
 }
