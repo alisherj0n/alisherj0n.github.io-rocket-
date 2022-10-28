@@ -8,32 +8,32 @@ input {
     position: relative;
     appearance: none;
     margin: 0;
-  }
 
-  &[type="checkbox"]::before,
-  &[type="checkbox"]::after {
-    font-family: "Material Icons Round";
-    font-size: 1.25rem;
-    color: map-get(variables.$colors, "body-light");
-    margin: -2px;
-  }
+    &::before,
+    &::after {
+      font-family: "Material Icons Round";
+      font-size: 1.25rem;
+      color: map-get(variables.$colors, "body-light");
+      margin: -2px;
+    }
 
-  &[type="checkbox"]::before {
-    content: "\e835";
-  }
+    &::before {
+      content: "\e835";
+    }
 
-  &[type="checkbox"]::after {
-    content: "\e834";
-    color: map-get(variables.$colors, "primary");
-  }
+    &::after {
+      content: "\e834";
+      color: map-get(variables.$colors, "primary");
+    }
 
-  &[type="checkbox"]:not(:checked)::before,
-  &[type="checkbox"]:checked::after {
-    display: block;
-  }
+    &:not(:checked)::before,
+    &:checked::after {
+      display: block;
+    }
 
-  &[type="checkbox"]:checked::before,
-  &[type="checkbox"]:not(:checked)::after {
-    display: none;
+    &:checked::before,
+    &:not(:checked)::after {
+      display: none;
+    }
   }
 }
