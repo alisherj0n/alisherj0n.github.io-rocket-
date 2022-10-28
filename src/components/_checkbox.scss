@@ -1,43 +1,39 @@
 @use "../variables";
 
-input[type="checkbox"] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  appearance: none;
-  margin: 0;
-}
+input {
+  &[type="checkbox"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    appearance: none;
+    margin: 0;
+  }
 
-input[type="checkbox"]::before,
-input[type="checkbox"]::after {
-  font-family: "Material Icons Round";
-  font-size: 1.25rem;
-  color: map-get(variables.$colors, "body-light");
-  margin: -2px;
-}
+  &[type="checkbox"]::before,
+  &[type="checkbox"]::after {
+    font-family: "Material Icons Round";
+    font-size: 1.25rem;
+    color: map-get(variables.$colors, "body-light");
+    margin: -2px;
+  }
 
-input[type="checkbox"]::before {
-  content: "\e835";
-}
+  &[type="checkbox"]::before {
+    content: "\e835";
+  }
 
-input[type="checkbox"]::after {
-  content: "\e834";
-  color: map-get(variables.$colors, "primary");
-}
+  &[type="checkbox"]::after {
+    content: "\e834";
+    color: map-get(variables.$colors, "primary");
+  }
 
-input[type="checkbox"]:not(:checked)::before {
-  display: block;
-}
+  &[type="checkbox"]:not(:checked)::before,
+  &[type="checkbox"]:checked::after {
+    display: block;
+  }
 
-input[type="checkbox"]:checked::before {
-  display: none;
-}
-
-input[type="checkbox"]:not(:checked)::after {
-  display: none;
-}
-
-input[type="checkbox"]:checked::after {
-  display: block;
+  &[type="checkbox"]:checked::before,
+  &[type="checkbox"]:not(:checked)::after {
+    display: none;
+  }
 }

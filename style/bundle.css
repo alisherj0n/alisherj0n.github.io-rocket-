@@ -499,38 +499,24 @@ input[type=checkbox] {
   appearance: none;
   margin: 0;
 }
-
-input[type=checkbox]::before,
-input[type=checkbox]::after {
+input[type=checkbox]::before, input[type=checkbox]::after {
   font-family: "Material Icons Round";
   font-size: 1.25rem;
   color: #8a9099;
   margin: -2px;
 }
-
 input[type=checkbox]::before {
   content: "\e835";
 }
-
 input[type=checkbox]::after {
   content: "\e834";
   color: #304ffd;
 }
-
-input[type=checkbox]:not(:checked)::before {
+input[type=checkbox]:not(:checked)::before, input[type=checkbox]:checked::after {
   display: block;
 }
-
-input[type=checkbox]:checked::before {
+input[type=checkbox]:checked::before, input[type=checkbox]:not(:checked)::after {
   display: none;
-}
-
-input[type=checkbox]:not(:checked)::after {
-  display: none;
-}
-
-input[type=checkbox]:checked::after {
-  display: block;
 }
 
 .dropdown {
