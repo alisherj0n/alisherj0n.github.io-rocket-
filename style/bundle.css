@@ -609,7 +609,36 @@ select:disabled {
   pointer-events: none;
 }
 
-input:not([type=checkbox]),
+input:not([type=checkbox]) {
+  height: 2.625rem;
+  border: 1px solid #e8e9eb;
+  border-radius: 14px;
+  background-color: transparent;
+  transition: border-color 0.2s;
+  outline: none;
+  padding: 0.4628rem 0.8rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+input:not([type=checkbox]).small:not([type=checkbox]) {
+  font-size: 0.875rem;
+  height: 2.25rem;
+  border-radius: 10px;
+}
+input:not([type=checkbox]).large:not([type=checkbox]) {
+  height: 3rem;
+}
+input:not([type=checkbox]):focus {
+  border-color: #304ffd;
+}
+input:not([type=checkbox]):disabled {
+  background-color: #eeeeee;
+  pointer-events: none;
+}
+input:not([type=checkbox])[type=date] {
+  color: #595f69;
+}
+
 textarea {
   border: 1px solid #e8e9eb;
   border-radius: 14px;
@@ -618,21 +647,6 @@ textarea {
   outline: none;
 }
 
-input:not([type=checkbox]) {
-  height: 2.625rem;
-}
-
-input.small:not([type=checkbox]) {
-  font-size: 0.875rem;
-  height: 2.25rem;
-  border-radius: 10px;
-}
-
-input.large:not([type=checkbox]) {
-  height: 3rem;
-}
-
-input:not([type=checkbox]),
 textarea {
   padding: 0.4628rem 0.8rem;
   font-family: "Poppins", sans-serif;
@@ -720,19 +734,13 @@ textarea {
   max-width: 100%;
 }
 
-input:focus,
 textarea:focus {
   border-color: #304ffd;
 }
 
-input:disabled,
 textarea:disabled {
   background-color: #eeeeee;
   pointer-events: none;
-}
-
-input[type=date] {
-  color: #595f69;
 }
 
 .dialog,
