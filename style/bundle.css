@@ -1108,20 +1108,17 @@ table tbody td:last-child {
   top: 0px;
   align-self: start;
 }
-
 .app > .sidebar .logo {
   max-width: 10rem;
   padding: 0 1.7rem;
   margin: 0 auto 1rem;
 }
-
 .app > .sidebar .logo.icon-only {
   max-width: 1.6rem;
   margin: 0 auto 1rem;
   padding: 0;
   display: none;
 }
-
 .app > .sidebar .nav .item {
   padding: 1rem 1.7rem;
   display: flex;
@@ -1131,7 +1128,12 @@ table tbody td:last-child {
   transition: background-color 0.2s, color 0.2s;
   gap: 1rem;
 }
-
+.app > .sidebar .nav .item:hover {
+  background-color: #f8f8f8;
+}
+.app > .sidebar .nav .item.active {
+  background-color: #f8f8f8;
+}
 .app > .sidebar .nav .item.active::before {
   content: "";
   position: absolute;
@@ -1141,52 +1143,13 @@ table tbody td:last-child {
   height: 100%;
   border-radius: 0px 6px 6px 0px;
 }
-
-.app > .sidebar .nav .item:hover,
-.app > .sidebar .nav .item.active {
-  background-color: #f8f8f8;
-}
-
-.app > .sidebar .nav .item.active {
-  background-color: #f8f8f8;
-}
-
 .app > .sidebar .nav .item .link-txt {
   margin-right: auto;
   color: #3f434a;
 }
-
 .app > .sidebar .nav .item .submenu-indicator {
   font-size: 1.2rem;
 }
-
-.app.collapsed > .sidebar {
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-}
-
-.app.collapsed > .sidebar .logo.icon-only {
-  display: block;
-}
-
-.app.collapsed > .sidebar .nav .item {
-  border-radius: 14px;
-  padding: 0.8rem;
-}
-
-.app.collapsed > .sidebar .nav .item.active {
-  background-color: #304ffd;
-  color: #fff;
-}
-
-.app.collapsed > .sidebar .logo,
-.app.collapsed > .sidebar .link-txt,
-.app.collapsed > .sidebar .submenu-indicator,
-.app.collapsed > .sidebar .badge,
-.app.collapsed > .sidebar .nav .item.active::before {
-  display: none;
-}
-
 @media (max-width: 992px) {
   .app > .sidebar {
     padding-left: 0.6rem;
@@ -1211,6 +1174,29 @@ table tbody td:last-child {
     display: none;
   }
 }
+.app.collapsed > .sidebar {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.app.collapsed > .sidebar .logo.icon-only {
+  display: block;
+}
+.app.collapsed > .sidebar .nav .item {
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.app.collapsed > .sidebar .nav .item.active {
+  background-color: #304ffd;
+  color: #fff;
+}
+.app.collapsed > .sidebar .logo,
+.app.collapsed > .sidebar .link-txt,
+.app.collapsed > .sidebar .submenu-indicator,
+.app.collapsed > .sidebar .badge,
+.app.collapsed > .sidebar .nav .item.active::before {
+  display: none;
+}
+
 .app-header {
   padding: 0.7rem 1.2rem;
   border-bottom: 1px solid #e8e9eb;
