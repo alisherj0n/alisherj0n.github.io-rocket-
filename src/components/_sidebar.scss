@@ -27,47 +27,44 @@ $sidebar-padding-x: (
       }
     }
 
-    .nav {
-      .item {
-        padding: 1rem map-get($sidebar-padding-x, "lg");
-        display: flex;
-        align-items: center;
-        position: relative;
-        color: map-get(variables.$colors, "body-light");
-        transition: background-color variables.$transition-duration,
-          color variables.$transition-duration;
-        gap: 1rem;
+    .nav .item {
+      padding: 1rem map-get($sidebar-padding-x, "lg");
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: map-get(variables.$colors, "body-light");
+      transition: background-color variables.$transition-duration,
+        color variables.$transition-duration;
+      gap: 1rem;
 
-        &:hover {
-          background-color: map-get(variables.$colors, "bg");
+      &:hover {
+        background-color: map-get(variables.$colors, "bg");
+      }
+
+      &.active {
+        background-color: map-get(variables.$colors, "bg");
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: map-get(variables.$colors, "primary");
+          width: 4px;
+          left: 0px;
+          height: 100%;
+          border-radius: 0px 6px 6px 0px;
         }
+      }
 
-        &.active {
-          background-color: map-get(variables.$colors, "bg");
+      .link-txt {
+        margin-right: auto;
+        color: map-get(variables.$colors, "heading");
+      }
 
-          &::before {
-            content: "";
-            position: absolute;
-            background-color: map-get(variables.$colors, "primary");
-            width: 4px;
-            left: 0px;
-            height: 100%;
-            border-radius: 0px 6px 6px 0px;
-          }
-        }
-
-        .link-txt {
-          margin-right: auto;
-          color: map-get(variables.$colors, "heading");
-        }
-
-        .submenu-indicator {
-          font-size: 1.2rem;
-        }
+      .submenu-indicator {
+        font-size: 1.2rem;
       }
     }
 
-    // breakpoint lg
     @media (max-width: map-get(variables.$breakpoints, "lg")) {
       padding-left: map-get($sidebar-padding-x, "sm");
       padding-right: map-get($sidebar-padding-x, "sm");
