@@ -8,50 +8,50 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   border-bottom: 1px solid map-get(variables.$colors, "border");
-}
 
-.tabs .badge {
-  padding: 0 map-get(badge.$badge-padding-x, "sm");
-  background-color: map-get(variables.$colors, "border");
-  color: map-get(variables.$colors, "body-light");
-  font-size: 0.8rem;
-  border-radius: map-get(variables.$radius, "xs");
-}
+  > * {
+    flex-shrink: 0;
+  }
 
-.tabs > * {
-  flex-shrink: 0;
-}
+  .badge {
+    padding: 0 map-get(badge.$badge-padding-x, "sm");
+    background-color: map-get(variables.$colors, "border");
+    color: map-get(variables.$colors, "body-light");
+    font-size: 0.8rem;
+    border-radius: map-get(variables.$radius, "xs");
+  }
 
-.tabs .actions {
-  margin-left: auto;
-}
+  .actions {
+    margin-left: auto;
+  }
 
-.tabs .tab {
-  padding: 1rem 0;
-  color: map-get(variables.$colors, "body-light");
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-  transition: color variables.$transition-duration;
-  border: none;
-  background: transparent;
-}
+  .tab {
+    padding: 1rem 0;
+    color: map-get(variables.$colors, "body-light");
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: color variables.$transition-duration;
+    border: none;
+    background: transparent;
 
-.tabs .tab:hover {
-  color: map-get(variables.$colors, "primary");
-}
+    &:hover {
+      color: map-get(variables.$colors, "primary");
+    }
 
-.tabs .tab.active {
-  color: map-get(variables.$colors, "primary");
-}
+    &.active {
+      color: map-get(variables.$colors, "primary");
 
-.tabs .tab.active::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: map-get(variables.$colors, "primary");
-  position: absolute;
-  bottom: 0;
-  border-radius: 2px 2px 0 0;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: map-get(variables.$colors, "primary");
+        position: absolute;
+        bottom: 0;
+        border-radius: 2px 2px 0 0;
+      }
+    }
+  }
 }
