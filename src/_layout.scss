@@ -12,7 +12,6 @@
     grid-template-columns: 320px 1fr;
   }
 
-  // breakpoint lg
   @media (max-width: map-get(variables.$breakpoints, "lg")) {
     grid-template-columns: auto 1fr;
   }

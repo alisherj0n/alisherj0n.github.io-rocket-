@@ -11,18 +11,18 @@
     overflow: hidden;
   }
 
-  &-icon {
+  .icon {
     width: 2.3rem;
     object-fit: cover;
   }
 
-  &-name {
+  .name {
     display: block;
     color: map-get(variables.$colors, "heading");
     line-height: 1.7;
   }
 
-  &-size {
+  .size {
     color: map-get(variables.$colors, "body-light");
     text-transform: uppercase;
   }

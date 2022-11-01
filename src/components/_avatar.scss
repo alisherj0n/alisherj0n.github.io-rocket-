@@ -7,6 +7,11 @@
   object-fit: cover;
   border-radius: map-get(variables.$radius, "lg");
 
+  &.small {
+    width: 2rem;
+    height: 2rem;
+  }
+
   &.large {
     width: 3rem;
     height: 3rem;
@@ -14,10 +19,5 @@
 
   &.round {
     border-radius: 50%;
-  }
-
-  &.small {
-    width: 2rem;
-    height: 2rem;
   }
 }
