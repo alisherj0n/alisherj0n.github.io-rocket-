@@ -5,32 +5,31 @@
   overflow: hidden;
   max-height: 100vh;
   overflow-y: scroll;
-}
 
-.board .page-view-toggles {
-  display: flex;
-  gap: 0.2rem;
-  align-items: center;
-}
+  .page-view-toggles {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+  }
 
-.board .tabs .actions .page-view-toggles > .active {
-  color: map-get(variables.$colors, "primary");
-}
+  .tabs .actions .page-view-toggles > .active {
+    color: map-get(variables.$colors, "primary");
+  }
 
-.board .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.5rem;
-}
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
 
-.board .projects .project-list-item .dropdown {
-  top: 4.5rem;
-  right: 0.7rem;
-}
+    .project-list-item .dropdown {
+      top: 4.5rem;
+      right: 0.7rem;
+    }
+  }
 
-/* ----breakpoint-sm---- */
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
-  .board .page-header .heading {
-    font-size: 1.6rem;
+  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+    .page-header .heading {
+      font-size: 1.6rem;
+    }
   }
 }
