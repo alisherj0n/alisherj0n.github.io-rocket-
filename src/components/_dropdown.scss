@@ -9,39 +9,42 @@
   box-shadow: 0px 20px 50px 0px map-get(variables.$colors, "shadow");
   position: absolute;
   display: none;
-}
 
-.dropdown.active {
-  display: block;
-}
+  &.active {
+    display: block;
+  }
 
-.dropdown .menu .item {
-  background-color: transparent;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  color: map-get(variables.$colors, "body");
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  padding: 0.6rem 2rem;
-  transition: color variables.$transition-duration,
-    background-color variables.$transition-duration;
-}
+  .item {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: map-get(variables.$colors, "body");
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 2rem;
+    transition: color variables.$transition-duration,
+      background-color variables.$transition-duration;
 
-.dropdown .item .icon {
-  color: map-get(variables.$colors, "body-light");
-}
+    &:hover {
+      background-color: map-get(variables.$colors, "bg");
+    }
 
-.dropdown .item:hover {
-  background-color: map-get(variables.$colors, "bg");
-}
+    .icon {
+      color: map-get(variables.$colors, "body-light");
+    }
 
-.dropdown .item.danger,
-.dropdown .item.danger .icon {
-  color: map-get(variables.$colors, "danger");
-}
+    &.danger {
+      color: map-get(variables.$colors, "danger");
 
-.dropdown .item.danger:hover {
-  background-color: map-get(variables.$colors, "danger-light");
+      &:hover {
+        background-color: map-get(variables.$colors, "danger-light");
+      }
+
+      .icon {
+        color: map-get(variables.$colors, "danger");
+      }
+    }
+  }
 }
