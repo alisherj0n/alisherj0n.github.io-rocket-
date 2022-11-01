@@ -6,29 +6,29 @@
   gap: 0.7rem;
   overflow: hidden;
   width: 100%;
-}
 
-.mini-profile .text-info {
-  width: 100%;
-  overflow: hidden;
-  color: map-get(variables.$colors, "heading");
-}
+  .text-info {
+    width: 100%;
+    overflow: hidden;
+    color: map-get(variables.$colors, "heading");
+  }
 
-.mini-profile .title,
-.mini-profile .subtitle {
-  display: block;
-  font-weight: 400;
-  width: 99%;
-}
+  .title,
+  .subtitle {
+    display: block;
+    font-weight: 400;
+    width: 99%;
+  }
 
-.mini-profile .title {
-  line-height: 1.4;
-}
+  .title {
+    line-height: 1.4;
+  }
 
-.mini-profile .subtitle {
-  color: map-get(variables.$colors, "body");
-}
+  .subtitle {
+    color: map-get(variables.$colors, "body");
+  }
 
-.mini-profile .avatar.large {
-  margin-right: 0.3rem;
+  .avatar.large {
+    margin-right: 0.3rem;
+  }
 }
