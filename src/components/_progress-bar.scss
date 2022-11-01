@@ -5,26 +5,26 @@
   height: 0.4rem;
   background-color: map-get(variables.$colors, "bg");
   border-radius: map-get(variables.$radius, "lg");
-}
 
-.progress-bar .progress {
-  background-color: map-get(variables.$colors, "body-light");
-  height: 100%;
-  border-radius: map-get(variables.$radius, "lg");
-}
+  .progress {
+    background-color: map-get(variables.$colors, "body-light");
+    height: 100%;
+    border-radius: map-get(variables.$radius, "lg");
+  }
 
-.progress-bar.success .progress {
-  background-color: map-get(variables.$colors, "success");
-}
+  &.success .progress {
+    background-color: map-get(variables.$colors, "success");
+  }
 
-.progress-bar.warning .progress {
-  background-color: map-get(variables.$colors, "warning");
-}
+  &.warning .progress {
+    background-color: map-get(variables.$colors, "warning");
+  }
 
-.progress-bar.danger .progress {
-  background-color: map-get(variables.$colors, "danger");
-}
+  &.danger .progress {
+    background-color: map-get(variables.$colors, "danger");
+  }
 
-.progress-bar.primary .progress {
-  background-color: map-get(variables.$colors, "primary");
+  &.primary .progress {
+    background-color: map-get(variables.$colors, "primary");
+  }
 }
