@@ -1,19 +1,18 @@
 @use "../variables";
 
-.page-header,
-.page-header .actions {
+.page-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-}
 
-.page-header {
-  justify-content: space-between;
-}
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-/* --breakpoint-sm-- */
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
-  .page-header {
+  @media (max-width: map-get(variables.$breakpoints, "sm")) {
     flex-direction: column;
   }
 }
