@@ -3,19 +3,19 @@
 .divider {
   width: 1px;
   background-color: map-get(variables.$colors, "border");
-}
 
-.divider.tall {
-  height: 2rem;
-}
+  &.tall {
+    height: 2rem;
+  }
 
-.divider.small {
-  height: 1.2rem;
-}
+  &.small {
+    height: 1.2rem;
+  }
 
-.divider.horizontal {
-  border-top: 1px solid map-get(variables.$colors, "border");
-  border-bottom: transparent;
-  width: 100%;
-  margin: 0.5rem 0;
+  &.horizontal {
+    border-top: 1px solid map-get(variables.$colors, "border");
+    border-bottom: transparent;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 }
