@@ -1,26 +1,24 @@
 @use "../variables";
 
-.stats,
-.stats .item {
+.stats {
   display: flex;
   align-items: center;
-}
-
-.stats {
   gap: 2.5rem;
-}
 
-.stats .item {
-  gap: 1rem;
-}
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-.stats .item .title {
-  color: map-get(variables.$colors, "body-light");
-  display: block;
-  width: 99%;
-}
+    .title {
+      color: map-get(variables.$colors, "body-light");
+      display: block;
+      width: 99%;
+    }
 
-.stats .item .subtitle {
-  color: map-get(variables.$colors, "heading");
-  width: 99%;
+    .subtitle {
+      color: map-get(variables.$colors, "heading");
+      width: 99%;
+    }
+  }
 }
