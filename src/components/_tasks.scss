@@ -1,58 +1,69 @@
 @use "../variables";
 
-.tasks,
-.tasks .task,
-.tasks .task .actions {
-  display: flex;
-}
-
 .tasks {
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
 
-.tasks .task {
-  gap: 1rem;
-  align-items: center;
-  color: map-get(variables.$colors, "heading");
-  border-radius: map-get(variables.$radius, "lg");
-  padding: 0.125rem 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  transition: background-color variables.$transition-duration,
-    box-shadow variables.$transition-duration;
-}
+  .task {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: map-get(variables.$colors, "heading");
+    border-radius: map-get(variables.$radius, "lg");
+    padding: 0.125rem 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    transition: background-color variables.$transition-duration,
+      box-shadow variables.$transition-duration;
 
-.tasks .task .description {
-  margin-right: auto;
-}
+    &:hover {
+      background-color: map-get(variables.$colors, "bg");
 
-.tasks .task .icon {
-  color: map-get(variables.$colors, "border");
-}
+      .actions {
+        opacity: 1;
+      }
+    }
 
-.tasks .task.completed .description {
-  text-decoration: line-through;
-}
+    &:focus {
+      background-color: map-get(variables.$colors, "bg");
 
-.tasks .task.completed .icon {
-  color: map-get(variables.$colors, "primary");
-}
+      .actions {
+        opacity: 1;
+      }
+    }
 
-.tasks .task .actions {
-  margin-right: -0.8rem;
-  opacity: 0;
-  transition: opacity variables.$transition-duration;
-}
+    &:focus-within {
+      background-color: map-get(variables.$colors, "bg");
 
-.tasks .task:hover,
-.tasks .task:focus,
-.tasks .task:focus-within {
-  background-color: map-get(variables.$colors, "bg");
-}
+      .actions {
+        opacity: 1;
+      }
+    }
 
-.tasks .task:hover .actions,
-.tasks .task:focus .actions,
-.tasks .task:focus-within .actions {
-  opacity: 1;
+    .actions {
+      display: flex;
+      margin-right: -0.8rem;
+      opacity: 0;
+      transition: opacity variables.$transition-duration;
+    }
+
+    .description {
+      margin-right: auto;
+    }
+
+    .icon {
+      color: map-get(variables.$colors, "border");
+    }
+
+    &.completed {
+      .description {
+        text-decoration: line-through;
+      }
+
+      .icon {
+        color: map-get(variables.$colors, "primary");
+      }
+    }
+  }
 }
