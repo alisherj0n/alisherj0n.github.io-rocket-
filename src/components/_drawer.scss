@@ -13,30 +13,24 @@
   position: fixed;
   top: 4rem;
   right: 0;
-}
 
-.drawer.active,
-.drawer .header,
-.drawer .actions {
-  display: flex;
-}
+  &.active {
+    display: flex;
+  }
 
-.drawer .header,
-.drawer .actions {
-  align-items: center;
-}
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.drawer .header {
-  justify-content: space-between;
-}
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-.drawer .actions {
-  gap: 0.5rem;
-}
-
-/*  breakpoint-xs */
-@media (max-width: map-get(variables.$breakpoints, "xs")) {
-  .drawer {
+  @media (max-width: map-get(variables.$breakpoints, "xs")) {
     width: 100%;
   }
 }
