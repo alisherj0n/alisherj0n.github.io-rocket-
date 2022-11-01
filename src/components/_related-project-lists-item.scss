@@ -1,39 +1,30 @@
-.related-projects-list-item,
-.related-projects-list-item .footer,
-.related-projects-list-item .footer .users {
-  display: flex;
-}
-
-.related-projects-list-item,
-.related-projects-list-item .footer {
-  gap: 1rem;
-}
-
 .related-projects-list-item {
+  display: flex;
+  gap: 1rem;
   padding: 1.5rem;
   flex-direction: column;
-}
 
-.related-projects-list-item.active {
-  background-color: #fff;
-}
+  .footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
 
-.related-projects-list-item .footer,
-.related-projects-list-item .footer .users {
-  align-items: center;
-}
+    .users {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+  }
 
-.related-projects-list-item .footer {
-  justify-content: space-between;
-  padding-left: 4rem;
-}
+  .more-users {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+  }
 
-.related-projects-list-item .footer .users {
-  gap: 0.3rem;
-}
-
-.related-projects-list-item .more-users {
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  &.active {
+    background-color: #fff;
+  }
 }
