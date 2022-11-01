@@ -1,36 +1,32 @@
 @use "../variables";
 
-.pagination,
-.pagination .displayable-quantity,
-.pagination .pages {
+.pagination {
   display: flex;
   align-items: center;
-}
-
-.pagination,
-.pagination .displayable-quantity {
-  gap: 1rem;
-}
-
-.pagination {
   justify-content: space-between;
-}
+  gap: 1rem;
 
-.pagination .summary {
-  color: map-get(variables.$colors, "body-light");
-}
+  .displayable-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.pagination .pages {
-  gap: 0.2rem;
-}
+  .pages {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 
-.pagination .pages .item {
-  min-width: 2.55rem;
-}
+    .item {
+      min-width: 2.55rem;
+    }
+  }
 
-// breakpoint sm
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
-  .pagination {
+  .pagination .summary {
+    color: map-get(variables.$colors, "body-light");
+  }
+
+  @media (max-width: map-get(variables.$breakpoints, "sm")) {
     flex-direction: column;
   }
 }
