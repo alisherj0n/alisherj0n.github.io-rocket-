@@ -5,28 +5,35 @@ $table-side-padding: 1.5rem;
 table {
   border-collapse: collapse;
   width: 100%;
-}
 
-table th {
-  text-align: start;
-  text-transform: uppercase;
-  color: map-get(variables.$colors, "body-light");
-  font-weight: 400;
-  font-size: 0.9rem;
-}
+  th {
+    text-align: start;
+    text-transform: uppercase;
+    color: map-get(variables.$colors, "body-light");
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-bottom: 1px solid map-get(variables.$colors, "border");
+    padding: 0.8rem 1rem;
 
-table th,
-table td {
-  border-bottom: 1px solid map-get(variables.$colors, "border");
-  padding: 0.8rem 1rem;
-}
+    &:first-child {
+      padding-left: $table-side-padding;
+    }
 
-table thead th:first-child,
-table tbody td:first-child {
-  padding-left: $table-side-padding;
-}
+    &:last-child {
+      padding-right: $table-side-padding;
+    }
+  }
 
-table thead th:last-child,
-table tbody td:last-child {
-  padding-right: $table-side-padding;
+  td {
+    border-bottom: 1px solid map-get(variables.$colors, "border");
+    padding: 0.8rem 1rem;
+
+    &:first-child {
+      padding-left: $table-side-padding;
+    }
+
+    &:last-child {
+      padding-right: $table-side-padding;
+    }
+  }
 }
