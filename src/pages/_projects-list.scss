@@ -5,46 +5,52 @@ $list-view-padding: 1.5rem;
 .projects-list {
   border-radius: map-get(variables.$radius, "lg");
   background-color: #fff;
-}
 
-.projects-list .header {
-  padding: $list-view-padding;
-  display: flex;
-  gap: 1.5rem;
-}
+  .header {
+    padding: $list-view-padding;
+    display: flex;
+    gap: 1.5rem;
+  }
 
-.projects-list .table-overflow {
-  overflow-x: auto;
-}
+  .table-overflow {
+    overflow-x: auto;
+  }
 
-.projects-list table .mini-profile .title {
-  font-size: 1rem;
-}
+  table {
+    .mini-profile {
+      .title {
+        font-size: 1rem;
+      }
 
-.projects-list table .mini-profile .subtitle,
-.projects-list table .progress-info {
-  color: map-get(variables.$colors, "body-light");
-}
+      .subtitle {
+        color: map-get(variables.$colors, "body-light");
+      }
+    }
 
-.projects-list table .progress-info {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
+    .progress-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: map-get(variables.$colors, "body-light");
+    }
+  }
 
-.projects-list .footer {
-  padding: $list-view-padding;
-}
+  .project-name {
+    min-width: 20rem;
+  }
 
-.projects-list .project-name,
-.projects-list .progress .progress-bar {
-  min-width: 20rem;
-}
+  .author {
+    min-width: 17rem;
+  }
 
-.projects-list .author {
-  min-width: 17rem;
-}
+  .progress {
+    width: 100%;
+    .progress-bar {
+      min-width: 20rem;
+    }
+  }
 
-.projects-list .progress {
-  width: 100%;
+  .footer {
+    padding: $list-view-padding;
+  }
 }
