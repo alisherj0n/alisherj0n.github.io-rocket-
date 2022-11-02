@@ -12,36 +12,36 @@
   align-self: center;
   cursor: pointer;
   position: relative;
-}
 
-.image-uploader input[type="file"] {
-  display: none;
-}
+  input[type="file"] {
+    display: none;
+  }
 
-.image-uploader .icon {
-  font-size: 2rem;
-  font-weight: bold;
-  color: map-get(variables.$colors, "body-light");
-}
+  .icon {
+    font-size: 2rem;
+    font-weight: bold;
+    color: map-get(variables.$colors, "body-light");
+  }
 
-.image-uploader .image {
-  border: 1px solid map-get(variables.$colors, "grey");
-  border-radius: map-get(variables.$radius, "lg");
-  max-width: 99%;
-}
+  .image {
+    border: 1px solid map-get(variables.$colors, "grey");
+    border-radius: map-get(variables.$radius, "lg");
+    max-width: 99%;
+  }
 
-.image-uploader .edit-btn {
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid map-get(variables.$colors, "grey");
-  background: #fff;
-  position: absolute;
-  top: -0.7rem;
-  right: -0.7rem;
-}
+  .edit-btn {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid map-get(variables.$colors, "grey");
+    background: #fff;
+    position: absolute;
+    top: -0.7rem;
+    right: -0.7rem;
 
-.image-uploader .edit-btn .icon {
-  font-size: 1.5rem;
-  color: map-get(variables.$colors, "heading");
+    .icon {
+      font-size: 1.5rem;
+      color: map-get(variables.$colors, "heading");
+    }
+  }
 }
