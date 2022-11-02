@@ -1,48 +1,46 @@
 @use "../variables";
 
-.project-list-item,
-.project-list-item .footer,
-.project-list-item .header,
-.project-list-item .progress-header {
-  display: flex;
-}
-
 .project-list-item {
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
   border-radius: map-get(variables.$radius, "lg");
   position: relative;
-}
 
-.project-list-item .header,
-.project-list-item .progress-header {
-  align-items: center;
-  justify-content: space-between;
-}
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.project-list-item .header .actions {
-  margin-right: map-get(variables.$form-controls-padding-x, "sm") * -1;
-}
+    .actions {
+      margin-right: -(map-get(variables.$form-controls-padding-x, "sm"));
+    }
+  }
 
-.project-list-item .mini-profile .title {
-  font-size: 1.125rem;
-}
+  .mini-profile .title {
+    font-size: 1.125rem;
+  }
 
-.project-list-item .description {
-  margin-bottom: auto;
-}
+  .description {
+    margin-bottom: auto;
+  }
 
-.project-list-item .progress-header {
-  margin-bottom: 0.4rem;
-}
+  .progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+  }
 
-.project-list-item .footer {
-  align-items: flex-end;
-  gap: 0.5rem;
-}
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
 
-.project-list-item .footer .badge {
-  margin-right: auto;
+    .badge {
+      margin-right: auto;
+    }
+  }
 }
