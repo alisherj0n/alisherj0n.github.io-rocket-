@@ -6,18 +6,18 @@
   border: 1px solid map-get(variables.$colors, "border");
   object-fit: cover;
   border-radius: map-get(variables.$radius, "lg");
-}
 
-.avatar.large {
-  width: 3rem;
-  height: 3rem;
-}
+  &.small {
+    width: 2rem;
+    height: 2rem;
+  }
 
-.avatar.round {
-  border-radius: 50%;
-}
+  &.large {
+    width: 3rem;
+    height: 3rem;
+  }
 
-.avatar.small {
-  width: 2rem;
-  height: 2rem;
+  &.round {
+    border-radius: 50%;
+  }
 }

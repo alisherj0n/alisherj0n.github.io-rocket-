@@ -5,25 +5,25 @@
   align-items: center;
   gap: 1rem;
   min-width: 0;
-}
 
-.file .text-info {
-  width: 100%;
-  overflow: hidden;
-}
+  .text-info {
+    width: 100%;
+    overflow: hidden;
+  }
 
-.file .file-icon {
-  width: 2.3rem;
-  object-fit: cover;
-}
+  .icon {
+    width: 2.3rem;
+    object-fit: cover;
+  }
 
-.file .file-name {
-  display: block;
-  color: map-get(variables.$colors, "heading");
-  line-height: 1.7;
-}
+  .name {
+    display: block;
+    color: map-get(variables.$colors, "heading");
+    line-height: 1.7;
+  }
 
-.file .file-size {
-  color: map-get(variables.$colors, "body-light");
-  text-transform: uppercase;
+  .size {
+    color: map-get(variables.$colors, "body-light");
+    text-transform: uppercase;
+  }
 }
