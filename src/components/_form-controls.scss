@@ -1,29 +1,30 @@
 @use "../variables";
+@use "../colors";
 
 select {
   padding: map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm") + 1rem
     map-get(variables.$form-controls-padding-y, "sm")
     map-get(variables.$form-controls-padding-x, "sm");
-  color: map-get(variables.$colors, "body");
+  color: colors.$body;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right 0.8rem center;
   background-image: url(../../images/select-arrow.png);
   background-size: 0.5rem;
   height: map-get(variables.$form-controls-height, "sm");
-  border: 1px solid map-get(variables.$colors, "border");
+  border: 1px solid colors.$border;
   border-radius: map-get(variables.$radius, "lg");
   background-color: transparent;
   transition: border-color variables.$transition-duration;
   outline: none;
 
   &:focus {
-    border-color: map-get(variables.$colors, "primary");
+    border-color: colors.$primary;
   }
 
   &:disabled {
-    background-color: map-get(variables.$colors, "grey-light");
+    background-color: colors.$grey-light;
     pointer-events: none;
   }
 
@@ -40,7 +41,7 @@ select {
 
 input:not([type="checkbox"]) {
   height: map-get(variables.$form-controls-height, "sm");
-  border: 1px solid map-get(variables.$colors, "border");
+  border: 1px solid colors.$border;
   border-radius: map-get(variables.$radius, "lg");
   background-color: transparent;
   transition: border-color variables.$transition-duration;
@@ -51,16 +52,16 @@ input:not([type="checkbox"]) {
   width: 100%;
 
   &:focus {
-    border-color: map-get(variables.$colors, "primary");
+    border-color: colors.$primary;
   }
 
   &:disabled {
-    background-color: map-get(variables.$colors, "grey-light");
+    background-color: colors.$grey-light;
     pointer-events: none;
   }
 
   &[type="date"] {
-    color: map-get(variables.$colors, "body");
+    color: colors.$body;
   }
 
   &.small:not([type="checkbox"]) {
@@ -75,7 +76,7 @@ input:not([type="checkbox"]) {
 }
 
 textarea {
-  border: 1px solid map-get(variables.$colors, "border");
+  border: 1px solid colors.$border;
   border-radius: map-get(variables.$radius, "lg");
   background-color: transparent;
   transition: border-color variables.$transition-duration;
@@ -86,11 +87,11 @@ textarea {
   width: 100%;
 
   &:focus {
-    border-color: map-get(variables.$colors, "primary");
+    border-color: colors.$primary;
   }
 
   &:disabled {
-    background-color: map-get(variables.$colors, "grey-light");
+    background-color: colors.$grey-light;
     pointer-events: none;
   }
 }
@@ -122,7 +123,7 @@ textarea {
 
   .left {
     left: 1rem;
-    color: map-get(variables.$colors, "body-light");
+    color: colors.$body-light;
     margin: 0;
   }
   .right {

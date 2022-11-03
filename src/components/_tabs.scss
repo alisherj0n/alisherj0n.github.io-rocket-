@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../components/badge";
+@use "../colors";
 
 .tabs {
   display: flex;
@@ -7,7 +8,7 @@
   gap: 1.5rem;
   flex-wrap: nowrap;
   overflow-x: auto;
-  border-bottom: 1px solid map-get(variables.$colors, "border");
+  border-bottom: 1px solid colors.$border;
 
   > * {
     flex-shrink: 0;
@@ -15,8 +16,8 @@
 
   .badge {
     padding: 0 map-get(badge.$badge-padding-x, "sm");
-    background-color: map-get(variables.$colors, "border");
-    color: map-get(variables.$colors, "body-light");
+    background-color: colors.$border;
+    color: colors.$body-light;
     font-size: 0.8rem;
     border-radius: map-get(variables.$radius, "xs");
   }
@@ -27,7 +28,7 @@
 
   .tab {
     padding: 1rem 0;
-    color: map-get(variables.$colors, "body-light");
+    color: colors.$body-light;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -37,17 +38,17 @@
     background: transparent;
 
     &:hover {
-      color: map-get(variables.$colors, "primary");
+      color: colors.$primary;
     }
 
     &.active {
-      color: map-get(variables.$colors, "primary");
+      color: colors.$primary;
 
       &::after {
         content: "";
         width: 100%;
         height: 2px;
-        background-color: map-get(variables.$colors, "primary");
+        background-color: colors.$primary;
         position: absolute;
         bottom: 0;
         border-radius: 2px 2px 0 0;

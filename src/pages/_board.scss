@@ -1,7 +1,8 @@
 @use "../variables";
+@use "../colors";
 
 .board {
-  background-color: map-get(variables.$colors, "bg");
+  background-color: colors.$bg;
   overflow: hidden;
   max-height: 100vh;
   overflow-y: scroll;
@@ -13,7 +14,7 @@
   }
 
   .tabs .actions .page-view-toggles > .active {
-    color: map-get(variables.$colors, "primary");
+    color: colors.$primary;
   }
 
   .projects {

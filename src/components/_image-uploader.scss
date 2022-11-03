@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 .image-uploader {
   display: flex;
@@ -6,7 +7,7 @@
   justify-content: center;
   width: 6rem;
   min-height: 6rem;
-  border: 1px dashed map-get(variables.$colors, "body-light");
+  border: 1px dashed colors.$body-light;
   padding: 0.5rem;
   border-radius: map-get(variables.$radius, "xl");
   align-self: center;
@@ -20,11 +21,11 @@
   .icon {
     font-size: 2rem;
     font-weight: bold;
-    color: map-get(variables.$colors, "body-light");
+    color: colors.$body-light;
   }
 
   .image {
-    border: 1px solid map-get(variables.$colors, "grey");
+    border: 1px solid colors.$grey;
     border-radius: map-get(variables.$radius, "lg");
     max-width: 99%;
   }
@@ -33,7 +34,7 @@
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid map-get(variables.$colors, "grey");
+    border: 1px solid colors.$grey;
     background: #fff;
     position: absolute;
     top: -0.7rem;
@@ -41,7 +42,7 @@
 
     .icon {
       font-size: 1.5rem;
-      color: map-get(variables.$colors, "heading");
+      color: colors.$heading;
     }
   }
 }

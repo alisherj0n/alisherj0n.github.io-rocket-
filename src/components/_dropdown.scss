@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 .dropdown {
   background: #fff;
@@ -6,7 +7,7 @@
   min-width: 10rem;
   max-width: 13rem;
   border-radius: map-get(variables.$radius, "lg");
-  box-shadow: 0px 20px 50px 0px map-get(variables.$colors, "shadow");
+  box-shadow: 0px 20px 50px 0px colors.$shadow;
   position: absolute;
   display: none;
 
@@ -19,7 +20,7 @@
     border: none;
     width: 100%;
     cursor: pointer;
-    color: map-get(variables.$colors, "body");
+    color: colors.$body;
     display: flex;
     align-items: center;
     gap: 0.7rem;
@@ -28,22 +29,22 @@
       background-color variables.$transition-duration;
 
     &:hover {
-      background-color: map-get(variables.$colors, "bg");
+      background-color: colors.$bg;
     }
 
     .icon {
-      color: map-get(variables.$colors, "body-light");
+      color: colors.$body-light;
     }
 
     &.danger {
-      color: map-get(variables.$colors, "danger");
+      color: colors.$danger;
 
       &:hover {
-        background-color: map-get(variables.$colors, "danger-light");
+        background-color: colors.$danger-light;
       }
 
       .icon {
-        color: map-get(variables.$colors, "danger");
+        color: colors.$danger;
       }
     }
   }
