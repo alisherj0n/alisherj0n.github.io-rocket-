@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 $badge-padding-y: (
   "sm": 0.3rem,
@@ -17,8 +18,8 @@ $badge-padding-x: (
   gap: 0.5rem;
   justify-content: center;
   white-space: nowrap;
-  background-color: map-get(variables.$colors, "bg-light");
-  color: map-get(variables.$colors, "heading");
+  background-color: colors.$bg-dark;
+  color: colors.$heading;
   padding: map-get($badge-padding-y, "sm") map-get($badge-padding-x, "lg");
   border-radius: map-get(variables.$radius, "xs");
 
@@ -41,44 +42,44 @@ $badge-padding-x: (
   }
 
   &.primary {
-    background-color: map-get(variables.$colors, "primary");
+    background-color: colors.$primary;
     color: #fff;
   }
 
   &.warning {
-    background-color: map-get(variables.$colors, "warning");
+    background-color: colors.$warning;
     color: #fff;
   }
 
   &.danger {
-    background-color: map-get(variables.$colors, "danger");
+    background-color: colors.$danger;
     color: #fff;
   }
 
   &.success {
-    background-color: map-get(variables.$colors, "success");
+    background-color: colors.$success;
     color: #fff;
   }
 
   &.light {
     &.primary {
-      background-color: map-get(variables.$colors, "primary-light");
-      color: map-get(variables.$colors, "primary");
+      background-color: colors.$primary-light;
+      color: colors.$primary;
     }
 
     &.warning {
-      background-color: map-get(variables.$colors, "warning-light");
-      color: map-get(variables.$colors, "warning");
+      background-color: colors.$warning-light;
+      color: colors.$warning;
     }
 
     &.danger {
-      background-color: map-get(variables.$colors, "danger-light");
-      color: map-get(variables.$colors, "danger");
+      background-color: colors.$danger-light;
+      color: colors.$danger;
     }
 
     &.success {
-      background-color: map-get(variables.$colors, "success-light");
-      color: map-get(variables.$colors, "success");
+      background-color: colors.$success-light;
+      color: colors.$success;
     }
   }
 }

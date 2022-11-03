@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 .pagination {
   display: flex;
@@ -23,7 +24,7 @@
   }
 
   .summary {
-    color: map-get(variables.$colors, "body-light");
+    color: colors.$body-light;
   }
 
   @media (max-width: map-get(variables.$breakpoints, "sm")) {

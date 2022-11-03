@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 $sidebar-padding-x: (
   "sm": 0.6rem,
@@ -7,7 +8,7 @@ $sidebar-padding-x: (
 
 .app {
   > .sidebar {
-    border-right: 1px solid map-get(variables.$colors, "border");
+    border-right: 1px solid colors.$border;
     min-height: 100vh;
     padding: 1rem 0;
     position: sticky;
@@ -32,22 +33,22 @@ $sidebar-padding-x: (
       display: flex;
       align-items: center;
       position: relative;
-      color: map-get(variables.$colors, "body-light");
+      color: colors.$body-light;
       transition: background-color variables.$transition-duration,
         color variables.$transition-duration;
       gap: 1rem;
 
       &:hover {
-        background-color: map-get(variables.$colors, "bg");
+        background-color: colors.$bg;
       }
 
       &.active {
-        background-color: map-get(variables.$colors, "bg");
+        background-color: colors.$bg;
 
         &::before {
           content: "";
           position: absolute;
-          background-color: map-get(variables.$colors, "primary");
+          background-color: colors.$primary;
           width: 4px;
           left: 0px;
           height: 100%;
@@ -57,7 +58,7 @@ $sidebar-padding-x: (
 
       .link-txt {
         margin-right: auto;
-        color: map-get(variables.$colors, "heading");
+        color: colors.$heading;
       }
 
       .submenu-indicator {
@@ -78,7 +79,7 @@ $sidebar-padding-x: (
         padding: 0.8rem;
 
         &.active {
-          background-color: map-get(variables.$colors, "primary");
+          background-color: colors.$primary;
           color: #fff;
         }
       }
@@ -107,7 +108,7 @@ $sidebar-padding-x: (
         padding: 0.8rem;
 
         &.active {
-          background-color: map-get(variables.$colors, "primary");
+          background-color: colors.$primary;
           color: #fff;
         }
       }

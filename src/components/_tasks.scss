@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../colors";
 
 .tasks {
   display: flex;
@@ -9,7 +10,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    color: map-get(variables.$colors, "heading");
+    color: colors.$heading;
     border-radius: map-get(variables.$radius, "lg");
     padding: 0.125rem 1rem;
     margin-left: -1rem;
@@ -18,7 +19,7 @@
       box-shadow variables.$transition-duration;
 
     &:hover {
-      background-color: map-get(variables.$colors, "bg");
+      background-color: colors.$bg;
 
       .actions {
         opacity: 1;
@@ -26,7 +27,7 @@
     }
 
     &:focus {
-      background-color: map-get(variables.$colors, "bg");
+      background-color: colors.$bg;
 
       .actions {
         opacity: 1;
@@ -34,7 +35,7 @@
     }
 
     &:focus-within {
-      background-color: map-get(variables.$colors, "bg");
+      background-color: colors.$bg;
 
       .actions {
         opacity: 1;
@@ -53,7 +54,7 @@
     }
 
     .icon {
-      color: map-get(variables.$colors, "border");
+      color: colors.$border;
     }
 
     &.completed {
@@ -62,7 +63,7 @@
       }
 
       .icon {
-        color: map-get(variables.$colors, "primary");
+        color: colors.$primary;
       }
     }
   }

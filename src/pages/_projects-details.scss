@@ -1,6 +1,7 @@
 @use "../variables";
 @use "../components/app-header";
 @use "../components/button";
+@use "../colors";
 
 .projects-details {
   .grid {
@@ -15,17 +16,17 @@
   }
 
   .related-projects-list {
-    background-color: map-get(variables.$colors, "bg");
+    background-color: colors.$bg;
     position: sticky;
     align-self: start;
-    border-right: 1px solid map-get(variables.$colors, "border");
+    border-right: 1px solid colors.$border;
     top: app-header.$app-header-height;
     overflow-y: auto;
     height: calc(100vh - app-header.$app-header-height);
 
     .searchbar {
-      background-color: map-get(variables.$colors, "bg");
-      border-bottom: 1px solid map-get(variables.$colors, "border");
+      background-color: colors.$bg;
+      border-bottom: 1px solid colors.$border;
       position: sticky;
       align-self: start;
       top: 0;
@@ -38,7 +39,7 @@
     }
 
     &-item {
-      border-bottom: 1px solid map-get(variables.$colors, "border");
+      border-bottom: 1px solid colors.$border;
     }
   }
 
@@ -104,7 +105,7 @@
   }
 
   .sidebar {
-    border-left: 1px solid map-get(variables.$colors, "border");
+    border-left: 1px solid colors.$border;
     gap: 1.5rem;
 
     .project-status {
