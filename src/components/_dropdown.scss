@@ -16,14 +16,12 @@
   }
 
   .item {
+    @include variables.flex(0.7rem);
     background-color: transparent;
     border: none;
     width: 100%;
     cursor: pointer;
     color: colors.$body;
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
     padding: 0.6rem 2rem;
     transition: color variables.$transition-duration,
       background-color variables.$transition-duration;

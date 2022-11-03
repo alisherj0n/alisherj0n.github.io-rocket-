@@ -49,8 +49,7 @@
     gap: 2.5rem;
 
     .header {
-      display: flex;
-      align-items: center;
+      @include variables.flex(0);
     }
 
     .mini-profile .title {

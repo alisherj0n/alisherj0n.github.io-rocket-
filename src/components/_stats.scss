@@ -2,14 +2,10 @@
 @use "../colors";
 
 .stats {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
+  @include variables.flex(2.5rem);
 
   .item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    @include variables.flex(1rem);
 
     .title {
       color: colors.$body-light;

@@ -1,3 +1,5 @@
+@use "../variables";
+
 .related-projects-list-item {
   display: flex;
   gap: 1rem;
@@ -5,16 +7,12 @@
   flex-direction: column;
 
   .footer {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    @include variables.flex(1rem);
     justify-content: space-between;
     padding-left: 4rem;
 
     .users {
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
+      @include variables.flex(0.3rem);
     }
   }
 

@@ -29,14 +29,12 @@ $sidebar-padding-x: (
     }
 
     .nav .item {
+      @include variables.flex(1rem);
       padding: 1rem map-get($sidebar-padding-x, "lg");
-      display: flex;
-      align-items: center;
       position: relative;
       color: colors.$body-light;
       transition: background-color variables.$transition-duration,
         color variables.$transition-duration;
-      gap: 1rem;
 
       &:hover {
         background-color: colors.$bg;

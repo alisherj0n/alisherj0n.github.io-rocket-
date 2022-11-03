@@ -3,8 +3,7 @@
 
 input {
   &[type="checkbox"] {
-    display: flex;
-    align-items: center;
+    @include variables.flex(0);
     justify-content: center;
     position: relative;
     appearance: none;

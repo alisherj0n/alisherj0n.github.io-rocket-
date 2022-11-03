@@ -34,3 +34,14 @@ $container-padding: (
 
 $transition-duration: 0.2s;
 $font-family: "Poppins", sans-serif;
+
+@mixin flex($gap) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-column {
+  @include flex;
+  flex-direction: column;
+}

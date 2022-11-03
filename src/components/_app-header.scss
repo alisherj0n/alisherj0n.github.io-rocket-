@@ -4,14 +4,13 @@
 $app-header-height: 66px;
 
 .app-header {
+  @include variables.flex(0.5rem);
   padding: 0.7rem map-get(variables.$container-padding, "sm");
   border-bottom: 1px solid colors.$border;
   background-color: #fff;
   color: colors.$heading;
   height: $app-header-height;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+
   position: sticky;
   top: 0;
   z-index: 1;
@@ -21,8 +20,7 @@ $app-header-height: 66px;
   }
 
   .user-profile-dropdown {
-    display: flex;
-    align-items: center;
+    @include variables.flex(0);
     cursor: pointer;
     background: transparent;
     border: none;

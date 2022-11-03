@@ -13,9 +13,8 @@ $badge-padding-x: (
 );
 
 .badge {
+  @include variables.flex(0.5rem);
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   justify-content: center;
   white-space: nowrap;
   background-color: colors.$bg-dark;

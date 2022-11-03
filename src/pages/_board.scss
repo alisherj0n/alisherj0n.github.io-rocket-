@@ -8,9 +8,7 @@
   overflow-y: scroll;
 
   .page-view-toggles {
-    display: flex;
-    gap: 0.2rem;
-    align-items: center;
+    @include variables.flex(0.2rem);
   }
 
   .tabs .actions .page-view-toggles > .active {

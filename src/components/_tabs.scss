@@ -3,9 +3,7 @@
 @use "../colors";
 
 .tabs {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  @include variables.flex(1.5rem);
   flex-wrap: nowrap;
   overflow-x: auto;
   border-bottom: 1px solid colors.$border;
@@ -27,11 +25,9 @@
   }
 
   .tab {
+    @include variables.flex(0.5rem);
     padding: 1rem 0;
     color: colors.$body-light;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     position: relative;
     transition: color variables.$transition-duration;
     border: none;

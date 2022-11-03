@@ -1,5 +1,6 @@
+@use "../variables";
+
 .sidebar .widget .header {
-  display: flex;
-  align-items: center;
+  @include variables.flex(0);
   justify-content: space-between;
 }

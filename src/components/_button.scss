@@ -13,10 +13,8 @@ $btn-padding-x: (
 );
 
 .btn {
-  display: flex;
-  align-items: center;
+  @include variables.flex(0.4rem);
   justify-content: center;
-  gap: 0.4rem;
   flex-shrink: 0;
   color: colors.$body-light;
   padding: map-get($btn-padding-y, "sm") map-get($btn-padding-x, "lg");

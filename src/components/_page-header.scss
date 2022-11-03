@@ -1,15 +1,11 @@
 @use "../variables";
 
 .page-header {
-  display: flex;
+  @include variables.flex(1rem);
   justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
 
   .actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    @include variables.flex(1rem);
   }
 
   @media (max-width: map-get(variables.$breakpoints, "sm")) {

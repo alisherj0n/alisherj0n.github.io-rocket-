@@ -11,9 +11,10 @@
     gap: 1rem;
 
     .text-info .header {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
+      @include variables.flex(1rem);
+      // display: flex;
+      // gap: 1rem;
+      // align-items: center;
       margin-bottom: 0.5rem;
     }
 
@@ -57,8 +58,6 @@
   }
 
   .attachments {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    @include variables.flex(1rem);
   }
 }

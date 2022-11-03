@@ -2,9 +2,7 @@
 @use "../colors";
 
 .file {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @include variables.flex(1rem);
   min-width: 0;
 
   .text-info {

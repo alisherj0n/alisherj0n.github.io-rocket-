@@ -29,9 +29,7 @@ $list-view-padding: 1.5rem;
     }
 
     .progress-info {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      @include variables.flex(0.5rem);
       color: colors.$body-light;
     }
   }

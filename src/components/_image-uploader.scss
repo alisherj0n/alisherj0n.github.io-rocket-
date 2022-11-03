@@ -2,8 +2,7 @@
 @use "../colors";
 
 .image-uploader {
-  display: flex;
-  align-items: center;
+  @include variables.flex(0);
   justify-content: center;
   width: 6rem;
   min-height: 6rem;

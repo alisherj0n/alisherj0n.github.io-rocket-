@@ -2,21 +2,15 @@
 @use "../colors";
 
 .pagination {
-  display: flex;
-  align-items: center;
+  @include variables.flex(1rem);
   justify-content: space-between;
-  gap: 1rem;
 
   .displayable-quantity {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    @include variables.flex(1rem);
   }
 
   .pages {
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
+    @include variables.flex(0.2rem);
 
     .item {
       min-width: 2.55rem;
