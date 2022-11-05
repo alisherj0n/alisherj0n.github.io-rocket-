@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./_mixins/media";
 
 .app {
   display: grid;
@@ -8,17 +9,17 @@
     grid-template-columns: auto 1fr;
   }
 
-  @media (min-width: map-get(variables.$breakpoints, "xl")) {
+  @include media.respondto(laptop, min) {
     grid-template-columns: 320px 1fr;
   }
 
-  @media (max-width: map-get(variables.$breakpoints, "lg")) {
+  @include media.respondto(tablet-landscape) {
     grid-template-columns: auto 1fr;
   }
 }
 
 .container {
-  padding: map-get(variables.$container-padding, "sm");
+  padding: map-get(variables.$container-padding, sm);
   display: flex;
   flex-direction: column;
   gap: 2rem;

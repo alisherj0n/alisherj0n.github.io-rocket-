@@ -1,36 +1,36 @@
 $radius: (
-  "xs": 6px,
-  "sm": 10px,
-  "lg": 14px,
-  "xl": 20px,
+  xs: 6px,
+  sm: 10px,
+  lg: 14px,
+  xl: 20px,
 );
 
 $breakpoints: (
-  "xs": 576px,
-  "sm": 768px,
-  "lg": 992px,
-  "xl": 1200px,
+  xs: 576px,
+  sm: 768px,
+  lg: 992px,
+  xl: 1200px,
 );
 
 $form-controls-height: (
-  "xs": 2.25rem,
-  "sm": 2.625rem,
-  "lg": 3rem,
+  xs: 2.25rem,
+  sm: 2.625rem,
+  lg: 3rem,
 );
 
 $form-controls-padding-y: (
-  "sm": 0.4628rem,
-  "lg": 2rem,
+  sm: 0.4628rem,
+  lg: 2rem,
 );
 
 $form-controls-padding-x: (
-  "sm": 0.8rem,
+  sm: 0.8rem,
 );
 
 $container-padding: (
-  "sm": 1.2rem,
-  "lg": 1.8rem,
+  sm: 1.2rem,
+  lg: 1.8rem,
 );
 
 $transition-duration: 0.2s;
-$font-family: "Poppins", sans-serif;
+$font-family: Poppins, sans-serif;

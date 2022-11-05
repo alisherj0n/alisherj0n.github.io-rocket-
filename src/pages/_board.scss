@@ -27,10 +27,4 @@
       right: 0.7rem;
     }
   }
-
-  @media (max-width: map-get(variables.$breakpoints, "sm")) {
-    .page-header .heading {
-      font-size: 1.6rem;
-    }
-  }
 }

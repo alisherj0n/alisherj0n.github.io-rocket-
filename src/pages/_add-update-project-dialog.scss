@@ -1,7 +1,7 @@
 @use "../variables";
+@use "../_mixins/media";
 
-/*  breakpoint-sm */
-@media (max-width: map-get(variables.$breakpoints, "sm")) {
+@include media.respondto(tablet) {
   .add-update-project-dialog .time-range {
     flex-direction: column;
   }

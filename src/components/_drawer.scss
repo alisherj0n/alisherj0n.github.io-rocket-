@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../colors";
+@use "../_mixins/media";
 
 .drawer {
   display: none;
@@ -31,7 +32,7 @@
     gap: 0.5rem;
   }
 
-  @media (max-width: map-get(variables.$breakpoints, "xs")) {
+  @include media.respondto(phone) {
     width: 100%;
   }
 }

@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../colors";
+@use "../_mixins/media";
 
 .pagination {
   display: flex;
@@ -27,7 +28,7 @@
     color: colors.$body-light;
   }
 
-  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+  @include media.respondto(tablet) {
     flex-direction: column;
   }
 }

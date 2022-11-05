@@ -1,10 +1,11 @@
 @use "../variables";
 @use "../colors";
+@use "../_mixins/media";
 
 $app-header-height: 66px;
 
 .app-header {
-  padding: 0.7rem map-get(variables.$container-padding, "sm");
+  padding: 0.7rem map-get(variables.$container-padding, sm);
   border-bottom: 1px solid colors.$border;
   background-color: #fff;
   color: colors.$heading;
@@ -45,8 +46,7 @@ $app-header-height: 66px;
     right: 10px;
   }
 
-  /* ----breakpoint-sm---- */
-  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+  @include media.respondto(tablet) {
     .btn.notification,
     .mini-profile .avatar {
       display: none;
