@@ -6,7 +6,7 @@
   height: 2.5rem;
   border: 1px solid colors.$border;
   object-fit: cover;
-  border-radius: map-get(variables.$radius, "lg");
+  border-radius: map-get(variables.$radius, lg);
 
   &.small {
     width: 2rem;

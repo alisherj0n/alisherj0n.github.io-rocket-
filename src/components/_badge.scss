@@ -2,14 +2,14 @@
 @use "../colors";
 
 $badge-padding-y: (
-  "sm": 0.3rem,
-  "lg": 1rem,
+  sm: 0.3rem,
+  lg: 1rem,
 );
 
 $badge-padding-x: (
-  "sm": 0.5rem,
-  "lg": 0.7rem,
-  "xl": 1rem,
+  sm: 0.5rem,
+  lg: 0.7rem,
+  xl: 1rem,
 );
 
 .badge {
@@ -20,8 +20,8 @@ $badge-padding-x: (
   white-space: nowrap;
   background-color: colors.$bg-dark;
   color: colors.$heading;
-  padding: map-get($badge-padding-y, "sm") map-get($badge-padding-x, "lg");
-  border-radius: map-get(variables.$radius, "xs");
+  padding: map-get($badge-padding-y, sm) map-get($badge-padding-x, lg);
+  border-radius: map-get(variables.$radius, xs);
 
   .icon {
     font-size: 1.1rem;
@@ -33,8 +33,8 @@ $badge-padding-x: (
   }
 
   &.large {
-    padding: map-get($badge-padding-y, "lg") map-get($badge-padding-x, "xl");
-    border-radius: map-get(variables.$radius, "lg");
+    padding: map-get($badge-padding-y, lg) map-get($badge-padding-x, xl);
+    border-radius: map-get(variables.$radius, lg);
 
     .icon {
       font-size: 1.3rem;

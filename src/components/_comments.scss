@@ -33,7 +33,7 @@
 
   .comment-field {
     border: 1px solid colors.$border;
-    border-radius: map-get(variables.$radius, "lg");
+    border-radius: map-get(variables.$radius, lg);
     padding: 0.55rem;
     transition: border-color variables.$transition-duration;
 

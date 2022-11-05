@@ -9,12 +9,12 @@
 .photo-attachment {
   width: 4.5rem;
   height: 4.5rem;
-  border-radius: map-get(variables.$radius, "lg");
+  border-radius: map-get(variables.$radius, lg);
   object-fit: cover;
 
   &.small {
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: map-get(variables.$radius, "xs");
+    border-radius: map-get(variables.$radius, xs);
   }
 }

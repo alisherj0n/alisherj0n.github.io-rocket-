@@ -2,6 +2,7 @@
 @use "../components/app-header";
 @use "../components/button";
 @use "../colors";
+@use "../_mixins/media";
 
 .projects-details {
   .grid {
@@ -10,7 +11,7 @@
   }
 
   .container {
-    padding: map-get(variables.$container-padding, "lg");
+    padding: map-get(variables.$container-padding, lg);
     gap: 1rem;
     overflow-x: hidden;
   }
@@ -32,8 +33,8 @@
       top: 0;
 
       input {
-        padding-top: map-get(variables.$form-controls-padding-y, "lg");
-        padding-bottom: map-get(variables.$form-controls-padding-y, "lg");
+        padding-top: map-get(variables.$form-controls-padding-y, lg);
+        padding-bottom: map-get(variables.$form-controls-padding-y, lg);
         border: none;
       }
     }
@@ -94,9 +95,9 @@
     gap: 2rem;
 
     .tabs {
-      margin-left: -(map-get(variables.$container-padding, "lg"));
-      margin-right: -(map-get(variables.$container-padding, "lg"));
-      padding: 0 map-get(variables.$container-padding, "lg");
+      margin-left: -(map-get(variables.$container-padding, lg));
+      margin-right: -(map-get(variables.$container-padding, lg));
+      padding: 0 map-get(variables.$container-padding, lg);
     }
   }
 
@@ -119,16 +120,15 @@
     }
 
     .add {
-      margin-right: map-get(button.$btn-padding-x, "sm") * -1;
+      margin-right: map-get(button.$btn-padding-x, sm) * -1;
     }
 
     .download {
-      margin-right: map-get(button.$btn-padding-x, "sm") * -1;
+      margin-right: map-get(button.$btn-padding-x, sm) * -1;
     }
   }
 
-  /* Breakpoint-xl */
-  @media (max-width: map-get(variables.$breakpoints, "xl")) {
+  @include media.respondto(laptop) {
     .grid {
       grid-template-columns: 1fr 250px;
     }
@@ -137,15 +137,13 @@
     }
   }
 
-  /*  Breakpoint-lg */
-  @media (max-width: map-get(variables.$breakpoints, "lg")) {
+  @include media.respondto(tablet-landscape) {
     .project .intro .stats {
       gap: 2rem;
     }
   }
 
-  /* Breakpoint-sm */
-  @media (max-width: map-get(variables.$breakpoints, "sm")) {
+  @include media.respondto(tablet) {
     .grid {
       grid-template-columns: 1fr;
     }

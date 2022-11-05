@@ -11,7 +11,7 @@
     gap: 1rem;
     align-items: center;
     color: colors.$heading;
-    border-radius: map-get(variables.$radius, "lg");
+    border-radius: map-get(variables.$radius, lg);
     padding: 0.125rem 1rem;
     margin-left: -1rem;
     margin-right: -1rem;

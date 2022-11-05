@@ -1,9 +1,10 @@
 @use "../variables";
 @use "../colors";
+@use "../_mixins/media";
 
 $sidebar-padding-x: (
-  "sm": 0.6rem,
-  "lg": 1.7rem,
+  sm: 0.6rem,
+  lg: 1.7rem,
 );
 
 .app {
@@ -17,7 +18,7 @@ $sidebar-padding-x: (
 
     .logo {
       max-width: 10rem;
-      padding: 0 map-get($sidebar-padding-x, "lg");
+      padding: 0 map-get($sidebar-padding-x, lg);
       margin: 0 auto 1rem;
 
       &.icon-only {
@@ -29,7 +30,7 @@ $sidebar-padding-x: (
     }
 
     .nav .item {
-      padding: 1rem map-get($sidebar-padding-x, "lg");
+      padding: 1rem map-get($sidebar-padding-x, lg);
       display: flex;
       align-items: center;
       position: relative;
@@ -66,16 +67,16 @@ $sidebar-padding-x: (
       }
     }
 
-    @media (max-width: map-get(variables.$breakpoints, "lg")) {
-      padding-left: map-get($sidebar-padding-x, "sm");
-      padding-right: map-get($sidebar-padding-x, "sm");
+    @include media.respondto(tablet-landscape) {
+      padding-left: map-get($sidebar-padding-x, sm);
+      padding-right: map-get($sidebar-padding-x, sm);
 
       .logo.icon-only {
         display: block;
       }
 
       .nav .item {
-        border-radius: map-get(variables.$radius, "lg");
+        border-radius: map-get(variables.$radius, lg);
         padding: 0.8rem;
 
         &.active {
@@ -96,15 +97,15 @@ $sidebar-padding-x: (
 
   &.collapsed {
     > .sidebar {
-      padding-left: map-get($sidebar-padding-x, "sm");
-      padding-right: map-get($sidebar-padding-x, "sm");
+      padding-left: map-get($sidebar-padding-x, sm);
+      padding-right: map-get($sidebar-padding-x, sm);
 
       .logo.icon-only {
         display: block;
       }
 
       .nav .item {
-        border-radius: map-get(variables.$radius, "lg");
+        border-radius: map-get(variables.$radius, lg);
         padding: 0.8rem;
 
         &.active {

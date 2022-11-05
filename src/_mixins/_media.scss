@@ -1,0 +1,23 @@
+@use "../variables";
+
+@mixin respondto($device, $direction: max) {
+  @if $device == phone {
+    @media (#{$direction}-width: map-get(variables.$breakpoints, xs)) {
+      @content;
+    }
+  } @else if $device == tablet {
+    @media (#{$direction}-width: map-get(variables.$breakpoints, sm)) {
+      @content;
+    }
+  } @else if $device == tablet-landscape {
+    @media (#{$direction}-width: map-get(variables.$breakpoints, lg)) {
+      @content;
+    }
+  } @else if $device == laptop {
+    @media (#{$direction}-width: map-get(variables.$breakpoints, xl)) {
+      @content;
+    }
+  } @else {
+    @error "Unknown device #{$device}.";
+  }
+}

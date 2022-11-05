@@ -4,7 +4,7 @@
 $list-view-padding: 1.5rem;
 
 .projects-list {
-  border-radius: map-get(variables.$radius, "lg");
+  border-radius: map-get(variables.$radius, lg);
   background-color: #fff;
 
   .header {

@@ -9,7 +9,7 @@ $dialog-padding: 2rem;
   position: fixed;
   z-index: 100;
   background: #fff;
-  border-radius: map-get(variables.$radius, "xl");
+  border-radius: map-get(variables.$radius, xl);
   box-shadow: -4px 8px 24px 0px colors.$shadow;
   top: 50%;
   left: 50%;

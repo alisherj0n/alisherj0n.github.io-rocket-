@@ -15,11 +15,11 @@
   }
 
   .badge {
-    padding: 0 map-get(badge.$badge-padding-x, "sm");
+    padding: 0 map-get(badge.$badge-padding-x, sm);
     background-color: colors.$border;
     color: colors.$body-light;
     font-size: 0.8rem;
-    border-radius: map-get(variables.$radius, "xs");
+    border-radius: map-get(variables.$radius, xs);
   }
 
   .actions {
