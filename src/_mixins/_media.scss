@@ -1,0 +1,23 @@
+@use "../variables";
+
+@mixin respondto($device) {
+  @if $device == phone {
+    @media (max-witdh: map-get(variables.$breakpoints, "xs")) {
+      @content;
+    }
+  } @else if $device == tablet {
+    @media (max-witdh: map-get(variables.$breakpoints, "sm")) {
+      @content;
+    }
+  } @else if $device == tablet-landscape {
+    @media (max-witdh: map-get(variables.$breakpoints, "lg")) {
+      @content;
+    }
+  } @else if $device == laptop {
+    @media (max-witdh: map-get(variables.$breakpoints, "xl")) {
+      @content;
+    }
+  } @else {
+    @error "Unknown device #{$device}.";
+  }
+}
