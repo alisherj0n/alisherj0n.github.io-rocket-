@@ -60,13 +60,13 @@ $btn-padding-x: (
   }
 
   @mixin button(
-    $color,
+    $variation,
     $bg: colors.$primary,
     $hover: colors.$primary-hover,
     $active: colors.$primary-dark,
     $focus: colors.$primary-shadow
   ) {
-    &.#{$color} {
+    &.#{$variation} {
       background-color: $bg;
       color: #fff;
       border-bottom-color: $active;
