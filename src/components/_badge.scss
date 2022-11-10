@@ -41,33 +41,22 @@ $badge-padding-x: (
     }
   }
 
-  @mixin badge($color, $bg: colors.$primary) {
+  @mixin badge($color, $bg, $light) {
     &.#{$color} {
       background-color: $bg;
       color: #fff;
     }
-  }
 
-  @include badge(primary);
-  @include badge(warning, colors.$warning);
-  @include badge(danger, colors.$danger);
-  @include badge(success, colors.$success);
-
-  &.light {
-    @mixin light(
-      $variation,
-      $bg: colors.$primary-light,
-      $color: colors.$primary
-    ) {
-      &.#{$variation} {
-        background-color: $bg;
-        color: $color;
+    &.light {
+      &.#{$color} {
+        background-color: $light;
+        color: $bg;
       }
     }
-
-    @include light(primary);
-    @include light(warning, colors.$warning-light, colors.$warning);
-    @include light(danger, colors.$danger-light, colors.$danger);
-    @include light(success, colors.$success-light, colors.$success);
   }
+
+  @include badge(primary, colors.$primary, colors.$primary-light);
+  @include badge(warning, colors.$warning, colors.$warning-light);
+  @include badge(danger, colors.$danger, colors.$danger-light);
+  @include badge(success, colors.$success, colors.$success-light);
 }
