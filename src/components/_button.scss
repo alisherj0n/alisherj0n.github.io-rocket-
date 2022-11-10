@@ -59,13 +59,7 @@ $btn-padding-x: (
     width: map-get(variables.$form-controls-height, sm);
   }
 
-  @mixin button(
-    $variation,
-    $bg: colors.$primary,
-    $hover: colors.$primary-hover,
-    $active: colors.$primary-dark,
-    $focus: colors.$primary-shadow
-  ) {
+  @mixin button($variation, $bg, $hover, $active, $focus) {
     &.#{$variation} {
       background-color: $bg;
       color: #fff;
@@ -86,14 +80,20 @@ $btn-padding-x: (
     }
   }
 
-  @include button(primary);
+  @include button(
+    primary,
+    colors.$primary,
+    colors.$primary-hover,
+    colors.$primary-dark,
+    colors.$primary-focus-shadow
+  );
 
   @include button(
     warning,
     colors.$warning,
     colors.$warning-hover,
     colors.$warning-dark,
-    colors.$warning-shadow
+    colors.$warning-focus-shadow
   );
 
   @include button(
@@ -101,7 +101,7 @@ $btn-padding-x: (
     colors.$danger,
     colors.$danger-hover,
     colors.$danger-dark,
-    colors.$danger-shadow
+    colors.$danger-focus-shadow
   );
 
   @include button(
@@ -109,7 +109,7 @@ $btn-padding-x: (
     colors.$success,
     colors.$success-hover,
     colors.$success-dark,
-    colors.$success-shadow
+    colors.$success-focus-shadow
   );
 
   &.light {
@@ -120,13 +120,7 @@ $btn-padding-x: (
       background-color: colors.$bg-dark;
     }
 
-    @mixin light(
-      $variation,
-      $color: colors.$primary,
-      $bg: colors.$primary-light,
-      $shadow: colors.$primary-shadow,
-      $active: colors.$primary-dark
-    ) {
+    @mixin light($variation, $color, $bg, $shadow, $active) {
       &.#{$variation} {
         background-color: $bg;
         color: $color;
@@ -147,13 +141,19 @@ $btn-padding-x: (
       }
     }
 
-    @include light(primary);
+    @include light(
+      primary,
+      colors.$primary,
+      colors.$primary-light,
+      colors.$primary-focus-shadow,
+      colors.$primary-dark
+    );
 
     @include light(
       warning,
       colors.$warning,
       colors.$warning-light,
-      colors.$warning-shadow,
+      colors.$warning-focus-shadow,
       colors.$warning-dark
     );
 
@@ -161,7 +161,7 @@ $btn-padding-x: (
       danger,
       colors.$danger,
       colors.$danger-light,
-      colors.$danger-shadow,
+      colors.$danger-focus-shadow,
       colors.$danger-dark
     );
 
@@ -169,7 +169,7 @@ $btn-padding-x: (
       success,
       colors.$success,
       colors.$success-light,
-      colors.$success-shadow,
+      colors.$success-focus-shadow,
       colors.$success-dark
     );
   }
@@ -212,7 +212,7 @@ $btn-padding-x: (
   transition: box-shadow variables.$transition-duration;
 
   &:focus {
-    box-shadow: 0px 0px 0px 3px colors.$primary-shadow;
+    box-shadow: 0px 0px 0px 3px colors.$primary-focus-shadow;
     outline: none;
   }
 }
