@@ -59,7 +59,7 @@ $btn-padding-x: (
     width: map-get(variables.$form-controls-height, sm);
   }
 
-  @mixin button($variation, $bg, $hover, $active, $focus) {
+  @mixin button($variation, $bg, $hover, $active, $focus, $light) {
     &.#{$variation} {
       background-color: $bg;
       color: #fff;
@@ -78,61 +78,27 @@ $btn-padding-x: (
         background-color: $active;
       }
     }
-  }
 
-  @include button(
-    primary,
-    colors.$primary,
-    colors.$primary-hover,
-    colors.$primary-dark,
-    colors.$primary-focus-shadow
-  );
+    &.light {
+      background-color: #fff;
+      border-bottom-color: transparent;
 
-  @include button(
-    warning,
-    colors.$warning,
-    colors.$warning-hover,
-    colors.$warning-dark,
-    colors.$warning-focus-shadow
-  );
+      &:hover {
+        background-color: colors.$bg-dark;
+      }
 
-  @include button(
-    danger,
-    colors.$danger,
-    colors.$danger-hover,
-    colors.$danger-dark,
-    colors.$danger-focus-shadow
-  );
-
-  @include button(
-    success,
-    colors.$success,
-    colors.$success-hover,
-    colors.$success-dark,
-    colors.$success-focus-shadow
-  );
-
-  &.light {
-    background-color: #fff;
-    border-bottom-color: transparent;
-
-    &:hover {
-      background-color: colors.$bg-dark;
-    }
-
-    @mixin light($variation, $color, $bg, $shadow, $active) {
       &.#{$variation} {
-        background-color: $bg;
-        color: $color;
+        background-color: $light;
+        color: $bg;
 
         &:hover,
         &:focus {
-          background-color: $color;
+          background-color: $bg;
           color: #fff;
         }
 
         &:focus {
-          box-shadow: 0px 0px 0px 3px $shadow;
+          box-shadow: 0px 0px 0px 3px $focus;
         }
 
         &:active {
@@ -141,64 +107,57 @@ $btn-padding-x: (
       }
     }
 
-    @include light(
-      primary,
-      colors.$primary,
-      colors.$primary-light,
-      colors.$primary-focus-shadow,
-      colors.$primary-dark
-    );
+    &.link {
+      background-color: transparent;
+      border-bottom-color: transparent;
 
-    @include light(
-      warning,
-      colors.$warning,
-      colors.$warning-light,
-      colors.$warning-focus-shadow,
-      colors.$warning-dark
-    );
-
-    @include light(
-      danger,
-      colors.$danger,
-      colors.$danger-light,
-      colors.$danger-focus-shadow,
-      colors.$danger-dark
-    );
-
-    @include light(
-      success,
-      colors.$success,
-      colors.$success-light,
-      colors.$success-focus-shadow,
-      colors.$success-dark
-    );
-  }
-
-  &.link {
-    background-color: transparent;
-    border-bottom-color: transparent;
-
-    @mixin link(
-      $variation,
-      $color: colors.$primary,
-      $hover: colors.$primary-light
-    ) {
       &.#{$variation} {
-        color: $color;
+        color: $bg;
 
         &:hover,
         &:focus,
         &:active {
-          background-color: $hover;
+          background-color: $light;
         }
       }
     }
-
-    @include link(primary);
-    @include link(warning, colors.$warning, colors.$warning-light);
-    @include link(danger, colors.$danger, colors.$danger-light);
-    @include link(success, colors.$success, colors.$success-light);
   }
+
+  @include button(
+    primary,
+    colors.$primary,
+    colors.$primary-hover,
+    colors.$primary-dark,
+    colors.$primary-focus-shadow,
+    colors.$primary-light
+  );
+
+  @include button(
+    warning,
+    colors.$warning,
+    colors.$warning-hover,
+    colors.$warning-dark,
+    colors.$warning-focus-shadow,
+    colors.$warning-light
+  );
+
+  @include button(
+    danger,
+    colors.$danger,
+    colors.$danger-hover,
+    colors.$danger-dark,
+    colors.$danger-focus-shadow,
+    colors.$danger-light
+  );
+
+  @include button(
+    success,
+    colors.$success,
+    colors.$success-hover,
+    colors.$success-dark,
+    colors.$success-focus-shadow,
+    colors.$danger-light
+  );
 
   &:disabled,
   &.disabled {
