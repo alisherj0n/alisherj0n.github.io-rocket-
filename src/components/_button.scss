@@ -128,7 +128,7 @@ $btn-padding-x: (
     colors.$primary,
     colors.$primary-hover,
     colors.$primary-dark,
-    colors.$primary-focus-shadow,
+    colors.$primary-focus,
     colors.$primary-light
   );
 
@@ -137,7 +137,7 @@ $btn-padding-x: (
     colors.$warning,
     colors.$warning-hover,
     colors.$warning-dark,
-    colors.$warning-focus-shadow,
+    colors.$warning-focus,
     colors.$warning-light
   );
 
@@ -146,7 +146,7 @@ $btn-padding-x: (
     colors.$danger,
     colors.$danger-hover,
     colors.$danger-dark,
-    colors.$danger-focus-shadow,
+    colors.$danger-focus,
     colors.$danger-light
   );
 
@@ -155,7 +155,7 @@ $btn-padding-x: (
     colors.$success,
     colors.$success-hover,
     colors.$success-dark,
-    colors.$success-focus-shadow,
+    colors.$success-focus,
     colors.$danger-light
   );
 
@@ -171,7 +171,7 @@ $btn-padding-x: (
   transition: box-shadow variables.$transition-duration;
 
   &:focus {
-    box-shadow: 0px 0px 0px 3px colors.$primary-focus-shadow;
+    box-shadow: 0px 0px 0px 3px colors.$primary-focus;
     outline: none;
   }
 }
