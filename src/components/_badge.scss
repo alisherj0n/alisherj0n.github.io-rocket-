@@ -41,45 +41,22 @@ $badge-padding-x: (
     }
   }
 
-  &.primary {
-    background-color: colors.$primary;
-    color: #fff;
-  }
-
-  &.warning {
-    background-color: colors.$warning;
-    color: #fff;
-  }
-
-  &.danger {
-    background-color: colors.$danger;
-    color: #fff;
-  }
-
-  &.success {
-    background-color: colors.$success;
-    color: #fff;
-  }
-
-  &.light {
-    &.primary {
-      background-color: colors.$primary-light;
-      color: colors.$primary;
+  @mixin badge($color, $bg, $light) {
+    &.#{$color} {
+      background-color: $bg;
+      color: #fff;
     }
 
-    &.warning {
-      background-color: colors.$warning-light;
-      color: colors.$warning;
-    }
-
-    &.danger {
-      background-color: colors.$danger-light;
-      color: colors.$danger;
-    }
-
-    &.success {
-      background-color: colors.$success-light;
-      color: colors.$success;
+    &.light {
+      &.#{$color} {
+        background-color: $light;
+        color: $bg;
+      }
     }
   }
+
+  @include badge(primary, colors.$primary, colors.$primary-light);
+  @include badge(warning, colors.$warning, colors.$warning-light);
+  @include badge(danger, colors.$danger, colors.$danger-light);
+  @include badge(success, colors.$success, colors.$success-light);
 }
