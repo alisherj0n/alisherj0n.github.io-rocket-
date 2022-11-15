@@ -7,8 +7,8 @@ $sidebar-padding-x: (
   lg: 1.7rem,
 );
 
-.app {
-  > .sidebar {
+@mixin sidebar($sidebar: large) {
+  .sidebar {
     border-right: 1px solid colors.$border;
     min-height: 100vh;
     padding: 1rem 0;
@@ -95,8 +95,8 @@ $sidebar-padding-x: (
     }
   }
 
-  &.collapsed {
-    > .sidebar {
+  @if $sidebar == collapsed {
+    .sidebar {
       padding-left: map-get($sidebar-padding-x, sm);
       padding-right: map-get($sidebar-padding-x, sm);
 
@@ -122,5 +122,15 @@ $sidebar-padding-x: (
         display: none;
       }
     }
+  }
+}
+
+.app {
+  & > {
+    @include sidebar;
+  }
+
+  &.collapsed > {
+    @include sidebar(collapsed);
   }
 }
