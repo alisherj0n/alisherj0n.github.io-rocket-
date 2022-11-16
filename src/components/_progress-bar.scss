@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../colors";
+@use "sass:meta";
 
 .progress-bar {
   width: 100%;
@@ -13,19 +14,18 @@
     border-radius: map-get(variables.$radius, lg);
   }
 
-  &.success .progress {
-    background-color: colors.$success;
+  @mixin colors($args...) {
+    @each $name, $color in meta.keywords($args) {
+      &.#{$name} .progress {
+        background-color: $color;
+      }
+    }
   }
 
-  &.warning .progress {
-    background-color: colors.$warning;
-  }
-
-  &.danger .progress {
-    background-color: colors.$danger;
-  }
-
-  &.primary .progress {
-    background-color: colors.$primary;
-  }
+  @include colors(
+    $primary: colors.$primary,
+    $warning: colors.$warning,
+    $danger: colors.$danger,
+    $success: colors.$success
+  );
 }
