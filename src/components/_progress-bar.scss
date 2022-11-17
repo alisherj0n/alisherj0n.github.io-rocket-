@@ -14,18 +14,14 @@
     border-radius: map-get(variables.$radius, lg);
   }
 
-  @mixin colors($args...) {
-    @each $name, $color in meta.keywords($args) {
-      &.#{$name} .progress {
-        background-color: $color;
-      }
+  @mixin progress-bar($variation, $bg) {
+    &.#{$variation} .progress {
+      background-color: $bg;
     }
   }
 
-  @include colors(
-    $primary: colors.$primary,
-    $warning: colors.$warning,
-    $danger: colors.$danger,
-    $success: colors.$success
-  );
+  @include progress-bar(primary, colors.$primary);
+  @include progress-bar(warning, colors.$warning);
+  @include progress-bar(danger, colors.$danger);
+  @include progress-bar(success, colors.$success);
 }
