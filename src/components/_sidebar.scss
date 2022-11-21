@@ -99,9 +99,7 @@ $sidebar-padding-x: (
     }
   }
 
-  &.collapsed {
-    > .sidebar {
-      @include collapsed;
-    }
+  &.collapsed > .sidebar {
+    @include collapsed;
   }
 }
