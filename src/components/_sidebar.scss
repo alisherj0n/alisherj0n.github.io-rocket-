@@ -7,6 +7,33 @@ $sidebar-padding-x: (
   lg: 1.7rem,
 );
 
+@mixin collapsed {
+  padding-left: map-get($sidebar-padding-x, sm);
+  padding-right: map-get($sidebar-padding-x, sm);
+
+  .logo.icon-only {
+    display: block;
+  }
+
+  .nav .item {
+    border-radius: map-get(variables.$radius, lg);
+    padding: 0.8rem;
+
+    &.active {
+      background-color: colors.$primary;
+      color: #fff;
+    }
+  }
+
+  .logo,
+  .link-txt,
+  .submenu-indicator,
+  .badge,
+  .nav .item.active::before {
+    display: none;
+  }
+}
+
 .app {
   > .sidebar {
     border-right: 1px solid colors.$border;
@@ -68,59 +95,13 @@ $sidebar-padding-x: (
     }
 
     @include media.respondto(tablet-landscape) {
-      padding-left: map-get($sidebar-padding-x, sm);
-      padding-right: map-get($sidebar-padding-x, sm);
-
-      .logo.icon-only {
-        display: block;
-      }
-
-      .nav .item {
-        border-radius: map-get(variables.$radius, lg);
-        padding: 0.8rem;
-
-        &.active {
-          background-color: colors.$primary;
-          color: #fff;
-        }
-      }
-
-      .logo,
-      .link-txt,
-      .submenu-indicator,
-      .badge,
-      .nav .item.active::before {
-        display: none;
-      }
+      @include collapsed;
     }
   }
 
   &.collapsed {
     > .sidebar {
-      padding-left: map-get($sidebar-padding-x, sm);
-      padding-right: map-get($sidebar-padding-x, sm);
-
-      .logo.icon-only {
-        display: block;
-      }
-
-      .nav .item {
-        border-radius: map-get(variables.$radius, lg);
-        padding: 0.8rem;
-
-        &.active {
-          background-color: colors.$primary;
-          color: #fff;
-        }
-      }
-
-      .logo,
-      .link-txt,
-      .submenu-indicator,
-      .badge,
-      .nav .item.active::before {
-        display: none;
-      }
+      @include collapsed;
     }
   }
 }
